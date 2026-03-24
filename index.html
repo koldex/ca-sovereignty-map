@@ -37,7 +37,7 @@
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/sp8=" crossorigin=""></script>
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <!-- TopoJSON -->
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
@@ -57,7 +57,15 @@
     let mapData;
 
     async function main() {
-      map = initMap('map');
+      try {
+        map = initMap('map');
+      } catch (err) {
+        document.getElementById('info-bar-content').innerHTML =
+          `<span class="text-muted">⚠ Kartan alustus epäonnistui: ${escapeHtml(err.message)}</span>`;
+        console.error('initMap failed:', err);
+        return;
+      }
+
       addLegend(map);
       setupInfoBar('info-bar');
 
@@ -70,9 +78,10 @@
         renderMunicipalities(topo, data.municipalities);
         renderStats(data);
       } catch (err) {
-        document.getElementById('info-bar-content').innerHTML =
+        const el = document.getElementById('info-bar-content');
+        if (el) el.innerHTML =
           `<span class="text-muted">⚠ Karttadatan lataus epäonnistui: ${escapeHtml(err.message)}</span>`;
-        console.error(err);
+        console.error('Data load failed:', err);
       }
     }
 

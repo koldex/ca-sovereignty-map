@@ -100,7 +100,7 @@
     "name": "Ishøj",
     "country": "DK",
     "population": 23131,
-    "domain": "ishj.dk",
+    "domain": "ishoj.dk",
     "domain_source": "guess"
   },
   {
@@ -180,7 +180,7 @@
     "name": "Køge",
     "country": "DK",
     "population": 61475,
-    "domain": "kge.dk",
+    "domain": "koge.dk",
     "domain_source": "guess"
   },
   {
@@ -444,7 +444,7 @@
     "name": "Esbjerg",
     "country": "DK",
     "population": 115579,
-    "domain": "www.esbjerg.dk",
+    "domain": "esbjerg.dk",
     "domain_source": "guess"
   },
   {
@@ -596,7 +596,7 @@
     "name": "Samsø",
     "country": "DK",
     "population": 3682,
-    "domain": "sams.dk",
+    "domain": "samso.dk",
     "domain_source": "guess"
   },
   {
@@ -644,7 +644,7 @@
     "name": "Morsø",
     "country": "DK",
     "population": 20066,
-    "domain": "mors.dk",
+    "domain": "morso.dk",
     "domain_source": "guess"
   },
   {
@@ -1284,7 +1284,7 @@
     "name": "Kalajoki",
     "country": "FI",
     "population": 12373,
-    "domain": "www.kalajoki.fi",
+    "domain": "kalajoki.fi",
     "domain_source": "guess"
   },
   {
@@ -1292,7 +1292,7 @@
     "name": "Kangasala",
     "country": "FI",
     "population": 31868,
-    "domain": "www.kangasala.fi",
+    "domain": "kangasala.fi",
     "domain_source": "guess"
   },
   {
@@ -2108,7 +2108,7 @@
     "name": "Närpiö",
     "country": "FI",
     "population": 9479,
-    "domain": "www.narpio.fi",
+    "domain": "narpio.fi",
     "domain_source": "guess"
   },
   {
@@ -2868,7 +2868,7 @@
     "name": "Tornio",
     "country": "FI",
     "population": 21602,
-    "domain": "www.tornio.fi",
+    "domain": "tornio.fi",
     "domain_source": "guess"
   },
   {
@@ -3092,7 +3092,7 @@
     "name": "Ylitornio",
     "country": "FI",
     "population": 3918,
-    "domain": "www.ylitornio.fi",
+    "domain": "ylitornio.fi",
     "domain_source": "guess"
   },
   {
@@ -3100,7 +3100,7 @@
     "name": "Ylivieska",
     "country": "FI",
     "population": 15255,
-    "domain": "www.ylivieska.fi",
+    "domain": "ylivieska.fi",
     "domain_source": "guess"
   },
   {
@@ -3108,7 +3108,7 @@
     "name": "Ylöjärvi",
     "country": "FI",
     "population": 33254,
-    "domain": "www.ylojarvi.fi",
+    "domain": "ylojarvi.fi",
     "domain_source": "guess"
   },
   {
@@ -3116,7 +3116,7 @@
     "name": "Ypäjä",
     "country": "FI",
     "population": 2343,
-    "domain": "www.ypaja.fi",
+    "domain": "ypaja.fi",
     "domain_source": "guess"
   },
   {
@@ -3348,7 +3348,15 @@
     "name": "Averøy",
     "country": "NO",
     "population": 5788,
-    "domain": "avery.no",
+    "domain": "www.averoy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1563",
+    "name": "Sunndal",
+    "country": "NO",
+    "population": 7036,
+    "domain": "www.sunndal.no",
     "domain_source": "guess"
   },
   {
@@ -3380,7 +3388,7 @@
     "name": "Bodø",
     "country": "NO",
     "population": 52357,
-    "domain": "bod.no",
+    "domain": "www.bodo.no",
     "domain_source": "guess"
   },
   {
@@ -3469,6 +3477,14 @@
     "country": "NO",
     "population": 1950,
     "domain": "www.gildeskal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1848",
+    "name": "Steigen",
+    "country": "NO",
+    "population": 2608,
+    "domain": "www.steigen.no",
     "domain_source": "guess"
   },
   {
@@ -3932,7 +3948,7 @@
     "name": "Øyer",
     "country": "NO",
     "population": 5100,
-    "domain": "www.yer.no",
+    "domain": "yer.no",
     "domain_source": "guess"
   },
   {
@@ -4044,7 +4060,7 @@
     "name": "Kragerø",
     "country": "NO",
     "population": 10380,
-    "domain": "krager.no",
+    "domain": "www.kragero.no",
     "domain_source": "guess"
   },
   {
@@ -4268,7 +4284,7 @@
     "name": "Bømlo",
     "country": "NO",
     "population": 11957,
-    "domain": "www.bmlo.no",
+    "domain": "www.bomlo.no",
     "domain_source": "guess"
   },
   {
@@ -4348,7 +4364,7 @@
     "name": "Askøy",
     "country": "NO",
     "population": 29553,
-    "domain": "asky.no",
+    "domain": "www.askoy.no",
     "domain_source": "guess"
   },
   {
@@ -4476,7 +4492,7 @@
     "name": "Frøya",
     "country": "NO",
     "population": 5151,
-    "domain": "frya.no",
+    "domain": "www.froya.no",
     "domain_source": "guess"
   },
   {
@@ -4684,7 +4700,7 @@
     "name": "Vardø",
     "country": "NO",
     "population": 2029,
-    "domain": "vard.no",
+    "domain": "www.vardo.no",
     "domain_source": "guess"
   },
   {
@@ -4732,7 +4748,7 @@
     "name": "Måsøy",
     "country": "NO",
     "population": 1225,
-    "domain": "masy.no",
+    "domain": "www.masoy.no",
     "domain_source": "guess"
   },
   {
@@ -5108,7 +5124,7 @@
     "name": "Ydre",
     "country": "SE",
     "population": 3726,
-    "domain": "www.ydre.se",
+    "domain": "ydre.se",
     "domain_source": "guess"
   },
   {
@@ -5724,7 +5740,7 @@
     "name": "Ystad",
     "country": "SE",
     "population": 30970,
-    "domain": "www.ystad.se",
+    "domain": "ystad.se",
     "domain_source": "guess"
   },
   {

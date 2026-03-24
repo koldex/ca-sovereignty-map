@@ -35,20 +35,32 @@ from .dns import domain_resolves
 @stamina.retry(
     on=(httpx.HTTPStatusError, httpx.ConnectError, httpx.TimeoutException),
     attempts=3,
-    wait_initial=2.0,
+    wait_initial=5.0,
+    wait_max=60.0,
 )
 async def _sparql_query(query: str) -> list[dict]:
-    """Execute a Wikidata SPARQL query and return bindings."""
+    """Execute a Wikidata SPARQL query and return bindings.
+
+    Wikimedia requires a descriptive User-Agent identifying the application
+    and contact information. Rate limit: ~1 req/s recommended.
+    """
     headers = {
         "Accept": "application/sparql-results+json",
-        "User-Agent": "CAmap-Nordics/0.1 (https://github.com/camap-nordics)",
+        "User-Agent": (
+            "CAmap-Nordics/0.1 "
+            "(https://github.com/koldex/ca-sovereignty-map; "
+            "TLS CA sovereignty map of Nordic municipalities)"
+        ),
     }
-    async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
+    async with httpx.AsyncClient(timeout=60) as client:
         r = await client.get(
             WIKIDATA_SPARQL_ENDPOINT,
             params={"query": query, "format": "json"},
             headers=headers,
         )
+        if r.status_code == 429 or r.status_code == 403:
+            # Rate limited — stamina will retry with backoff
+            r.raise_for_status()
         r.raise_for_status()
         data = r.json()
         return data["results"]["bindings"]
@@ -126,31 +138,54 @@ def _slugify_name(name: str) -> list[str]:
 def guess_domains(name: str, country: str, region: str = "") -> list[str]:
     """Generate plausible domain guesses for a Nordic municipality.
 
+    Returns candidates in priority order: most likely first.
     Cf. mxmap's guess_domains() for Swiss municipalities.
     """
     slugs = _slugify_name(name)
     tld = COUNTRY_TLDS.get(country, "eu")
-    candidates: set[str] = set()
+
+    # Use list to preserve priority order, set for deduplication
+    seen: set[str] = set()
+    candidates: list[str] = []
+
+    def add(domain: str) -> None:
+        if domain and domain not in seen:
+            seen.add(domain)
+            candidates.append(domain)
 
     for slug in slugs:
         if not slug:
             continue
 
-        candidates.add(f"{slug}.{tld}")
-        candidates.add(f"www.{slug}.{tld}")
+        if country == "FI":
+            # Finnish pattern: most use {name}.fi directly
+            add(f"{slug}.fi")
+            add(f"www.{slug}.fi")
 
-        if country == "SE":
-            candidates.add(f"{slug}.kommun.se")
-            candidates.add(f"www.{slug}.se")
+        elif country == "SE":
+            # Swedish: majority use {name}.se, some use {name}.kommun.se
+            add(f"{slug}.se")
+            add(f"{slug}.kommun.se")
+            add(f"www.{slug}.se")
+            add(f"www.{slug}.kommun.se")
+
         elif country == "NO":
-            candidates.add(f"{slug}.kommune.no")
-            candidates.add(f"www.{slug}.kommune.no")
-        elif country == "DK":
-            candidates.add(f"{slug}.dk")
-        elif country == "FI":
-            candidates.add(f"{slug}.fi")
+            # Norwegian: majority use {name}.kommune.no
+            add(f"{slug}.kommune.no")
+            add(f"{slug}.no")
+            add(f"www.{slug}.kommune.no")
+            add(f"www.{slug}.no")
 
-    return sorted(candidates)
+        elif country == "DK":
+            # Danish: majority use {name}.dk
+            add(f"{slug}.dk")
+            add(f"www.{slug}.dk")
+
+        else:
+            add(f"{slug}.{tld}")
+            add(f"www.{slug}.{tld}")
+
+    return candidates
 
 
 # ── Domain validation ─────────────────────────────────────────────────────────
