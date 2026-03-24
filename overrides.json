@@ -1,0 +1,23 @@
+{
+  "_comment": "Manual domain overrides for municipalities where auto-detection fails. Format: municipality_id → {domain, reason}",
+  "FI-091": {
+    "domain": "hel.fi",
+    "reason": "Helsinki uses hel.fi, not helsinki.fi"
+  },
+  "FI-049": {
+    "domain": "espoo.fi",
+    "reason": "Official service domain"
+  },
+  "SE-0180": {
+    "domain": "stockholm.se",
+    "reason": "Stockholm uses stockholm.se directly"
+  },
+  "NO-0301": {
+    "domain": "oslo.kommune.no",
+    "reason": "Uses kommune.no subdomain"
+  },
+  "DK-101": {
+    "domain": "kk.dk",
+    "reason": "Copenhagen uses kk.dk (Kobenhavns Kommune)"
+  }
+}

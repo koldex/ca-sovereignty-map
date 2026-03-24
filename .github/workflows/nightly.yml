@@ -1,0 +1,47 @@
+name: Nightly CA Scan
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # 02:00 UTC = 04:00 Finnish time
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - run: uv python install 3.13
+
+      - run: uv sync
+
+      # Phase 2: Scan certificates (municipality_domains.json must exist)
+      - name: Scan TLS certificates
+        run: uv run scan-certs --concurrency 30
+        # Lower concurrency to be considerate of CI runner resources
+
+      - name: Run analysis report
+        run: uv run analyze
+        continue-on-error: true
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      - name: Commit updated scan data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json data.min.json
+          git diff --staged --quiet || git commit -m "Update CA scan data [${{ steps.date.outputs.date }}]"
+          git push

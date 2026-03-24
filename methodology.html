@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodologia — CAmap Nordics</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+  <nav class="nav">
+    <span class="nav-title">🗺 CAmap Nordics</span>
+    <a href="index.html" class="nav-link">Kartta</a>
+    <a href="methodology.html" class="nav-link active">Metodologia</a>
+    <a href="https://github.com/koldex/ca-sovereignty-map" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+
+  <div class="content-page">
+    <h1>Metodologia</h1>
+    <p class="text-muted">
+      Miten karttadata kerätään, luokitellaan ja päivitetään.
+    </p>
+
+    <h2>Tausta ja motivaatio</h2>
+    <p>
+      TLS-sertifikaattiauktoriteetti (CA) voi periaatteessa peruuttaa verkkotunnukselle myöntämänsä
+      sertifikaatin tai kieltäytyä uusimasta sitä. Tätä kutsutaan "kill switch" -riskiksi.
+      Pohjoismaisten kuntien julkiset verkkosivut luottavat suurelta osin yhdysvaltalaisiin CA-palveluihin,
+      jotka ovat US CLOUD Act -lainsäädännön alaisia.
+    </p>
+    <p>
+      Projekti on inspiroitunut <a href="https://mxmap.ch" target="_blank">mxmap.ch</a>-palvelusta
+      (David Huser) ja sen hollantilaisesta versiosta <a href="https://mxmap.nl" target="_blank">mxmap.nl</a>.
+      Siinä missä nämä kartoittavat sähköpostipalveluntarjoajia, tämä projekti kartoittaa
+      TLS-sertifikaattiauktoriteetteja.
+    </p>
+
+    <h2>Tietolähteet</h2>
+
+    <h3>Kuntadomenien tunnistaminen</h3>
+    <p>Kunkin kunnan virallinen verkkotunnus tunnistetaan kolmivaiheisesti:</p>
+    <ol>
+      <li><strong>Manuaaliset korjaukset</strong> (<code>overrides.json</code>) — korkein prioriteetti</li>
+      <li><strong>Wikidata SPARQL</strong> — virallinen verkkosivutieto per kunta</li>
+      <li><strong>Domain-arvailu</strong> — nimestä generoitu kandidaattiluettelo, validoitu DNS-kyselyllä</li>
+    </ol>
+
+    <h3>Sertifikaattiskannaus</h3>
+    <p>
+      Jokaisen verkkotunnuksen TLS-sertifikaattiketju skannataan OpenSSL-komennolla:
+    </p>
+    <pre><code>echo | openssl s_client -connect domain:443 -showcerts 2>/dev/null</code></pre>
+    <p>
+      Ketjusta poimitaan leaf-, väli- ja root-sertifikaatit. Lisäksi haetaan
+      DNS CAA -tietueet ja Certificate Transparency -lokeista historiallinen tieto
+      (crt.sh-palvelu).
+    </p>
+
+    <h2>Luokittelu</h2>
+
+    <h3>CA-sormenjälkitietokanta</h3>
+    <p>
+      Projekti ylläpitää sisäistä CA-sormenjälkitietokantaa (<code>signatures.py</code>), joka
+      sisältää tunnetut CA:t tunnistuskaavoineen (issuer CN/O, OCSP URL, CAA-arvo).
+      Lisäksi käytetään CCADB-tietokantaa (Mozilla/Linux Foundation) jurisdiktiotiedon
+      auktoritatiivisena lähteenä.
+    </p>
+
+    <h3>Signaalit ja painotus</h3>
+    <p>Luokittelu perustuu seuraaviin signaaleihin:</p>
+
+    <table class="signal-table">
+      <thead>
+        <tr>
+          <th>Signaali</th>
+          <th>Paino</th>
+          <th>Kuvaus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Leaf-sertifikaatin myöntäjä</td>
+          <td>0.35 <span class="signal-weight-bar" style="width:70px"></span></td>
+          <td>Vahvin signaali — suoraan käytössä oleva CA</td>
+        </tr>
+        <tr>
+          <td>Välisertifikaatin myöntäjä</td>
+          <td>0.25 <span class="signal-weight-bar" style="width:50px"></span></td>
+          <td>CA:n hierarkia</td>
+        </tr>
+        <tr>
+          <td>Root CA</td>
+          <td>0.15 <span class="signal-weight-bar" style="width:30px"></span></td>
+          <td>Juurisertifikaatti</td>
+        </tr>
+        <tr>
+          <td>DNS CAA -tietue</td>
+          <td>0.10 <span class="signal-weight-bar" style="width:20px"></span></td>
+          <td>Domain-omistajan valtuutus CA:lle</td>
+        </tr>
+        <tr>
+          <td>CT-lokit</td>
+          <td>0.08 <span class="signal-weight-bar" style="width:16px"></span></td>
+          <td>Historiallinen data</td>
+        </tr>
+        <tr>
+          <td>OCSP-endpoint</td>
+          <td>0.04</td>
+          <td>Peruutuspalvelun jurisdiktio</td>
+        </tr>
+        <tr>
+          <td>CRL-endpoint</td>
+          <td>0.03</td>
+          <td>Sertifikaattiluettelo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Riskitasot</h2>
+
+    <table class="risk-table">
+      <thead>
+        <tr>
+          <th>Riskitaso</th>
+          <th>Väri</th>
+          <th>Kuvaus</th>
+          <th>Esimerkki</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-us">Kriittinen</span></td>
+          <td>Punainen</td>
+          <td>US CLOUD Act -alainen, suora peruutusriski</td>
+          <td>DigiCert, Amazon, Google, Cloudflare</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-us">Korkea</span></td>
+          <td>Oranssi-punainen</td>
+          <td>US-jurisdiktio, nonprofit/rajoitettu</td>
+          <td>Let's Encrypt (ISRG)</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-allied">Keskitaso</span></td>
+          <td>Oranssi</td>
+          <td>Liittolaismaa tai monikansallinen</td>
+          <td>GlobalSign (BE/JP), SwissSign (CH)</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-eu">Matala</span></td>
+          <td>Sininen</td>
+          <td>EU-jurisdiktio</td>
+          <td>HARICA (GR), Certum (PL), D-TRUST (DE)</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-nordic">Minimaalinen</span></td>
+          <td>Vihreä</td>
+          <td>Pohjoismainen/kansallinen CA</td>
+          <td>Buypass (NO)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Päivitystiheys</h2>
+    <p>
+      Sertifikaattiskannaus ajetaan automaattisesti joka yö klo 04:00 Suomen aikaa
+      (GitHub Actions cron). Tulokset tallennetaan <code>data.json</code>-tiedostoon
+      ja julkaistaan karttasivulle.
+    </p>
+
+    <h2>Rajoitukset</h2>
+    <ul>
+      <li>Ei kaikkia kuntia voida tunnistaa — osalla ei ole julkista HTTPS-sivua</li>
+      <li>Jotkut kunnat käyttävät CDN-palveluita (Cloudflare, Akamai), jolloin CA voi näyttää eri kuin varsinainen hosting</li>
+      <li>CAA-tietueet voivat sallia useampia CA:ita kuin käytössä on</li>
+      <li>CCADB-data ei kata kaikkia CA:ita</li>
+    </ul>
+
+    <h2>Avoin lähdekoodi</h2>
+    <p>
+      Projektin lähdekoodi ja data ovat avoimesti saatavilla
+      <a href="https://github.com/koldex/ca-sovereignty-map" target="_blank">GitHubissa</a>
+      MIT/EUPL-lisenssillä. Pull requestit ja korjausehdotukset ovat tervetulleita.
+    </p>
+  </div>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

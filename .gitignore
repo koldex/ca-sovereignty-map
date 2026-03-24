@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+dist/
+build/
+.uv/
+uv.lock
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data / generated files
+data.min.json
+ccadb_cache.json
+
+# Secrets / local config
+.env
+.env.*
+*.secret
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AI operation files
+ai_operation_in_progress.md

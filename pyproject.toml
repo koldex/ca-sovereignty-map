@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "camap-nordics"
+version = "0.1.0"
+description = "Interactive map showing CA sovereignty of Nordic municipalities"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dnspython>=2.8.0",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "pydantic>=2.0",
+    "stamina>=25.2.0",
+    "cryptography>=44.0",
+]
+
+[project.scripts]
+resolve-domains = "cert_sovereignty.cli:resolve_domains"
+scan-certs = "cert_sovereignty.cli:scan_certs"
+analyze = "cert_sovereignty.cli:analyze"
+update-ccadb = "cert_sovereignty.cli:update_ccadb"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cert_sovereignty"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+    "pytest-asyncio>=0.25",
+    "respx>=0.22",
+    "ruff>=0.15.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.coverage.run]
+source = ["cert_sovereignty"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "PT"]
+ignore = ["E501"]

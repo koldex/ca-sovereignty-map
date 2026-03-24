@@ -1,0 +1,114 @@
+/* CAmap Nordics — Shared CSS */
+
+:root {
+  --color-us: #e74c3c;
+  --color-us-medium: #f1948a;
+  --color-eu: #3498db;
+  --color-eu-medium: #85c1e9;
+  --color-nordic: #2ecc71;
+  --color-nordic-medium: #82e0aa;
+  --color-allied: #f39c12;
+  --color-allied-medium: #f8c471;
+  --color-unknown: #cccccc;
+
+  /* Colorblind-safe palette */
+  --color-cb-us: #d55e00;
+  --color-cb-us-medium: #f0b27a;
+  --color-cb-eu: #0072b2;
+  --color-cb-eu-medium: #7fb3d8;
+  --color-cb-nordic: #009e73;
+  --color-cb-nordic-medium: #7fceab;
+  --color-cb-allied: #e69f00;
+  --color-cb-allied-medium: #f2ce7e;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --border-radius: 6px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background: #f8f9fa;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Navigation ─────────────────────────────────────────── */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e1e4e8;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292e;
+  margin-right: auto;
+}
+
+.nav-link {
+  font-size: 13px;
+  color: #586069;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: background 0.15s;
+}
+
+.nav-link:hover {
+  background: #f6f8fa;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #24292e;
+  font-weight: 500;
+}
+
+/* ── Risk badges ─────────────────────────────────────────── */
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-us { background: var(--color-us); color: #fff; }
+.badge-eu { background: var(--color-eu); color: #fff; }
+.badge-nordic { background: var(--color-nordic); color: #fff; }
+.badge-allied { background: var(--color-allied); color: #fff; }
+.badge-unknown { background: var(--color-unknown); color: #555; }
+
+/* ── Utility ─────────────────────────────────────────────── */
+
+.text-muted { color: #6a737d; }
+.text-small { font-size: 12px; }
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 16px; }

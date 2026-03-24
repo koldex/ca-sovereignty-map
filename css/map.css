@@ -1,0 +1,303 @@
+/* CAmap Nordics — Map page CSS */
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ── Map container ───────────────────────────────────────── */
+
+#map {
+  flex: 1;
+  width: 100%;
+  background: #e8f0f7;
+}
+
+/* ── Info bar (bottom on desktop, collapsible on mobile) ─── */
+
+#info-bar {
+  background: #fff;
+  border-top: 1px solid #e1e4e8;
+  padding: 12px 20px;
+  min-height: 60px;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: max-height 0.2s ease;
+}
+
+#info-bar.collapsed {
+  max-height: 36px;
+  overflow: hidden;
+}
+
+#info-bar-content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#info-bar .muni-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+#info-bar .muni-domain {
+  font-size: 12px;
+  color: #586069;
+  font-family: monospace;
+}
+
+/* ── Legend ──────────────────────────────────────────────── */
+
+.legend {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 16px;
+  border-radius: var(--border-radius, 6px);
+  box-shadow: var(--shadow, 0 2px 8px rgba(0,0,0,0.15));
+  font-size: 12px;
+  min-width: 180px;
+}
+
+.legend-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #586069;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── Filter panel ────────────────────────────────────────── */
+
+.filter-panel {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 16px;
+  border-radius: var(--border-radius, 6px);
+  box-shadow: var(--shadow, 0 2px 8px rgba(0,0,0,0.15));
+  font-size: 12px;
+  min-width: 160px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.filter-header {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #586069;
+  margin: 10px 0 6px 0;
+}
+
+.filter-header:first-child {
+  margin-top: 0;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-item input[type="checkbox"] {
+  margin: 0;
+}
+
+.risk-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ── Popup ───────────────────────────────────────────────── */
+
+.leaflet-popup-content {
+  max-width: 380px;
+  min-width: 260px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.popup-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.popup-country {
+  font-size: 12px;
+  color: #586069;
+}
+
+.popup-domain {
+  font-family: monospace;
+  font-size: 12px;
+  color: #0366d6;
+  margin-bottom: 10px;
+}
+
+.popup-section {
+  margin-bottom: 10px;
+}
+
+.popup-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #586069;
+  margin-bottom: 4px;
+}
+
+/* Certificate chain visualization */
+.chain-container {
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.chain-node {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.chain-node:last-child {
+  border-bottom: none;
+}
+
+.chain-type {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #586069;
+  width: 65px;
+  flex-shrink: 0;
+}
+
+.chain-issuer {
+  flex: 1;
+  font-weight: 500;
+}
+
+.chain-country {
+  font-size: 11px;
+  color: #586069;
+}
+
+/* Kill switch section */
+.killswitch-item {
+  display: flex;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.killswitch-label {
+  color: #586069;
+  flex-shrink: 0;
+}
+
+/* Confidence bar */
+.confidence-bar {
+  height: 4px;
+  background: #e1e4e8;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: #2ecc71;
+  transition: width 0.3s;
+}
+
+/* ── Stats overlay ───────────────────────────────────────── */
+
+.stats-panel {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 16px;
+  border-radius: var(--border-radius, 6px);
+  box-shadow: var(--shadow, 0 2px 8px rgba(0,0,0,0.15));
+  font-size: 12px;
+  min-width: 200px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.stats-bar-row {
+  margin-bottom: 6px;
+}
+
+.stats-bar {
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.stats-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+/* ── Mobile styles ───────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .legend, .filter-panel, .stats-panel {
+    font-size: 11px;
+    padding: 8px 12px;
+    min-width: 140px;
+  }
+
+  #info-bar {
+    max-height: 150px;
+    padding: 8px 12px;
+  }
+
+  .leaflet-popup-content {
+    max-width: 280px;
+    min-width: 220px;
+  }
+}
