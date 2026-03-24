@@ -206,13 +206,54 @@ Store these in `Settings → Secrets → Actions` in your fork. Never commit the
 
 ### TLS certificate for self-hosted deployment
 
-For maximum sovereignty, use **Buypass** (Norwegian CA) instead of Let's Encrypt (US):
+For maximum sovereignty, use **Telia Certificate Service** (Swedish CA, Nordic jurisdiction)
+instead of Let's Encrypt (US CLOUD Act). Telia offers publicly trusted DV and OV TLS
+certificates via ACME from their FullSSL self-service platform.
 
-```
-ACME directory: https://api.buypass.com/acme/directory
+**ACME directory:** `https://acme.trust.telia.com/directory`
+
+#### Prerequisites
+
+1. Sign a FullSSL service agreement with Telia at [telia.fi/ssl](https://telia.fi/ssl)
+2. After onboarding, log in to the Secure Manager self-service portal and create an
+   **EAB (Extended Account Binding) credential pair** — a `KID` and an `HMAC` key.
+   These replace the normal ACME account registration step.
+
+#### Obtaining a certificate with `lego` (recommended client)
+
+Telia recommends deploying `lego` as a Docker container. Example using HTTP-01 challenge
+(port 80 must be reachable from the internet):
+
+```bash
+lego \
+  -s https://acme.trust.telia.com/directory \
+  -m admin@yourdomain.example \
+  -a --eab \
+  --kid  YOUR_KID_FROM_SECURE_MANAGER \
+  --hmac YOUR_HMAC_FROM_SECURE_MANAGER \
+  -d your.domain.example \
+  --http run
 ```
 
-Configure in Coolify: `Settings → SSL → Custom ACME → Buypass`.
+For DNS-01 challenge (no open port 80 required), append `--dns <provider>` instead of
+`--http`. Lego supports many DNS providers out of the box (Route53, Cloudflare, etc.).
+See `lego dnshelp` for the full list.
+
+#### Configuring in Coolify
+
+In the Coolify UI, navigate to `Settings → SSL → Custom ACME` and enter:
+
+- **ACME directory URL:** `https://acme.trust.telia.com/directory`
+- **EAB KID:** your KID from the Secure Manager portal
+- **EAB HMAC:** your HMAC key from the Secure Manager portal
+
+Coolify will handle automatic renewal using the stored EAB credentials.
+
+> **Note:** The Telia ACME service includes ACME ARI (Automatic Renewal Information)
+> support, which allows Telia to push accelerated renewal windows if a certificate
+> vulnerability is discovered.
+
+Source: [Telia ACME help](https://support.trust.telia.com/acmehelp_en.html)
 
 ---
 
