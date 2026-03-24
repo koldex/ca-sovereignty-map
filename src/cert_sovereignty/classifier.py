@@ -120,6 +120,9 @@ def classify(
     tls_version: str = "",
     verification: str = "",
     error: str | None = None,
+    cert_mismatch: bool = False,
+    http_accessible: bool | None = None,
+    scanned_domain: str = "",
 ) -> ClassificationResult:
     """Classify a domain's CA sovereignty from all collected evidence.
 
@@ -167,4 +170,7 @@ def classify(
         tls_version=tls_version,
         verification=verification,
         error=error,
+        cert_mismatch=cert_mismatch,
+        http_accessible=http_accessible,
+        scanned_domain=scanned_domain,
     )

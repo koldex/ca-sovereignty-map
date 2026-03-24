@@ -85,6 +85,22 @@ function buildPopup(muni) {
         `<div class="text-small text-muted">${escapeHtml(s.kind)}: ${escapeHtml(s.ca_name)} (${s.weight.toFixed(2)})</div>`
       ).join('') : '';
 
+  // Error / context notice
+  const errCat = muni.error_category || '';
+  const contextHtml = (() => {
+    if (errCat === 'http_only')
+      return `<div class="popup-notice notice-http">⚠ HTTP only — no TLS certificate on this domain. The municipality's site does not use HTTPS.</div>`;
+    if (errCat === 'shared_hosting' || muni.cert_mismatch)
+      return `<div class="popup-notice notice-shared">ℹ Shared hosting — certificate belongs to the hosting platform, not the municipality domain. CA shown is the platform's CA.</div>`;
+    if (muni.shared_hosting && !muni.cert_mismatch)
+      return `<div class="popup-notice notice-shared">ℹ Shared hosting — this municipality shares the same TLS certificate with ${muni.shared_cert_fingerprint ? 'others on the same server' : 'other municipalities'}.</div>`;
+    if (errCat === 'timeout')
+      return `<div class="popup-notice notice-unknown">⚠ Connection timed out — server did not respond on port 443 within 15 s.</div>`;
+    if (errCat === 'ssl_error' || errCat === 'ssl_mismatch')
+      return `<div class="popup-notice notice-unknown">⚠ TLS error — ${escapeHtml(muni.error || 'SSL negotiation failed')}.</div>`;
+    return '';
+  })();
+
   return `<div>
     <div class="popup-header">
       <div>
@@ -94,39 +110,41 @@ function buildPopup(muni) {
       ${jurisdictionBadgeHtml(muni.jurisdiction || 'other')}
     </div>
     ${domain ? `<div class="popup-domain"><a href="https://${escapeHtml(domain)}" target="_blank" rel="noopener">${escapeHtml(domain)}</a></div>` : ''}
+    ${contextHtml}
+    ${muni.category !== 'unknown' || muni.cert_mismatch || muni.shared_hosting ? `
     <div class="popup-section">
       <div class="popup-section-title">Certificate Authority</div>
       <strong>${escapeHtml(muni.primary_ca || '–')}</strong>
       ${muni.ca_country ? `<span class="text-muted"> · ${escapeHtml(muni.ca_country)}</span>` : ''}
       ${muni.ca_owner ? `<div class="text-small text-muted">${escapeHtml(muni.ca_owner)}</div>` : ''}
-    </div>
-    <div class="popup-section">
+    </div>` : ''}
+    ${chain.length > 0 ? `<div class="popup-section">
       <div class="popup-section-title">Certificate Chain</div>
       ${chainHtml}
-    </div>
+    </div>` : ''}
     ${caaRecords.length > 0 ? `<div class="popup-section">
       <div class="popup-section-title">DNS CAA Records</div>
       <code class="text-small">${caaRecords.map(escapeHtml).join(', ')}</code>
     </div>` : ''}
-    <div class="popup-section">
+    ${muni.category !== 'unknown' ? `<div class="popup-section">
       <div class="popup-section-title">Risk Level</div>
       ${RISK_LABELS[muni.risk_level] || muni.risk_level || '–'}
-    </div>
+    </div>` : ''}
     ${signalsHtml ? `<div class="popup-section">
       <div class="popup-section-title">Classification Signals</div>
       ${signalsHtml}
     </div>` : ''}
-    <div class="mt-2">
+    ${conf > 0 ? `<div class="mt-2">
       <div class="text-small text-muted">
         Confidence: ${conf.toFixed(1)}%
         ${tlsInfo.tls_version ? ' · ' + escapeHtml(tlsInfo.tls_version) : ''}
         ${tlsInfo.verification === 'OK' ? ' · ✓ Verified' : ''}
+        ${muni.scanned_domain ? ' · scanned: ' + escapeHtml(muni.scanned_domain) : ''}
       </div>
       <div class="confidence-bar">
         <div class="confidence-fill" style="width: ${conf}%"></div>
       </div>
-    </div>
-    ${muni.error ? `<div class="text-small text-muted mt-1">⚠ ${escapeHtml(muni.error)}</div>` : ''}
+    </div>` : ''}
   </div>`;
 }
 

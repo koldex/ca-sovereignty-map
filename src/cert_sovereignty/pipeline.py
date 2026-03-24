@@ -70,6 +70,9 @@ async def scan_domain(
             tls_version=tls_version,
             verification=verification,
             error=error,
+            cert_mismatch=tls_result.get("cert_mismatch", False),
+            http_accessible=tls_result.get("http_accessible"),
+            scanned_domain=tls_result.get("scanned_domain", ""),
         )
 
 
@@ -148,10 +151,34 @@ async def scan_many(
 # ── Serialization ──────────────────────────────────────────────────────────────
 
 
-def serialize_result(result: ClassificationResult, municipality_meta: dict) -> dict:
+def serialize_result(
+    result: ClassificationResult,
+    municipality_meta: dict,
+    shared_hosting: bool = False,
+    shared_cert_fp: str = "",
+) -> dict:
     """Serialize a ClassificationResult to the data.json municipality format."""
     jurisdiction_str = result.jurisdiction.value
     category = CATEGORY_MAP.get(jurisdiction_str, "unknown")
+
+    # Derive a human-readable error_category
+    error = result.error or ""
+    if error == "http_only":
+        error_category = "http_only"
+    elif result.cert_mismatch:
+        error_category = "shared_hosting"
+    elif shared_hosting:
+        error_category = "shared_hosting"
+    elif "timeout" in error.lower():
+        error_category = "timeout"
+    elif "verification failed" in error.lower():
+        error_category = "ssl_mismatch"
+    elif "ssl" in error.lower():
+        error_category = "ssl_error"
+    elif error:
+        error_category = "connection_error"
+    else:
+        error_category = ""
 
     return {
         "id": municipality_meta.get("id", ""),
@@ -160,6 +187,7 @@ def serialize_result(result: ClassificationResult, municipality_meta: dict) -> d
         "country": municipality_meta.get("country", ""),
         "region": municipality_meta.get("region", ""),
         "domain": result.domain,
+        "scanned_domain": result.scanned_domain or "",
         "population": municipality_meta.get("population"),
         "primary_ca": result.primary_ca,
         "ca_owner": result.ca_owner,
@@ -184,8 +212,52 @@ def serialize_result(result: ClassificationResult, municipality_meta: dict) -> d
             }
             for ev in result.evidence
         ],
+        # Context fields
+        "cert_mismatch": result.cert_mismatch,
+        "http_accessible": result.http_accessible,
+        "shared_hosting": shared_hosting,
+        "shared_cert_fingerprint": shared_cert_fp,
+        "error_category": error_category,
         "error": result.error,
         "scan_timestamp": result.scan_timestamp,
+    }
+
+
+def _detect_shared_hosting(
+    results: dict[str, ClassificationResult],
+    threshold: int = 5,
+) -> dict[str, tuple[bool, str]]:
+    """Return {domain: (is_shared, fingerprint)} for domains sharing a cert.
+
+    If threshold or more domains share the same leaf cert SHA-256 fingerprint,
+    they are on a shared hosting platform.
+    """
+    from collections import Counter
+
+    # Count fingerprints across all successful scans
+    fp_count: Counter[str] = Counter()
+    domain_fp: dict[str, str] = {}
+    for domain, result in results.items():
+        if result.cert_chain:
+            fp = result.cert_chain[0].sha256_fingerprint
+            if fp:
+                fp_count[fp] += 1
+                domain_fp[domain] = fp
+
+    shared_fps = {fp for fp, count in fp_count.items() if count >= threshold}
+    if shared_fps:
+        logger.info(
+            "Shared hosting detected: {} fingerprints used by {}+ municipalities",
+            len(shared_fps),
+            threshold,
+        )
+        for fp in shared_fps:
+            count = fp_count[fp]
+            logger.info("  {} ({} municipalities)", fp[:16] + "...", count)
+
+    return {
+        domain: (fp in shared_fps, fp)
+        for domain, fp in domain_fp.items()
     }
 
 
@@ -195,18 +267,19 @@ def build_data_json(
     *,
     commit: str = "",
 ) -> dict:
-    """Build the final data.json payload.
-
-    Cf. mxmap's build_data_json().
-    """
+    """Build the final data.json payload with shared hosting detection."""
     generated = datetime.now(timezone.utc).isoformat()
 
-    # Count by jurisdiction
+    # Detect shared hosting (5+ municipalities with same leaf cert)
+    shared_info = _detect_shared_hosting(results)
+
+    # Count breakdown including http_only
     counts: dict[str, int] = {
         "us-controlled": 0,
         "eu-controlled": 0,
         "nordic": 0,
         "allied": 0,
+        "http_only": 0,
         "unknown": 0,
     }
 
@@ -218,11 +291,16 @@ def build_data_json(
         result = results.get(domain)
 
         if result:
-            serialized = serialize_result(result, muni)
-            category = serialized.get("category", "unknown")
-            counts[category] = counts.get(category, 0) + 1
+            is_shared, fp = shared_info.get(domain, (False, ""))
+            serialized = serialize_result(result, muni, shared_hosting=is_shared, shared_cert_fp=fp)
+            if result.error == "http_only":
+                counts["http_only"] = counts.get("http_only", 0) + 1
+            else:
+                category = serialized.get("category", "unknown")
+                counts[category] = counts.get(category, 0) + 1
         else:
-            serialized = {**muni, "error": "no_domain", "category": "unknown"}
+            serialized = {**muni, "error": "no_domain", "category": "unknown",
+                          "error_category": "no_domain"}
             counts["unknown"] += 1
 
         muni_data[muni_id] = serialized

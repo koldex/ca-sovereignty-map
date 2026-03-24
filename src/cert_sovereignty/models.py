@@ -108,6 +108,15 @@ class ClassificationResult(BaseModel):
     verification: str = ""
     error: str | None = None
     scan_timestamp: str = ""
+    # ── Additional context fields ──────────────────────────────────────────────
+    # True when cert's SAN doesn't match domain — municipality uses shared hosting
+    cert_mismatch: bool = False
+    # True when 443 fails but port 80 responds (HTTP-only site)
+    http_accessible: bool | None = None
+    # Set by post-scan pipeline when 5+ municipalities share the same cert fingerprint
+    shared_hosting: bool = False
+    shared_cert_fingerprint: str = ""
+    scanned_domain: str = ""  # actual domain scanned when www fallback was used
 
 
 class MunicipalityRecord(BaseModel):

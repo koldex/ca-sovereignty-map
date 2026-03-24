@@ -135,7 +135,35 @@ html, body {
   display: inline-block;
 }
 
-/* ── Popup ───────────────────────────────────────────────── */
+/* ── Popup notices ──────────────────────────────────────────────── */
+
+.popup-notice {
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.notice-http {
+  background: #fff3cd;
+  border-left: 3px solid #f59e0b;
+  color: #6b4c00;
+}
+
+.notice-shared {
+  background: #dbeafe;
+  border-left: 3px solid #3b82f6;
+  color: #1e3a5f;
+}
+
+.notice-unknown {
+  background: #f3f4f6;
+  border-left: 3px solid #9ca3af;
+  color: #4b5563;
+}
+
+/* ── Popup ───────────────────────────────────────────────────────── */
 
 .leaflet-popup-content {
   max-width: 380px;
