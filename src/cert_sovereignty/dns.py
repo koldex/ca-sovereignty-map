@@ -12,6 +12,7 @@ import asyncio
 import dns.asyncresolver
 import dns.exception
 import dns.rdatatype
+import dns.resolver
 from loguru import logger
 
 # Fallback resolvers (in order of preference)
@@ -48,10 +49,10 @@ async def resolve_robust(
             answer = await resolver.resolve(domain, rdtype)
             return answer
 
-        except dns.exception.NXDOMAIN:
+        except dns.resolver.NXDOMAIN:
             # Domain doesn't exist — no need to try other resolvers
             return None
-        except dns.exception.NoAnswer:
+        except dns.resolver.NoAnswer:
             # Record type doesn't exist — no need to try other resolvers
             return None
         except (dns.exception.DNSException, OSError, asyncio.TimeoutError) as e:

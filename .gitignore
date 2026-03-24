@@ -38,3 +38,6 @@ ccadb_cache.json
 
 # AI operation files
 ai_operation_in_progress.md
+
+# Large data cache (GISCO source file, ~125MB)
+.data_cache/

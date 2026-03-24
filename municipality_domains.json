@@ -1,1 +1,7058 @@
-[]
+[
+  {
+    "id": "DK-101",
+    "name": "København",
+    "country": "DK",
+    "population": 638117,
+    "domain": "kk.dk",
+    "domain_source": "override"
+  },
+  {
+    "id": "DK-147",
+    "name": "Frederiksberg",
+    "country": "DK",
+    "population": 103677,
+    "domain": "frederiksberg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-151",
+    "name": "Ballerup",
+    "country": "DK",
+    "population": 49310,
+    "domain": "ballerup.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-153",
+    "name": "Brøndby",
+    "country": "DK",
+    "population": 35232,
+    "domain": "brondby.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-155",
+    "name": "Dragør",
+    "country": "DK",
+    "population": 14569,
+    "domain": "dragor.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-157",
+    "name": "Gentofte",
+    "country": "DK",
+    "population": 74550,
+    "domain": "gentofte.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-159",
+    "name": "Gladsaxe",
+    "country": "DK",
+    "population": 69200,
+    "domain": "gladsaxe.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-161",
+    "name": "Glostrup",
+    "country": "DK",
+    "population": 23380,
+    "domain": "glostrup.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-163",
+    "name": "Herlev",
+    "country": "DK",
+    "population": 28913,
+    "domain": "herlev.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-165",
+    "name": "Albertslund",
+    "country": "DK",
+    "population": 27366,
+    "domain": "albertslund.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-167",
+    "name": "Hvidovre",
+    "country": "DK",
+    "population": 53451,
+    "domain": "hvidovre.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-169",
+    "name": "Høje-Taastrup",
+    "country": "DK",
+    "population": 51729,
+    "domain": "www.hoje-taastrup.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-183",
+    "name": "Ishøj",
+    "country": "DK",
+    "population": 23131,
+    "domain": "ishj.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-187",
+    "name": "Vallensbæk",
+    "country": "DK",
+    "population": 16515,
+    "domain": "vallensbaek.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-210",
+    "name": "Fredensborg",
+    "country": "DK",
+    "population": 40998,
+    "domain": "fredensborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-217",
+    "name": "Helsingør",
+    "country": "DK",
+    "population": 63000,
+    "domain": "helsingor.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-219",
+    "name": "Hillerød",
+    "country": "DK",
+    "population": 51528,
+    "domain": "hillerod.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-223",
+    "name": "Hørsholm",
+    "country": "DK",
+    "population": 24917,
+    "domain": "horsholm.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-230",
+    "name": "Rudersdal",
+    "country": "DK",
+    "population": 57024,
+    "domain": "rudersdal.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-240",
+    "name": "Egedal",
+    "country": "DK",
+    "population": 43696,
+    "domain": "egedal.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-250",
+    "name": "Frederikssund",
+    "country": "DK",
+    "population": 45439,
+    "domain": "frederikssund.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-253",
+    "name": "Greve",
+    "country": "DK",
+    "population": 50514,
+    "domain": "greve.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-259",
+    "name": "Køge",
+    "country": "DK",
+    "population": 61475,
+    "domain": "kge.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-260",
+    "name": "Halsnæs",
+    "country": "DK",
+    "population": 31420,
+    "domain": "halsnaes.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-265",
+    "name": "Roskilde",
+    "country": "DK",
+    "population": 88889,
+    "domain": "roskilde.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-269",
+    "name": "Solrød",
+    "country": "DK",
+    "population": 23441,
+    "domain": "solrod.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-270",
+    "name": "Gribskov",
+    "country": "DK",
+    "population": 40971,
+    "domain": "gribskov.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-306",
+    "name": "Odsherred",
+    "country": "DK",
+    "population": 32923,
+    "domain": "odsherred.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-316",
+    "name": "Holbæk",
+    "country": "DK",
+    "population": 71913,
+    "domain": "holbaek.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-320",
+    "name": "Faxe",
+    "country": "DK",
+    "population": 36713,
+    "domain": "faxe.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-326",
+    "name": "Kalundborg",
+    "country": "DK",
+    "population": 48487,
+    "domain": "kalundborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-329",
+    "name": "Ringsted",
+    "country": "DK",
+    "population": 34847,
+    "domain": "ringsted.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-330",
+    "name": "Slagelse",
+    "country": "DK",
+    "population": 79122,
+    "domain": "slagelse.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-336",
+    "name": "Stevns",
+    "country": "DK",
+    "population": 23034,
+    "domain": "stevns.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-340",
+    "name": "Sorø",
+    "country": "DK",
+    "population": 29993,
+    "domain": "soro.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-350",
+    "name": "Lejre",
+    "country": "DK",
+    "population": 28173,
+    "domain": "lejre.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-360",
+    "name": "Lolland",
+    "country": "DK",
+    "population": 40539,
+    "domain": "lolland.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-370",
+    "name": "Næstved",
+    "country": "DK",
+    "population": 83181,
+    "domain": "naestved.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-376",
+    "name": "Guldborgsund",
+    "country": "DK",
+    "population": 60328,
+    "domain": "guldborgsund.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-390",
+    "name": "Vordingborg",
+    "country": "DK",
+    "population": 45268,
+    "domain": "vordingborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-400",
+    "name": "Bornholm",
+    "country": "DK",
+    "population": 39570,
+    "domain": "bornholm.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-410",
+    "name": "Middelfart",
+    "country": "DK",
+    "population": 39116,
+    "domain": "middelfart.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-411",
+    "name": "Christiansø",
+    "country": "DK",
+    "population": 90,
+    "domain": "christians.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-420",
+    "name": "Assens",
+    "country": "DK",
+    "population": 40867,
+    "domain": "assens.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-430",
+    "name": "Faaborg-Midtfyn",
+    "country": "DK",
+    "population": 51683,
+    "domain": "faaborg-midtfyn.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-440",
+    "name": "Kerteminde",
+    "country": "DK",
+    "population": 23847,
+    "domain": "kerteminde.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-450",
+    "name": "Nyborg",
+    "country": "DK",
+    "population": 31933,
+    "domain": "nyborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-461",
+    "name": "Odense",
+    "country": "DK",
+    "population": 205509,
+    "domain": "odense.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-479",
+    "name": "Svendborg",
+    "country": "DK",
+    "population": 58588,
+    "domain": "svendborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-482",
+    "name": "Langeland",
+    "country": "DK",
+    "population": 12367,
+    "domain": "langeland.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-492",
+    "name": "Ærø",
+    "country": "DK",
+    "population": 5960,
+    "domain": "aero.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-510",
+    "name": "Haderslev",
+    "country": "DK",
+    "population": 55376,
+    "domain": "haderslev.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-530",
+    "name": "Billund",
+    "country": "DK",
+    "population": 26551,
+    "domain": "billund.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-540",
+    "name": "Sønderborg",
+    "country": "DK",
+    "population": 73831,
+    "domain": "sonderborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-550",
+    "name": "Tønder",
+    "country": "DK",
+    "population": 37050,
+    "domain": "tonder.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-561",
+    "name": "Esbjerg",
+    "country": "DK",
+    "population": 115579,
+    "domain": "www.esbjerg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-563",
+    "name": "Fanø",
+    "country": "DK",
+    "population": 3456,
+    "domain": "fano.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-573",
+    "name": "Varde",
+    "country": "DK",
+    "population": 49628,
+    "domain": "varde.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-575",
+    "name": "Vejen",
+    "country": "DK",
+    "population": 42790,
+    "domain": "vejen.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-580",
+    "name": "Aabenraa",
+    "country": "DK",
+    "population": 58526,
+    "domain": "aabenraa.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-607",
+    "name": "Fredericia",
+    "country": "DK",
+    "population": 51275,
+    "domain": "fredericia.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-615",
+    "name": "Horsens",
+    "country": "DK",
+    "population": 92229,
+    "domain": "horsens.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-621",
+    "name": "Kolding",
+    "country": "DK",
+    "population": 93161,
+    "domain": "kolding.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-630",
+    "name": "Vejle",
+    "country": "DK",
+    "population": 116992,
+    "domain": "vejle.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-657",
+    "name": "Herning",
+    "country": "DK",
+    "population": 89238,
+    "domain": "herning.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-661",
+    "name": "Holstebro",
+    "country": "DK",
+    "population": 58662,
+    "domain": "holstebro.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-665",
+    "name": "Lemvig",
+    "country": "DK",
+    "population": 19607,
+    "domain": "lemvig.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-671",
+    "name": "Struer",
+    "country": "DK",
+    "population": 20808,
+    "domain": "struer.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-706",
+    "name": "Syddjurs",
+    "country": "DK",
+    "population": 43168,
+    "domain": "syddjurs.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-707",
+    "name": "Norddjurs",
+    "country": "DK",
+    "population": 36943,
+    "domain": "norddjurs.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-710",
+    "name": "Favrskov",
+    "country": "DK",
+    "population": 48381,
+    "domain": "favrskov.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-727",
+    "name": "Odder",
+    "country": "DK",
+    "population": 22979,
+    "domain": "odder.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-730",
+    "name": "Randers",
+    "country": "DK",
+    "population": 98190,
+    "domain": "randers.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-740",
+    "name": "Silkeborg",
+    "country": "DK",
+    "population": 95488,
+    "domain": "silkeborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-741",
+    "name": "Samsø",
+    "country": "DK",
+    "population": 3682,
+    "domain": "sams.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-746",
+    "name": "Skanderborg",
+    "country": "DK",
+    "population": 63390,
+    "domain": "skanderborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-751",
+    "name": "Aarhus",
+    "country": "DK",
+    "population": 352751,
+    "domain": "aarhus.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-756",
+    "name": "Ikast-Brande",
+    "country": "DK",
+    "population": 41473,
+    "domain": "ikast-brande.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-760",
+    "name": "Ringkøbing-Skjern",
+    "country": "DK",
+    "population": 56182,
+    "domain": "ringkobing-skjern.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-766",
+    "name": "Hedensted",
+    "country": "DK",
+    "population": 46773,
+    "domain": "hedensted.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-773",
+    "name": "Morsø",
+    "country": "DK",
+    "population": 20066,
+    "domain": "mors.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-779",
+    "name": "Skive",
+    "country": "DK",
+    "population": 45425,
+    "domain": "skive.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-787",
+    "name": "Thisted",
+    "country": "DK",
+    "population": 43160,
+    "domain": "thisted.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-791",
+    "name": "Viborg",
+    "country": "DK",
+    "population": 96679,
+    "domain": "viborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-810",
+    "name": "Brønderslev",
+    "country": "DK",
+    "population": 36177,
+    "domain": "bronderslev.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-813",
+    "name": "Frederikshavn",
+    "country": "DK",
+    "population": 59039,
+    "domain": "frederikshavn.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-820",
+    "name": "Vesthimmerlands",
+    "country": "DK",
+    "population": 36362,
+    "domain": "vesthimmerlands.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-825",
+    "name": "Læsø",
+    "country": "DK",
+    "population": 1764,
+    "domain": "laeso.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-840",
+    "name": "Rebild",
+    "country": "DK",
+    "population": 30518,
+    "domain": "rebild.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-846",
+    "name": "Mariagerfjord",
+    "country": "DK",
+    "population": 41536,
+    "domain": "mariagerfjord.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-849",
+    "name": "Jammerbugt",
+    "country": "DK",
+    "population": 38175,
+    "domain": "jammerbugt.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-851",
+    "name": "Aalborg",
+    "country": "DK",
+    "population": 219487,
+    "domain": "aalborg.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "DK-860",
+    "name": "Hjørring",
+    "country": "DK",
+    "population": 64155,
+    "domain": "hjorring.dk",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-005",
+    "name": "Alajärvi",
+    "country": "FI",
+    "population": 9562,
+    "domain": "alajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-009",
+    "name": "Alavieska",
+    "country": "FI",
+    "population": 2519,
+    "domain": "alavieska.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-010",
+    "name": "Alavus",
+    "country": "FI",
+    "population": 11468,
+    "domain": "alavus.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-016",
+    "name": "Asikkala",
+    "country": "FI",
+    "population": 8083,
+    "domain": "asikkala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-018",
+    "name": "Askola",
+    "country": "FI",
+    "population": 4943,
+    "domain": "askola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-019",
+    "name": "Aura",
+    "country": "FI",
+    "population": 3941,
+    "domain": "aura.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-020",
+    "name": "Akaa",
+    "country": "FI",
+    "population": 16475,
+    "domain": "akaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-035",
+    "name": "Brändö",
+    "country": "FI",
+    "population": 445,
+    "domain": "brando.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-043",
+    "name": "Eckerö",
+    "country": "FI",
+    "population": 952,
+    "domain": "eckero.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-046",
+    "name": "Enonkoski",
+    "country": "FI",
+    "population": 1361,
+    "domain": "enonkoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-047",
+    "name": "Enontekiö",
+    "country": "FI",
+    "population": 1838,
+    "domain": "enontekio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-049",
+    "name": "Espoo",
+    "country": "FI",
+    "population": 289731,
+    "domain": "espoo.fi",
+    "domain_source": "override"
+  },
+  {
+    "id": "FI-050",
+    "name": "Eura",
+    "country": "FI",
+    "population": 11632,
+    "domain": "eura.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-051",
+    "name": "Eurajoki",
+    "country": "FI",
+    "population": 9402,
+    "domain": "eurajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-052",
+    "name": "Evijärvi",
+    "country": "FI",
+    "population": 2425,
+    "domain": "evijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-061",
+    "name": "Forssa",
+    "country": "FI",
+    "population": 16901,
+    "domain": "forssa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-065",
+    "name": "Geta",
+    "country": "FI",
+    "population": 496,
+    "domain": "geta.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-069",
+    "name": "Haapajärvi",
+    "country": "FI",
+    "population": 7010,
+    "domain": "haapajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-071",
+    "name": "Haapavesi",
+    "country": "FI",
+    "population": 6758,
+    "domain": "haapavesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-072",
+    "name": "Hailuoto",
+    "country": "FI",
+    "population": 959,
+    "domain": "hailuoto.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-074",
+    "name": "Halsua",
+    "country": "FI",
+    "population": 1127,
+    "domain": "halsua.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-075",
+    "name": "Hamina",
+    "country": "FI",
+    "population": 20111,
+    "domain": "hamina.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-077",
+    "name": "Hankasalmi",
+    "country": "FI",
+    "population": 4875,
+    "domain": "hankasalmi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-078",
+    "name": "Hanko",
+    "country": "FI",
+    "population": 8199,
+    "domain": "hanko.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-079",
+    "name": "Harjavalta",
+    "country": "FI",
+    "population": 6931,
+    "domain": "harjavalta.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-081",
+    "name": "Hartola",
+    "country": "FI",
+    "population": 2697,
+    "domain": "hartola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-082",
+    "name": "Hattula",
+    "country": "FI",
+    "population": 9422,
+    "domain": "hattula.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-086",
+    "name": "Hausjärvi",
+    "country": "FI",
+    "population": 8260,
+    "domain": "hausjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-090",
+    "name": "Heinävesi",
+    "country": "FI",
+    "population": 3254,
+    "domain": "heinavesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-091",
+    "name": "Helsinki",
+    "country": "FI",
+    "population": 653835,
+    "domain": "hel.fi",
+    "domain_source": "override"
+  },
+  {
+    "id": "FI-092",
+    "name": "Vantaa",
+    "country": "FI",
+    "population": 233775,
+    "domain": "vantaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-097",
+    "name": "Hirvensalmi",
+    "country": "FI",
+    "population": 2136,
+    "domain": "hirvensalmi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-098",
+    "name": "Hollola",
+    "country": "FI",
+    "population": 23410,
+    "domain": "hollola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-099",
+    "name": "Honkajoki",
+    "country": "FI",
+    "population": 1620,
+    "domain": "honkajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-102",
+    "name": "Huittinen",
+    "country": "FI",
+    "population": 10044,
+    "domain": "huittinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-103",
+    "name": "Humppila",
+    "country": "FI",
+    "population": 2184,
+    "domain": "humppila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-105",
+    "name": "Hyrynsalmi",
+    "country": "FI",
+    "population": 2271,
+    "domain": "hyrynsalmi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-106",
+    "name": "Hyvinkää",
+    "country": "FI",
+    "population": 46470,
+    "domain": "hyvinkaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-108",
+    "name": "Hämeenkyrö",
+    "country": "FI",
+    "population": 10404,
+    "domain": "hameenkyro.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-109",
+    "name": "Hämeenlinna",
+    "country": "FI",
+    "population": 67633,
+    "domain": "hameenlinna.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-111",
+    "name": "Heinola",
+    "country": "FI",
+    "population": 18667,
+    "domain": "heinola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-139",
+    "name": "Ii",
+    "country": "FI",
+    "population": 9844,
+    "domain": "ii.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-140",
+    "name": "Iisalmi",
+    "country": "FI",
+    "population": 21368,
+    "domain": "iisalmi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-142",
+    "name": "Iitti",
+    "country": "FI",
+    "population": 6711,
+    "domain": "iitti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-143",
+    "name": "Ikaalinen",
+    "country": "FI",
+    "population": 6942,
+    "domain": "ikaalinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-145",
+    "name": "Ilmajoki",
+    "country": "FI",
+    "population": 12269,
+    "domain": "ilmajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-146",
+    "name": "Ilomantsi",
+    "country": "FI",
+    "population": 4857,
+    "domain": "ilomantsi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-148",
+    "name": "Inari",
+    "country": "FI",
+    "population": 6907,
+    "domain": "inari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-149",
+    "name": "Inkoo",
+    "country": "FI",
+    "population": 5386,
+    "domain": "inkoo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-151",
+    "name": "Isojoki",
+    "country": "FI",
+    "population": 1951,
+    "domain": "isojoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-152",
+    "name": "Isokyrö",
+    "country": "FI",
+    "population": 4522,
+    "domain": "isokyro.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-153",
+    "name": "Imatra",
+    "country": "FI",
+    "population": 26508,
+    "domain": "imatra.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-165",
+    "name": "Janakkala",
+    "country": "FI",
+    "population": 16413,
+    "domain": "janakkala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-167",
+    "name": "Joensuu",
+    "country": "FI",
+    "population": 76850,
+    "domain": "joensuu.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-169",
+    "name": "Jokioinen",
+    "country": "FI",
+    "population": 5133,
+    "domain": "jokioinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-171",
+    "name": "Joroinen",
+    "country": "FI",
+    "population": 4767,
+    "domain": "joroinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-172",
+    "name": "Joutsa",
+    "country": "FI",
+    "population": 4377,
+    "domain": "joutsa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-176",
+    "name": "Juuka",
+    "country": "FI",
+    "population": 4606,
+    "domain": "juuka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-177",
+    "name": "Juupajoki",
+    "country": "FI",
+    "population": 1844,
+    "domain": "juupajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-178",
+    "name": "Juva",
+    "country": "FI",
+    "population": 6116,
+    "domain": "juva.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-179",
+    "name": "Jyväskylä",
+    "country": "FI",
+    "population": 142400,
+    "domain": "jyvaskyla.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-181",
+    "name": "Jämijärvi",
+    "country": "FI",
+    "population": 1739,
+    "domain": "jamijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-182",
+    "name": "Jämsä",
+    "country": "FI",
+    "population": 20182,
+    "domain": "jamsa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-186",
+    "name": "Järvenpää",
+    "country": "FI",
+    "population": 43711,
+    "domain": "jarvenpaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-202",
+    "name": "Kaarina",
+    "country": "FI",
+    "population": 33937,
+    "domain": "kaarina.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-204",
+    "name": "Kaavi",
+    "country": "FI",
+    "population": 2893,
+    "domain": "kaavi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-205",
+    "name": "Kajaani",
+    "country": "FI",
+    "population": 36709,
+    "domain": "kajaani.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-208",
+    "name": "Kalajoki",
+    "country": "FI",
+    "population": 12373,
+    "domain": "www.kalajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-211",
+    "name": "Kangasala",
+    "country": "FI",
+    "population": 31868,
+    "domain": "www.kangasala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-213",
+    "name": "Kangasniemi",
+    "country": "FI",
+    "population": 5356,
+    "domain": "kangasniemi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-214",
+    "name": "Kankaanpää",
+    "country": "FI",
+    "population": 11286,
+    "domain": "kankaanpaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-216",
+    "name": "Kannonkoski",
+    "country": "FI",
+    "population": 1339,
+    "domain": "kannonkoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-217",
+    "name": "Kannus",
+    "country": "FI",
+    "population": 5464,
+    "domain": "kannus.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-218",
+    "name": "Karijoki",
+    "country": "FI",
+    "population": 1245,
+    "domain": "karijoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-224",
+    "name": "Karkkila",
+    "country": "FI",
+    "population": 8714,
+    "domain": "karkkila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-226",
+    "name": "Karstula",
+    "country": "FI",
+    "population": 3949,
+    "domain": "karstula.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-230",
+    "name": "Karvia",
+    "country": "FI",
+    "population": 2342,
+    "domain": "karvia.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-231",
+    "name": "Kaskinen",
+    "country": "FI",
+    "population": 1246,
+    "domain": "kaskinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-232",
+    "name": "Kauhajoki",
+    "country": "FI",
+    "population": 13184,
+    "domain": "kauhajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-233",
+    "name": "Kauhava",
+    "country": "FI",
+    "population": 15726,
+    "domain": "kauhava.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-235",
+    "name": "Kauniainen",
+    "country": "FI",
+    "population": 9797,
+    "domain": "kauniainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-236",
+    "name": "Kaustinen",
+    "country": "FI",
+    "population": 4261,
+    "domain": "kaustinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-239",
+    "name": "Keitele",
+    "country": "FI",
+    "population": 2202,
+    "domain": "keitele.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-240",
+    "name": "Kemi",
+    "country": "FI",
+    "population": 20707,
+    "domain": "kemi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-241",
+    "name": "Keminmaa",
+    "country": "FI",
+    "population": 8079,
+    "domain": "keminmaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-244",
+    "name": "Kempele",
+    "country": "FI",
+    "population": 18355,
+    "domain": "kempele.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-245",
+    "name": "Kerava",
+    "country": "FI",
+    "population": 36756,
+    "domain": "kerava.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-249",
+    "name": "Keuruu",
+    "country": "FI",
+    "population": 9605,
+    "domain": "keuruu.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-250",
+    "name": "Kihniö",
+    "country": "FI",
+    "population": 1865,
+    "domain": "kihnio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-256",
+    "name": "Kinnula",
+    "country": "FI",
+    "population": 1620,
+    "domain": "kinnula.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-257",
+    "name": "Kirkkonummi",
+    "country": "FI",
+    "population": 39586,
+    "domain": "kirkkonummi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-260",
+    "name": "Kitee",
+    "country": "FI",
+    "population": 10136,
+    "domain": "kitee.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-261",
+    "name": "Kittilä",
+    "country": "FI",
+    "population": 6453,
+    "domain": "kittila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-263",
+    "name": "Kiuruvesi",
+    "country": "FI",
+    "population": 7998,
+    "domain": "kiuruvesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-265",
+    "name": "Kivijärvi",
+    "country": "FI",
+    "population": 1096,
+    "domain": "kivijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-271",
+    "name": "Kokemäki",
+    "country": "FI",
+    "population": 7103,
+    "domain": "kokemaki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-272",
+    "name": "Kokkola",
+    "country": "FI",
+    "population": 47681,
+    "domain": "kokkola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-273",
+    "name": "Kolari",
+    "country": "FI",
+    "population": 3846,
+    "domain": "kolari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-275",
+    "name": "Konnevesi",
+    "country": "FI",
+    "population": 2627,
+    "domain": "konnevesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-276",
+    "name": "Kontiolahti",
+    "country": "FI",
+    "population": 14821,
+    "domain": "kontiolahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-280",
+    "name": "Korsnäs",
+    "country": "FI",
+    "population": 2077,
+    "domain": "korsnas.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-285",
+    "name": "Kotka",
+    "country": "FI",
+    "population": 52126,
+    "domain": "kotka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-286",
+    "name": "Kouvola",
+    "country": "FI",
+    "population": 82113,
+    "domain": "kouvola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-287",
+    "name": "Kristiinankaupunki",
+    "country": "FI",
+    "population": 6486,
+    "domain": "kristiinankaupunki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-288",
+    "name": "Kruunupyy",
+    "country": "FI",
+    "population": 6428,
+    "domain": "kruunupyy.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-290",
+    "name": "Kuhmo",
+    "country": "FI",
+    "population": 8190,
+    "domain": "kuhmo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-291",
+    "name": "Kuhmoinen",
+    "country": "FI",
+    "population": 2206,
+    "domain": "kuhmoinen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-297",
+    "name": "Kuopio",
+    "country": "FI",
+    "population": 119282,
+    "domain": "kuopio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-300",
+    "name": "Kuortane",
+    "country": "FI",
+    "population": 3551,
+    "domain": "kuortane.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-301",
+    "name": "Kurikka",
+    "country": "FI",
+    "population": 20678,
+    "domain": "kurikka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-304",
+    "name": "Kustavi",
+    "country": "FI",
+    "population": 949,
+    "domain": "kustavi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-305",
+    "name": "Kuusamo",
+    "country": "FI",
+    "population": 15134,
+    "domain": "kuusamo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-309",
+    "name": "Outokumpu",
+    "country": "FI",
+    "population": 6688,
+    "domain": "outokumpu.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-312",
+    "name": "Kyyjärvi",
+    "country": "FI",
+    "population": 1313,
+    "domain": "kyyjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-316",
+    "name": "Kärkölä",
+    "country": "FI",
+    "population": 4368,
+    "domain": "karkola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-317",
+    "name": "Kärsämäki",
+    "country": "FI",
+    "population": 2576,
+    "domain": "karsamaki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-318",
+    "name": "Kökar",
+    "country": "FI",
+    "population": 232,
+    "domain": "kokar.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-320",
+    "name": "Kemijärvi",
+    "country": "FI",
+    "population": 7274,
+    "domain": "kemijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-322",
+    "name": "Kemiönsaari",
+    "country": "FI",
+    "population": 6640,
+    "domain": "kemionsaari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-398",
+    "name": "Lahti",
+    "country": "FI",
+    "population": 119823,
+    "domain": "lahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-399",
+    "name": "Laihia",
+    "country": "FI",
+    "population": 8017,
+    "domain": "laihia.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-400",
+    "name": "Laitila",
+    "country": "FI",
+    "population": 8588,
+    "domain": "laitila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-402",
+    "name": "Lapinlahti",
+    "country": "FI",
+    "population": 9485,
+    "domain": "lapinlahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-403",
+    "name": "Lappajärvi",
+    "country": "FI",
+    "population": 2996,
+    "domain": "lappajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-405",
+    "name": "Lappeenranta",
+    "country": "FI",
+    "population": 72634,
+    "domain": "lappeenranta.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-407",
+    "name": "Lapinjärvi",
+    "country": "FI",
+    "population": 2606,
+    "domain": "lapinjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-408",
+    "name": "Lapua",
+    "country": "FI",
+    "population": 14278,
+    "domain": "lapua.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-410",
+    "name": "Laukaa",
+    "country": "FI",
+    "population": 18903,
+    "domain": "laukaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-416",
+    "name": "Lemi",
+    "country": "FI",
+    "population": 2971,
+    "domain": "lemi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-417",
+    "name": "Lemland",
+    "country": "FI",
+    "population": 2053,
+    "domain": "lemland.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-418",
+    "name": "Lempäälä",
+    "country": "FI",
+    "population": 23523,
+    "domain": "lempaala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-420",
+    "name": "Leppävirta",
+    "country": "FI",
+    "population": 9454,
+    "domain": "leppavirta.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-421",
+    "name": "Lestijärvi",
+    "country": "FI",
+    "population": 719,
+    "domain": "lestijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-422",
+    "name": "Lieksa",
+    "country": "FI",
+    "population": 10884,
+    "domain": "lieksa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-423",
+    "name": "Lieto",
+    "country": "FI",
+    "population": 19994,
+    "domain": "lieto.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-425",
+    "name": "Liminka",
+    "country": "FI",
+    "population": 10191,
+    "domain": "liminka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-426",
+    "name": "Liperi",
+    "country": "FI",
+    "population": 12084,
+    "domain": "liperi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-430",
+    "name": "Loimaa",
+    "country": "FI",
+    "population": 15875,
+    "domain": "loimaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-433",
+    "name": "Loppi",
+    "country": "FI",
+    "population": 7828,
+    "domain": "loppi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-434",
+    "name": "Loviisa",
+    "country": "FI",
+    "population": 14772,
+    "domain": "loviisa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-435",
+    "name": "Luhanka",
+    "country": "FI",
+    "population": 690,
+    "domain": "luhanka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-436",
+    "name": "Lumijoki",
+    "country": "FI",
+    "population": 2020,
+    "domain": "lumijoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-440",
+    "name": "Luoto",
+    "country": "FI",
+    "population": 5417,
+    "domain": "luoto.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-441",
+    "name": "Luumäki",
+    "country": "FI",
+    "population": 4636,
+    "domain": "luumaki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-444",
+    "name": "Lohja",
+    "country": "FI",
+    "population": 45965,
+    "domain": "lohja.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-445",
+    "name": "Parainen",
+    "country": "FI",
+    "population": 15132,
+    "domain": "parainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-475",
+    "name": "Maalahti",
+    "country": "FI",
+    "population": 5475,
+    "domain": "maalahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-480",
+    "name": "Marttila",
+    "country": "FI",
+    "population": 2013,
+    "domain": "marttila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-481",
+    "name": "Masku",
+    "country": "FI",
+    "population": 9534,
+    "domain": "masku.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-483",
+    "name": "Merijärvi",
+    "country": "FI",
+    "population": 1089,
+    "domain": "merijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-484",
+    "name": "Merikarvia",
+    "country": "FI",
+    "population": 3067,
+    "domain": "merikarvia.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-489",
+    "name": "Miehikkälä",
+    "country": "FI",
+    "population": 1857,
+    "domain": "miehikkala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-491",
+    "name": "Mikkeli",
+    "country": "FI",
+    "population": 53134,
+    "domain": "mikkeli.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-494",
+    "name": "Muhos",
+    "country": "FI",
+    "population": 8908,
+    "domain": "muhos.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-495",
+    "name": "Multia",
+    "country": "FI",
+    "population": 1566,
+    "domain": "multia.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-498",
+    "name": "Muonio",
+    "country": "FI",
+    "population": 2308,
+    "domain": "muonio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-499",
+    "name": "Mustasaari",
+    "country": "FI",
+    "population": 19448,
+    "domain": "mustasaari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-500",
+    "name": "Muurame",
+    "country": "FI",
+    "population": 10164,
+    "domain": "muurame.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-503",
+    "name": "Mynämäki",
+    "country": "FI",
+    "population": 7654,
+    "domain": "mynamaki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-504",
+    "name": "Myrskylä",
+    "country": "FI",
+    "population": 1882,
+    "domain": "myrskyla.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-505",
+    "name": "Mäntsälä",
+    "country": "FI",
+    "population": 20721,
+    "domain": "mantsala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-507",
+    "name": "Mäntyharju",
+    "country": "FI",
+    "population": 5791,
+    "domain": "mantyharju.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-508",
+    "name": "Mänttä-Vilppula",
+    "country": "FI",
+    "population": 9855,
+    "domain": "mantta-vilppula.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-529",
+    "name": "Naantali",
+    "country": "FI",
+    "population": 19314,
+    "domain": "naantali.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-531",
+    "name": "Nakkila",
+    "country": "FI",
+    "population": 5329,
+    "domain": "nakkila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-535",
+    "name": "Nivala",
+    "country": "FI",
+    "population": 10639,
+    "domain": "nivala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-536",
+    "name": "Nokia",
+    "country": "FI",
+    "population": 33929,
+    "domain": "nokia.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-538",
+    "name": "Nousiainen",
+    "country": "FI",
+    "population": 4715,
+    "domain": "nousiainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-541",
+    "name": "Nurmes",
+    "country": "FI",
+    "population": 9552,
+    "domain": "nurmes.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-543",
+    "name": "Nurmijärvi",
+    "country": "FI",
+    "population": 42993,
+    "domain": "nurmijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-545",
+    "name": "Närpiö",
+    "country": "FI",
+    "population": 9479,
+    "domain": "www.narpio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-560",
+    "name": "Orimattila",
+    "country": "FI",
+    "population": 16003,
+    "domain": "orimattila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-561",
+    "name": "Oripää",
+    "country": "FI",
+    "population": 1329,
+    "domain": "oripaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-562",
+    "name": "Orivesi",
+    "country": "FI",
+    "population": 9158,
+    "domain": "orivesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-563",
+    "name": "Oulainen",
+    "country": "FI",
+    "population": 7288,
+    "domain": "oulainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-564",
+    "name": "Oulu",
+    "country": "FI",
+    "population": 205489,
+    "domain": "oulu.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-576",
+    "name": "Padasjoki",
+    "country": "FI",
+    "population": 2896,
+    "domain": "padasjoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-577",
+    "name": "Paimio",
+    "country": "FI",
+    "population": 10850,
+    "domain": "paimio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-578",
+    "name": "Paltamo",
+    "country": "FI",
+    "population": 3273,
+    "domain": "paltamo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-580",
+    "name": "Parikkala",
+    "country": "FI",
+    "population": 4734,
+    "domain": "parikkala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-581",
+    "name": "Parkano",
+    "country": "FI",
+    "population": 6404,
+    "domain": "parkano.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-583",
+    "name": "Pelkosenniemi",
+    "country": "FI",
+    "population": 939,
+    "domain": "pelkosenniemi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-584",
+    "name": "Perho",
+    "country": "FI",
+    "population": 2759,
+    "domain": "perho.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-588",
+    "name": "Pertunmaa",
+    "country": "FI",
+    "population": 1690,
+    "domain": "pertunmaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-592",
+    "name": "Petäjävesi",
+    "country": "FI",
+    "population": 3841,
+    "domain": "petajavesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-593",
+    "name": "Pieksämäki",
+    "country": "FI",
+    "population": 17682,
+    "domain": "pieksamaki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-595",
+    "name": "Pielavesi",
+    "country": "FI",
+    "population": 4391,
+    "domain": "pielavesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-598",
+    "name": "Pietarsaari",
+    "country": "FI",
+    "population": 19208,
+    "domain": "pietarsaari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-601",
+    "name": "Pihtipudas",
+    "country": "FI",
+    "population": 4032,
+    "domain": "pihtipudas.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-604",
+    "name": "Pirkkala",
+    "country": "FI",
+    "population": 19623,
+    "domain": "pirkkala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-607",
+    "name": "Polvijärvi",
+    "country": "FI",
+    "population": 4246,
+    "domain": "polvijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-608",
+    "name": "Pomarkku",
+    "country": "FI",
+    "population": 2089,
+    "domain": "pomarkku.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-609",
+    "name": "Pori",
+    "country": "FI",
+    "population": 83934,
+    "domain": "pori.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-611",
+    "name": "Pornainen",
+    "country": "FI",
+    "population": 5035,
+    "domain": "pornainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-614",
+    "name": "Posio",
+    "country": "FI",
+    "population": 3183,
+    "domain": "posio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-615",
+    "name": "Pudasjärvi",
+    "country": "FI",
+    "population": 7873,
+    "domain": "pudasjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-616",
+    "name": "Pukkila",
+    "country": "FI",
+    "population": 1860,
+    "domain": "pukkila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-619",
+    "name": "Punkalaidun",
+    "country": "FI",
+    "population": 2828,
+    "domain": "punkalaidun.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-620",
+    "name": "Puolanka",
+    "country": "FI",
+    "population": 2528,
+    "domain": "puolanka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-623",
+    "name": "Puumala",
+    "country": "FI",
+    "population": 2151,
+    "domain": "puumala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-624",
+    "name": "Pyhtää",
+    "country": "FI",
+    "population": 5140,
+    "domain": "pyhtaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-625",
+    "name": "Pyhäjoki",
+    "country": "FI",
+    "population": 3077,
+    "domain": "pyhajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-626",
+    "name": "Pyhäjärvi",
+    "country": "FI",
+    "population": 5131,
+    "domain": "pyhajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-630",
+    "name": "Pyhäntä",
+    "country": "FI",
+    "population": 1578,
+    "domain": "pyhanta.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-631",
+    "name": "Pyhäranta",
+    "country": "FI",
+    "population": 2004,
+    "domain": "pyharanta.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-635",
+    "name": "Pälkäne",
+    "country": "FI",
+    "population": 6435,
+    "domain": "palkane.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-636",
+    "name": "Pöytyä",
+    "country": "FI",
+    "population": 8276,
+    "domain": "poytya.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-638",
+    "name": "Porvoo",
+    "country": "FI",
+    "population": 50380,
+    "domain": "porvoo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-678",
+    "name": "Raahe",
+    "country": "FI",
+    "population": 24679,
+    "domain": "raahe.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-680",
+    "name": "Raisio",
+    "country": "FI",
+    "population": 24056,
+    "domain": "raisio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-681",
+    "name": "Rantasalmi",
+    "country": "FI",
+    "population": 3431,
+    "domain": "rantasalmi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-683",
+    "name": "Ranua",
+    "country": "FI",
+    "population": 3783,
+    "domain": "ranua.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-684",
+    "name": "Rauma",
+    "country": "FI",
+    "population": 39205,
+    "domain": "rauma.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-686",
+    "name": "Rautalampi",
+    "country": "FI",
+    "population": 3121,
+    "domain": "rautalampi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-687",
+    "name": "Rautavaara",
+    "country": "FI",
+    "population": 1602,
+    "domain": "rautavaara.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-689",
+    "name": "Rautjärvi",
+    "country": "FI",
+    "population": 3226,
+    "domain": "rautjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-691",
+    "name": "Reisjärvi",
+    "country": "FI",
+    "population": 2718,
+    "domain": "reisjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-694",
+    "name": "Riihimäki",
+    "country": "FI",
+    "population": 28793,
+    "domain": "riihimaki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-697",
+    "name": "Ristijärvi",
+    "country": "FI",
+    "population": 1272,
+    "domain": "ristijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-698",
+    "name": "Rovaniemi",
+    "country": "FI",
+    "population": 63042,
+    "domain": "rovaniemi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-700",
+    "name": "Ruokolahti",
+    "country": "FI",
+    "population": 4994,
+    "domain": "ruokolahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-702",
+    "name": "Ruovesi",
+    "country": "FI",
+    "population": 4283,
+    "domain": "ruovesi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-704",
+    "name": "Rusko",
+    "country": "FI",
+    "population": 6327,
+    "domain": "rusko.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-707",
+    "name": "Rääkkylä",
+    "country": "FI",
+    "population": 2126,
+    "domain": "raakkyla.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-710",
+    "name": "Raasepori",
+    "country": "FI",
+    "population": 27536,
+    "domain": "raasepori.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-729",
+    "name": "Saarijärvi",
+    "country": "FI",
+    "population": 9309,
+    "domain": "saarijarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-732",
+    "name": "Salla",
+    "country": "FI",
+    "population": 3400,
+    "domain": "salla.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-734",
+    "name": "Salo",
+    "country": "FI",
+    "population": 51833,
+    "domain": "salo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-738",
+    "name": "Sauvo",
+    "country": "FI",
+    "population": 2945,
+    "domain": "sauvo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-739",
+    "name": "Savitaipale",
+    "country": "FI",
+    "population": 3383,
+    "domain": "savitaipale.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-740",
+    "name": "Savonlinna",
+    "country": "FI",
+    "population": 32974,
+    "domain": "savonlinna.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-742",
+    "name": "Savukoski",
+    "country": "FI",
+    "population": 1005,
+    "domain": "savukoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-743",
+    "name": "Seinäjoki",
+    "country": "FI",
+    "population": 63781,
+    "domain": "seinajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-746",
+    "name": "Sievi",
+    "country": "FI",
+    "population": 4910,
+    "domain": "sievi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-747",
+    "name": "Siikainen",
+    "country": "FI",
+    "population": 1437,
+    "domain": "siikainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-748",
+    "name": "Siikajoki",
+    "country": "FI",
+    "population": 5145,
+    "domain": "siikajoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-749",
+    "name": "Siilinjärvi",
+    "country": "FI",
+    "population": 21423,
+    "domain": "siilinjarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-751",
+    "name": "Simo",
+    "country": "FI",
+    "population": 2988,
+    "domain": "simo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-753",
+    "name": "Sipoo",
+    "country": "FI",
+    "population": 21170,
+    "domain": "sipoo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-755",
+    "name": "Siuntio",
+    "country": "FI",
+    "population": 6145,
+    "domain": "siuntio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-758",
+    "name": "Sodankylä",
+    "country": "FI",
+    "population": 8303,
+    "domain": "sodankyla.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-759",
+    "name": "Soini",
+    "country": "FI",
+    "population": 2052,
+    "domain": "soini.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-761",
+    "name": "Somero",
+    "country": "FI",
+    "population": 8711,
+    "domain": "somero.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-762",
+    "name": "Sonkajärvi",
+    "country": "FI",
+    "population": 3897,
+    "domain": "sonkajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-765",
+    "name": "Sotkamo",
+    "country": "FI",
+    "population": 10336,
+    "domain": "sotkamo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-768",
+    "name": "Sulkava",
+    "country": "FI",
+    "population": 2492,
+    "domain": "sulkava.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-771",
+    "name": "Sund",
+    "country": "FI",
+    "population": 1023,
+    "domain": "sund.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-777",
+    "name": "Suomussalmi",
+    "country": "FI",
+    "population": 7727,
+    "domain": "suomussalmi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-778",
+    "name": "Suonenjoki",
+    "country": "FI",
+    "population": 7064,
+    "domain": "suonenjoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-781",
+    "name": "Sysmä",
+    "country": "FI",
+    "population": 3657,
+    "domain": "sysma.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-783",
+    "name": "Säkylä",
+    "country": "FI",
+    "population": 6721,
+    "domain": "sakyla.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-785",
+    "name": "Vaala",
+    "country": "FI",
+    "population": 2792,
+    "domain": "vaala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-790",
+    "name": "Sastamala",
+    "country": "FI",
+    "population": 24277,
+    "domain": "sastamala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-791",
+    "name": "Siikalatva",
+    "country": "FI",
+    "population": 5231,
+    "domain": "siikalatva.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-831",
+    "name": "Taipalsaari",
+    "country": "FI",
+    "population": 4671,
+    "domain": "taipalsaari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-832",
+    "name": "Taivalkoski",
+    "country": "FI",
+    "population": 3976,
+    "domain": "taivalkoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-833",
+    "name": "Taivassalo",
+    "country": "FI",
+    "population": 1639,
+    "domain": "taivassalo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-834",
+    "name": "Tammela",
+    "country": "FI",
+    "population": 6015,
+    "domain": "tammela.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-837",
+    "name": "Tampere",
+    "country": "FI",
+    "population": 238140,
+    "domain": "tampere.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-844",
+    "name": "Tervo",
+    "country": "FI",
+    "population": 1520,
+    "domain": "tervo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-845",
+    "name": "Tervola",
+    "country": "FI",
+    "population": 3001,
+    "domain": "tervola.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-846",
+    "name": "Teuva",
+    "country": "FI",
+    "population": 5076,
+    "domain": "teuva.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-848",
+    "name": "Tohmajärvi",
+    "country": "FI",
+    "population": 4361,
+    "domain": "tohmajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-849",
+    "name": "Toholampi",
+    "country": "FI",
+    "population": 3033,
+    "domain": "toholampi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-850",
+    "name": "Toivakka",
+    "country": "FI",
+    "population": 2388,
+    "domain": "toivakka.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-851",
+    "name": "Tornio",
+    "country": "FI",
+    "population": 21602,
+    "domain": "www.tornio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-853",
+    "name": "Turku",
+    "country": "FI",
+    "population": 192962,
+    "domain": "turku.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-854",
+    "name": "Pello",
+    "country": "FI",
+    "population": 3373,
+    "domain": "pello.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-857",
+    "name": "Tuusniemi",
+    "country": "FI",
+    "population": 2477,
+    "domain": "tuusniemi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-858",
+    "name": "Tuusula",
+    "country": "FI",
+    "population": 38599,
+    "domain": "tuusula.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-859",
+    "name": "Tyrnävä",
+    "country": "FI",
+    "population": 6637,
+    "domain": "tyrnava.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-886",
+    "name": "Ulvila",
+    "country": "FI",
+    "population": 12871,
+    "domain": "ulvila.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-887",
+    "name": "Urjala",
+    "country": "FI",
+    "population": 4688,
+    "domain": "urjala.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-889",
+    "name": "Utajärvi",
+    "country": "FI",
+    "population": 2676,
+    "domain": "utajarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-890",
+    "name": "Utsjoki",
+    "country": "FI",
+    "population": 1212,
+    "domain": "utsjoki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-892",
+    "name": "Uurainen",
+    "country": "FI",
+    "population": 3681,
+    "domain": "uurainen.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-893",
+    "name": "Uusikaarlepyy",
+    "country": "FI",
+    "population": 7464,
+    "domain": "uusikaarlepyy.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-895",
+    "name": "Uusikaupunki",
+    "country": "FI",
+    "population": 15522,
+    "domain": "uusikaupunki.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-905",
+    "name": "Vaasa",
+    "country": "FI",
+    "population": 67636,
+    "domain": "vaasa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-908",
+    "name": "Valkeakoski",
+    "country": "FI",
+    "population": 20972,
+    "domain": "valkeakoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-915",
+    "name": "Varkaus",
+    "country": "FI",
+    "population": 20466,
+    "domain": "varkaus.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-918",
+    "name": "Vehmaa",
+    "country": "FI",
+    "population": 2293,
+    "domain": "vehmaa.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-921",
+    "name": "Vesanto",
+    "country": "FI",
+    "population": 2014,
+    "domain": "vesanto.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-922",
+    "name": "Vesilahti",
+    "country": "FI",
+    "population": 4355,
+    "domain": "vesilahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-924",
+    "name": "Veteli",
+    "country": "FI",
+    "population": 3114,
+    "domain": "veteli.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-925",
+    "name": "Vieremä",
+    "country": "FI",
+    "population": 3579,
+    "domain": "vierema.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-927",
+    "name": "Vihti",
+    "country": "FI",
+    "population": 29158,
+    "domain": "vihti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-931",
+    "name": "Viitasaari",
+    "country": "FI",
+    "population": 6176,
+    "domain": "viitasaari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-934",
+    "name": "Vimpeli",
+    "country": "FI",
+    "population": 2827,
+    "domain": "vimpeli.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-935",
+    "name": "Virolahti",
+    "country": "FI",
+    "population": 3109,
+    "domain": "virolahti.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-936",
+    "name": "Virrat",
+    "country": "FI",
+    "population": 6544,
+    "domain": "virrat.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-941",
+    "name": "Vårdö",
+    "country": "FI",
+    "population": 447,
+    "domain": "vardo.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-946",
+    "name": "Vöyri",
+    "country": "FI",
+    "population": 6461,
+    "domain": "voyri.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-976",
+    "name": "Ylitornio",
+    "country": "FI",
+    "population": 3918,
+    "domain": "www.ylitornio.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-977",
+    "name": "Ylivieska",
+    "country": "FI",
+    "population": 15255,
+    "domain": "www.ylivieska.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-980",
+    "name": "Ylöjärvi",
+    "country": "FI",
+    "population": 33254,
+    "domain": "www.ylojarvi.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-981",
+    "name": "Ypäjä",
+    "country": "FI",
+    "population": 2343,
+    "domain": "www.ypaja.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-989",
+    "name": "Ähtäri",
+    "country": "FI",
+    "population": 5616,
+    "domain": "ahtari.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "FI-992",
+    "name": "Äänekoski",
+    "country": "FI",
+    "population": 18765,
+    "domain": "aanekoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-0301",
+    "name": "Oslo",
+    "country": "NO",
+    "population": 693494,
+    "domain": "oslo.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1101",
+    "name": "Eigersund",
+    "country": "NO",
+    "population": 14811,
+    "domain": "www.eigersund.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1103",
+    "name": "Stavanger",
+    "country": "NO",
+    "population": 143574,
+    "domain": "www.stavanger.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1106",
+    "name": "Haugesund",
+    "country": "NO",
+    "population": 37357,
+    "domain": "www.haugesund.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1111",
+    "name": "Sokndal",
+    "country": "NO",
+    "population": 3280,
+    "domain": "www.sokndal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1119",
+    "name": "Hå",
+    "country": "NO",
+    "population": 18991,
+    "domain": "www.ha.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1120",
+    "name": "Klepp",
+    "country": "NO",
+    "population": 19588,
+    "domain": "www.klepp.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1121",
+    "name": "Time",
+    "country": "NO",
+    "population": 18916,
+    "domain": "www.time.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1122",
+    "name": "Gjesdal",
+    "country": "NO",
+    "population": 12002,
+    "domain": "www.gjesdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1124",
+    "name": "Sola",
+    "country": "NO",
+    "population": 27153,
+    "domain": "www.sola.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1130",
+    "name": "Strand",
+    "country": "NO",
+    "population": 12968,
+    "domain": "www.strand.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1133",
+    "name": "Hjelmeland",
+    "country": "NO",
+    "population": 2574,
+    "domain": "www.hjelmeland.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1134",
+    "name": "Suldal",
+    "country": "NO",
+    "population": 3804,
+    "domain": "www.suldal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1135",
+    "name": "Sauda",
+    "country": "NO",
+    "population": 4595,
+    "domain": "www.sauda.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1149",
+    "name": "Karmøy",
+    "country": "NO",
+    "population": 42186,
+    "domain": "www.karmoy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1151",
+    "name": "Utsira",
+    "country": "NO",
+    "population": 198,
+    "domain": "www.utsira.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1505",
+    "name": "Kristiansund",
+    "country": "NO",
+    "population": 24179,
+    "domain": "www.kristiansund.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1506",
+    "name": "Molde",
+    "country": "NO",
+    "population": 31967,
+    "domain": "www.molde.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1511",
+    "name": "Vanylven",
+    "country": "NO",
+    "population": 3117,
+    "domain": "www.vanylven.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1520",
+    "name": "Ørsta",
+    "country": "NO",
+    "population": 10825,
+    "domain": "www.orsta.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1525",
+    "name": "Stranda",
+    "country": "NO",
+    "population": 4523,
+    "domain": "www.stranda.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1528",
+    "name": "Sykkylven",
+    "country": "NO",
+    "population": 7625,
+    "domain": "www.sykkylven.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1531",
+    "name": "Sula",
+    "country": "NO",
+    "population": 9310,
+    "domain": "www.sula.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1535",
+    "name": "Vestnes",
+    "country": "NO",
+    "population": 6532,
+    "domain": "www.vestnes.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1539",
+    "name": "Rauma",
+    "country": "NO",
+    "population": 7468,
+    "domain": "www.rauma.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1547",
+    "name": "Aukra",
+    "country": "NO",
+    "population": 3509,
+    "domain": "www.aukra.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1554",
+    "name": "Averøy",
+    "country": "NO",
+    "population": 5788,
+    "domain": "avery.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1576",
+    "name": "Aure",
+    "country": "NO",
+    "population": 3507,
+    "domain": "www.aure.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1578",
+    "name": "Fjord",
+    "country": "NO",
+    "population": 2549,
+    "domain": "fjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1579",
+    "name": "Hustadvika",
+    "country": "NO",
+    "population": 13279,
+    "domain": "hustadvika.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1804",
+    "name": "Bodø",
+    "country": "NO",
+    "population": 52357,
+    "domain": "bod.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1806",
+    "name": "Narvik",
+    "country": "NO",
+    "population": 21845,
+    "domain": "www.narvik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1811",
+    "name": "Bindal",
+    "country": "NO",
+    "population": 1426,
+    "domain": "www.bindal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1813",
+    "name": "Brønnøy",
+    "country": "NO",
+    "population": 7917,
+    "domain": "www.bronnoy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1820",
+    "name": "Alstahaug",
+    "country": "NO",
+    "population": 7447,
+    "domain": "www.alstahaug.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1822",
+    "name": "Leirfjord",
+    "country": "NO",
+    "population": 2294,
+    "domain": "www.leirfjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1824",
+    "name": "Vefsn",
+    "country": "NO",
+    "population": 13278,
+    "domain": "www.vefsn.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1833",
+    "name": "Rana",
+    "country": "NO",
+    "population": 26184,
+    "domain": "www.rana.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1834",
+    "name": "Lurøy",
+    "country": "NO",
+    "population": 1890,
+    "domain": "www.luroy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1836",
+    "name": "Rødøy",
+    "country": "NO",
+    "population": 1213,
+    "domain": "rdy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1837",
+    "name": "Meløy",
+    "country": "NO",
+    "population": 6288,
+    "domain": "www.meloy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1838",
+    "name": "Gildeskål",
+    "country": "NO",
+    "population": 1950,
+    "domain": "www.gildeskal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1856",
+    "name": "Røst",
+    "country": "NO",
+    "population": 498,
+    "domain": "rst.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1857",
+    "name": "Værøy",
+    "country": "NO",
+    "population": 728,
+    "domain": "vry.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1865",
+    "name": "Vågan",
+    "country": "NO",
+    "population": 9608,
+    "domain": "www.vagan.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-1871",
+    "name": "Andøy",
+    "country": "NO",
+    "population": 4663,
+    "domain": "andy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3001",
+    "name": "Halden",
+    "country": "NO",
+    "population": 31373,
+    "domain": "www.halden.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3003",
+    "name": "Sarpsborg",
+    "country": "NO",
+    "population": 56732,
+    "domain": "www.sarpsborg.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3004",
+    "name": "Fredrikstad",
+    "country": "NO",
+    "population": 82385,
+    "domain": "www.fredrikstad.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3005",
+    "name": "Drammen",
+    "country": "NO",
+    "population": 101386,
+    "domain": "www.drammen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3006",
+    "name": "Kongsberg",
+    "country": "NO",
+    "population": 27723,
+    "domain": "www.kongsberg.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3007",
+    "name": "Ringerike",
+    "country": "NO",
+    "population": 30641,
+    "domain": "www.ringerike.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3011",
+    "name": "Hvaler",
+    "country": "NO",
+    "population": 4668,
+    "domain": "www.hvaler.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3012",
+    "name": "Aremark",
+    "country": "NO",
+    "population": 1325,
+    "domain": "www.aremark.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3015",
+    "name": "Skiptvet",
+    "country": "NO",
+    "population": 3805,
+    "domain": "www.skiptvet.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3016",
+    "name": "Rakkestad",
+    "country": "NO",
+    "population": 8255,
+    "domain": "www.rakkestad.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3019",
+    "name": "Vestby",
+    "country": "NO",
+    "population": 18042,
+    "domain": "www.vestby.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3020",
+    "name": "Nordre Follo",
+    "country": "NO",
+    "population": 59288,
+    "domain": "nordre-follo.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3022",
+    "name": "Frogn",
+    "country": "NO",
+    "population": 15877,
+    "domain": "www.frogn.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3024",
+    "name": "Bærum",
+    "country": "NO",
+    "population": 127731,
+    "domain": "brum.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3025",
+    "name": "Asker",
+    "country": "NO",
+    "population": 94441,
+    "domain": "www.asker.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3028",
+    "name": "Enebakk",
+    "country": "NO",
+    "population": 11110,
+    "domain": "www.enebakk.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3030",
+    "name": "Lillestrøm",
+    "country": "NO",
+    "population": 85983,
+    "domain": "lillestrom.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3031",
+    "name": "Nittedal",
+    "country": "NO",
+    "population": 24249,
+    "domain": "www.nittedal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3033",
+    "name": "Ullensaker",
+    "country": "NO",
+    "population": 39625,
+    "domain": "www.ullensaker.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3035",
+    "name": "Eidsvoll",
+    "country": "NO",
+    "population": 25436,
+    "domain": "www.eidsvoll.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3036",
+    "name": "Nannestad",
+    "country": "NO",
+    "population": 14139,
+    "domain": "www.nannestad.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3037",
+    "name": "Hurdal",
+    "country": "NO",
+    "population": 2854,
+    "domain": "www.hurdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3038",
+    "name": "Hole",
+    "country": "NO",
+    "population": 6799,
+    "domain": "www.hole.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3039",
+    "name": "Flå",
+    "country": "NO",
+    "population": 1050,
+    "domain": "www.fla.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3040",
+    "name": "Nesbyen",
+    "country": "NO",
+    "population": 3273,
+    "domain": "nesbyen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3042",
+    "name": "Hemsedal",
+    "country": "NO",
+    "population": 2486,
+    "domain": "www.hemsedal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3043",
+    "name": "Ål",
+    "country": "NO",
+    "population": 4674,
+    "domain": "www.al.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3045",
+    "name": "Sigdal",
+    "country": "NO",
+    "population": 3467,
+    "domain": "www.sigdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3048",
+    "name": "Øvre Eiker",
+    "country": "NO",
+    "population": 19423,
+    "domain": "www.ovre-eiker.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3049",
+    "name": "Lier",
+    "country": "NO",
+    "population": 26811,
+    "domain": "www.lier.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3050",
+    "name": "Flesberg",
+    "country": "NO",
+    "population": 2688,
+    "domain": "www.flesberg.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3051",
+    "name": "Rollag",
+    "country": "NO",
+    "population": 1390,
+    "domain": "www.rollag.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3053",
+    "name": "Jevnaker",
+    "country": "NO",
+    "population": 6852,
+    "domain": "www.jevnaker.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3054",
+    "name": "Lunner",
+    "country": "NO",
+    "population": 9048,
+    "domain": "www.lunner.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3401",
+    "name": "Kongsvinger",
+    "country": "NO",
+    "population": 17829,
+    "domain": "www.kongsvinger.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3403",
+    "name": "Hamar",
+    "country": "NO",
+    "population": 31369,
+    "domain": "www.hamar.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3405",
+    "name": "Lillehammer",
+    "country": "NO",
+    "population": 28345,
+    "domain": "www.lillehammer.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3407",
+    "name": "Gjøvik",
+    "country": "NO",
+    "population": 30560,
+    "domain": "www.gjovik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3411",
+    "name": "Ringsaker",
+    "country": "NO",
+    "population": 34768,
+    "domain": "www.ringsaker.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3412",
+    "name": "Løten",
+    "country": "NO",
+    "population": 7674,
+    "domain": "www.loten.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3413",
+    "name": "Stange",
+    "country": "NO",
+    "population": 21064,
+    "domain": "www.stange.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3415",
+    "name": "Sør-Odal",
+    "country": "NO",
+    "population": 7905,
+    "domain": "www.sor-odal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3416",
+    "name": "Eidskog",
+    "country": "NO",
+    "population": 6106,
+    "domain": "www.eidskog.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3417",
+    "name": "Grue",
+    "country": "NO",
+    "population": 4612,
+    "domain": "www.grue.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3420",
+    "name": "Elverum",
+    "country": "NO",
+    "population": 21254,
+    "domain": "www.elverum.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3421",
+    "name": "Trysil",
+    "country": "NO",
+    "population": 6627,
+    "domain": "www.trysil.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3422",
+    "name": "Åmot",
+    "country": "NO",
+    "population": 4356,
+    "domain": "www.amot.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3428",
+    "name": "Alvdal",
+    "country": "NO",
+    "population": 2432,
+    "domain": "www.alvdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3431",
+    "name": "Dovre",
+    "country": "NO",
+    "population": 2553,
+    "domain": "www.dovre.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3433",
+    "name": "Skjåk",
+    "country": "NO",
+    "population": 2197,
+    "domain": "www.skjak.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3434",
+    "name": "Lom",
+    "country": "NO",
+    "population": 2228,
+    "domain": "www.lom.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3436",
+    "name": "Nord-Fron",
+    "country": "NO",
+    "population": 5723,
+    "domain": "www.nord-fron.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3438",
+    "name": "Sør-Fron",
+    "country": "NO",
+    "population": 3119,
+    "domain": "www.sor-fron.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3440",
+    "name": "Øyer",
+    "country": "NO",
+    "population": 5100,
+    "domain": "www.yer.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3441",
+    "name": "Gausdal",
+    "country": "NO",
+    "population": 6106,
+    "domain": "www.gausdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3449",
+    "name": "Sør-Aurdal",
+    "country": "NO",
+    "population": 2954,
+    "domain": "www.sor-aurdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3450",
+    "name": "Etnedal",
+    "country": "NO",
+    "population": 1279,
+    "domain": "www.etnedal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3451",
+    "name": "Nord-Aurdal",
+    "country": "NO",
+    "population": 6413,
+    "domain": "www.nord-aurdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3454",
+    "name": "Vang",
+    "country": "NO",
+    "population": 1578,
+    "domain": "www.vang.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3801",
+    "name": "Horten",
+    "country": "NO",
+    "population": 27351,
+    "domain": "www.horten.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3802",
+    "name": "Holmestrand",
+    "country": "NO",
+    "population": 24699,
+    "domain": "www.holmestrand.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3804",
+    "name": "Sandefjord",
+    "country": "NO",
+    "population": 63764,
+    "domain": "www.sandefjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3805",
+    "name": "Larvik",
+    "country": "NO",
+    "population": 47204,
+    "domain": "www.larvik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3806",
+    "name": "Porsgrunn",
+    "country": "NO",
+    "population": 36397,
+    "domain": "www.porsgrunn.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3808",
+    "name": "Notodden",
+    "country": "NO",
+    "population": 13049,
+    "domain": "www.notodden.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3811",
+    "name": "Færder",
+    "country": "NO",
+    "population": 26730,
+    "domain": "faerder.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3812",
+    "name": "Siljan",
+    "country": "NO",
+    "population": 2340,
+    "domain": "www.siljan.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3814",
+    "name": "Kragerø",
+    "country": "NO",
+    "population": 10380,
+    "domain": "krager.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3817",
+    "name": "Midt-Telemark",
+    "country": "NO",
+    "population": 10444,
+    "domain": "midt-telemark.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3818",
+    "name": "Tinn",
+    "country": "NO",
+    "population": 5691,
+    "domain": "www.tinn.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3821",
+    "name": "Kviteseid",
+    "country": "NO",
+    "population": 2403,
+    "domain": "www.kviteseid.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3822",
+    "name": "Nissedal",
+    "country": "NO",
+    "population": 1448,
+    "domain": "www.nissedal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3823",
+    "name": "Fyresdal",
+    "country": "NO",
+    "population": 1287,
+    "domain": "www.fyresdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3824",
+    "name": "Tokke",
+    "country": "NO",
+    "population": 2201,
+    "domain": "www.tokke.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-3825",
+    "name": "Vinje",
+    "country": "NO",
+    "population": 3676,
+    "domain": "vinje.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4201",
+    "name": "Risør",
+    "country": "NO",
+    "population": 6809,
+    "domain": "www.risor.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4202",
+    "name": "Grimstad",
+    "country": "NO",
+    "population": 23544,
+    "domain": "www.grimstad.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4204",
+    "name": "Kristiansand",
+    "country": "NO",
+    "population": 111633,
+    "domain": "www.kristiansand.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4205",
+    "name": "Lindesnes",
+    "country": "NO",
+    "population": 23046,
+    "domain": "www.lindesnes.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4206",
+    "name": "Farsund",
+    "country": "NO",
+    "population": 9691,
+    "domain": "www.farsund.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4207",
+    "name": "Flekkefjord",
+    "country": "NO",
+    "population": 9028,
+    "domain": "www.flekkefjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4213",
+    "name": "Tvedestrand",
+    "country": "NO",
+    "population": 6053,
+    "domain": "www.tvedestrand.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4215",
+    "name": "Lillesand",
+    "country": "NO",
+    "population": 11074,
+    "domain": "www.lillesand.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4216",
+    "name": "Birkenes",
+    "country": "NO",
+    "population": 5226,
+    "domain": "www.birkenes.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4217",
+    "name": "Åmli",
+    "country": "NO",
+    "population": 1836,
+    "domain": "www.amli.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4221",
+    "name": "Valle",
+    "country": "NO",
+    "population": 1164,
+    "domain": "www.valle.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4222",
+    "name": "Bykle",
+    "country": "NO",
+    "population": 965,
+    "domain": "www.bykle.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4223",
+    "name": "Vennesla",
+    "country": "NO",
+    "population": 14774,
+    "domain": "www.vennesla.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4225",
+    "name": "Lyngdal",
+    "country": "NO",
+    "population": 10365,
+    "domain": "www.lyngdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4227",
+    "name": "Kvinesdal",
+    "country": "NO",
+    "population": 5987,
+    "domain": "www.kvinesdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4228",
+    "name": "Sirdal",
+    "country": "NO",
+    "population": 1822,
+    "domain": "www.sirdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4601",
+    "name": "Bergen",
+    "country": "NO",
+    "population": 283929,
+    "domain": "www.bergen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4602",
+    "name": "Kinn",
+    "country": "NO",
+    "population": 17207,
+    "domain": "kinn.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4611",
+    "name": "Etne",
+    "country": "NO",
+    "population": 4062,
+    "domain": "www.etne.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4612",
+    "name": "Sveio",
+    "country": "NO",
+    "population": 5766,
+    "domain": "www.sveio.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4613",
+    "name": "Bømlo",
+    "country": "NO",
+    "population": 11957,
+    "domain": "www.bmlo.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4614",
+    "name": "Stord",
+    "country": "NO",
+    "population": 18759,
+    "domain": "www.stord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4616",
+    "name": "Tysnes",
+    "country": "NO",
+    "population": 2869,
+    "domain": "www.tysnes.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4619",
+    "name": "Eidfjord",
+    "country": "NO",
+    "population": 906,
+    "domain": "www.eidfjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4620",
+    "name": "Ulvik",
+    "country": "NO",
+    "population": 1080,
+    "domain": "www.ulvik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4622",
+    "name": "Kvam",
+    "country": "NO",
+    "population": 8457,
+    "domain": "www.kvam.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4623",
+    "name": "Samnanger",
+    "country": "NO",
+    "population": 2485,
+    "domain": "www.samnanger.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4624",
+    "name": "Bjørnafjorden",
+    "country": "NO",
+    "population": 24908,
+    "domain": "bjornafjorden.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4625",
+    "name": "Austevoll",
+    "country": "NO",
+    "population": 5236,
+    "domain": "www.austevoll.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4626",
+    "name": "Øygarden",
+    "country": "NO",
+    "population": 38316,
+    "domain": "www.oygarden.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4627",
+    "name": "Askøy",
+    "country": "NO",
+    "population": 29553,
+    "domain": "asky.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4628",
+    "name": "Vaksdal",
+    "country": "NO",
+    "population": 3977,
+    "domain": "www.vaksdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4629",
+    "name": "Modalen",
+    "country": "NO",
+    "population": 388,
+    "domain": "www.modalen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4633",
+    "name": "Fedje",
+    "country": "NO",
+    "population": 548,
+    "domain": "www.fedje.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4634",
+    "name": "Masfjorden",
+    "country": "NO",
+    "population": 1691,
+    "domain": "www.masfjorden.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4635",
+    "name": "Gulen",
+    "country": "NO",
+    "population": 2297,
+    "domain": "www.gulen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4639",
+    "name": "Vik",
+    "country": "NO",
+    "population": 2635,
+    "domain": "www.vik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4642",
+    "name": "Lærdal",
+    "country": "NO",
+    "population": 2126,
+    "domain": "laerdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4643",
+    "name": "Årdal",
+    "country": "NO",
+    "population": 5193,
+    "domain": "www.ardal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4645",
+    "name": "Askvoll",
+    "country": "NO",
+    "population": 3011,
+    "domain": "www.askvoll.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4647",
+    "name": "Sunnfjord",
+    "country": "NO",
+    "population": 22030,
+    "domain": "sunnfjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4649",
+    "name": "Stad",
+    "country": "NO",
+    "population": 9457,
+    "domain": "stad.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4650",
+    "name": "Gloppen",
+    "country": "NO",
+    "population": 5854,
+    "domain": "www.gloppen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-4651",
+    "name": "Stryn",
+    "country": "NO",
+    "population": 7130,
+    "domain": "www.stryn.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5001",
+    "name": "Trondheim",
+    "country": "NO",
+    "population": 205163,
+    "domain": "www.trondheim.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5006",
+    "name": "Steinkjer",
+    "country": "NO",
+    "population": 24357,
+    "domain": "www.steinkjer.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5014",
+    "name": "Frøya",
+    "country": "NO",
+    "population": 5151,
+    "domain": "frya.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5020",
+    "name": "Osen",
+    "country": "NO",
+    "population": 948,
+    "domain": "www.osen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5021",
+    "name": "Oppdal",
+    "country": "NO",
+    "population": 7001,
+    "domain": "www.oppdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5022",
+    "name": "Rennebu",
+    "country": "NO",
+    "population": 2486,
+    "domain": "www.rennebu.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5025",
+    "name": "Røros",
+    "country": "NO",
+    "population": 5581,
+    "domain": "www.roros.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5026",
+    "name": "Holtålen",
+    "country": "NO",
+    "population": 1981,
+    "domain": "www.holtalen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5028",
+    "name": "Melhus",
+    "country": "NO",
+    "population": 16733,
+    "domain": "www.melhus.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5031",
+    "name": "Malvik",
+    "country": "NO",
+    "population": 14148,
+    "domain": "www.malvik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5032",
+    "name": "Selbu",
+    "country": "NO",
+    "population": 4062,
+    "domain": "www.selbu.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5035",
+    "name": "Stjørdal",
+    "country": "NO",
+    "population": 24145,
+    "domain": "www.stjordal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5037",
+    "name": "Levanger",
+    "country": "NO",
+    "population": 20164,
+    "domain": "www.levanger.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5038",
+    "name": "Verdal",
+    "country": "NO",
+    "population": 14948,
+    "domain": "www.verdal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5042",
+    "name": "Lierne",
+    "country": "NO",
+    "population": 1355,
+    "domain": "www.lierne.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5045",
+    "name": "Grong",
+    "country": "NO",
+    "population": 2359,
+    "domain": "www.grong.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5046",
+    "name": "Høylandet",
+    "country": "NO",
+    "population": 1231,
+    "domain": "www.hoylandet.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5049",
+    "name": "Flatanger",
+    "country": "NO",
+    "population": 1103,
+    "domain": "www.flatanger.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5053",
+    "name": "Inderøy",
+    "country": "NO",
+    "population": 6816,
+    "domain": "www.inderoy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5054",
+    "name": "Indre Fosen",
+    "country": "NO",
+    "population": 10084,
+    "domain": "indre-fosen.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5055",
+    "name": "Heim",
+    "country": "NO",
+    "population": 5963,
+    "domain": "heim.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5056",
+    "name": "Hitra",
+    "country": "NO",
+    "population": 5050,
+    "domain": "www.hitra.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5057",
+    "name": "Ørland",
+    "country": "NO",
+    "population": 10323,
+    "domain": "www.orland.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5058",
+    "name": "Åfjord",
+    "country": "NO",
+    "population": 4288,
+    "domain": "www.afjord.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5059",
+    "name": "Orkland",
+    "country": "NO",
+    "population": 18217,
+    "domain": "orkland.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5061",
+    "name": "Rindal",
+    "country": "NO",
+    "population": 2003,
+    "domain": "www.rindal.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5401",
+    "name": "Tromsø",
+    "country": "NO",
+    "population": 76974,
+    "domain": "www.tromso.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5403",
+    "name": "Alta",
+    "country": "NO",
+    "population": 20789,
+    "domain": "www.alta.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5404",
+    "name": "Vardø",
+    "country": "NO",
+    "population": 2029,
+    "domain": "vard.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5416",
+    "name": "Bardu",
+    "country": "NO",
+    "population": 4005,
+    "domain": "www.bardu.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5419",
+    "name": "Sørreisa",
+    "country": "NO",
+    "population": 3464,
+    "domain": "www.sorreisa.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5420",
+    "name": "Dyrøy",
+    "country": "NO",
+    "population": 1083,
+    "domain": "www.dyroy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5427",
+    "name": "Skjervøy",
+    "country": "NO",
+    "population": 2927,
+    "domain": "www.skjervoy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5433",
+    "name": "Hasvik",
+    "country": "NO",
+    "population": 1005,
+    "domain": "www.hasvik.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5434",
+    "name": "Måsøy",
+    "country": "NO",
+    "population": 1225,
+    "domain": "masy.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5435",
+    "name": "Nordkapp",
+    "country": "NO",
+    "population": 3162,
+    "domain": "www.nordkapp.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "NO-5444",
+    "name": "Sør-Varanger",
+    "country": "NO",
+    "population": 10158,
+    "domain": "www.sor-varanger.no",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0114",
+    "name": "Upplands Väsby",
+    "country": "SE",
+    "population": 47184,
+    "domain": "upplands-vasby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0115",
+    "name": "Vallentuna",
+    "country": "SE",
+    "population": 34119,
+    "domain": "vallentuna.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0117",
+    "name": "Österåker",
+    "country": "SE",
+    "population": 46644,
+    "domain": "osteraker.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0120",
+    "name": "Värmdö",
+    "country": "SE",
+    "population": 45566,
+    "domain": "varmdo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0123",
+    "name": "Järfälla",
+    "country": "SE",
+    "population": 81274,
+    "domain": "jarfalla.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0125",
+    "name": "Ekerö",
+    "country": "SE",
+    "population": 28879,
+    "domain": "ekero.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0126",
+    "name": "Huddinge",
+    "country": "SE",
+    "population": 113234,
+    "domain": "huddinge.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0127",
+    "name": "Botkyrka",
+    "country": "SE",
+    "population": 94847,
+    "domain": "botkyrka.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0128",
+    "name": "Salem",
+    "country": "SE",
+    "population": 16959,
+    "domain": "salem.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0136",
+    "name": "Haninge",
+    "country": "SE",
+    "population": 93690,
+    "domain": "haninge.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0138",
+    "name": "Tyresö",
+    "country": "SE",
+    "population": 48678,
+    "domain": "tyreso.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0139",
+    "name": "Upplands-Bro",
+    "country": "SE",
+    "population": 30195,
+    "domain": "upplands-bro.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0140",
+    "name": "Nykvarn",
+    "country": "SE",
+    "population": 11222,
+    "domain": "nykvarn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0160",
+    "name": "Täby",
+    "country": "SE",
+    "population": 72755,
+    "domain": "taby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0162",
+    "name": "Danderyd",
+    "country": "SE",
+    "population": 32712,
+    "domain": "danderyd.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0163",
+    "name": "Sollentuna",
+    "country": "SE",
+    "population": 73990,
+    "domain": "sollentuna.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0180",
+    "name": "Stockholm",
+    "country": "SE",
+    "population": 975551,
+    "domain": "stockholm.se",
+    "domain_source": "override"
+  },
+  {
+    "id": "SE-0181",
+    "name": "Södertälje",
+    "country": "SE",
+    "population": 100111,
+    "domain": "sodertalje.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0182",
+    "name": "Nacka",
+    "country": "SE",
+    "population": 106505,
+    "domain": "nacka.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0183",
+    "name": "Sundbyberg",
+    "country": "SE",
+    "population": 52801,
+    "domain": "sundbyberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0184",
+    "name": "Solna",
+    "country": "SE",
+    "population": 83162,
+    "domain": "solna.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0186",
+    "name": "Lidingö",
+    "country": "SE",
+    "population": 48005,
+    "domain": "lidingo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0187",
+    "name": "Vaxholm",
+    "country": "SE",
+    "population": 11886,
+    "domain": "vaxholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0188",
+    "name": "Norrtälje",
+    "country": "SE",
+    "population": 63673,
+    "domain": "norrtalje.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0191",
+    "name": "Sigtuna",
+    "country": "SE",
+    "population": 49537,
+    "domain": "sigtuna.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0192",
+    "name": "Nynäshamn",
+    "country": "SE",
+    "population": 28811,
+    "domain": "nynashamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0305",
+    "name": "Håbo",
+    "country": "SE",
+    "population": 22019,
+    "domain": "habo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0319",
+    "name": "Älvkarleby",
+    "country": "SE",
+    "population": 9511,
+    "domain": "alvkarleby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0330",
+    "name": "Knivsta",
+    "country": "SE",
+    "population": 19106,
+    "domain": "knivsta.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0331",
+    "name": "Heby",
+    "country": "SE",
+    "population": 14101,
+    "domain": "heby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0360",
+    "name": "Tierp",
+    "country": "SE",
+    "population": 21327,
+    "domain": "tierp.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0380",
+    "name": "Uppsala",
+    "country": "SE",
+    "population": 233839,
+    "domain": "uppsala.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0381",
+    "name": "Enköping",
+    "country": "SE",
+    "population": 46240,
+    "domain": "enkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0382",
+    "name": "Östhammar",
+    "country": "SE",
+    "population": 22251,
+    "domain": "osthammar.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0428",
+    "name": "Vingåker",
+    "country": "SE",
+    "population": 9144,
+    "domain": "vingaker.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0461",
+    "name": "Gnesta",
+    "country": "SE",
+    "population": 11421,
+    "domain": "gnesta.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0480",
+    "name": "Nyköping",
+    "country": "SE",
+    "population": 57071,
+    "domain": "nykoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0481",
+    "name": "Oxelösund",
+    "country": "SE",
+    "population": 11995,
+    "domain": "oxelosund.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0482",
+    "name": "Flen",
+    "country": "SE",
+    "population": 16431,
+    "domain": "flen.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0483",
+    "name": "Katrineholm",
+    "country": "SE",
+    "population": 34765,
+    "domain": "katrineholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0484",
+    "name": "Eskilstuna",
+    "country": "SE",
+    "population": 106975,
+    "domain": "eskilstuna.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0486",
+    "name": "Strängnäs",
+    "country": "SE",
+    "population": 37290,
+    "domain": "strangnas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0488",
+    "name": "Trosa",
+    "country": "SE",
+    "population": 14309,
+    "domain": "trosa.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0509",
+    "name": "Ödeshög",
+    "country": "SE",
+    "population": 5338,
+    "domain": "odeshog.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0512",
+    "name": "Ydre",
+    "country": "SE",
+    "population": 3726,
+    "domain": "www.ydre.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0513",
+    "name": "Kinda",
+    "country": "SE",
+    "population": 9991,
+    "domain": "kinda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0560",
+    "name": "Boxholm",
+    "country": "SE",
+    "population": 5441,
+    "domain": "boxholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0561",
+    "name": "Åtvidaberg",
+    "country": "SE",
+    "population": 11427,
+    "domain": "atvidaberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0562",
+    "name": "Finspång",
+    "country": "SE",
+    "population": 21765,
+    "domain": "finspang.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0563",
+    "name": "Valdemarsvik",
+    "country": "SE",
+    "population": 7737,
+    "domain": "valdemarsvik.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0580",
+    "name": "Linköping",
+    "country": "SE",
+    "population": 164616,
+    "domain": "linkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0581",
+    "name": "Norrköping",
+    "country": "SE",
+    "population": 143478,
+    "domain": "norrkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0582",
+    "name": "Söderköping",
+    "country": "SE",
+    "population": 14616,
+    "domain": "soderkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0583",
+    "name": "Motala",
+    "country": "SE",
+    "population": 43640,
+    "domain": "motala.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0584",
+    "name": "Vadstena",
+    "country": "SE",
+    "population": 7423,
+    "domain": "vadstena.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0586",
+    "name": "Mjölby",
+    "country": "SE",
+    "population": 27960,
+    "domain": "mjolby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0604",
+    "name": "Aneby",
+    "country": "SE",
+    "population": 6821,
+    "domain": "aneby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0617",
+    "name": "Gnosjö",
+    "country": "SE",
+    "population": 9614,
+    "domain": "gnosjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0642",
+    "name": "Mullsjö",
+    "country": "SE",
+    "population": 7385,
+    "domain": "mullsjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0643",
+    "name": "Habo",
+    "country": "SE",
+    "population": 12589,
+    "domain": "habo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0662",
+    "name": "Gislaved",
+    "country": "SE",
+    "population": 29635,
+    "domain": "gislaved.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0665",
+    "name": "Vaggeryd",
+    "country": "SE",
+    "population": 14532,
+    "domain": "vaggeryd.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0680",
+    "name": "Jönköping",
+    "country": "SE",
+    "population": 142427,
+    "domain": "jonkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0682",
+    "name": "Nässjö",
+    "country": "SE",
+    "population": 31563,
+    "domain": "nassjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0683",
+    "name": "Värnamo",
+    "country": "SE",
+    "population": 34530,
+    "domain": "varnamo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0684",
+    "name": "Sävsjö",
+    "country": "SE",
+    "population": 11721,
+    "domain": "savsjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0685",
+    "name": "Vetlanda",
+    "country": "SE",
+    "population": 27502,
+    "domain": "vetlanda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0686",
+    "name": "Eksjö",
+    "country": "SE",
+    "population": 17788,
+    "domain": "eksjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0687",
+    "name": "Tranås",
+    "country": "SE",
+    "population": 18903,
+    "domain": "tranas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0760",
+    "name": "Uppvidinge",
+    "country": "SE",
+    "population": 9498,
+    "domain": "uppvidinge.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0761",
+    "name": "Lessebo",
+    "country": "SE",
+    "population": 8655,
+    "domain": "lessebo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0763",
+    "name": "Tingsryd",
+    "country": "SE",
+    "population": 12369,
+    "domain": "tingsryd.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0764",
+    "name": "Alvesta",
+    "country": "SE",
+    "population": 20224,
+    "domain": "alvesta.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0765",
+    "name": "Älmhult",
+    "country": "SE",
+    "population": 17884,
+    "domain": "almhult.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0767",
+    "name": "Markaryd",
+    "country": "SE",
+    "population": 10373,
+    "domain": "markaryd.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0780",
+    "name": "Växjö",
+    "country": "SE",
+    "population": 94859,
+    "domain": "vaxjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0781",
+    "name": "Ljungby",
+    "country": "SE",
+    "population": 28401,
+    "domain": "ljungby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0821",
+    "name": "Högsby",
+    "country": "SE",
+    "population": 5731,
+    "domain": "hogsby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0834",
+    "name": "Torsås",
+    "country": "SE",
+    "population": 7149,
+    "domain": "torsas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0840",
+    "name": "Mörbylånga",
+    "country": "SE",
+    "population": 15487,
+    "domain": "morbylanga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0860",
+    "name": "Hultsfred",
+    "country": "SE",
+    "population": 14107,
+    "domain": "hultsfred.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0861",
+    "name": "Mönsterås",
+    "country": "SE",
+    "population": 13264,
+    "domain": "monsteras.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0862",
+    "name": "Emmaboda",
+    "country": "SE",
+    "population": 9360,
+    "domain": "emmaboda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0880",
+    "name": "Kalmar",
+    "country": "SE",
+    "population": 70329,
+    "domain": "kalmar.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0881",
+    "name": "Nybro",
+    "country": "SE",
+    "population": 20273,
+    "domain": "nybro.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0882",
+    "name": "Oskarshamn",
+    "country": "SE",
+    "population": 27147,
+    "domain": "oskarshamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0883",
+    "name": "Västervik",
+    "country": "SE",
+    "population": 36655,
+    "domain": "vastervik.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0884",
+    "name": "Vimmerby",
+    "country": "SE",
+    "population": 15672,
+    "domain": "vimmerby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0885",
+    "name": "Borgholm",
+    "country": "SE",
+    "population": 10836,
+    "domain": "borgholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-0980",
+    "name": "Gotland",
+    "country": "SE",
+    "population": 60124,
+    "domain": "gotland.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1060",
+    "name": "Olofström",
+    "country": "SE",
+    "population": 13311,
+    "domain": "olofstrom.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1080",
+    "name": "Karlskrona",
+    "country": "SE",
+    "population": 66515,
+    "domain": "karlskrona.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1081",
+    "name": "Ronneby",
+    "country": "SE",
+    "population": 29372,
+    "domain": "ronneby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1082",
+    "name": "Karlshamn",
+    "country": "SE",
+    "population": 32402,
+    "domain": "karlshamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1083",
+    "name": "Sölvesborg",
+    "country": "SE",
+    "population": 17456,
+    "domain": "solvesborg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1214",
+    "name": "Svalöv",
+    "country": "SE",
+    "population": 14276,
+    "domain": "svalov.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1230",
+    "name": "Staffanstorp",
+    "country": "SE",
+    "population": 25883,
+    "domain": "staffanstorp.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1231",
+    "name": "Burlöv",
+    "country": "SE",
+    "population": 19312,
+    "domain": "burlov.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1233",
+    "name": "Vellinge",
+    "country": "SE",
+    "population": 36915,
+    "domain": "vellinge.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1257",
+    "name": "Örkelljunga",
+    "country": "SE",
+    "population": 10451,
+    "domain": "orkelljunga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1260",
+    "name": "Bjuv",
+    "country": "SE",
+    "population": 15697,
+    "domain": "bjuv.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1261",
+    "name": "Kävlinge",
+    "country": "SE",
+    "population": 32020,
+    "domain": "kavlinge.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1262",
+    "name": "Lomma",
+    "country": "SE",
+    "population": 24876,
+    "domain": "lomma.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1263",
+    "name": "Svedala",
+    "country": "SE",
+    "population": 22665,
+    "domain": "svedala.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1264",
+    "name": "Skurup",
+    "country": "SE",
+    "population": 16042,
+    "domain": "skurup.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1265",
+    "name": "Sjöbo",
+    "country": "SE",
+    "population": 19412,
+    "domain": "sjobo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1266",
+    "name": "Hörby",
+    "country": "SE",
+    "population": 15653,
+    "domain": "horby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1267",
+    "name": "Höör",
+    "country": "SE",
+    "population": 16830,
+    "domain": "hoor.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1270",
+    "name": "Tomelilla",
+    "country": "SE",
+    "population": 13663,
+    "domain": "tomelilla.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1272",
+    "name": "Bromölla",
+    "country": "SE",
+    "population": 12759,
+    "domain": "bromolla.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1273",
+    "name": "Osby",
+    "country": "SE",
+    "population": 13198,
+    "domain": "osby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1275",
+    "name": "Perstorp",
+    "country": "SE",
+    "population": 7476,
+    "domain": "perstorp.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1276",
+    "name": "Klippan",
+    "country": "SE",
+    "population": 17738,
+    "domain": "klippan.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1277",
+    "name": "Åstorp",
+    "country": "SE",
+    "population": 16063,
+    "domain": "astorp.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1278",
+    "name": "Båstad",
+    "country": "SE",
+    "population": 15413,
+    "domain": "bastad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1280",
+    "name": "Malmö",
+    "country": "SE",
+    "population": 347949,
+    "domain": "malmo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1281",
+    "name": "Lund",
+    "country": "SE",
+    "population": 125941,
+    "domain": "lund.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1282",
+    "name": "Landskrona",
+    "country": "SE",
+    "population": 46305,
+    "domain": "landskrona.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1283",
+    "name": "Helsingborg",
+    "country": "SE",
+    "population": 149280,
+    "domain": "helsingborg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1284",
+    "name": "Höganäs",
+    "country": "SE",
+    "population": 27168,
+    "domain": "hoganas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1285",
+    "name": "Eslöv",
+    "country": "SE",
+    "population": 34123,
+    "domain": "eslov.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1286",
+    "name": "Ystad",
+    "country": "SE",
+    "population": 30970,
+    "domain": "www.ystad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1287",
+    "name": "Trelleborg",
+    "country": "SE",
+    "population": 45877,
+    "domain": "trelleborg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1290",
+    "name": "Kristianstad",
+    "country": "SE",
+    "population": 86217,
+    "domain": "kristianstad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1291",
+    "name": "Simrishamn",
+    "country": "SE",
+    "population": 19227,
+    "domain": "simrishamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1292",
+    "name": "Ängelholm",
+    "country": "SE",
+    "population": 42910,
+    "domain": "angelholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1293",
+    "name": "Hässleholm",
+    "country": "SE",
+    "population": 52010,
+    "domain": "hassleholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1315",
+    "name": "Hylte",
+    "country": "SE",
+    "population": 10649,
+    "domain": "hylte.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1380",
+    "name": "Halmstad",
+    "country": "SE",
+    "population": 103754,
+    "domain": "halmstad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1381",
+    "name": "Laholm",
+    "country": "SE",
+    "population": 25967,
+    "domain": "laholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1382",
+    "name": "Falkenberg",
+    "country": "SE",
+    "population": 46051,
+    "domain": "falkenberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1383",
+    "name": "Varberg",
+    "country": "SE",
+    "population": 65397,
+    "domain": "varberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1384",
+    "name": "Kungsbacka",
+    "country": "SE",
+    "population": 84930,
+    "domain": "kungsbacka.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1401",
+    "name": "Härryda",
+    "country": "SE",
+    "population": 38246,
+    "domain": "harryda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1402",
+    "name": "Partille",
+    "country": "SE",
+    "population": 39512,
+    "domain": "partille.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1407",
+    "name": "Öckerö",
+    "country": "SE",
+    "population": 12934,
+    "domain": "ockero.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1415",
+    "name": "Stenungsund",
+    "country": "SE",
+    "population": 27044,
+    "domain": "stenungsund.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1419",
+    "name": "Tjörn",
+    "country": "SE",
+    "population": 16147,
+    "domain": "tjorn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1421",
+    "name": "Orust",
+    "country": "SE",
+    "population": 15315,
+    "domain": "orust.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1427",
+    "name": "Sotenäs",
+    "country": "SE",
+    "population": 9100,
+    "domain": "sotenas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1430",
+    "name": "Munkedal",
+    "country": "SE",
+    "population": 10582,
+    "domain": "munkedal.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1435",
+    "name": "Tanum",
+    "country": "SE",
+    "population": 12912,
+    "domain": "tanum.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1439",
+    "name": "Färgelanda",
+    "country": "SE",
+    "population": 6658,
+    "domain": "fargelanda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1440",
+    "name": "Ale",
+    "country": "SE",
+    "population": 31868,
+    "domain": "ale.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1441",
+    "name": "Lerum",
+    "country": "SE",
+    "population": 43020,
+    "domain": "lerum.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1442",
+    "name": "Vårgårda",
+    "country": "SE",
+    "population": 11946,
+    "domain": "vargarda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1443",
+    "name": "Bollebygd",
+    "country": "SE",
+    "population": 9544,
+    "domain": "bollebygd.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1444",
+    "name": "Grästorp",
+    "country": "SE",
+    "population": 5685,
+    "domain": "grastorp.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1445",
+    "name": "Essunga",
+    "country": "SE",
+    "population": 5687,
+    "domain": "essunga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1446",
+    "name": "Karlsborg",
+    "country": "SE",
+    "population": 6962,
+    "domain": "karlsborg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1447",
+    "name": "Gullspång",
+    "country": "SE",
+    "population": 5169,
+    "domain": "gullspang.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1452",
+    "name": "Tranemo",
+    "country": "SE",
+    "population": 11885,
+    "domain": "tranemo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1460",
+    "name": "Bengtsfors",
+    "country": "SE",
+    "population": 9591,
+    "domain": "bengtsfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1461",
+    "name": "Mellerud",
+    "country": "SE",
+    "population": 9312,
+    "domain": "mellerud.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1462",
+    "name": "Lilla Edet",
+    "country": "SE",
+    "population": 14282,
+    "domain": "lilla-edet.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1463",
+    "name": "Mark",
+    "country": "SE",
+    "population": 34896,
+    "domain": "mark.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1465",
+    "name": "Svenljunga",
+    "country": "SE",
+    "population": 10751,
+    "domain": "svenljunga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1466",
+    "name": "Herrljunga",
+    "country": "SE",
+    "population": 9444,
+    "domain": "herrljunga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1470",
+    "name": "Vara",
+    "country": "SE",
+    "population": 16096,
+    "domain": "vara.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1471",
+    "name": "Götene",
+    "country": "SE",
+    "population": 13194,
+    "domain": "gotene.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1472",
+    "name": "Tibro",
+    "country": "SE",
+    "population": 11297,
+    "domain": "tibro.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1473",
+    "name": "Töreboda",
+    "country": "SE",
+    "population": 9281,
+    "domain": "toreboda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1480",
+    "name": "Göteborg",
+    "country": "SE",
+    "population": 583056,
+    "domain": "goteborg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1481",
+    "name": "Mölndal",
+    "country": "SE",
+    "population": 69901,
+    "domain": "molndal.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1482",
+    "name": "Kungälv",
+    "country": "SE",
+    "population": 47050,
+    "domain": "kungalv.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1484",
+    "name": "Lysekil",
+    "country": "SE",
+    "population": 14366,
+    "domain": "lysekil.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1485",
+    "name": "Uddevalla",
+    "country": "SE",
+    "population": 56787,
+    "domain": "uddevalla.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1486",
+    "name": "Strömstad",
+    "country": "SE",
+    "population": 13244,
+    "domain": "stromstad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1487",
+    "name": "Vänersborg",
+    "country": "SE",
+    "population": 39624,
+    "domain": "vanersborg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1488",
+    "name": "Trollhättan",
+    "country": "SE",
+    "population": 59249,
+    "domain": "trollhattan.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1489",
+    "name": "Alingsås",
+    "country": "SE",
+    "population": 41602,
+    "domain": "alingsas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1490",
+    "name": "Borås",
+    "country": "SE",
+    "population": 113714,
+    "domain": "boras.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1491",
+    "name": "Ulricehamn",
+    "country": "SE",
+    "population": 24704,
+    "domain": "ulricehamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1492",
+    "name": "Åmål",
+    "country": "SE",
+    "population": 12441,
+    "domain": "amal.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1493",
+    "name": "Mariestad",
+    "country": "SE",
+    "population": 24513,
+    "domain": "mariestad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1494",
+    "name": "Lidköping",
+    "country": "SE",
+    "population": 40328,
+    "domain": "lidkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1495",
+    "name": "Skara",
+    "country": "SE",
+    "population": 18695,
+    "domain": "skara.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1496",
+    "name": "Skövde",
+    "country": "SE",
+    "population": 56791,
+    "domain": "skovde.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1497",
+    "name": "Hjo",
+    "country": "SE",
+    "population": 9229,
+    "domain": "hjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1498",
+    "name": "Tidaholm",
+    "country": "SE",
+    "population": 12790,
+    "domain": "tidaholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1499",
+    "name": "Falköping",
+    "country": "SE",
+    "population": 33238,
+    "domain": "falkoping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1715",
+    "name": "Kil",
+    "country": "SE",
+    "population": 12115,
+    "domain": "kil.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1730",
+    "name": "Eda",
+    "country": "SE",
+    "population": 8550,
+    "domain": "eda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1737",
+    "name": "Torsby",
+    "country": "SE",
+    "population": 11549,
+    "domain": "torsby.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1760",
+    "name": "Storfors",
+    "country": "SE",
+    "population": 3990,
+    "domain": "storfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1761",
+    "name": "Hammarö",
+    "country": "SE",
+    "population": 16668,
+    "domain": "hammaro.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1762",
+    "name": "Munkfors",
+    "country": "SE",
+    "population": 3725,
+    "domain": "munkfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1763",
+    "name": "Forshaga",
+    "country": "SE",
+    "population": 11524,
+    "domain": "forshaga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1764",
+    "name": "Grums",
+    "country": "SE",
+    "population": 9043,
+    "domain": "grums.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1765",
+    "name": "Årjäng",
+    "country": "SE",
+    "population": 9996,
+    "domain": "arjang.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1766",
+    "name": "Sunne",
+    "country": "SE",
+    "population": 13335,
+    "domain": "sunne.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1780",
+    "name": "Karlstad",
+    "country": "SE",
+    "population": 94828,
+    "domain": "karlstad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1781",
+    "name": "Kristinehamn",
+    "country": "SE",
+    "population": 24190,
+    "domain": "kristinehamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1782",
+    "name": "Filipstad",
+    "country": "SE",
+    "population": 10503,
+    "domain": "filipstad.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1783",
+    "name": "Hagfors",
+    "country": "SE",
+    "population": 11517,
+    "domain": "hagfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1784",
+    "name": "Arvika",
+    "country": "SE",
+    "population": 25932,
+    "domain": "arvika.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1785",
+    "name": "Säffle",
+    "country": "SE",
+    "population": 15420,
+    "domain": "saffle.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1814",
+    "name": "Lekeberg",
+    "country": "SE",
+    "population": 8472,
+    "domain": "lekeberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1860",
+    "name": "Laxå",
+    "country": "SE",
+    "population": 5659,
+    "domain": "laxa.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1861",
+    "name": "Hallsberg",
+    "country": "SE",
+    "population": 15990,
+    "domain": "hallsberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1862",
+    "name": "Degerfors",
+    "country": "SE",
+    "population": 9631,
+    "domain": "degerfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1863",
+    "name": "Hällefors",
+    "country": "SE",
+    "population": 6896,
+    "domain": "hallefors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1864",
+    "name": "Ljusnarsberg",
+    "country": "SE",
+    "population": 4674,
+    "domain": "ljusnarsberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1880",
+    "name": "Örebro",
+    "country": "SE",
+    "population": 156381,
+    "domain": "orebro.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1881",
+    "name": "Kumla",
+    "country": "SE",
+    "population": 21862,
+    "domain": "kumla.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1882",
+    "name": "Askersund",
+    "country": "SE",
+    "population": 11471,
+    "domain": "askersund.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1883",
+    "name": "Karlskoga",
+    "country": "SE",
+    "population": 30263,
+    "domain": "karlskoga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1884",
+    "name": "Nora",
+    "country": "SE",
+    "population": 10686,
+    "domain": "nora.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1885",
+    "name": "Lindesberg",
+    "country": "SE",
+    "population": 23658,
+    "domain": "lindesberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1904",
+    "name": "Skinnskatteberg",
+    "country": "SE",
+    "population": 4366,
+    "domain": "skinnskatteberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1907",
+    "name": "Surahammar",
+    "country": "SE",
+    "population": 10092,
+    "domain": "surahammar.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1960",
+    "name": "Kungsör",
+    "country": "SE",
+    "population": 8745,
+    "domain": "kungsor.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1961",
+    "name": "Hallstahammar",
+    "country": "SE",
+    "population": 16400,
+    "domain": "hallstahammar.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1962",
+    "name": "Norberg",
+    "country": "SE",
+    "population": 5729,
+    "domain": "norberg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1980",
+    "name": "Västerås",
+    "country": "SE",
+    "population": 155551,
+    "domain": "vasteras.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1981",
+    "name": "Sala",
+    "country": "SE",
+    "population": 22867,
+    "domain": "sala.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1982",
+    "name": "Fagersta",
+    "country": "SE",
+    "population": 13267,
+    "domain": "fagersta.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1983",
+    "name": "Köping",
+    "country": "SE",
+    "population": 26085,
+    "domain": "koping.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-1984",
+    "name": "Arboga",
+    "country": "SE",
+    "population": 14039,
+    "domain": "arboga.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2021",
+    "name": "Vansbro",
+    "country": "SE",
+    "population": 6801,
+    "domain": "vansbro.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2023",
+    "name": "Malung-Sälen",
+    "country": "SE",
+    "population": 10177,
+    "domain": "malung-salen.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2026",
+    "name": "Gagnef",
+    "country": "SE",
+    "population": 10378,
+    "domain": "gagnef.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2029",
+    "name": "Leksand",
+    "country": "SE",
+    "population": 15801,
+    "domain": "leksand.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2031",
+    "name": "Rättvik",
+    "country": "SE",
+    "population": 11047,
+    "domain": "rattvik.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2034",
+    "name": "Orsa",
+    "country": "SE",
+    "population": 6877,
+    "domain": "orsa.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2039",
+    "name": "Älvdalen",
+    "country": "SE",
+    "population": 7033,
+    "domain": "alvdalen.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2061",
+    "name": "Smedjebacken",
+    "country": "SE",
+    "population": 10854,
+    "domain": "smedjebacken.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2062",
+    "name": "Mora",
+    "country": "SE",
+    "population": 20492,
+    "domain": "mora.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2080",
+    "name": "Falun",
+    "country": "SE",
+    "population": 59528,
+    "domain": "falun.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2081",
+    "name": "Borlänge",
+    "country": "SE",
+    "population": 52394,
+    "domain": "borlange.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2082",
+    "name": "Säter",
+    "country": "SE",
+    "population": 11161,
+    "domain": "sater.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2083",
+    "name": "Hedemora",
+    "country": "SE",
+    "population": 15462,
+    "domain": "hedemora.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2084",
+    "name": "Avesta",
+    "country": "SE",
+    "population": 23067,
+    "domain": "avesta.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2085",
+    "name": "Ludvika",
+    "country": "SE",
+    "population": 26604,
+    "domain": "ludvika.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2101",
+    "name": "Ockelbo",
+    "country": "SE",
+    "population": 5884,
+    "domain": "ockelbo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2104",
+    "name": "Hofors",
+    "country": "SE",
+    "population": 9570,
+    "domain": "hofors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2121",
+    "name": "Ovanåker",
+    "country": "SE",
+    "population": 11672,
+    "domain": "ovanaker.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2132",
+    "name": "Nordanstig",
+    "country": "SE",
+    "population": 9483,
+    "domain": "nordanstig.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2161",
+    "name": "Ljusdal",
+    "country": "SE",
+    "population": 18867,
+    "domain": "ljusdal.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2180",
+    "name": "Gävle",
+    "country": "SE",
+    "population": 102904,
+    "domain": "gavle.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2181",
+    "name": "Sandviken",
+    "country": "SE",
+    "population": 39290,
+    "domain": "sandviken.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2182",
+    "name": "Söderhamn",
+    "country": "SE",
+    "population": 25492,
+    "domain": "soderhamn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2183",
+    "name": "Bollnäs",
+    "country": "SE",
+    "population": 26809,
+    "domain": "bollnas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2184",
+    "name": "Hudiksvall",
+    "country": "SE",
+    "population": 37531,
+    "domain": "hudiksvall.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2260",
+    "name": "Ånge",
+    "country": "SE",
+    "population": 9226,
+    "domain": "ange.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2262",
+    "name": "Timrå",
+    "country": "SE",
+    "population": 17963,
+    "domain": "timra.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2280",
+    "name": "Härnösand",
+    "country": "SE",
+    "population": 25114,
+    "domain": "harnosand.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2281",
+    "name": "Sundsvall",
+    "country": "SE",
+    "population": 99439,
+    "domain": "sundsvall.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2282",
+    "name": "Kramfors",
+    "country": "SE",
+    "population": 18133,
+    "domain": "kramfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2283",
+    "name": "Sollefteå",
+    "country": "SE",
+    "population": 18872,
+    "domain": "solleftea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2284",
+    "name": "Örnsköldsvik",
+    "country": "SE",
+    "population": 55807,
+    "domain": "ornskoldsvik.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2303",
+    "name": "Ragunda",
+    "country": "SE",
+    "population": 5208,
+    "domain": "ragunda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2305",
+    "name": "Bräcke",
+    "country": "SE",
+    "population": 6181,
+    "domain": "bracke.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2309",
+    "name": "Krokom",
+    "country": "SE",
+    "population": 15054,
+    "domain": "krokom.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2313",
+    "name": "Strömsund",
+    "country": "SE",
+    "population": 11488,
+    "domain": "stromsund.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2321",
+    "name": "Åre",
+    "country": "SE",
+    "population": 12049,
+    "domain": "are.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2326",
+    "name": "Berg",
+    "country": "SE",
+    "population": 7120,
+    "domain": "berg.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2361",
+    "name": "Härjedalen",
+    "country": "SE",
+    "population": 10070,
+    "domain": "harjedalen.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2380",
+    "name": "Östersund",
+    "country": "SE",
+    "population": 63985,
+    "domain": "ostersund.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2401",
+    "name": "Nordmaling",
+    "country": "SE",
+    "population": 7108,
+    "domain": "nordmaling.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2403",
+    "name": "Bjurholm",
+    "country": "SE",
+    "population": 2387,
+    "domain": "bjurholm.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2404",
+    "name": "Vindeln",
+    "country": "SE",
+    "population": 5485,
+    "domain": "vindeln.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2409",
+    "name": "Robertsfors",
+    "country": "SE",
+    "population": 6748,
+    "domain": "robertsfors.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2417",
+    "name": "Norsjö",
+    "country": "SE",
+    "population": 3945,
+    "domain": "norsjo.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2418",
+    "name": "Malå",
+    "country": "SE",
+    "population": 3024,
+    "domain": "mala.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2421",
+    "name": "Storuman",
+    "country": "SE",
+    "population": 5826,
+    "domain": "storuman.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2422",
+    "name": "Sorsele",
+    "country": "SE",
+    "population": 2442,
+    "domain": "sorsele.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2425",
+    "name": "Dorotea",
+    "country": "SE",
+    "population": 2498,
+    "domain": "dorotea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2460",
+    "name": "Vännäs",
+    "country": "SE",
+    "population": 8997,
+    "domain": "vannas.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2462",
+    "name": "Vilhelmina",
+    "country": "SE",
+    "population": 6539,
+    "domain": "vilhelmina.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2463",
+    "name": "Åsele",
+    "country": "SE",
+    "population": 2805,
+    "domain": "asele.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2480",
+    "name": "Umeå",
+    "country": "SE",
+    "population": 130224,
+    "domain": "umea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2481",
+    "name": "Lycksele",
+    "country": "SE",
+    "population": 12324,
+    "domain": "lycksele.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2482",
+    "name": "Skellefteå",
+    "country": "SE",
+    "population": 72840,
+    "domain": "skelleftea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2505",
+    "name": "Arvidsjaur",
+    "country": "SE",
+    "population": 6145,
+    "domain": "arvidsjaur.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2506",
+    "name": "Arjeplog",
+    "country": "SE",
+    "population": 2718,
+    "domain": "arjeplog.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2510",
+    "name": "Jokkmokk",
+    "country": "SE",
+    "population": 4851,
+    "domain": "jokkmokk.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2513",
+    "name": "Överkalix",
+    "country": "SE",
+    "population": 3289,
+    "domain": "overkalix.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2514",
+    "name": "Kalix",
+    "country": "SE",
+    "population": 15812,
+    "domain": "kalix.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2518",
+    "name": "Övertorneå",
+    "country": "SE",
+    "population": 4217,
+    "domain": "overtornea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2521",
+    "name": "Pajala",
+    "country": "SE",
+    "population": 5966,
+    "domain": "pajala.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2523",
+    "name": "Gällivare",
+    "country": "SE",
+    "population": 17462,
+    "domain": "gallivare.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2560",
+    "name": "Älvsbyn",
+    "country": "SE",
+    "population": 8054,
+    "domain": "alvsbyn.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2580",
+    "name": "Luleå",
+    "country": "SE",
+    "population": 78549,
+    "domain": "lulea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2581",
+    "name": "Piteå",
+    "country": "SE",
+    "population": 42226,
+    "domain": "pitea.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2582",
+    "name": "Boden",
+    "country": "SE",
+    "population": 28060,
+    "domain": "boden.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2583",
+    "name": "Haparanda",
+    "country": "SE",
+    "population": 9601,
+    "domain": "haparanda.se",
+    "domain_source": "guess"
+  },
+  {
+    "id": "SE-2584",
+    "name": "Kiruna",
+    "country": "SE",
+    "population": 22664,
+    "domain": "kiruna.se",
+    "domain_source": "guess"
+  }
+]
