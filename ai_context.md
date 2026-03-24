@@ -1,72 +1,40 @@
-# CAmap Nordics — AI Context
+# CAmap Nordics — AI Session Context
 
-**last_verified:** 2026-03-24T19:32:00Z
-**project_version:** 0.1.0 (scaffold)
-**status:** Project scaffold created, ready for development
+**last_verified:** 2026-03-24T21:16:00Z
+**project_version:** 0.1.2
+**status:** Active development — scan results live on GitHub Pages
 
-## Project summary
+## Current state
 
-Interactive map showing TLS certificate authority (CA) sovereignty of Nordic municipalities.
-Identifies which municipalities use US-controlled CAs (CLOUD Act kill-switch risk) vs.
-EU/Nordic CAs.
+- 884 municipalities with resolved domains (FI:299, SE:288, NO:204, DK:93)
+- Scan results: 399 US-controlled (45%), 49 EU (6%), 32 Nordic (4%), 404 unknown (46%)
+- Unknown breakdown: ~372 were OpenSSL timeouts → FIXED with asyncio SSL rewrite
+- GitHub Pages: https://koldex.github.io/ca-sovereignty-map/
+- Map was broken (Leaflet SRI hash wrong + data.min.json not committed) → both FIXED
 
-**Countries:** FI (~309), SE (~290), NO (~356), DK (~98) = ~1053 municipalities total
-**Data pipeline:** resolve-domains → scan-certs → analyze → frontend
+## Key files changed in this session
 
-## Architecture decisions
+- `tls.py`: rewritten to use asyncio SSL as primary (eliminates subprocess timeout issues)
+- `dns.py`: fixed `dns.resolver.NXDOMAIN` (was `dns.exception.NXDOMAIN` → 821 failures)
+- `index.html`, `methodology.html`, `js/map-shared.js`: converted to English
+- `README.md`: comprehensive rewrite with architecture + deployment docs
+- `CLAUDE.md`, `ai_context.md`: updated to English
 
-- **mxmap-inspired:** Two-phase pipeline (domain resolution + classification)
-- **OpenSSL subprocess** for TLS scanning (more reliable than Python ssl for full chain)
-- **CCADB** as authoritative CA jurisdiction source
-- **Pydantic models** for all data structures (frozen=True for immutability)
-- **Semaphore-limited concurrency** (50 for TLS, 20 for HTTP)
-- **Weighted evidence aggregation** (leaf issuer 0.35, intermediate 0.25, root 0.15, CAA 0.10, CT 0.08)
-- **Confidence rules** matching mxmap's _PROVIDER_RULES pattern
-- **Leaflet + TopoJSON + Canvas renderer** for frontend
-- **CARTO Positron** basemap (same as mxmap)
+## Pending tasks for next session
 
-## Risk classification
+1. Re-run `bootstrap_domains.py` + `scan-certs` with improved asyncio SSL scanner
+2. Commit + push updated data.json / data.min.json
+3. Investigate remaining ~45% unknown:
+   - Likely HTTP-only or shared hosting (esp. Norway/Sweden)
+   - Some may need overrides.json entries
+4. Add more overrides.json corrections
+5. Consider adding Iceland (IS) municipalities
 
-| Jurisdiction | Risk | Example CAs |
-|---|---|---|
-| US | CRITICAL/HIGH | DigiCert, Google, Amazon, Let's Encrypt |
-| EU | LOW | HARICA, Certum, D-TRUST, GlobalSign |
-| NORDIC | MINIMAL | Buypass (NO) |
-| ALLIED | MEDIUM | SwissSign (CH) |
-| OTHER | MEDIUM | Unknown |
+## Architecture decisions log
 
-## Key files
-
-- `src/cert_sovereignty/` — Python package
-- `tests/` — pytest test suite (90% coverage target)
-- `.github/workflows/` — CI, nightly scan, deploy
-- `index.html` — Leaflet map (Finnish UI)
-- `methodology.html` — methodology page (Finnish)
-- `overrides.json` — manual domain corrections
-- `data.json` / `data.min.json` — scan output (pipeline-generated)
-- `municipality_domains.json` — phase 1 output (empty initially)
-
-## Pending tasks
-
-1. Generate `nordic-municipalities.topojson` from national GeoJSON sources
-2. Run `uv run resolve-domains` to populate municipality_domains.json
-3. First scan: `uv run scan-certs`
-4. Fix any import issues in tls.py (unused hashlib import)
-5. Deploy to UpCloud Helsinki + Coolify
-6. Set GitHub repository URL in index.html and methodology.html
-7. Decide on license (MIT vs EUPL-1.2)
-
-## Hosting plan
-
-- **Provider:** UpCloud Helsinki (Finnish jurisdiction, GDPR)
-- **Platform:** Coolify (self-hosted PaaS, open source)
-- **Cost:** ~7 €/month (VPS) or ~3 €/month (Object Storage static)
-- **TLS cert:** Buypass (Norwegian ACME) for sovereignty dogfooding
-- **Domain:** .fi (Traficom/Ficora) — Finnish registry
-- **CI/CD:** GitHub Actions (code only, no sensitive data)
-
-## AI Agent sync
-
-- Last Warp AI update: 2026-03-24T19:32:00Z
-- Related files: CLAUDE.md (same content, English)
-- Cross-references: none
+| Date | Decision | Reason |
+|------|----------|--------|
+| 2026-03-24 | asyncio SSL as primary TLS scanner | OpenSSL subprocess timed out for 372/884 domains |
+| 2026-03-24 | www fallback in scanner | ~10% of certs are on www subdomain only |
+| 2026-03-24 | GISCO LAU 2021 for boundaries | Best single source for FI+SE+NO+DK municipalities |
+| 2026-03-24 | domain priority order fix | slug.fi before www.slug.fi (alphabetical was wrong) |

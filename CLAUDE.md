@@ -1,116 +1,65 @@
 # CAmap Nordics — AI Agent Context
 
-## Project overview
+## Project summary
 
-Interactive map visualizing the TLS certificate authority (CA) sovereignty of Nordic
-municipalities (FI, SE, NO, DK). Identifies "kill switch" risk: US-based CAs (subject
-to CLOUD Act) vs. EU/Nordic CAs.
+Interactive map of TLS certificate authority (CA) sovereignty for Nordic municipalities
+(FI, SE, NO, DK). Maps kill-switch risk: US-controlled CAs (CLOUD Act) vs EU/Nordic CAs.
 
+**Live:** https://koldex.github.io/ca-sovereignty-map/
 **Inspired by:** mxmap.ch (David Huser) → mxmap.nl (Soverin/Andre)
-**Focus:** TLS certificate authorities, not email providers
+
+## Quick commands
+
+```bash
+uv sync --group dev                              # install dependencies
+uv run python scripts/bootstrap_domains.py      # Phase 1: resolve domains
+uv run scan-certs --skip-ct --concurrency 30    # Phase 2: TLS scan
+uv run analyze                                  # Phase 3: statistics
+uv run pytest --cov                             # run tests
+uv run ruff check src tests && uv run ruff format src tests  # lint/format
+uv run python scripts/generate_topojson.py     # regenerate TopoJSON
+```
 
 ## Architecture
 
-### Pipeline (3 phases)
+Pipeline: **bootstrap_domains.py → scan-certs → data.json → GitHub Pages**
 
-```
-Phase 1 (resolve-domains):
-  Wikidata SPARQL + national APIs + domain guessing
-  → municipality_domains.json
+Key modules:
+- `tls.py` — asyncio SSL scanner (primary), www fallback, no OpenSSL subprocess
+- `dns.py` — DNS lookup with Quad9/Cloudflare fallback (use `dns.resolver.NXDOMAIN`, NOT `dns.exception.NXDOMAIN`)
+- `signatures.py` — CA fingerprint database (18 CAs, pattern matching)
+- `classifier.py` — weighted evidence aggregation, confidence scoring
+- `pipeline.py` — scan_many() with semaphore (concurrency 50), builds data.json
+- `resolve.py` — domain guessing + Wikidata SPARQL (User-Agent required)
 
-Phase 2 (scan-certs):
-  OpenSSL subprocess + CCADB enrichment + DNS CAA + crt.sh CT logs
-  → classify() → data.json + data.min.json
+## Data sources
 
-Phase 3 (analyze):
-  Statistics report from data.json
-```
+- **Municipality boundaries:** Eurostat GISCO LAU 2021 (CC BY 4.0), cached at `.data_cache/`
+- **Municipality domains:** Wikidata SPARQL → domain guessing → DNS validation
+- **CA jurisdiction:** CCADB (Mozilla/Linux Foundation)
+- **CT logs:** crt.sh API (optional, `--skip-ct` disables)
 
-### Source files
+## Known limitations / pending improvements
 
-| Module | Description |
-|--------|-------------|
-| `src/cert_sovereignty/models.py` | Pydantic models (Jurisdiction, RiskLevel, Evidence, etc.) |
-| `src/cert_sovereignty/signatures.py` | CA fingerprint database (match_patterns) |
-| `src/cert_sovereignty/tls.py` | OpenSSL subprocess TLS scanner |
-| `src/cert_sovereignty/probes.py` | DNS CAA + CT log probes |
-| `src/cert_sovereignty/classifier.py` | Evidence aggregation + confidence scoring |
-| `src/cert_sovereignty/resolve.py` | Municipality domain resolution (Wikidata + guessing) |
-| `src/cert_sovereignty/pipeline.py` | Orchestration + serialization |
-| `src/cert_sovereignty/analyze.py` | Statistics |
-| `src/cert_sovereignty/cli.py` | CLI entry points |
-| `src/cert_sovereignty/constants.py` | Wikidata SPARQL, country configs, CCADB URLs |
-| `src/cert_sovereignty/dns.py` | DNS resolution (multi-resolver fallback) |
-| `src/cert_sovereignty/log.py` | Loguru configuration |
+- ~45% classified as "Unknown" — HTTP-only, CDN proxy, or slow/refusing TLS connections
+- Wikidata SPARQL needs proper User-Agent to avoid 403 rate limits
+- Norway: many municipalities use shared hosting (Framsikt, WebCruiter etc.)
+- Sweden: some use `.kommun.se` others use `.se` directly
+- Domain guessing is not perfect; `overrides.json` is the correction mechanism
 
-## Commands
+## Municipality ID format
 
-```bash
-# Install (requires uv)
-uv sync --group dev
+`{COUNTRY}-{LAU_ID}` — exactly matching GISCO LAU 2021 GISCO_ID field with `_` → `-`
+Examples: `FI-049` (Espoo), `SE-0180` (Stockholm), `NO-0301` (Oslo), `DK-101` (Copenhagen)
 
-# Phase 1: Resolve municipality domains
-uv run resolve-domains --countries FI SE NO DK
+## Hosting recommendation
 
-# Phase 2: Scan certificates
-uv run scan-certs [--country FI] [--skip-ct] [--concurrency 50]
+UpCloud Helsinki + Coolify (~7 €/month) — Finnish jurisdiction, no US CLOUD Act.
+TLS: Buypass (Norwegian ACME, `https://api.buypass.com/acme/directory`) for Nordic sovereignty.
 
-# Phase 3: Statistics
-uv run analyze [--json]
+## Important bugs fixed
 
-# Update CCADB cache
-uv run update-ccadb
-
-# Run tests
-uv run pytest --cov --cov-report=term-missing
-
-# Lint/format
-uv run ruff check src tests
-uv run ruff format src tests
-```
-
-## Data files
-
-| File | Description |
-|------|-------------|
-| `municipality_domains.json` | Phase 1 output: municipality → domain mapping |
-| `overrides.json` | Manual domain corrections |
-| `data.json` | Phase 2 output: full scan results (pretty-printed) |
-| `data.min.json` | Phase 2 output: minified (used by frontend) |
-| `nordic-municipalities.topojson` | **TODO: generate** — municipality boundary polygons |
-| `ccadb_cache.json` | CCADB fingerprint cache (generated by update-ccadb) |
-
-## Frontend
-
-- `index.html` — main Leaflet map
-- `methodology.html` — methodology documentation
-- `css/shared.css`, `css/map.css`, `css/content.css`
-- `js/map-shared.js` — color schemes, popups, map initialization
-- `js/nav.js` — navigation
-
-Key dependency: **`nordic-municipalities.topojson`** must be generated from national
-GeoJSON sources before the map works. See README for instructions.
-
-## Risk classification
-
-| Level | Color | Description |
-|-------|-------|-------------|
-| critical | Red | US CLOUD Act (DigiCert, Google, Amazon) |
-| high | Red-orange | US nonprofit (Let's Encrypt/ISRG) |
-| medium | Orange | Allied non-EU (GlobalSign, SwissSign) |
-| low | Blue | EU-controlled (HARICA, Certum, D-TRUST) |
-| minimal | Green | Nordic (Buypass NO) |
-
-## Hosting
-
-Recommended: UpCloud Helsinki + Coolify (~7 €/month) or UpCloud Object Storage
-(~3 €/month for static hosting). Finnish jurisdiction, no US CLOUD Act exposure.
-TLS certificate: Buypass (Norwegian) via ACME for Nordic sovereignty dogfooding.
-
-## Next steps (TODO)
-
-1. Generate `nordic-municipalities.topojson` from national GeoJSON sources
-2. Run `uv run resolve-domains` to populate `municipality_domains.json`
-3. Run `uv run scan-certs` to generate first `data.json`
-4. Deploy to UpCloud/Coolify
-5. Configure GitHub repository secret `UPCLOUD_S3_ACCESS` + `UPCLOUD_S3_SECRET`
+1. `dns.py`: `dns.resolver.NXDOMAIN` not `dns.exception.NXDOMAIN` (was causing 821 failures)
+2. `tls.py`: replaced OpenSSL subprocess with asyncio SSL (was causing 372 timeouts)
+3. `index.html`: Leaflet JS SRI hash was wrong (`...XV/XN/sp8=` → `...XV1lvTlZBo=`)
+4. `data.min.json`: was in .gitignore — now committed (required by GitHub Pages)

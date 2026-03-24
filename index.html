@@ -1,71 +1,51 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAmap Nordics — Pohjoismaisten kuntien TLS-sertifikaattiauktoriteettien suvereniteettikartta</title>
-  <meta name="description" content="Interaktiivinen kartta Pohjoismaisten kuntien TLS-sertifikaattiauktoriteetin jurisdiktiosta ja kill switch -riskistä.">
-
-  <!-- Leaflet CSS -->
+  <title>CAmap Nordics — TLS Certificate Authority Sovereignty Map</title>
+  <meta name="description" content="Interactive map showing which certificate authorities control HTTPS for Nordic municipal websites, and their geopolitical kill-switch risk.">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-
-  <!-- App CSS -->
   <link rel="stylesheet" href="css/shared.css">
   <link rel="stylesheet" href="css/map.css">
 </head>
 <body>
   <div class="page-layout">
-    <!-- Navigation -->
     <nav class="nav">
       <span class="nav-title">🗺 CAmap Nordics</span>
-      <a href="index.html" class="nav-link active">Kartta</a>
-      <a href="methodology.html" class="nav-link">Metodologia</a>
+      <a href="index.html" class="nav-link active">Map</a>
+      <a href="methodology.html" class="nav-link">Methodology</a>
       <a href="https://github.com/koldex/ca-sovereignty-map" class="nav-link" target="_blank" rel="noopener">GitHub</a>
     </nav>
-
-    <!-- Map -->
     <div id="map"></div>
-
-    <!-- Info bar -->
     <div id="info-bar">
       <div id="info-bar-content">
-        <span class="text-muted text-small">Ladataan karttadataa…</span>
+        <span class="text-muted text-small">Loading map data…</span>
       </div>
     </div>
   </div>
 
-  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-  <!-- TopoJSON -->
   <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-
-  <!-- App JS -->
   <script src="js/nav.js"></script>
   <script src="js/map-shared.js"></script>
-
   <script>
     'use strict';
-
     const DATA_URL = 'data.min.json';
     const TOPOJSON_URL = 'nordic-municipalities.topojson';
-
-    let map;
-    let muniLayer;
-    let mapData;
+    let map, muniLayer, mapData;
 
     async function main() {
       try {
         map = initMap('map');
       } catch (err) {
         document.getElementById('info-bar-content').innerHTML =
-          `<span class="text-muted">⚠ Kartan alustus epäonnistui: ${escapeHtml(err.message)}</span>`;
+          `<span class="text-muted">⚠ Map init failed: ${escapeHtml(err.message)}</span>`;
         console.error('initMap failed:', err);
         return;
       }
-
       addLegend(map);
       setupInfoBar('info-bar');
 
@@ -80,45 +60,33 @@
       } catch (err) {
         const el = document.getElementById('info-bar-content');
         if (el) el.innerHTML =
-          `<span class="text-muted">⚠ Karttadatan lataus epäonnistui: ${escapeHtml(err.message)}</span>`;
+          `<span class="text-muted">⚠ Failed to load map data: ${escapeHtml(err.message)}</span>`;
         console.error('Data load failed:', err);
       }
     }
 
     function renderMunicipalities(topo, municipalities) {
-      // TopoJSON → GeoJSON
-      // Expects object name 'municipalities' in the TopoJSON file
       const geoJson = topojson.feature(topo, topo.objects.municipalities);
-
       muniLayer = L.geoJSON(geoJson, {
         style: feature => {
           const id = feature.properties.id || feature.properties.municipal_code;
           const muni = municipalities[id];
           return {
             fillColor: muni ? getMuniColor(muni) : '#cccccc',
-            fillOpacity: 0.75,
-            color: '#fff',
-            weight: 0.5,
+            fillOpacity: 0.75, color: '#fff', weight: 0.5,
           };
         },
         onEachFeature: (feature, layer) => {
           const id = feature.properties.id || feature.properties.municipal_code;
           const muni = municipalities[id];
-
           layer.on('click', () => {
             if (muni) {
               updateInfoBar(muni);
               layer.bindPopup(buildPopup(muni), { maxWidth: 400 }).openPopup();
             }
           });
-
-          layer.on('mouseover', () => {
-            layer.setStyle({ fillOpacity: 0.95, weight: 1.5, color: '#555' });
-          });
-
-          layer.on('mouseout', () => {
-            muniLayer.resetStyle(layer);
-          });
+          layer.on('mouseover', () => layer.setStyle({ fillOpacity: 0.95, weight: 1.5, color: '#555' }));
+          layer.on('mouseout', () => muniLayer.resetStyle(layer));
         },
       }).addTo(map);
     }
@@ -128,28 +96,21 @@
       const counts = data.counts || {};
       const usCount = counts['us-controlled'] || 0;
       const usPct = total > 0 ? (usCount / total * 100).toFixed(0) : 0;
-
       document.getElementById('info-bar-content').innerHTML = `
-        <div>
-          <span class="text-muted text-small">Klikkaa kuntaa nähdäksesi tiedot</span>
-        </div>
+        <div><span class="text-muted text-small">Click a municipality to see details</span></div>
         <div class="text-small text-muted">
-          Yhteensä ${total.toLocaleString('fi')} kuntaa ·
-          US-kontrolloitu: <strong>${usPct}%</strong> ·
-          Päivitetty: ${data.generated ? new Date(data.generated).toLocaleDateString('fi') : '–'}
-        </div>
-      `;
+          ${total.toLocaleString('en')} municipalities scanned ·
+          US-controlled: <strong>${usPct}%</strong> ·
+          Updated: ${data.generated ? new Date(data.generated).toLocaleDateString('en-GB') : '–'}
+        </div>`;
     }
 
-    // Redraw on color scheme change
-    window.onColorSchemeChange = function (scheme) {
+    window.onColorSchemeChange = function () {
       if (!muniLayer || !mapData) return;
       muniLayer.eachLayer(layer => {
         const id = layer.feature.properties.id || layer.feature.properties.municipal_code;
         const muni = mapData.municipalities[id];
-        if (muni) {
-          layer.setStyle({ fillColor: getMuniColor(muni) });
-        }
+        if (muni) layer.setStyle({ fillColor: getMuniColor(muni) });
       });
     };
 

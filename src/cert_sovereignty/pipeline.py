@@ -12,7 +12,8 @@ from __future__ import annotations
 
 import asyncio
 import json
-import shutil
+import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -35,12 +36,9 @@ async def scan_domain(
     semaphore: asyncio.Semaphore,
     skip_ct: bool = False,
 ) -> ClassificationResult:
-    """Scan a single domain and return classification result.
-
-    Uses semaphore to limit concurrency (cf. mxmap's classify_many()).
-    """
+    """Scan a single domain and return classification result."""
     async with semaphore:
-        logger.info("Scanning {}", domain)
+        logger.debug("Scanning {}", domain)  # debug level to keep progress bar clean
 
         # TLS certificate chain scan
         tls_result = await scan_certificate_chain(domain, port=port)
@@ -81,23 +79,37 @@ async def scan_many(
     concurrency: int = SEMAPHORE_LIMIT,
     skip_ct: bool = False,
 ) -> dict[str, ClassificationResult]:
-    """Scan multiple domains concurrently with semaphore limiting.
-
-    Cf. mxmap's classify_many().
-    """
+    """Scan multiple domains concurrently, printing a live progress bar."""
+    total = len(domains)
     semaphore = asyncio.Semaphore(concurrency)
-    tasks = [
-        scan_domain(domain, semaphore=semaphore, skip_ct=skip_ct)
-        for domain in domains
-    ]
-    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    # Wrap each scan_domain coroutine to track completions
+    async def _tracked(domain: str) -> tuple[str, ClassificationResult]:
+        result = await scan_domain(domain, semaphore=semaphore, skip_ct=skip_ct)
+        return domain, result
+
+    tasks = [asyncio.create_task(_tracked(d)) for d in domains]
 
     output: dict[str, ClassificationResult] = {}
-    for domain, result in zip(domains, results):
+    done_count = 0
+    classified = 0
+    start_time = time.monotonic()
+
+    PROGRESS_EVERY = max(1, total // 50)  # update ~50 times
+
+    for coro in asyncio.as_completed(tasks):
+        try:
+            domain, result = await coro
+        except Exception as exc:
+            # Shouldn't happen — _tracked catches all errors — but just in case
+            logger.error("Unexpected exception in scan task: {}", exc)
+            continue
+
         if isinstance(result, Exception):
-            logger.error("scan_domain({}) raised: {}", domain, result)
-            output[domain] = ClassificationResult(
-                domain=domain,
+            logger.error("scan_domain raised: {}", result)
+            domain_key = str(result)
+            output[domain_key] = ClassificationResult(
+                domain=domain_key,
                 primary_ca="Unknown",
                 jurisdiction=Jurisdiction.OTHER,
                 risk_level=RiskLevel.MEDIUM,
@@ -106,7 +118,30 @@ async def scan_many(
             )
         else:
             output[domain] = result
+            if result.jurisdiction.value != "other":
+                classified += 1
 
+        done_count += 1
+
+        if done_count % PROGRESS_EVERY == 0 or done_count == total:
+            elapsed = time.monotonic() - start_time
+            pct = done_count / total * 100
+            rate = done_count / elapsed if elapsed > 0 else 0
+            eta = (total - done_count) / rate if rate > 0 else 0
+            bar_len = 30
+            filled = int(bar_len * done_count / total)
+            bar = "█" * filled + "░" * (bar_len - filled)
+            line = (
+                f"\r  [{bar}] {done_count}/{total} ({pct:.0f}%)"
+                f"  classified: {classified}"
+                f"  {rate:.1f} dom/s"
+                f"  ETA: {int(eta)}s  "
+            )
+            sys.stderr.write(line)
+            sys.stderr.flush()
+
+    sys.stderr.write("\n")
+    sys.stderr.flush()
     return output
 
 
@@ -195,7 +230,7 @@ def build_data_json(
     return {
         "generated": generated,
         "commit": commit,
-        "scan_method": "openssl_subprocess",
+        "scan_method": "asyncio_ssl",
         "total": len(municipalities),
         "counts": counts,
         "municipalities": muni_data,
