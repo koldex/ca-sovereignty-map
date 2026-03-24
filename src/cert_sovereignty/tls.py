@@ -1,21 +1,33 @@
 """TLS certificate chain scanner.
 
-Primary: asyncio SSL (asyncio.open_connection with ssl=).
+Primary: asyncio SSL with explicit IPv4 resolution.
+
+Root cause of most timeouts: Nordic municipal servers have both A and AAAA records,
+but their IPv6 port 443 endpoints are firewalled/unreachable. asyncio.open_connection
+on macOS prefers IPv6 (like most modern stacks), causing 15-second timeouts for servers
+that work fine on IPv4 in under 300ms.
+
+Fix: resolve IPv4 address explicitly and connect to it (passing server_hostname for SNI).
 
 Recovery chain when primary fails:
-  1. www fallback       — try www.{domain}:443
-  2. Cert mismatch      — SSL verify failed → reconnect without verify
-                          (shared hosting: cert belongs to hosting platform, not municipality)
-  3. HTTP-only check    — timeout / connection reset → probe port 80
-                          (no HTTPS at all; classify error_category="http_only")
+  1. www fallback            — try www.{domain}:443
+  2. Cert mismatch recovery  — SSL verify failed → connect without verify (shared hosting)
+  3. HTTP-only probe         — timeout/reset → check if port 80 is open
+
+Additional enrichment after successful scan:
+  4. HTTPS redirect following — if domain redirects to a different host (e.g.
+     stockholm.se → start.stockholm), scan the redirect target instead so we
+     classify the CA actually serving municipality content.
 """
 
 from __future__ import annotations
 
 import asyncio
+import socket
 import ssl
 from datetime import datetime, timezone
 
+import httpx
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
@@ -38,7 +50,7 @@ _RETRY_ERRORS = ("Connection timeout", "Connection error", "Connection reset")
 
 
 async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15) -> dict:
-    """Scan TLS cert chain with full recovery chain."""
+    """Scan TLS cert chain with full recovery chain + redirect following."""
     result = await _scan_asyncio_ssl(domain, port, timeout)
 
     # ── Recovery 1: www fallback ──────────────────────────────────────────────
@@ -47,20 +59,15 @@ async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15
         if not www["error"]:
             www["domain"] = domain
             www["scanned_domain"] = f"www.{domain}"
-            logger.debug("www fallback succeeded for {}", domain)
             return www
 
     # ── Recovery 2: cert mismatch → shared hosting ────────────────────────────
-    # SSL verification fails when cert's SAN doesn't include the municipality domain
-    # (common: municipality domain points to shared hosting platform)
     if result["error"] and "SSL verification failed" in result["error"]:
         shared = await _scan_asyncio_ssl_no_verify(domain, port, min(timeout, 10))
         if not shared.get("error") and shared.get("chain"):
             shared["domain"] = domain
             shared["cert_mismatch"] = True
-            logger.debug("Shared hosting cert recovered for {} (mismatch)", domain)
             return shared
-        # www + no-verify combo
         if not domain.startswith("www."):
             shared_www = await _scan_asyncio_ssl_no_verify(
                 f"www.{domain}", port, min(timeout, 10)
@@ -72,37 +79,39 @@ async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15
                 return shared_www
 
     # ── Recovery 3: HTTP-only probe ───────────────────────────────────────────
-    # Connection timeout / reset on 443 → check if HTTP port 80 is accessible
-    if result["error"] and any(
-        s in result["error"] for s in _RETRY_ERRORS
-    ):
+    if result["error"] and any(s in result["error"] for s in _RETRY_ERRORS):
         http_ok = await _check_port_open(domain, 80, timeout=5)
         result["http_accessible"] = http_ok
         if http_ok:
             result["error"] = "http_only"
 
+    # ── Enrichment 4: HTTPS cross-domain redirect following ───────────────────
+    # Only run when we successfully got a cert — check if the domain redirects
+    # to a different host (e.g. stockholm.se → start.stockholm). If so, the
+    # redirect target is the actual municipal website; scan it instead.
+    if not result["error"] and result.get("chain"):
+        redirect_host = await _follow_https_redirect(domain, timeout=6)
+        if redirect_host:
+            logger.debug("Following cross-domain redirect: {} → {}", domain, redirect_host)
+            redir_result = await _scan_asyncio_ssl(redirect_host, port, min(timeout, 10))
+            if not redir_result.get("error") and redir_result.get("chain"):
+                redir_result["domain"] = domain
+                redir_result["scanned_domain"] = redirect_host
+                return redir_result
+
     return result
 
 
-# ── Core SSL scanners ─────────────────────────────────────────────────────────
-
-
 async def _scan_asyncio_ssl(domain: str, port: int, timeout: int) -> dict:
-    """Scan using asyncio SSL with full certificate verification."""
     return await _connect_and_scan(domain, port, timeout, verify=True)
 
 
 async def _scan_asyncio_ssl_no_verify(domain: str, port: int, timeout: int) -> dict:
-    """Scan without certificate verification — used for shared hosting recovery.
-
-    Connects to port 443 and reads the certificate even when the cert's SAN
-    does not include the requested hostname. This lets us classify the CA
-    (e.g. Let's Encrypt, DigiCert) used by the shared hosting platform.
-    """
     return await _connect_and_scan(domain, port, timeout, verify=False)
 
 
 async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) -> dict:
+    """Core TLS scan. Prefers IPv4 to avoid broken-IPv6 timeouts."""
     result: dict = {
         "domain": domain,
         "scan_timestamp": datetime.now(timezone.utc).isoformat(),
@@ -111,11 +120,9 @@ async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) 
         "tls_version": "",
         "verification": "",
         "error": None,
-        "cert_mismatch": not verify,  # pre-set; will be corrected if verify=True succeeds
+        "cert_mismatch": False,
         "http_accessible": None,
     }
-    if verify:
-        result["cert_mismatch"] = False  # assume good until recovery
 
     try:
         ssl_ctx = ssl.create_default_context()
@@ -123,24 +130,36 @@ async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) 
             ssl_ctx.check_hostname = False
             ssl_ctx.verify_mode = ssl.CERT_NONE
 
+        # Resolve to IPv4 explicitly to avoid broken-IPv6 endpoints.
+        # Many Nordic municipal servers have AAAA records but their IPv6
+        # port 443 is firewalled — IPv4 works fine in <300ms.
+        connect_target: str = domain
+        try:
+            loop = asyncio.get_event_loop()
+            ipv4_infos = await asyncio.wait_for(
+                loop.getaddrinfo(domain, port, family=socket.AF_INET, type=socket.SOCK_STREAM),
+                timeout=5,
+            )
+            if ipv4_infos:
+                connect_target = ipv4_infos[0][4][0]
+        except Exception:
+            pass  # No IPv4 → fall back to hostname (system default, may use IPv6)
+
         reader, writer = await asyncio.wait_for(
-            asyncio.open_connection(domain, port, ssl=ssl_ctx, server_hostname=domain),
+            asyncio.open_connection(connect_target, port, ssl=ssl_ctx, server_hostname=domain),
             timeout=timeout,
         )
+
         ssl_obj = writer.get_extra_info("ssl_object")
         if ssl_obj:
             result["tls_version"] = ssl_obj.version() or ""
             result["verification"] = "OK" if verify else "unverified"
-
-            # Leaf cert
             der_cert = ssl_obj.getpeercert(binary_form=True)
             if der_cert:
                 cert = x509.load_der_x509_certificate(der_cert, default_backend())
                 entry = _parse_x509_cert(cert, 0, "leaf")
                 result["chain"].append(entry)
                 result["evidence"].extend(_match_cert_to_ca(entry, SignalKind.LEAF_ISSUER))
-
-            # Full chain (Python 3.13+)
             if hasattr(ssl_obj, "get_verified_chain"):
                 try:
                     for i, der in enumerate(ssl_obj.get_verified_chain()[1:], start=1):
@@ -174,14 +193,56 @@ async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) 
     return result
 
 
+# ── HTTPS redirect following ──────────────────────────────────────────────────
+
+
+async def _follow_https_redirect(domain: str, timeout: int = 6) -> str | None:
+    """Return the final hostname after following HTTPS redirects, or None.
+
+    Returns None if:
+    - No redirect occurs (final host == original domain)
+    - The redirect is only path/query (same host, e.g. /en → /)
+    - Request fails
+
+    Uses httpx (already a project dependency) with verify=False so we can
+    detect redirects even from servers with cert mismatches.
+    """
+    try:
+        async with httpx.AsyncClient(
+            verify=False,
+            follow_redirects=True,
+            timeout=timeout,
+        ) as client:
+            resp = await client.head(f"https://{domain}/")
+            final_host = resp.url.host.lower().lstrip("www.")
+            original = domain.lower().lstrip("www.")
+            if final_host != original:
+                # Cross-domain redirect found
+                return resp.url.host  # Return actual final host including www if present
+    except Exception:
+        pass
+    return None
+
+
 # ── HTTP-only probe ───────────────────────────────────────────────────────────
 
 
 async def _check_port_open(domain: str, port: int, timeout: int = 5) -> bool:
     """Return True if a TCP connection to domain:port succeeds within timeout."""
     try:
+        # Also try IPv4 explicitly here
+        loop = asyncio.get_event_loop()
+        try:
+            ipv4_infos = await asyncio.wait_for(
+                loop.getaddrinfo(domain, port, family=socket.AF_INET, type=socket.SOCK_STREAM),
+                timeout=3,
+            )
+            target = ipv4_infos[0][4][0] if ipv4_infos else domain
+        except Exception:
+            target = domain
+
         _, writer = await asyncio.wait_for(
-            asyncio.open_connection(domain, port),
+            asyncio.open_connection(target, port),
             timeout=timeout,
         )
         writer.close()
