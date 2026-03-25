@@ -6332,8 +6332,8 @@
     "name": "Alvdal",
     "country": "NO",
     "population": 2432,
-    "domain": "www.alvdal.no",
-    "domain_source": "guess"
+    "domain": "alvdal.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3429",

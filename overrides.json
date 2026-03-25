@@ -1165,5 +1165,9 @@
   "NO-3821": {
     "domain": "vinje.no",
     "reason": "NO — replaced timing-out www.X.no with vinje.no"
+  },
+  "NO-3428": {
+    "domain": "alvdal.kommune.no",
+    "reason": "www.alvdal.no is a parked page at Norwegian web hotel Tornado (title='Parked', cert *.web.tornado-node.net); correct domain is alvdal.kommune.no"
   }
 }

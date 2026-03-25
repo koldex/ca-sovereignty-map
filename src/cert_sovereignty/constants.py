@@ -165,6 +165,8 @@ SKIP_DOMAINS: frozenset[str] = frozenset(
         "lielvardes.lv",  # 'lielvardes.lv is for sale' (DomainParking.ru)
         # Wrong Lithuanian domains
         "traku.lt",  # Redirects to facebook.com/traku.turtas (real estate), not municipality
+        # Norwegian domains parked at web hotels (title='Parked', cert belongs to hosting platform)
+        "www.alvdal.no",  # Parked at Tornado web hotel (*.web.tornado-node.net); use alvdal.kommune.no
     ]
 )
 
