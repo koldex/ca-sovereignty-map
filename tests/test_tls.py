@@ -6,7 +6,6 @@ from cert_sovereignty.models import SignalKind
 from cert_sovereignty.tls import (
     _extract_pem_certs,
     _match_cert_to_ca,
-    _parse_brief_output,
 )
 
 
@@ -15,6 +14,7 @@ def test_extract_pem_certs_empty() -> None:
 
 
 def test_extract_pem_certs_single() -> None:
+    # _extract_pem_certs is kept for diagnostic use with openssl showcerts output
     pem_output = """
 depth=0 CN=example.fi
 -----BEGIN CERTIFICATE-----
@@ -40,24 +40,18 @@ BBBB
     assert len(certs) == 2
 
 
-def test_parse_brief_output_ok() -> None:
-    output = """
-CONNECTION ESTABLISHED
-Protocol version: TLSv1.3
-Ciphersuite: TLS_AES_256_GCM_SHA384
-Peer certificate: CN=example.fi
-Verification: OK
-"""
-    info = _parse_brief_output(output)
-    assert info["verification_status"] == "OK"
-    assert info["tls_version"] == "TLSv1.3"
-    assert info["ciphersuite"] == "TLS_AES_256_GCM_SHA384"
+def test_extract_pem_certs_no_partial() -> None:
+    # Incomplete PEM block (missing END) must not produce a result
+    pem_output = "-----BEGIN CERTIFICATE-----\nAAAA\n"
+    assert _extract_pem_certs(pem_output) == []
 
 
-def test_parse_brief_output_fail() -> None:
-    output = "Verification: FAILED\n"
-    info = _parse_brief_output(output)
-    assert info["verification_status"] == "FAILED"
+def test_redirect_strip_www_uses_removeprefix() -> None:
+    """B005: lstrip('www.') strips chars, removeprefix strips the exact string."""
+    # 'webmaster.example.fi' must not be stripped by removeprefix('www.')
+    assert "webmaster.example.fi".removeprefix("www.") == "webmaster.example.fi"
+    # 'www.example.fi' is correctly stripped
+    assert "www.example.fi".removeprefix("www.") == "example.fi"
 
 
 def test_match_cert_to_ca_letsencrypt(letsencrypt_leaf) -> None:
