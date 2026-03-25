@@ -262,7 +262,10 @@ async def _check_port_open(domain: str, port: int, timeout: int = 5) -> bool:
 def _get_name_attr(name: x509.Name, oid: object) -> str:
     try:
         attrs = name.get_attributes_for_oid(oid)  # type: ignore[arg-type]
-        return attrs[0].value if attrs else ""
+        # attrs[0].value is str | bytes in cryptography's stubs; we always
+        # receive str for standard DN attributes (CN, O, C) — cast explicitly
+        value = attrs[0].value if attrs else ""
+        return value if isinstance(value, str) else value.decode("utf-8", errors="replace")
     except Exception:
         return ""
 

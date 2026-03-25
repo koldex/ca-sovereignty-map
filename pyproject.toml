@@ -28,6 +28,8 @@ packages = ["src/cert_sovereignty"]
 
 [dependency-groups]
 dev = [
+    "mypy>=1.9",
+    "mypy-extensions>=1.0",
     "pytest>=8.0",
     "pytest-cov>=6.0",
     "pytest-asyncio>=0.25",
@@ -55,6 +57,20 @@ show_missing = true
 # mocking or integration tests to reach higher coverage. Unit tests cover
 # 100% of pure-logic modules (models, classifier, signatures, constants).
 fail_under = 55
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+# Pydantic v2 frozen models confuse mypy without the plugin; we rely on
+# ruff for most type-related lint. Strict mode would require stubs for
+# every third-party library (dnspython, cryptography, httpx, stamina).
+strict = false
+warn_return_any = false    # json.load / r.json() return Any — too noisy
+warn_unused_ignores = true
+warn_redundant_casts = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+exclude = ["tests/"]
 
 [tool.ruff]
 line-length = 100

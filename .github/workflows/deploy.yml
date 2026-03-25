@@ -23,6 +23,10 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# Opt into Node.js 24 now to avoid forced migration noise in June 2026
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     environment:
@@ -32,16 +36,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # SHA-pinned to actions/checkout@v4
+      # https://github.com/actions/checkout/releases/tag/v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
 
+      # SHA-pinned to actions/configure-pages@v5
+      # https://github.com/actions/configure-pages/releases/tag/v5
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
 
+      # SHA-pinned to actions/upload-pages-artifact@v3
+      # https://github.com/actions/upload-pages-artifact/releases/tag/v3
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
           path: '.'   # Serve from repo root (index.html, data.min.json, css/, js/)
 
+      # SHA-pinned to actions/deploy-pages@v4
+      # https://github.com/actions/deploy-pages/releases/tag/v4
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

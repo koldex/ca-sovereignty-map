@@ -9,6 +9,10 @@ concurrency:
   group: nightly
   cancel-in-progress: false  # Never cancel an in-progress scan
 
+# Opt into Node.js 24 now to avoid forced migration noise in June 2026
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -17,11 +21,15 @@ jobs:
       contents: write  # Required to commit updated data.json
 
     steps:
-      - uses: actions/checkout@v4
+      # SHA-pinned to actions/checkout@v4
+      # https://github.com/actions/checkout/releases/tag/v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: astral-sh/setup-uv@v5
+      # SHA-pinned to astral-sh/setup-uv@v5
+      # https://github.com/astral-sh/setup-uv/releases/tag/v5
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86
         with:
           enable-cache: true
           cache-dependency-glob: uv.lock
@@ -33,7 +41,6 @@ jobs:
       # Phase 2: Scan certificates (municipality_domains.json must exist)
       - name: Scan TLS certificates
         run: uv run scan-certs --concurrency 30
-        # Lower concurrency to be considerate of CI runner resources
 
       - name: Run analysis report
         run: uv run analyze

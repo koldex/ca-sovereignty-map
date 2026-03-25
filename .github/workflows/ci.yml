@@ -15,14 +15,22 @@ concurrency:
 permissions:
   contents: read
 
+# Opt into Node.js 24 now to avoid forced migration noise in June 2026
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   lint:
     name: Lint & format
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # SHA-pinned to actions/checkout@v4
+      # https://github.com/actions/checkout/releases/tag/v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
 
-      - uses: astral-sh/setup-uv@v5
+      # SHA-pinned to astral-sh/setup-uv@v5
+      # https://github.com/astral-sh/setup-uv/releases/tag/v5
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86
         with:
           enable-cache: true
           cache-dependency-glob: uv.lock
@@ -31,22 +39,28 @@ jobs:
 
       - run: uv sync --group dev
 
-      # Ruff check — output GitHub annotations directly in the PR diff
+      # Ruff check with GitHub annotation output (inline in PR diff)
       - name: ruff check
         run: uv run ruff check src tests --output-format=github
 
-      # Ruff format — fail if any file is not formatted
+      # Ruff format — fail if any file is unformatted
       - name: ruff format
         run: uv run ruff format src tests --check
+
+      # Mypy type checking
+      - name: mypy
+        run: uv run mypy src/cert_sovereignty
 
   test:
     name: Tests & coverage
     runs-on: ubuntu-latest
     needs: lint
     steps:
-      - uses: actions/checkout@v4
+      # SHA-pinned to actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
 
-      - uses: astral-sh/setup-uv@v5
+      # SHA-pinned to astral-sh/setup-uv@v5
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86
         with:
           enable-cache: true
           cache-dependency-glob: uv.lock
@@ -58,8 +72,10 @@ jobs:
       - name: pytest with coverage
         run: uv run pytest --cov --cov-report=term-missing --cov-report=xml
 
+      # SHA-pinned to codecov/codecov-action@v4
+      # https://github.com/codecov/codecov-action/releases/tag/v4
       - name: Upload coverage
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@b9fd7d16f6d7d1b5d2bec1a2887e65ceed900238
         with:
           file: coverage.xml
         continue-on-error: true
