@@ -40,7 +40,7 @@ sector.
 
 The author, **Mikko Koljander**, has a direct professional interest in the subject matter of this
 application. He is involved in certificate authority product development and operations at
-[Telia](https://trust.telia.com/), a Nordic telecommunications company whose CA services
+[Telia](https://support.trust.telia.com/index_en.html), a Nordic telecommunications company whose CA services
 (Telia Certificate Service) are classified in this map as **Minimal risk / Nordic jurisdiction**.
 
 This disclosure is made in the interest of transparency. The data collection methodology, the
