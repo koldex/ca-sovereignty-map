@@ -8,7 +8,10 @@
 // scan entry in data.json (no domain was resolved for the municipality).
 // Deliberately distinct from both the jurisdiction colours AND the neutral
 // grey range used for classified-unknown municipalities (#eeeeee–#aaaaaa).
-const NO_DATA_COLOR = '#c0cad4'; // blue-grey
+// var (not const/let) so the value is accessible from the inline <script>
+// in index.html — const/let top-level declarations are scoped to their
+// own <script> block and are not reachable from a separate one.
+var NO_DATA_COLOR = '#c0cad4'; // blue-grey
 
 const COLOR_SCHEMES = {
   default: {
