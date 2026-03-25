@@ -4,6 +4,12 @@
  */
 'use strict';
 
+// Colour for polygons that exist in the boundary TopoJSON but have no
+// scan entry in data.json (no domain was resolved for the municipality).
+// Deliberately distinct from both the jurisdiction colours AND the neutral
+// grey range used for classified-unknown municipalities (#eeeeee–#aaaaaa).
+const NO_DATA_COLOR = '#c0cad4'; // blue-grey
+
 const COLOR_SCHEMES = {
   default: {
     'us-controlled': { high: '#e74c3c', medium: '#f1948a', low: '#dddddd' },
@@ -196,6 +202,10 @@ function addLegend(map) {
           <div class="legend-swatch" style="background:${scheme[cat].high}"></div>
           <span>${label}</span>
         </div>`).join('')}
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:${NO_DATA_COLOR}"></div>
+        <span>No domain data</span>
+      </div>
       <div class="mt-2 text-small text-muted">
         <label style="cursor:pointer">
           <input type="checkbox" id="cb-mode" onchange="toggleColorblind(this.checked)">

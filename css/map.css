@@ -163,6 +163,12 @@ html, body {
   color: #4b5563;
 }
 
+.notice-nodata {
+  background: #eef1f5;
+  border-left: 3px solid #c0cad4;
+  color: #4b5e72;
+}
+
 /* ── Popup ───────────────────────────────────────────────────────── */
 
 .leaflet-popup-content {

@@ -71,18 +71,47 @@
         style: feature => {
           const id = feature.properties.id || feature.properties.municipal_code;
           const muni = municipalities[id];
+          // NO_DATA_COLOR: clearly distinct from the neutral greys used for
+          // classified-unknown municipalities (#eeeeee / #aaaaaa range).
+          // 171 polygons have boundary data but no scan entry.
           return {
-            fillColor: muni ? getMuniColor(muni) : '#cccccc',
+            fillColor: muni ? getMuniColor(muni) : NO_DATA_COLOR,
             fillOpacity: 0.75, color: '#fff', weight: 0.5,
           };
         },
         onEachFeature: (feature, layer) => {
           const id = feature.properties.id || feature.properties.municipal_code;
           const muni = municipalities[id];
+          const name = feature.properties.name || id || '';
+          const country = feature.properties.country || '';
+
           layer.on('click', () => {
             if (muni) {
               updateInfoBar(muni);
               layer.bindPopup(buildPopup(muni), { maxWidth: 400 }).openPopup();
+            } else {
+              // No scan data — polygon exists in boundaries but had no
+              // resolvable domain (municipality too small, recently merged, etc.)
+              layer.bindPopup(
+                `<div>
+                  <div class="popup-header">
+                    <div>
+                      <div class="popup-name">${escapeHtml(name)}</div>
+                      <div class="popup-country">${escapeHtml(country)}</div>
+                    </div>
+                    <span class="badge badge-unknown">No data</span>
+                  </div>
+                  <div class="popup-notice notice-nodata">
+                    No domain data — this municipality could not be matched
+                    to a resolvable web domain. It may have recently merged,
+                    use a non-standard domain pattern, or have no public
+                    website. Add a correction to
+                    <a href="https://github.com/koldex/ca-sovereignty-map/blob/main/overrides.json"
+                       target="_blank" rel="noopener">overrides.json</a>.
+                  </div>
+                </div>`,
+                { maxWidth: 380 }
+              ).openPopup();
             }
           });
           layer.on('mouseover', () => layer.setStyle({ fillOpacity: 0.95, weight: 1.5, color: '#555' }));
