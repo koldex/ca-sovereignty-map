@@ -8,7 +8,6 @@ from cert_sovereignty.models import (
     CertChainEntry,
     Evidence,
     Jurisdiction,
-    RiskLevel,
     SignalKind,
 )
 

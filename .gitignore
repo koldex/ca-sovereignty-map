@@ -10,7 +10,7 @@ htmlcov/
 dist/
 build/
 .uv/
-uv.lock
+# uv.lock is committed for reproducible CI installs
 
 # Virtual environments
 .venv/

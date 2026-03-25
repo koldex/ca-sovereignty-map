@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from cert_sovereignty.classifier import _aggregate, _rule_confidence, classify
 from cert_sovereignty.models import Evidence, Jurisdiction, RiskLevel, SignalKind
 
@@ -93,7 +91,7 @@ def test_classify_letsencrypt() -> None:
 
 
 def test_classify_buypass_nordic() -> None:
-    tls_ev = [
+    [
         make_evidence(SignalKind.LEAF_ISSUER, "Buypass", 0.35),
     ]
     # Override jurisdiction for test

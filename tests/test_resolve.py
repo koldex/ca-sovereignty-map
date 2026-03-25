@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from cert_sovereignty.resolve import _extract_domain, _slugify_name, guess_domains
 
 

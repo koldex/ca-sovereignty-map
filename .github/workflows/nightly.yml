@@ -5,12 +5,16 @@ on:
     - cron: '0 2 * * *'   # 02:00 UTC = 04:00 Finnish time
   workflow_dispatch:       # Allow manual trigger
 
+concurrency:
+  group: nightly
+  cancel-in-progress: false  # Never cancel an in-progress scan
+
 jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     permissions:
-      contents: write
+      contents: write  # Required to commit updated data.json
 
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +24,7 @@ jobs:
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
+          cache-dependency-glob: uv.lock
 
       - run: uv python install 3.13
 

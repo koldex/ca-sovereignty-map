@@ -6,8 +6,6 @@ import json
 import tempfile
 from pathlib import Path
 
-import pytest
-
 from cert_sovereignty.models import ClassificationResult, Jurisdiction, RiskLevel
 from cert_sovereignty.pipeline import build_data_json, serialize_result, write_output
 

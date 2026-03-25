@@ -25,7 +25,7 @@ from __future__ import annotations
 import asyncio
 import socket
 import ssl
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import httpx
 from cryptography import x509
@@ -69,9 +69,7 @@ async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15
             shared["cert_mismatch"] = True
             return shared
         if not domain.startswith("www."):
-            shared_www = await _scan_asyncio_ssl_no_verify(
-                f"www.{domain}", port, min(timeout, 10)
-            )
+            shared_www = await _scan_asyncio_ssl_no_verify(f"www.{domain}", port, min(timeout, 10))
             if not shared_www.get("error") and shared_www.get("chain"):
                 shared_www["domain"] = domain
                 shared_www["scanned_domain"] = f"www.{domain}"
@@ -114,7 +112,7 @@ async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) 
     """Core TLS scan. Prefers IPv4 to avoid broken-IPv6 timeouts."""
     result: dict = {
         "domain": domain,
-        "scan_timestamp": datetime.now(timezone.utc).isoformat(),
+        "scan_timestamp": datetime.now(UTC).isoformat(),
         "chain": [],
         "evidence": [],
         "tls_version": "",
@@ -167,7 +165,9 @@ async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) 
                         ct = "root" if cert.subject == cert.issuer else "intermediate"
                         entry = _parse_x509_cert(cert, i, ct)
                         result["chain"].append(entry)
-                        kind = SignalKind.ROOT_CA if ct == "root" else SignalKind.INTERMEDIATE_ISSUER
+                        kind = (
+                            SignalKind.ROOT_CA if ct == "root" else SignalKind.INTERMEDIATE_ISSUER
+                        )
                         result["evidence"].extend(_match_cert_to_ca(entry, kind))
                 except Exception:
                     pass
@@ -178,7 +178,7 @@ async def _connect_and_scan(domain: str, port: int, timeout: int, verify: bool) 
         except Exception:
             pass
 
-    except asyncio.TimeoutError:
+    except TimeoutError:
         result["error"] = f"Connection timeout ({timeout}s)"
     except ssl.SSLCertVerificationError as e:
         result["error"] = f"SSL verification failed: {e}"
@@ -214,8 +214,9 @@ async def _follow_https_redirect(domain: str, timeout: int = 6) -> str | None:
             timeout=timeout,
         ) as client:
             resp = await client.head(f"https://{domain}/")
-            final_host = resp.url.host.lower().lstrip("www.")
-            original = domain.lower().lstrip("www.")
+            # Use removeprefix, not lstrip — lstrip strips any char in the string
+            final_host = resp.url.host.lower().removeprefix("www.")
+            original = domain.lower().removeprefix("www.")
             if final_host != original:
                 # Cross-domain redirect found
                 return resp.url.host  # Return actual final host including www if present
@@ -300,24 +301,31 @@ def _match_cert_to_ca(entry: CertChainEntry, kind: SignalKind) -> list[Evidence]
             matched = True
             detail_parts.append(f"root_cn={entry.subject_cn}")
         if matched:
-            results.append(Evidence(
-                kind=kind,
-                jurisdiction=sig.jurisdiction,
-                ca_name=sig.name,
-                weight=WEIGHTS[kind],
-                detail=f"{kind.value}: {', '.join(detail_parts)} → {sig.name}",
-                raw=f"{entry.issuer_org}|{entry.issuer_cn}",
-            ))
+            results.append(
+                Evidence(
+                    kind=kind,
+                    jurisdiction=sig.jurisdiction,
+                    ca_name=sig.name,
+                    weight=WEIGHTS[kind],
+                    detail=f"{kind.value}: {', '.join(detail_parts)} → {sig.name}",
+                    raw=f"{entry.issuer_org}|{entry.issuer_cn}",
+                )
+            )
     return results
 
 
 def _extract_pem_certs(showcerts_output: str) -> list[str]:
-    pems, current, in_cert = [], [], False
+    pems: list[str] = []
+    current: list[str] = []
+    in_cert = False
     for line in showcerts_output.split("\n"):
         if "-----BEGIN CERTIFICATE-----" in line:
-            in_cert = True; current = [line]
+            in_cert = True
+            current = [line]
         elif "-----END CERTIFICATE-----" in line:
-            current.append(line); pems.append("\n".join(current)); in_cert = False
+            current.append(line)
+            pems.append("\n".join(current))
+            in_cert = False
         elif in_cert:
             current.append(line)
     return pems

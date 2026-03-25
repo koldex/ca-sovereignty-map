@@ -39,9 +39,9 @@ def resolve_domains() -> None:
     setup_logging(args.verbose)
 
     async def _run() -> None:
-        from .resolve import fetch_wikidata_domains, load_overrides, resolve_municipality_domain
+        from .resolve import fetch_wikidata_domains, load_overrides
 
-        overrides = load_overrides(Path(args.overrides))
+        load_overrides(Path(args.overrides))
         all_results: list[dict] = []
 
         for country in args.countries:

@@ -7,8 +7,6 @@ Reused directly from mxmap's dns.py pattern:
 
 from __future__ import annotations
 
-import asyncio
-
 import dns.asyncresolver
 import dns.exception
 import dns.rdatatype
@@ -55,7 +53,7 @@ async def resolve_robust(
         except dns.resolver.NoAnswer:
             # Record type doesn't exist — no need to try other resolvers
             return None
-        except (dns.exception.DNSException, OSError, asyncio.TimeoutError) as e:
+        except (TimeoutError, dns.exception.DNSException, OSError) as e:
             ns_label = nameserver or "system"
             logger.debug("DNS {} {} via {}: {}", rdtype, domain, ns_label, e)
             continue

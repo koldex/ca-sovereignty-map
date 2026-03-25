@@ -10,7 +10,7 @@ import enum
 from pydantic import BaseModel, ConfigDict, Field
 
 
-class Jurisdiction(str, enum.Enum):
+class Jurisdiction(enum.StrEnum):
     """CA's legal jurisdiction — determines kill-switch risk."""
 
     US = "us"  # US CLOUD Act subject
@@ -20,7 +20,7 @@ class Jurisdiction(str, enum.Enum):
     OTHER = "other"  # Unknown / other
 
 
-class RiskLevel(str, enum.Enum):
+class RiskLevel(enum.StrEnum):
     """Kill-switch risk level."""
 
     CRITICAL = "critical"  # US-controlled, direct revocation risk
@@ -30,7 +30,7 @@ class RiskLevel(str, enum.Enum):
     MINIMAL = "minimal"  # Nordic / national
 
 
-class SignalKind(str, enum.Enum):
+class SignalKind(enum.StrEnum):
     """Certificate signal type (cf. mxmap: MX, SPF, DKIM...)."""
 
     LEAF_ISSUER = "leaf_issuer"

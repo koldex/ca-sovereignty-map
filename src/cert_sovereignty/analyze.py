@@ -9,8 +9,6 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from loguru import logger
-
 
 def load_data(data_path: Path) -> dict:
     """Load data.json file."""
@@ -38,7 +36,7 @@ def compute_stats(data: dict) -> dict:
         }
     )
 
-    for muni_id, muni in municipalities.items():
+    for _muni_id, muni in municipalities.items():
         country = muni.get("country", "UNKNOWN")
         jurisdiction = muni.get("jurisdiction", "other")
         ca = muni.get("primary_ca", "Unknown")
@@ -103,9 +101,7 @@ def print_report(stats: dict) -> None:
         print(f"  {jurisdiction:12s} {count:4d}  {pct:5.1f}%  {bar}")
 
     print("\nTop 10 CAs globally:")
-    for i, (ca, count) in enumerate(
-        list(stats["global"]["by_ca"].items())[:10], start=1
-    ):
+    for i, (ca, count) in enumerate(list(stats["global"]["by_ca"].items())[:10], start=1):
         pct = count / max(stats["total"], 1) * 100
         print(f"  {i:2d}. {ca:40s} {count:4d}  ({pct:.1f}%)")
 

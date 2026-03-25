@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from cert_sovereignty.analyze import compute_stats
 
 

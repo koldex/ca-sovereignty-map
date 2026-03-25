@@ -14,7 +14,7 @@ import asyncio
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from loguru import logger
@@ -24,7 +24,6 @@ from .constants import CATEGORY_MAP, SEMAPHORE_LIMIT
 from .models import ClassificationResult, Jurisdiction, RiskLevel
 from .probes import probe_caa, probe_ct_log
 from .tls import scan_certificate_chain
-
 
 # ── Phase 2: Certificate scanning ─────────────────────────────────────────────
 
@@ -255,10 +254,7 @@ def _detect_shared_hosting(
             count = fp_count[fp]
             logger.info("  {} ({} municipalities)", fp[:16] + "...", count)
 
-    return {
-        domain: (fp in shared_fps, fp)
-        for domain, fp in domain_fp.items()
-    }
+    return {domain: (fp in shared_fps, fp) for domain, fp in domain_fp.items()}
 
 
 def build_data_json(
@@ -268,7 +264,7 @@ def build_data_json(
     commit: str = "",
 ) -> dict:
     """Build the final data.json payload with shared hosting detection."""
-    generated = datetime.now(timezone.utc).isoformat()
+    generated = datetime.now(UTC).isoformat()
 
     # Detect shared hosting (5+ municipalities with same leaf cert)
     shared_info = _detect_shared_hosting(results)
@@ -299,8 +295,12 @@ def build_data_json(
                 category = serialized.get("category", "unknown")
                 counts[category] = counts.get(category, 0) + 1
         else:
-            serialized = {**muni, "error": "no_domain", "category": "unknown",
-                          "error_category": "no_domain"}
+            serialized = {
+                **muni,
+                "error": "no_domain",
+                "category": "unknown",
+                "error_category": "no_domain",
+            }
             counts["unknown"] += 1
 
         muni_data[muni_id] = serialized

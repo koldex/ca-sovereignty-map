@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from cert_sovereignty.models import SignalKind
 from cert_sovereignty.tls import (
     _extract_pem_certs,

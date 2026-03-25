@@ -24,10 +24,8 @@ from .constants import (
     SKIP_DOMAINS,
     WIKIDATA_QUERIES,
     WIKIDATA_SPARQL_ENDPOINT,
-    HTTP_TIMEOUT,
 )
 from .dns import domain_resolves
-
 
 # ── Wikidata SPARQL ───────────────────────────────────────────────────────────
 

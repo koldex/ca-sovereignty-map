@@ -2,10 +2,8 @@
 
 from __future__ import annotations
 
-import pytest
-
 from cert_sovereignty.models import Jurisdiction, RiskLevel
-from cert_sovereignty.signatures import SIGNATURES, CASignature, match_patterns
+from cert_sovereignty.signatures import SIGNATURES, match_patterns
 
 
 def test_match_patterns_basic() -> None:

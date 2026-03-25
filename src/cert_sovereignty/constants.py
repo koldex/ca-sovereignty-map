@@ -218,9 +218,7 @@ GEOPOLITICAL_REGIONS: dict[str, dict] = {
         "label": "Adversarial jurisdiction",
         "risk": "CRITICAL",
         "color": "#8e44ad",
-        "description": (
-            "States with significant geopolitical tensions with Western democracies"
-        ),
+        "description": ("States with significant geopolitical tensions with Western democracies"),
     },
 }
 
@@ -244,12 +242,8 @@ MAX_CT_ENTRIES = 50  # max crt.sh results per domain
 
 # ── CCADB URLs ────────────────────────────────────────────────────────────────
 
-CCADB_ALL_CERTS_CSV = (
-    "https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2"
-)
-CCADB_CAA_IDENTIFIERS = (
-    "https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReport"
-)
+CCADB_ALL_CERTS_CSV = "https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2"
+CCADB_CAA_IDENTIFIERS = "https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReport"
 CCADB_MOZILLA_INCLUDED = (
     "https://ccadb.my.salesforce-sites.com/mozilla/IncludedCACertificateReportCSVFormat"
 )
