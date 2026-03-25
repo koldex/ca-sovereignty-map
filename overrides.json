@@ -182,5 +182,341 @@
     "reason": "Švenčionių rajono sav. — nom: Švenčionys"
   },
   "_todo_LT-33": "Alytaus rajono savivaldybė — no working public domain found",
-  "_todo_LT-66": "Panevėžio rajono savivaldybė — no working public domain found"
+  "_todo_LT-66": "Panevėžio rajono savivaldybė — no working public domain found",
+  "_section_LV": "Latvian overrides — GISCO LAU uses genitive case ('Kuldīgas' not 'Kuldīga'). All 82 domains DNS-verified. Note: novads.lv shared portal is parked by DomainParking.ru (see SKIP_DOMAINS).",
+  "LV-0604300": {
+    "domain": "aglona.lv",
+    "reason": "Aglonas novads — nom: Aglona"
+  },
+  "LV-0320200": {
+    "domain": "aizkraukle.lv",
+    "reason": "Aizkraukles novads — nom: Aizkraukle"
+  },
+  "LV-0640600": {
+    "domain": "aizpute.lv",
+    "reason": "Aizputes novads — nom: Aizpute"
+  },
+  "LV-0560800": {
+    "domain": "akniste.lv",
+    "reason": "Aknīstes novads — nom: Aknīste"
+  },
+  "LV-0624200": {
+    "domain": "alsunga.lv",
+    "reason": "Alsungas novads — nom: Alsunga"
+  },
+  "LV-0360200": {
+    "domain": "aluksne.lv",
+    "reason": "Alūksnes novads — nom: Alūksne"
+  },
+  "LV-0424701": {
+    "domain": "amata.lv",
+    "reason": "Amatas novads — nom: Amata"
+  },
+  "LV-0460800": {
+    "domain": "auce.lv",
+    "reason": "Auces novads — nom: Auce"
+  },
+  "LV-0804900": {
+    "domain": "babite.lv",
+    "reason": "Babītes novads — nom: Babīte"
+  },
+  "LV-0800600": {
+    "domain": "baldone.lv",
+    "reason": "Baldones novads — nom: Baldone"
+  },
+  "LV-0384400": {
+    "domain": "baltinava.lv",
+    "reason": "Baltinavas novads — nom: Baltinava"
+  },
+  "LV-0400200": {
+    "domain": "bauska.lv",
+    "reason": "Bauskas novads — nom: Bauska"
+  },
+  "LV-0840601": {
+    "domain": "broceni.lv",
+    "reason": "Brocēnu novads — nom: Brocēni"
+  },
+  "LV-0967101": {
+    "domain": "burtnieks.lv",
+    "reason": "Burtnieku novads — nom: Burtnieks"
+  },
+  "LV-0805200": {
+    "domain": "carnikava.lv",
+    "reason": "Carnikavas novads — nom: Carnikava"
+  },
+  "LV-0700800": {
+    "domain": "cesvaine.lv",
+    "reason": "Cesvaines novads — nom: Cesvaine"
+  },
+  "LV-0601000": {
+    "domain": "dagda.lv",
+    "reason": "Dagdas novads — nom: Dagda"
+  },
+  "LV-0460200": {
+    "domain": "dobele.lv",
+    "reason": "Dobeles novads — nom: Dobele"
+  },
+  "LV-0885100": {
+    "domain": "dundaga.lv",
+    "reason": "Dundagas novads — nom: Dundaga"
+  },
+  "LV-0640801": {
+    "domain": "durbe.lv",
+    "reason": "Durbes novads — nom: Durbe"
+  },
+  "LV-0905100": {
+    "domain": "engure.lv",
+    "reason": "Engures novads — nom: Engure"
+  },
+  "LV-0806000": {
+    "domain": "garkalne.lv",
+    "reason": "Garkalnes novads — nom: Garkalne"
+  },
+  "LV-0641000": {
+    "domain": "grobina.lv",
+    "reason": "Grobiņas novads — nom: Grobiņa"
+  },
+  "LV-0500200": {
+    "domain": "gulbene.lv",
+    "reason": "Gulbenes novads — nom: Gulbene"
+  },
+  "LV-0406400": {
+    "domain": "iecava.lv",
+    "reason": "Iecavas novads — nom: Iecava"
+  },
+  "LV-0740600": {
+    "domain": "ikskile.lv",
+    "reason": "Ikšķiles novads — nom: Ikšķile"
+  },
+  "LV-0440801": {
+    "domain": "ilukste.lv",
+    "reason": "Ilūkstes novads — nom: Ilūkste"
+  },
+  "LV-0425700": {
+    "domain": "jaunpiebalga.lv",
+    "reason": "Jaunpiebalgas novads — nom: Jaunpiebalga"
+  },
+  "LV-0540200": {
+    "domain": "jelgava.lv",
+    "reason": "Jelgavas novads — note: same as city"
+  },
+  "LV-0901201": {
+    "domain": "kandava.lv",
+    "reason": "Kandavas novads — nom: Kandava"
+  },
+  "LV-0960200": {
+    "domain": "koceni.lv",
+    "reason": "Kocēnu novads — nom: Kocēni"
+  },
+  "LV-0326100": {
+    "domain": "koknese.lv",
+    "reason": "Kokneses novads — nom: Koknese"
+  },
+  "LV-0806900": {
+    "domain": "krimulda.lv",
+    "reason": "Krimuldas novads — nom: Krimulda"
+  },
+  "LV-0600202": {
+    "domain": "kraslava.lv",
+    "reason": "Krāslavas novads — nom: Krāslava"
+  },
+  "LV-0620200": {
+    "domain": "kuldiga.lv",
+    "reason": "Kuldīgas novads — nom: Kuldīga"
+  },
+  "LV-0681000": {
+    "domain": "karsava.lv",
+    "reason": "Kārsavas novads — nom: Kārsava"
+  },
+  "LV-0741001": {
+    "domain": "kegums.lv",
+    "reason": "Ķeguma novads — nom: Ķegums"
+  },
+  "LV-0660200": {
+    "domain": "limbazi.lv",
+    "reason": "Limbažu novads — nom: Limbaži"
+  },
+  "LV-0701400": {
+    "domain": "lubana.lv",
+    "reason": "Lubānas novads — nom: Lubāna"
+  },
+  "LV-0680200": {
+    "domain": "ludza.lv",
+    "reason": "Ludzas novads — nom: Ludza"
+  },
+  "LV-0421200": {
+    "domain": "ligatne.lv",
+    "reason": "Līgatnes novads — nom: Līgatne"
+  },
+  "LV-0761201": {
+    "domain": "livani.lv",
+    "reason": "Līvānu novads — nom: Livāni"
+  },
+  "LV-0961000": {
+    "domain": "mazsalaca.lv",
+    "reason": "Mazsalacas novads — nom: Mazsalaca"
+  },
+  "LV-0887600": {
+    "domain": "mersrags.lv",
+    "reason": "Mērsraga novads — nom: Mērsrags"
+  },
+  "LV-0327100": {
+    "domain": "nereta.lv",
+    "reason": "Neretas novads — nom: Nereta"
+  },
+  "LV-0647900": {
+    "domain": "nica.lv",
+    "reason": "Nīcas novads — nom: Nīca"
+  },
+  "LV-0801000": {
+    "domain": "olaine.lv",
+    "reason": "Olaines novads — nom: Olaine"
+  },
+  "LV-0546701": {
+    "domain": "ozolnieki.lv",
+    "reason": "Ozolnieku novads — nom: Ozolnieki"
+  },
+  "LV-0760202": {
+    "domain": "preili.lv",
+    "reason": "Preiļu novads — nom: Preiļi"
+  },
+  "LV-0641600": {
+    "domain": "priekule.lv",
+    "reason": "Priekules novads — nom: Priekule"
+  },
+  "LV-0427300": {
+    "domain": "priekuli.lv",
+    "reason": "Priekuļu novads — nom: Priekuļi"
+  },
+  "LV-0427500": {
+    "domain": "pargauja.lv",
+    "reason": "Pārgaujas novads — nom: Pārgauja"
+  },
+  "LV-0641401": {
+    "domain": "pavilosta.lv",
+    "reason": "Pāvilostas novads — nom: Pāvilosta"
+  },
+  "LV-0427700": {
+    "domain": "rauna.lv",
+    "reason": "Raunas novads — nom: Rauna"
+  },
+  "LV-0766300": {
+    "domain": "riebini.lv",
+    "reason": "Riebiņu novads — nom: Riebiņi"
+  },
+  "LV-0888301": {
+    "domain": "roja.lv",
+    "reason": "Rojas novads — nom: Roja"
+  },
+  "LV-0808400": {
+    "domain": "ropazi.lv",
+    "reason": "Ropažu novads — nom: Ropaži"
+  },
+  "LV-0648500": {
+    "domain": "rucava.lv",
+    "reason": "Rucavas novads — nom: Rucava"
+  },
+  "LV-0387500": {
+    "domain": "rugaji.lv",
+    "reason": "Rugāju novads — nom: Rugāji"
+  },
+  "LV-0407700": {
+    "domain": "rundale.lv",
+    "reason": "Rundāles novads — nom: Rundāle"
+  },
+  "LV-0780200": {
+    "domain": "rezekne.lv",
+    "reason": "Rēzeknes novads — note: same as city"
+  },
+  "LV-0961600": {
+    "domain": "rujiena.lv",
+    "reason": "Rūjienas novads — nom: Rūjiena"
+  },
+  "LV-0661400": {
+    "domain": "salacgriva.lv",
+    "reason": "Salacgrīvas novads — nom: Salacgrīva"
+  },
+  "LV-0801400": {
+    "domain": "saulkrasti.lv",
+    "reason": "Saulkrastu novads — nom: Saulkrasti"
+  },
+  "LV-0801601": {
+    "domain": "sigulda.lv",
+    "reason": "Siguldas novads — nom: Sigulda"
+  },
+  "LV-0621200": {
+    "domain": "skrunda.lv",
+    "reason": "Skrundas novads — nom: Skrunda"
+  },
+  "LV-0941600": {
+    "domain": "smiltene.lv",
+    "reason": "Smiltenes novads — nom: Smiltene"
+  },
+  "LV-0809600": {
+    "domain": "www.stopini.lv",
+    "reason": "Stopiņu novads — uses www prefix"
+  },
+  "LV-0941800": {
+    "domain": "strenci.lv",
+    "reason": "Strenču novads — nom: Strenči"
+  },
+  "LV-0880200": {
+    "domain": "talsi.lv",
+    "reason": "Talsu novads — nom: Talsi"
+  },
+  "LV-0468900": {
+    "domain": "tervete.lv",
+    "reason": "Tērvetes novads — nom: Tērvete"
+  },
+  "LV-0900200": {
+    "domain": "tukums.lv",
+    "reason": "Tukuma novads — nom: Tukums"
+  },
+  "LV-0649300": {
+    "domain": "vainode.lv",
+    "reason": "Vaiņodes novads — nom: Vaiņode"
+  },
+  "LV-0940200": {
+    "domain": "valka.lv",
+    "reason": "Valkas novads — nom: Valka"
+  },
+  "LV-0429300": {
+    "domain": "vecpiebalga.lv",
+    "reason": "Vecpiebalgas novads — nom: Vecpiebalga"
+  },
+  "LV-0409500": {
+    "domain": "vecumnieki.lv",
+    "reason": "Vecumnieku novads — nom: Vecumnieki"
+  },
+  "LV-0801800": {
+    "domain": "incukalns.lv",
+    "reason": "Inčukalna novads — nom: Inčukalns"
+  },
+  "LV-0381600": {
+    "domain": "vilaka.lv",
+    "reason": "Viļakas novads — nom: Viļaka"
+  },
+  "LV-0781800": {
+    "domain": "vilani.lv",
+    "reason": "Viļānu novads — nom: Viļāni"
+  },
+  "LV-0769101": {
+    "domain": "varkava.lv",
+    "reason": "Vārkavas novads — nom: Vārkava"
+  },
+  "LV-0681801": {
+    "domain": "zilupe.lv",
+    "reason": "Zilupes novads — nom: Zilupe"
+  },
+  "LV-0705500": {
+    "domain": "ergli.lv",
+    "reason": "Ērgļu novads — nom: Ērgļi"
+  },
+  "_todo_LV-0360800": "Apes novads — no working domain found",
+  "_todo_LV-0964700": "Beverīnas novads — no working domain found",
+  "_todo_LV-0684901": "Ciblas novads — no working domain found",
+  "_todo_LV-0321000": "Jaunjelgavas novads — no working domain found (may have merged)",
+  "_todo_LV-0967300": "Naukšēnu novads — no working domain found",
+  "_todo_LV-0321400": "Pļaviņu novads — no working domain found",
+  "_todo_LV-0740202": "Ogres novads — ogres.lv already in direct list"
 }

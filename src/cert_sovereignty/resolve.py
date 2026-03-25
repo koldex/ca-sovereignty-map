@@ -148,6 +148,32 @@ _BALTIC_SUFFIX_PATTERNS: dict[str, list[str]] = {
     ],
 }
 
+# Latvian genitive endings and their nominative equivalents.
+# GISCO stores municipality names in genitive compound form ('Kuldīgas novads')
+# but websites use the nominative ('kuldiga.lv').
+_LV_GENITIVE_TO_NOMINATIVE: list[tuple[str, str]] = [
+    ("as", "a"),   # Bauska→Bauskas, Kuldīga→Kuldīgas
+    ("es", "e"),   # Dobele→Dobeles, Aizkraukle→Aizkraukles
+    ("u",  "i"),  # Brocēni→Brocēnu, Tukums→ (special below)
+    ("a",  "s"),  # Tukums gen=Tukuma: Tukuma→Tukums
+]
+
+
+def _lv_nominative_slugs(genitive_slug: str) -> list[str]:
+    """Generate plausible nominative slug variants from a Latvian genitive slug.
+
+    This converts domain slugs derived from GISCO genitive-case names back to
+    nominative forms used in actual .lv domains.
+    E.g. 'kuldigas' (gen of Kuldīga) → 'kuldiga' → kuldiga.lv
+    E.g. 'brocenu'  (gen of Brocēni) → 'broceni' → broceni.lv
+    """
+    results = [genitive_slug]
+    g = genitive_slug
+    for suffix, replacement in _LV_GENITIVE_TO_NOMINATIVE:
+        if g.endswith(suffix) and len(g) > len(suffix) + 1:
+            results.append(g[: -len(suffix)] + replacement)
+    return results
+
 
 def _strip_baltic_suffixes(name: str, country: str) -> str:
     """Remove trailing administrative-type suffixes from Baltic municipality names."""
@@ -213,11 +239,12 @@ def guess_domains(name: str, country: str, region: str = "") -> list[str]:
             add(f"www.{slug}.ee")
 
         elif country == "LV":
-            # Latvian: {name}.lv (e.g. riga.lv, jelgava.lv)
-            add(f"{slug}.lv")
-            add(f"www.{slug}.lv")
-            # Some rural municipalities: {name}.novads.lv
-            add(f"{slug}.novads.lv")
+            # Latvian: {name}.lv
+            # GISCO names use genitive case — try all nominative transformations
+            for nom_slug in _lv_nominative_slugs(slug):
+                add(f"{nom_slug}.lv")
+                add(f"www.{nom_slug}.lv")
+            # Note: novads.lv is in SKIP_DOMAINS (parked by DomainParking.ru)
 
         elif country == "LT":
             # Lithuanian: municipalities = savivaldybės
