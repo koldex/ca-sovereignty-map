@@ -308,7 +308,14 @@ Municipality IDs follow the format `{COUNTRY}-{LAU_ID}` matching the GISCO LAU 2
 
 ## Licence
 
-MIT or EUPL-1.2 — to be decided.
+[EUPL-1.2](LICENCE) — European Union Public Licence v. 1.2
+
+Chosen because this project is rooted in European digital sovereignty. The EUPL-1.2
+is the EU Commission's own open source licence, with a weak copyleft that ensures
+modifications remain open. It is compatible with GPL, AGPL, MPL, MIT (as a dependency)
+and available in all official EU languages including Finnish, Swedish, Estonian, Latvian,
+Lithuanian and Danish. See [joinup.ec.europa.eu](https://joinup.ec.europa.eu/collection/eupl)
+for the official text in all 23 EU languages.
 
 ## Attribution
 

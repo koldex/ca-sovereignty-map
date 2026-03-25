@@ -5,8 +5,9 @@ build-backend = "hatchling.build"
 [project]
 name = "camap-nordics"
 version = "0.1.0"
-description = "Interactive map showing CA sovereignty of Nordic municipalities"
+description = "Interactive map showing CA sovereignty of Nordic and Baltic municipalities"
 readme = "README.md"
+license = { text = "EUPL-1.2" }
 requires-python = ">=3.12"
 dependencies = [
     "dnspython>=2.8.0",
