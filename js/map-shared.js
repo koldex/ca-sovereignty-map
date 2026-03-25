@@ -4,20 +4,25 @@
  */
 'use strict';
 
+// Three confidence tiers per category:
+//   high  (conf ≥75%)  — strong colour
+//   medium(50–74%)   — lighter shade
+//   low   (<50%)     — pale tint of the same hue (NOT grey — municipality IS classified)
+// 'unknown' and 'no-data' use neutral greys only.
 const COLOR_SCHEMES = {
   default: {
-    'us-controlled': { high: '#e74c3c', medium: '#f1948a', low: '#dddddd' },
-    'eu-controlled': { high: '#3498db', medium: '#85c1e9', low: '#dddddd' },
-    'nordic':        { high: '#2ecc71', medium: '#82e0aa', low: '#dddddd' },
-    'allied':        { high: '#f39c12', medium: '#f8c471', low: '#dddddd' },
+    'us-controlled': { high: '#e74c3c', medium: '#f1948a', low: '#fadbd8' },
+    'eu-controlled': { high: '#3498db', medium: '#85c1e9', low: '#d6eaf8' },
+    'nordic':        { high: '#2ecc71', medium: '#82e0aa', low: '#d5f5e3' },
+    'allied':        { high: '#f39c12', medium: '#f8c471', low: '#fdebd0' },
     'unknown':       { high: '#aaaaaa', medium: '#cccccc', low: '#eeeeee' },
     lake: '#89B3D6',
   },
   colorblind: {
-    'us-controlled': { high: '#d55e00', medium: '#f0b27a', low: '#dddddd' },
-    'eu-controlled': { high: '#0072b2', medium: '#7fb3d8', low: '#dddddd' },
-    'nordic':        { high: '#009e73', medium: '#7fceab', low: '#dddddd' },
-    'allied':        { high: '#e69f00', medium: '#f2ce7e', low: '#dddddd' },
+    'us-controlled': { high: '#d55e00', medium: '#f0b27a', low: '#fad7c3' },
+    'eu-controlled': { high: '#0072b2', medium: '#7fb3d8', low: '#cde5f5' },
+    'nordic':        { high: '#009e73', medium: '#7fceab', low: '#c8edd8' },
+    'allied':        { high: '#e69f00', medium: '#f2ce7e', low: '#faecc5' },
     'unknown':       { high: '#aaaaaa', medium: '#cccccc', low: '#eeeeee' },
     lake: '#c4afff',
   },

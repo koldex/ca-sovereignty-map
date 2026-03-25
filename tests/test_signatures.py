@@ -23,6 +23,19 @@ def test_match_patterns_empty() -> None:
     assert match_patterns("", ()) is False
 
 
+def test_match_patterns_short_exact_match_only() -> None:
+    """Short patterns (≤4 chars) must NOT match as substring inside longer strings."""
+    # 'R4' is a Let's Encrypt intermediate CN—must NOT match inside 'Root R46' (Sectigo)
+    assert match_patterns("Sectigo Public Server Authentication Root R46", ("R4",)) is False
+    # But it MUST still match when the value IS exactly 'R4'
+    assert match_patterns("R4", ("R4",)) is True
+    # 'R10' is long enough for substring matching
+    assert match_patterns("Let's Encrypt R10", ("R10",)) is False  # R10 is ≤4 chars, exact only
+    assert match_patterns("R10", ("R10",)) is True
+    # Longer pattern still uses substring
+    assert match_patterns("HARICA TLS RSA Root CA 2021", ("HARICA TLS",)) is True
+
+
 def test_signatures_not_empty() -> None:
     assert len(SIGNATURES) > 5
 

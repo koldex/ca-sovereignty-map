@@ -38,14 +38,26 @@ class CASignature(BaseModel):
 
 
 def match_patterns(value: str, patterns: tuple[str, ...] | list[str]) -> bool:
-    """Case-insensitive substring match of value against any pattern.
+    """Case-insensitive match of value against any pattern.
 
-    Reused directly from mxmap's match_patterns().
+    Short patterns (≤4 chars, e.g. Let's Encrypt intermediates 'R3', 'R4',
+    'E1') require an exact match to prevent false positives such as 'R4'
+    matching as a substring of 'Sectigo Public Server Authentication Root R46'.
+    Longer patterns use substring matching as before (cf. mxmap).
     """
     if not value or not patterns:
         return False
     lower = value.lower()
-    return any(p.lower() in lower for p in patterns)
+    for p in patterns:
+        p_lower = p.lower()
+        if len(p_lower) <= 4:
+            # Short code: must match the entire value exactly
+            if lower == p_lower:
+                return True
+        else:
+            if p_lower in lower:
+                return True
+    return False
 
 
 # ── CA Signature Database ─────────────────────────────────────────────────────
@@ -185,7 +197,13 @@ SIGNATURES: list[CASignature] = [
         parent_company="Entrust Corporation",
         cloud_act_subject=True,
         issuer_org_patterns=("Entrust",),
-        issuer_cn_patterns=("Entrust Root", "Entrust Certification"),
+        issuer_cn_patterns=(
+            "Entrust Root",
+            "Entrust Certification",
+            # Entrust OV TLS and DV TLS issuing CAs (Rovaniemi uses this)
+            "Entrust OV TLS",
+            "Entrust DV TLS",
+        ),
         caa_values=("entrust.net",),
         notes="Chrome/Firefox restricted trust from 2024 onwards.",
     ),
@@ -249,7 +267,13 @@ SIGNATURES: list[CASignature] = [
         parent_company="Hellenic Academic and Research Institutions CA",
         cloud_act_subject=False,
         issuer_org_patterns=("HARICA",),
-        issuer_cn_patterns=("HARICA TLS RSA Root", "HARICA TLS ECC Root"),
+        issuer_cn_patterns=(
+            "HARICA TLS RSA Root",
+            "HARICA TLS ECC Root",
+            # GÉANT TLS issuing CAs chain up to HARICA as the root CA.
+            # 'GEANT TLS RSA 1', 'GEANT TLS ECC 1', etc.
+            "GEANT TLS",
+        ),
         caa_values=("harica.gr",),
     ),
     CASignature(

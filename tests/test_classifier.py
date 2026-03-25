@@ -61,9 +61,23 @@ def test_rule_confidence_leaf_inter_root() -> None:
     assert _rule_confidence(ev) == 0.95
 
 
+def test_rule_confidence_inter_root() -> None:
+    """inter_root rule covers academic chains (e.g. HARICA/GÉANT for Oulu)."""
+    ev = [
+        make_evidence(SignalKind.INTERMEDIATE_ISSUER, "X", 0.25),
+        make_evidence(SignalKind.ROOT_CA, "X", 0.15),
+    ]
+    assert _rule_confidence(ev) == 0.85
+
+
 def test_rule_confidence_leaf_only() -> None:
     ev = [make_evidence(SignalKind.LEAF_ISSUER, "X", 0.35)]
     assert _rule_confidence(ev) == 0.75
+
+
+def test_rule_confidence_inter_only() -> None:
+    ev = [make_evidence(SignalKind.INTERMEDIATE_ISSUER, "X", 0.25)]
+    assert _rule_confidence(ev) == 0.65
 
 
 def test_rule_confidence_empty() -> None:

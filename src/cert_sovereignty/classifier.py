@@ -43,9 +43,15 @@ _CA_RULES: tuple[_Rule, ...] = (
     _Rule("leaf_inter", frozenset({_S.LEAF_ISSUER, _S.INTERMEDIATE_ISSUER}), 0.90),
     _Rule("leaf_caa", frozenset({_S.LEAF_ISSUER, _S.CAA_RECORD}), 0.85),
     _Rule("leaf_ct", frozenset({_S.LEAF_ISSUER, _S.CT_LOG}), 0.80),
+    # 2 signals without leaf — e.g. academic chains where the leaf issuing CA
+    # is not yet in our DB but both intermediate and root are (Oulu/HARICA/GÉANT)
+    _Rule("inter_root", frozenset({_S.INTERMEDIATE_ISSUER, _S.ROOT_CA}), 0.85),
+    _Rule("inter_caa", frozenset({_S.INTERMEDIATE_ISSUER, _S.CAA_RECORD}), 0.80),
     # 1 signal
     _Rule("leaf_only", frozenset({_S.LEAF_ISSUER}), 0.75),
+    _Rule("inter_only", frozenset({_S.INTERMEDIATE_ISSUER}), 0.65),
     _Rule("caa_only", frozenset({_S.CAA_RECORD}), 0.50),
+    _Rule("root_only", frozenset({_S.ROOT_CA}), 0.50),
     _Rule("fallback", frozenset(), 0.30),
 )
 
