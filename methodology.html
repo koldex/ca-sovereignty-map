@@ -22,13 +22,47 @@
     <p>
       A TLS certificate authority (CA) can in principle revoke a certificate it has issued,
       or refuse to renew it. This is called the <strong>kill-switch risk</strong>. Nordic
-      municipal websites largely depend on US-based CA services that are subject to the US
-      CLOUD Act, creating a potential single point of failure for public digital infrastructure.
+      and Baltic municipal websites largely depend on US-based CA services that are subject to
+      the US CLOUD Act, creating a potential single point of failure for public digital infrastructure.
     </p>
     <p>
       This project is inspired by <a href="https://mxmap.ch" target="_blank">mxmap.ch</a>
       (David Huser) and its Dutch counterpart <a href="https://mxmap.nl" target="_blank">mxmap.nl</a>.
       Where those projects map email providers, this one maps <strong>TLS certificate authorities</strong>.
+    </p>
+
+    <h2>Demonstrative Purpose</h2>
+    <div class="popup-notice notice-shared" style="margin-bottom:16px">
+      <strong>This application is a demonstration tool, not an operational risk assessment.</strong>
+    </div>
+    <p>
+      Municipal <em>public websites</em> are rarely mission-critical in themselves. An outage
+      on a municipal homepage is an inconvenience; it does not stop an ambulance, disable a
+      water treatment plant or block a hospital’s patient records system.
+    </p>
+    <p>
+      The real significance of this map lies in what it <strong>suggests</strong>: the CA
+      choices visible on public-facing websites are a reliable proxy for the procurement
+      and infrastructure practices of the same organisations. Municipalities that rely on
+      US-controlled certificate authorities for their public websites very likely apply the
+      same procurement patterns across their <strong>internal systems</strong> — including
+      IT infrastructure used by hospitals, emergency dispatch, social services and utilities.
+      Those systems typically share the same cloud vendors, the same managed DNS providers
+      and, consequently, the same certificate authorities.
+    </p>
+    <p>
+      The US CLOUD Act grants American authorities the power to compel any US-headquartered
+      company to produce data or — in the case of a CA — to revoke or withhold certificates,
+      regardless of where the data or service is physically located. A municipality that has
+      unknowingly embedded US-controlled PKI throughout its infrastructure has created a
+      structural dependency that could, in an extreme scenario, be leveraged against the
+      continuity of its services.
+    </p>
+    <p>
+      This map is therefore an invitation to ask the question:
+      <em>if our public website certificate is US-controlled, what else is?</em>
+      It is a starting point for a broader audit of digital sovereignty in the public sector,
+      not a complete picture of operational risk.
     </p>
 
     <h2>Coverage</h2>

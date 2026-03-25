@@ -10,6 +10,34 @@ Live: **https://koldex.github.io/ca-sovereignty-map/**
 
 ---
 
+## Demonstrative purpose
+
+> **This application is a demonstration tool, not an operational risk assessment.**
+
+Municipal public websites are rarely mission-critical. An outage on `espoo.fi` is an
+inconvenience; it does not stop an ambulance, disable a water treatment plant or block a
+hospital's patient records system.
+
+The real significance of this map lies in what it *suggests*: **the CA choices visible on
+public-facing websites are a reliable proxy for the procurement and infrastructure practices
+of the same organisations.** Municipalities that rely on US-controlled certificate authorities
+for their public websites very likely apply the same procurement patterns across their internal
+systems — including IT infrastructure used by hospitals, emergency dispatch, social services and
+utilities. Those systems often share the same cloud vendors, the same managed DNS providers and,
+consequently, the same certificate authorities.
+
+The US CLOUD Act grants American authorities the power to compel any US-headquartered company
+to produce data or — in the case of a CA — to revoke or withhold certificates, regardless of
+where the data or service is physically located. A municipality that has unknowingly embedded
+US-controlled PKI throughout its infrastructure has created a structural dependency that could,
+in an extreme scenario, be leveraged against the continuity of its services.
+
+This map is an invitation to ask the question: if our public website certificate is US-controlled,
+what else is? It is a starting point for a broader audit of digital sovereignty in the public
+sector.
+
+---
+
 ## What it shows
 
 A certificate authority (CA) that has issued a TLS certificate can revoke it or refuse to
