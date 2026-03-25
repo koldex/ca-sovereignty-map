@@ -1,15 +1,15 @@
 {
-  "generated": "2026-03-24T22:07:49.849727+00:00",
+  "generated": "2026-03-25T04:28:06.677575+00:00",
   "commit": "",
   "scan_method": "asyncio_ssl",
   "total": 884,
   "counts": {
     "us-controlled": 693,
-    "eu-controlled": 69,
+    "eu-controlled": 67,
     "nordic": 41,
     "allied": 0,
-    "http_only": 39,
-    "unknown": 42
+    "http_only": 33,
+    "unknown": 50
   },
   "municipalities": {
     "DK-101": {
@@ -130,7 +130,7 @@
       "jurisdiction": "us",
       "risk_level": "high",
       "category": "us-controlled",
-      "classification_confidence": 75.0,
+      "classification_confidence": 80.0,
       "cert_chain": [
         {
           "position": 0,
@@ -191,7 +191,12 @@
         }
       ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=US, O=Let's Encrypt, CN=R13",
+        "C=US, O=Let's Encrypt, CN=R12",
+        "C=US, O=Let's Encrypt, CN=E7",
+        "C=US, O=Let's Encrypt, CN=E8"
+      ],
       "tls_info": {
         "tls_version": "TLSv1.3",
         "verification": "OK"
@@ -208,6 +213,30 @@
           "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.15,
           "detail": "root_ca: root_cn=ISRG Root X1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R13 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R12 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E7 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E8 → Let's Encrypt (ISRG)"
         }
       ],
       "cert_mismatch": false,
@@ -884,7 +913,14 @@
         }
       ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=US, O=Let's Encrypt, CN=E8",
+        "C=US, O=Let's Encrypt, CN=E7",
+        "C=US, O=Let's Encrypt, CN=R12",
+        "C=US, O=SSL Corporation, CN=Cloudflare TLS Issuing ECC CA 3",
+        "C=US, O=SSL Corporation, CN=Cloudflare TLS Issuing RSA CA 3",
+        "C=US, O=Let's Encrypt, CN=R13"
+      ],
       "tls_info": {
         "tls_version": "TLSv1.3",
         "verification": "OK"
@@ -913,6 +949,42 @@
           "ca_name": "SSL.com",
           "weight": 0.15,
           "detail": "root_ca: issuer_org=SSL Corporation → SSL.com"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E8 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E7 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R12 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Cloudflare",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=SSL Corporation, CN=Cloudflare TLS Issuing ECC CA 3 → Cloudflare"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Cloudflare",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=SSL Corporation, CN=Cloudflare TLS Issuing RSA CA 3 → Cloudflare"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R13 → Let's Encrypt (ISRG)"
         }
       ],
       "cert_mismatch": false,
@@ -1314,7 +1386,9 @@
         }
       ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=US, O=Let's Encrypt, CN=R3"
+      ],
       "tls_info": {
         "tls_version": "TLSv1.3",
         "verification": "OK"
@@ -1355,6 +1429,12 @@
           "ca_name": "Google Trust Services",
           "weight": 0.15,
           "detail": "root_ca: issuer_org=Google Trust Services LLC, issuer_cn=GTS Root R4 → Google Trust Services"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R3 → Let's Encrypt (ISRG)"
         }
       ],
       "cert_mismatch": false,
@@ -1919,7 +1999,7 @@
       "jurisdiction": "us",
       "risk_level": "high",
       "category": "us-controlled",
-      "classification_confidence": 75.0,
+      "classification_confidence": 80.0,
       "cert_chain": [
         {
           "position": 0,
@@ -1980,7 +2060,12 @@
         }
       ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=US, O=Let's Encrypt, CN=R13",
+        "C=US, O=Let's Encrypt, CN=R12",
+        "C=US, O=Let's Encrypt, CN=E8",
+        "C=US, O=Let's Encrypt, CN=E7"
+      ],
       "tls_info": {
         "tls_version": "TLSv1.3",
         "verification": "OK"
@@ -1997,6 +2082,30 @@
           "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.15,
           "detail": "root_ca: root_cn=ISRG Root X1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R13 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R12 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E8 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E7 → Let's Encrypt (ISRG)"
         }
       ],
       "cert_mismatch": false,
@@ -2016,27 +2125,162 @@
       "domain": "egedal.dk",
       "scanned_domain": "",
       "population": 43696,
-      "primary_ca": "Unknown",
-      "ca_owner": "",
-      "ca_country": "",
-      "jurisdiction": "other",
-      "risk_level": "medium",
-      "category": "unknown",
-      "classification_confidence": 0.0,
-      "cert_chain": [],
+      "primary_ca": "Let's Encrypt (ISRG)",
+      "ca_owner": "Internet Security Research Group",
+      "ca_country": "US",
+      "jurisdiction": "us",
+      "risk_level": "high",
+      "category": "us-controlled",
+      "classification_confidence": 80.0,
+      "cert_chain": [
+        {
+          "position": 0,
+          "cert_type": "leaf",
+          "subject_cn": "egedal.dk",
+          "subject_org": "",
+          "subject_country": "",
+          "issuer_cn": "R12",
+          "issuer_org": "Let's Encrypt",
+          "issuer_country": "US",
+          "not_before": "2026-02-05T12:43:02+00:00",
+          "not_after": "2026-05-06T12:43:01+00:00",
+          "serial_hex": "0x64d6fe37d3190dce9b2185c9f66bee791f2",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "703736DFB4A8F59C6BF675E612F75DD1987D48D9F017AF258C8DEC869D5E8DAF",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
+        },
+        {
+          "position": 1,
+          "cert_type": "intermediate",
+          "subject_cn": "R12",
+          "subject_org": "Let's Encrypt",
+          "subject_country": "US",
+          "issuer_cn": "ISRG Root X1",
+          "issuer_org": "Internet Security Research Group",
+          "issuer_country": "US",
+          "not_before": "2024-03-13T00:00:00+00:00",
+          "not_after": "2027-03-12T23:59:59+00:00",
+          "serial_hex": "0xc212324b70a9b49171dc40f7e285263c",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "131FCE7784016899A5A00203A9EFC80F18EBBD75580717EDC1553580930836EC",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "ISRG Root X1",
+          "subject_org": "Internet Security Research Group",
+          "subject_country": "US",
+          "issuer_cn": "ISRG Root X1",
+          "issuer_org": "Internet Security Research Group",
+          "issuer_country": "US",
+          "not_before": "2015-06-04T11:04:38+00:00",
+          "not_after": "2035-06-04T11:04:38+00:00",
+          "serial_hex": "0x8210cfb0d240e3594463e0bb63828b00",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "96BCEC06264976F37460779ACF28C5A7CFE8A3C0AAE11A8FFCEE05C0BDDF08C6",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
+        }
+      ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV E36",
+        "C=US, O=Let's Encrypt, CN=R12",
+        "C=US, O=Google Trust Services, CN=WE1",
+        "C=US, O=\"CLOUDFLARE, INC.\", CN=Cloudflare TLS Issuing RSA CA 1",
+        "C=US, O=Let's Encrypt, CN=R13",
+        "C=US, O=\"CLOUDFLARE, INC.\", CN=Cloudflare TLS Issuing ECC CA 1",
+        "C=US, O=Let's Encrypt, CN=R11",
+        "C=US, O=Let's Encrypt, CN=R10",
+        "C=US, O=Let's Encrypt, CN=R3"
+      ],
       "tls_info": {
-        "tls_version": "",
-        "verification": ""
+        "tls_version": "TLSv1.3",
+        "verification": "OK"
       },
-      "classification_signals": [],
+      "classification_signals": [
+        {
+          "kind": "leaf_issuer",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.35,
+          "detail": "leaf_issuer: issuer_org=Let's Encrypt → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.15,
+          "detail": "root_ca: root_cn=ISRG Root X1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Sectigo (Comodo)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV E36 → Sectigo (Comodo)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R12 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Google Trust Services, CN=WE1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Cloudflare",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=\"CLOUDFLARE, INC.\", CN=Cloudflare TLS Issuing RSA CA 1 → Cloudflare"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R13 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Cloudflare",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=\"CLOUDFLARE, INC.\", CN=Cloudflare TLS Issuing ECC CA 1 → Cloudflare"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R11 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R10 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R3 → Let's Encrypt (ISRG)"
+        }
+      ],
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "",
-      "error_category": "timeout",
-      "error": "Connection timeout (15s)",
+      "shared_cert_fingerprint": "703736DFB4A8F59C6BF675E612F75DD1987D48D9F017AF258C8DEC869D5E8DAF",
+      "error_category": "",
+      "error": null,
       "scan_timestamp": ""
     },
     "DK-250": {
@@ -2163,7 +2407,7 @@
       "jurisdiction": "us",
       "risk_level": "high",
       "category": "us-controlled",
-      "classification_confidence": 75.0,
+      "classification_confidence": 80.0,
       "cert_chain": [
         {
           "position": 0,
@@ -2224,7 +2468,14 @@
         }
       ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=US, O=Let's Encrypt, CN=R12",
+        "C=US, O=Let's Encrypt, CN=R13",
+        "C=US, O=Let's Encrypt, CN=E8",
+        "C=US, O=Let's Encrypt, CN=E7",
+        "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=RapidSSL TLS RSA CA G1",
+        "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=Thawte TLS RSA CA G1"
+      ],
       "tls_info": {
         "tls_version": "TLSv1.3",
         "verification": "OK"
@@ -2241,6 +2492,42 @@
           "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.15,
           "detail": "root_ca: root_cn=ISRG Root X1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R12 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R13 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E8 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E7 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "DigiCert",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=RapidSSL TLS RSA CA G1 → DigiCert"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "DigiCert",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=Thawte TLS RSA CA G1 → DigiCert"
         }
       ],
       "cert_mismatch": false,
@@ -2489,11 +2776,11 @@
           "issuer_cn": "R12",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-02-02T14:10:48+00:00",
-          "not_after": "2026-05-03T14:10:47+00:00",
-          "serial_hex": "0x6a631d3cbc08ac7e047b48c1a9cd7b03f4c",
+          "not_before": "2026-02-06T08:22:12+00:00",
+          "not_after": "2026-05-07T08:22:11+00:00",
+          "serial_hex": "0x62df1cda172f51338e7d6e96b864a45522f",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "1F6612F56FAF745334143371A4129DE54049F9BDA43548347699708F6C2E99AF",
+          "sha256_fingerprint": "5330B9FF5A7497E7C81D4FB72FC0BAE6086B11EB8C55BC7D40D9299263671BC6",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -2561,7 +2848,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "1F6612F56FAF745334143371A4129DE54049F9BDA43548347699708F6C2E99AF",
+      "shared_cert_fingerprint": "5330B9FF5A7497E7C81D4FB72FC0BAE6086B11EB8C55BC7D40D9299263671BC6",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -2581,7 +2868,7 @@
       "jurisdiction": "us",
       "risk_level": "high",
       "category": "us-controlled",
-      "classification_confidence": 75.0,
+      "classification_confidence": 80.0,
       "cert_chain": [
         {
           "position": 0,
@@ -2642,7 +2929,15 @@
         }
       ],
       "caa_records": [],
-      "ct_issuers": [],
+      "ct_issuers": [
+        "C=US, O=Google Trust Services, CN=WE1",
+        "C=US, O=Google Trust Services, CN=WR1",
+        "C=US, O=Let's Encrypt, CN=E8",
+        "C=US, O=Let's Encrypt, CN=R12",
+        "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1",
+        "C=US, O=Let's Encrypt, CN=R13",
+        "C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 DV TLS CA 2020"
+      ],
       "tls_info": {
         "tls_version": "TLSv1.3",
         "verification": "OK"
@@ -2659,6 +2954,48 @@
           "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.15,
           "detail": "root_ca: root_cn=ISRG Root X1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Google Trust Services, CN=WE1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Google Trust Services",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Google Trust Services, CN=WR1 → Google Trust Services"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=E8 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R12 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "DigiCert",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust TLS RSA CA G1 → DigiCert"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=US, O=Let's Encrypt, CN=R13 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "ct_log",
+          "ca_name": "Let's Encrypt (ISRG)",
+          "weight": 0.08,
+          "detail": "CT log issuer: C=BE, O=GlobalSign nv-sa, CN=GlobalSign GCC R3 DV TLS CA 2020 → Let's Encrypt (ISRG)"
         }
       ],
       "cert_mismatch": false,
@@ -2798,11 +3135,11 @@
           "issuer_cn": "R12",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-02-17T06:45:22+00:00",
-          "not_after": "2026-05-18T06:45:21+00:00",
-          "serial_hex": "0x633e5f365b03e62d4c51d37d39dd2c2a76f",
+          "not_before": "2026-02-02T14:02:20+00:00",
+          "not_after": "2026-05-03T14:02:19+00:00",
+          "serial_hex": "0x6b84e17c624b2ecd1f697cde079d52b7856",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "109340305915375B51052A16AE0C1A15F7167094A065650DDFE3E4538CA4ED53",
+          "sha256_fingerprint": "79D59D75CA656FC276C24BEFE20018FCBDCFBB8DC807E8BF0B23CD01B89C18F7",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -2870,7 +3207,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "109340305915375B51052A16AE0C1A15F7167094A065650DDFE3E4538CA4ED53",
+      "shared_cert_fingerprint": "79D59D75CA656FC276C24BEFE20018FCBDCFBB8DC807E8BF0B23CD01B89C18F7",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -3168,14 +3505,14 @@
           "subject_cn": "slagelse.dk",
           "subject_org": "",
           "subject_country": "",
-          "issuer_cn": "R12",
+          "issuer_cn": "R13",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-02-02T14:15:19+00:00",
-          "not_after": "2026-05-03T14:15:18+00:00",
-          "serial_hex": "0x635c40419d100210511b51878f55ca3517b",
+          "not_before": "2026-02-10T08:06:44+00:00",
+          "not_after": "2026-05-11T08:06:43+00:00",
+          "serial_hex": "0x5600a08910ee6c13a067502078793f73b5b",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "B7B435FF5DE1B244FFBF7825C251456F6FCB46C9770161961BD7392F45439209",
+          "sha256_fingerprint": "9DACE3A81677AF1B1735E05A5870921B9C935B4F0D5C14CF05A85D6570ACD35C",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -3184,7 +3521,7 @@
         {
           "position": 1,
           "cert_type": "intermediate",
-          "subject_cn": "R12",
+          "subject_cn": "R13",
           "subject_org": "Let's Encrypt",
           "subject_country": "US",
           "issuer_cn": "ISRG Root X1",
@@ -3192,9 +3529,9 @@
           "issuer_country": "US",
           "not_before": "2024-03-13T00:00:00+00:00",
           "not_after": "2027-03-12T23:59:59+00:00",
-          "serial_hex": "0xc212324b70a9b49171dc40f7e285263c",
+          "serial_hex": "0x5a00f212d8d4b480f3924157ea298305",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "131FCE7784016899A5A00203A9EFC80F18EBBD75580717EDC1553580930836EC",
+          "sha256_fingerprint": "D3B128216A843F8EF1321501F5DF52A5DF52939EE2C19297712CD3DE4D419354",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -3243,7 +3580,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "B7B435FF5DE1B244FFBF7825C251456F6FCB46C9770161961BD7392F45439209",
+      "shared_cert_fingerprint": "9DACE3A81677AF1B1735E05A5870921B9C935B4F0D5C14CF05A85D6570ACD35C",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -4590,11 +4927,11 @@
           "issuer_cn": "R13",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-03-11T12:01:01+00:00",
-          "not_after": "2026-06-09T12:01:00+00:00",
-          "serial_hex": "0x5e003df019d9b69ce36cb8864f1d63e1f12",
+          "not_before": "2026-02-02T16:19:12+00:00",
+          "not_after": "2026-05-03T16:19:11+00:00",
+          "serial_hex": "0x61ba0334dd8777299da186c3d9682235710",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "B8FB226C050C4F1630698A6E8E1F1FCAABE607661CF873AE634A22102DC10A72",
+          "sha256_fingerprint": "59D3DF9375C2DBF900BC3DEE51E258239BB20E85FD2041DA11B5BDE4F731B93C",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -4662,7 +4999,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "B8FB226C050C4F1630698A6E8E1F1FCAABE607661CF873AE634A22102DC10A72",
+      "shared_cert_fingerprint": "59D3DF9375C2DBF900BC3DEE51E258239BB20E85FD2041DA11B5BDE4F731B93C",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -6262,14 +6599,14 @@
           "subject_cn": "vejle.dk",
           "subject_org": "",
           "subject_country": "",
-          "issuer_cn": "R12",
+          "issuer_cn": "R13",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-03-05T11:46:12+00:00",
-          "not_after": "2026-06-03T11:46:11+00:00",
-          "serial_hex": "0x54c978ca646573d67067a882455c5377b14",
+          "not_before": "2026-02-02T14:41:29+00:00",
+          "not_after": "2026-05-03T14:41:28+00:00",
+          "serial_hex": "0x6b9fc6fe7039c962416450c21f2f064e2ed",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "3C0FF17668E4ABB1D9651BA39B36FF3FD5C6BFCA8539DFE30F01DC6DFD9FC061",
+          "sha256_fingerprint": "867B7E656DD2574A6FDD248CB5D65B903859E9C7FF0BD63B2C66A435F47A6C06",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -6278,7 +6615,7 @@
         {
           "position": 1,
           "cert_type": "intermediate",
-          "subject_cn": "R12",
+          "subject_cn": "R13",
           "subject_org": "Let's Encrypt",
           "subject_country": "US",
           "issuer_cn": "ISRG Root X1",
@@ -6286,9 +6623,9 @@
           "issuer_country": "US",
           "not_before": "2024-03-13T00:00:00+00:00",
           "not_after": "2027-03-12T23:59:59+00:00",
-          "serial_hex": "0xc212324b70a9b49171dc40f7e285263c",
+          "serial_hex": "0x5a00f212d8d4b480f3924157ea298305",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "131FCE7784016899A5A00203A9EFC80F18EBBD75580717EDC1553580930836EC",
+          "sha256_fingerprint": "D3B128216A843F8EF1321501F5DF52A5DF52939EE2C19297712CD3DE4D419354",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -6337,7 +6674,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "3C0FF17668E4ABB1D9651BA39B36FF3FD5C6BFCA8539DFE30F01DC6DFD9FC061",
+      "shared_cert_fingerprint": "867B7E656DD2574A6FDD248CB5D65B903859E9C7FF0BD63B2C66A435F47A6C06",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -7879,7 +8216,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "ssl_error",
-      "error": "SSL error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1081)",
+      "error": "SSL error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "DK-766": {
@@ -9112,14 +9449,14 @@
           "subject_cn": "aalborg.dk",
           "subject_org": "",
           "subject_country": "",
-          "issuer_cn": "R12",
+          "issuer_cn": "R13",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-02-02T16:11:31+00:00",
-          "not_after": "2026-05-03T16:11:30+00:00",
-          "serial_hex": "0x6ecf00311010b38ecc9651e908490b108da",
+          "not_before": "2026-03-02T07:12:18+00:00",
+          "not_after": "2026-05-31T07:12:17+00:00",
+          "serial_hex": "0x5b76dcf58578d2510b66e9874a7334645c4",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "17E09EFA09282F4E7BE462469AC5FF4C449A3904FAC35BFC3F4ABD7BB359B356",
+          "sha256_fingerprint": "2EE33ADF1A9D04D47E2A20B829FDFEA61D85115D52A2596F9A99C383A8B32A9E",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -9128,7 +9465,7 @@
         {
           "position": 1,
           "cert_type": "intermediate",
-          "subject_cn": "R12",
+          "subject_cn": "R13",
           "subject_org": "Let's Encrypt",
           "subject_country": "US",
           "issuer_cn": "ISRG Root X1",
@@ -9136,9 +9473,9 @@
           "issuer_country": "US",
           "not_before": "2024-03-13T00:00:00+00:00",
           "not_after": "2027-03-12T23:59:59+00:00",
-          "serial_hex": "0xc212324b70a9b49171dc40f7e285263c",
+          "serial_hex": "0x5a00f212d8d4b480f3924157ea298305",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "131FCE7784016899A5A00203A9EFC80F18EBBD75580717EDC1553580930836EC",
+          "sha256_fingerprint": "D3B128216A843F8EF1321501F5DF52A5DF52939EE2C19297712CD3DE4D419354",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -9187,7 +9524,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "17E09EFA09282F4E7BE462469AC5FF4C449A3904FAC35BFC3F4ABD7BB359B356",
+      "shared_cert_fingerprint": "2EE33ADF1A9D04D47E2A20B829FDFEA61D85115D52A2596F9A99C383A8B32A9E",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -9437,7 +9774,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -9476,6 +9813,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -9496,6 +9852,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -10176,8 +10538,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "connection_error",
-      "error": "Connection error: [Errno 51] Connect call failed ('195.74.38.94', 443)",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "FI-046": {
@@ -11005,7 +11367,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -11044,6 +11406,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -11064,6 +11445,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -12250,7 +12637,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -12289,6 +12676,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -12309,6 +12715,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -13002,7 +13414,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -13041,6 +13453,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -13061,6 +13492,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -13395,7 +13832,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -13434,6 +13871,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -13454,6 +13910,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -16562,7 +17024,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -16601,6 +17063,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -16621,6 +17102,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -20937,7 +21424,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -20976,6 +21463,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -20996,6 +21502,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -24698,7 +25210,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -24737,6 +25249,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -24757,6 +25288,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -30092,7 +30629,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -30131,6 +30668,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -30151,6 +30707,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -30310,7 +30872,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -30349,6 +30911,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -30369,6 +30950,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -30818,7 +31405,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -30857,6 +31444,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -30877,6 +31483,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -31659,7 +32271,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -31698,6 +32310,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -31718,6 +32349,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -33493,7 +34130,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -33532,6 +34169,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -33552,6 +34208,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -33680,7 +34342,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -33719,6 +34381,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -33739,6 +34420,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -37943,98 +38630,27 @@
       "domain": "uurainen.fi",
       "scanned_domain": "",
       "population": 3681,
-      "primary_ca": "Let's Encrypt (ISRG)",
-      "ca_owner": "Internet Security Research Group",
-      "ca_country": "US",
-      "jurisdiction": "us",
-      "risk_level": "high",
-      "category": "us-controlled",
-      "classification_confidence": 75.0,
-      "cert_chain": [
-        {
-          "position": 0,
-          "cert_type": "leaf",
-          "subject_cn": "www.uurainen.fi",
-          "subject_org": "",
-          "subject_country": "",
-          "issuer_cn": "R13",
-          "issuer_org": "Let's Encrypt",
-          "issuer_country": "US",
-          "not_before": "2026-03-03T07:52:25+00:00",
-          "not_after": "2026-06-01T07:52:24+00:00",
-          "serial_hex": "0x6a153fbb522cc6868a1dbc281201f66a3e6",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "6440F438829D5FB63D2D1BFA3FA3585B3C8FC15E3440DA1E5C86BE1AE65E701A",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        },
-        {
-          "position": 1,
-          "cert_type": "intermediate",
-          "subject_cn": "R13",
-          "subject_org": "Let's Encrypt",
-          "subject_country": "US",
-          "issuer_cn": "ISRG Root X1",
-          "issuer_org": "Internet Security Research Group",
-          "issuer_country": "US",
-          "not_before": "2024-03-13T00:00:00+00:00",
-          "not_after": "2027-03-12T23:59:59+00:00",
-          "serial_hex": "0x5a00f212d8d4b480f3924157ea298305",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "D3B128216A843F8EF1321501F5DF52A5DF52939EE2C19297712CD3DE4D419354",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        },
-        {
-          "position": 2,
-          "cert_type": "root",
-          "subject_cn": "ISRG Root X1",
-          "subject_org": "Internet Security Research Group",
-          "subject_country": "US",
-          "issuer_cn": "ISRG Root X1",
-          "issuer_org": "Internet Security Research Group",
-          "issuer_country": "US",
-          "not_before": "2015-06-04T11:04:38+00:00",
-          "not_after": "2035-06-04T11:04:38+00:00",
-          "serial_hex": "0x8210cfb0d240e3594463e0bb63828b00",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "96BCEC06264976F37460779ACF28C5A7CFE8A3C0AAE11A8FFCEE05C0BDDF08C6",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        }
-      ],
+      "primary_ca": "Unknown",
+      "ca_owner": "",
+      "ca_country": "",
+      "jurisdiction": "other",
+      "risk_level": "medium",
+      "category": "unknown",
+      "classification_confidence": 0.0,
+      "cert_chain": [],
       "caa_records": [],
       "ct_issuers": [],
       "tls_info": {
-        "tls_version": "TLSv1.3",
-        "verification": "OK"
+        "tls_version": "",
+        "verification": ""
       },
-      "classification_signals": [
-        {
-          "kind": "leaf_issuer",
-          "ca_name": "Let's Encrypt (ISRG)",
-          "weight": 0.35,
-          "detail": "leaf_issuer: issuer_org=Let's Encrypt → Let's Encrypt (ISRG)"
-        },
-        {
-          "kind": "root_ca",
-          "ca_name": "Let's Encrypt (ISRG)",
-          "weight": 0.15,
-          "detail": "root_ca: root_cn=ISRG Root X1 → Let's Encrypt (ISRG)"
-        }
-      ],
+      "classification_signals": [],
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "6440F438829D5FB63D2D1BFA3FA3585B3C8FC15E3440DA1E5C86BE1AE65E701A",
-      "error_category": "",
-      "error": null,
+      "shared_cert_fingerprint": "",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "FI-893": {
@@ -39633,7 +40249,7 @@
       "country": "FI",
       "region": "",
       "domain": "voyri.fi",
-      "scanned_domain": "",
+      "scanned_domain": "www.vora.fi",
       "population": 6461,
       "primary_ca": "Let's Encrypt (ISRG)",
       "ca_owner": "Internet Security Research Group",
@@ -39847,7 +40463,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -39886,6 +40502,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -39906,6 +40541,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -41113,8 +41754,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-1122": {
@@ -41453,7 +42094,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "connection_error",
-      "error": "Connection error: [Errno 61] Connect call failed ('82.134.72.41', 443)",
+      "error": "Connection error: [Errno 111] Connect call failed ('82.134.72.41', 443)",
       "scan_timestamp": ""
     },
     "NO-1151": {
@@ -42404,8 +43045,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "connection_error",
-      "error": "Connection error: [Errno 51] Connect call failed ('185.186.44.140', 443)",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "NO-1563": {
@@ -42436,8 +43077,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "connection_error",
-      "error": "Connection error: [Errno 51] Connect call failed ('185.186.44.140', 443)",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "NO-1576": {
@@ -42873,8 +43514,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-1820": {
@@ -43214,8 +43855,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-1834": {
@@ -43665,7 +44306,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "ssl_error",
-      "error": "SSL error: [SSL: RECORD_LAYER_FAILURE] record layer failure (_ssl.c:1081)",
+      "error": "SSL error: [SSL] record layer failure (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-1856": {
@@ -46700,8 +47341,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-3403": {
@@ -47144,8 +47785,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-3413": {
@@ -47485,8 +48126,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-3420": {
@@ -48173,8 +48814,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "http_only",
-      "error": "http_only",
+      "error_category": "ssl_error",
+      "error": "SSL error: [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-3438": {
@@ -51097,7 +51738,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "ssl_error",
-      "error": "SSL error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1081)",
+      "error": "SSL error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-4601": {
@@ -52903,7 +53544,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "ssl_error",
-      "error": "SSL error: [SSL: RECORD_LAYER_FAILURE] record layer failure (_ssl.c:1081)",
+      "error": "SSL error: [SSL] record layer failure (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-4639": {
@@ -53165,7 +53806,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "ssl_error",
-      "error": "SSL error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1081)",
+      "error": "SSL error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1032)",
       "scan_timestamp": ""
     },
     "NO-4645": {
@@ -53383,6 +54024,38 @@
       "domain": "stad.no",
       "scanned_domain": "",
       "population": 9457,
+      "primary_ca": "Unknown",
+      "ca_owner": "",
+      "ca_country": "",
+      "jurisdiction": "other",
+      "risk_level": "medium",
+      "category": "unknown",
+      "classification_confidence": 0.0,
+      "cert_chain": [],
+      "caa_records": [],
+      "ct_issuers": [],
+      "tls_info": {
+        "tls_version": "",
+        "verification": ""
+      },
+      "classification_signals": [],
+      "cert_mismatch": false,
+      "http_accessible": null,
+      "shared_hosting": false,
+      "shared_cert_fingerprint": "",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
+      "scan_timestamp": ""
+    },
+    "NO-4650": {
+      "id": "NO-4650",
+      "name": "Gloppen",
+      "name_sv": "",
+      "country": "NO",
+      "region": "",
+      "domain": "www.gloppen.no",
+      "scanned_domain": "",
+      "population": 5854,
       "primary_ca": "Let's Encrypt (ISRG)",
       "ca_owner": "Internet Security Research Group",
       "ca_country": "US",
@@ -53394,17 +54067,17 @@
         {
           "position": 0,
           "cert_type": "leaf",
-          "subject_cn": "stad.no",
+          "subject_cn": "www.gloppen.no",
           "subject_org": "",
           "subject_country": "",
-          "issuer_cn": "E8",
+          "issuer_cn": "R12",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-03-14T10:07:43+00:00",
-          "not_after": "2026-06-12T10:07:42+00:00",
-          "serial_hex": "0x67db5e2aa2a7f6a16687306eeff52da4344",
-          "sig_algorithm": "1.2.840.10045.4.3.3",
-          "sha256_fingerprint": "10109FE900A20B6779AE63AB94B88A407C6E6A679AFBCB89BB15A305E3CCE20E",
+          "not_before": "2026-02-01T20:22:03+00:00",
+          "not_after": "2026-05-02T20:22:02+00:00",
+          "serial_hex": "0x6f597ac6e2a0b0286b461557a1e26a50dc5",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "2511E34900E8CBFF9E8DA4A42B86754841C79DE161B950246B30C4DF2240026A",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -53413,7 +54086,7 @@
         {
           "position": 1,
           "cert_type": "intermediate",
-          "subject_cn": "E8",
+          "subject_cn": "R12",
           "subject_org": "Let's Encrypt",
           "subject_country": "US",
           "issuer_cn": "ISRG Root X1",
@@ -53421,9 +54094,9 @@
           "issuer_country": "US",
           "not_before": "2024-03-13T00:00:00+00:00",
           "not_after": "2027-03-12T23:59:59+00:00",
-          "serial_hex": "0x63959363c24e7082715918bfc3d7ed56",
+          "serial_hex": "0xc212324b70a9b49171dc40f7e285263c",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "83624FD338C8D9B023C18A67CB7A9C0519DA43D11775B4C6CBDAD45C3D997C52",
+          "sha256_fingerprint": "131FCE7784016899A5A00203A9EFC80F18EBBD75580717EDC1553580930836EC",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -53472,41 +54145,9 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "10109FE900A20B6779AE63AB94B88A407C6E6A679AFBCB89BB15A305E3CCE20E",
+      "shared_cert_fingerprint": "2511E34900E8CBFF9E8DA4A42B86754841C79DE161B950246B30C4DF2240026A",
       "error_category": "",
       "error": null,
-      "scan_timestamp": ""
-    },
-    "NO-4650": {
-      "id": "NO-4650",
-      "name": "Gloppen",
-      "name_sv": "",
-      "country": "NO",
-      "region": "",
-      "domain": "www.gloppen.no",
-      "scanned_domain": "",
-      "population": 5854,
-      "primary_ca": "Unknown",
-      "ca_owner": "",
-      "ca_country": "",
-      "jurisdiction": "other",
-      "risk_level": "medium",
-      "category": "unknown",
-      "classification_confidence": 0.0,
-      "cert_chain": [],
-      "caa_records": [],
-      "ct_issuers": [],
-      "tls_info": {
-        "tls_version": "",
-        "verification": ""
-      },
-      "classification_signals": [],
-      "cert_mismatch": false,
-      "http_accessible": null,
-      "shared_hosting": false,
-      "shared_cert_fingerprint": "",
-      "error_category": "timeout",
-      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "NO-4651": {
@@ -53537,8 +54178,8 @@
       "http_accessible": null,
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
-      "error_category": "connection_error",
-      "error": "Connection error: [Errno 51] Connect call failed ('185.78.210.46', 443)",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "NO-5001": {
@@ -55915,7 +56556,7 @@
       "shared_hosting": false,
       "shared_cert_fingerprint": "",
       "error_category": "connection_error",
-      "error": "Connection error: [Errno 61] Connect call failed ('195.225.2.93', 443)",
+      "error": "Connection error: [Errno 111] Connect call failed ('195.225.2.93', 443)",
       "scan_timestamp": ""
     },
     "NO-5401": {
@@ -57281,11 +57922,11 @@
           "issuer_cn": "R13",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-01-22T04:21:16+00:00",
-          "not_after": "2026-04-22T04:21:15+00:00",
-          "serial_hex": "0x63cc66fd090628f4b95fe610432fea64b74",
+          "not_before": "2026-03-25T03:24:16+00:00",
+          "not_after": "2026-06-23T03:24:15+00:00",
+          "serial_hex": "0x6357404532a484d0a7fe53d39894455100a",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "3C563A8325E82981537870C9E6B908F4ADD8F63D98BB583C6692E8709ADB4FFF",
+          "sha256_fingerprint": "EA4EADF970602AD6623013D0E36D73715B49F9E16DE0819E15E43C102DD22428",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -57353,7 +57994,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "3C563A8325E82981537870C9E6B908F4ADD8F63D98BB583C6692E8709ADB4FFF",
+      "shared_cert_fingerprint": "EA4EADF970602AD6623013D0E36D73715B49F9E16DE0819E15E43C102DD22428",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -57384,11 +58025,11 @@
           "issuer_cn": "R13",
           "issuer_org": "Let's Encrypt",
           "issuer_country": "US",
-          "not_before": "2026-01-22T02:42:54+00:00",
-          "not_after": "2026-04-22T02:42:53+00:00",
-          "serial_hex": "0x6676df6c02f3000ce4a6cc27a849092e242",
+          "not_before": "2026-03-25T01:46:07+00:00",
+          "not_after": "2026-06-23T01:46:06+00:00",
+          "serial_hex": "0x5e474ab2bee5f0da3f7d0f71c0c1528a295",
           "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "C88B82960895961BD257260E0E8CCED15F56F60CAD1C7EDC98CCCE7C6B24D4AA",
+          "sha256_fingerprint": "06D6A1171D4B852A9EB53667851BD9C5ECB6351AF8930B60028888C8FB3A6629",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -57456,7 +58097,7 @@
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "C88B82960895961BD257260E0E8CCED15F56F60CAD1C7EDC98CCCE7C6B24D4AA",
+      "shared_cert_fingerprint": "06D6A1171D4B852A9EB53667851BD9C5ECB6351AF8930B60028888C8FB3A6629",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -57906,28 +58547,28 @@
       "domain": "haninge.se",
       "scanned_domain": "",
       "population": 93690,
-      "primary_ca": "GlobalSign",
-      "ca_owner": "GMO Internet Group (JP)",
-      "ca_country": "BE",
-      "jurisdiction": "eu",
-      "risk_level": "low",
-      "category": "eu-controlled",
+      "primary_ca": "Let's Encrypt (ISRG)",
+      "ca_owner": "Internet Security Research Group",
+      "ca_country": "US",
+      "jurisdiction": "us",
+      "risk_level": "high",
+      "category": "us-controlled",
       "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
           "cert_type": "leaf",
-          "subject_cn": "*.haninge.se",
+          "subject_cn": "haninge.se",
           "subject_org": "",
           "subject_country": "",
-          "issuer_cn": "GlobalSign GCC R6 AlphaSSL CA 2023",
-          "issuer_org": "GlobalSign nv-sa",
-          "issuer_country": "BE",
-          "not_before": "2025-03-10T09:15:41+00:00",
-          "not_after": "2026-04-11T09:15:40+00:00",
-          "serial_hex": "0x1e00c0131c5b7c2b3a870f1c",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "CBE647E7A69B24F883F9F89E589BFDE7B79E3ECDB378EFB17EF6308B73B3FC29",
+          "issuer_cn": "WE1",
+          "issuer_org": "Google Trust Services",
+          "issuer_country": "US",
+          "not_before": "2026-01-31T14:33:03+00:00",
+          "not_after": "2026-05-01T15:32:56+00:00",
+          "serial_hex": "0x3816787a3574f0b90e4b7a59ecb20bda",
+          "sig_algorithm": "1.2.840.10045.4.3.2",
+          "sha256_fingerprint": "35238E25CD7306158482F5F0D4894493D6BA65AE7078694928861EC956A3F202",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -57936,17 +58577,17 @@
         {
           "position": 1,
           "cert_type": "intermediate",
-          "subject_cn": "GlobalSign GCC R6 AlphaSSL CA 2023",
-          "subject_org": "GlobalSign nv-sa",
-          "subject_country": "BE",
-          "issuer_cn": "GlobalSign",
-          "issuer_org": "GlobalSign",
-          "issuer_country": "",
-          "not_before": "2023-07-19T03:43:25+00:00",
-          "not_after": "2026-07-19T00:00:00+00:00",
-          "serial_hex": "0x7f1f2c902e83d0e3b6fb3bee478b5e80",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "E46FB2A75097A345D4246DCF44A10DAA71D9FD0EBFAB61BA67E6DB84EE5B6CAB",
+          "subject_cn": "WE1",
+          "subject_org": "Google Trust Services",
+          "subject_country": "US",
+          "issuer_cn": "GTS Root R4",
+          "issuer_org": "Google Trust Services LLC",
+          "issuer_country": "US",
+          "not_before": "2023-12-13T09:00:00+00:00",
+          "not_after": "2029-02-20T14:00:00+00:00",
+          "serial_hex": "0x7ff31977972c224a76155d13b6d685e3",
+          "sig_algorithm": "1.2.840.10045.4.3.3",
+          "sha256_fingerprint": "1DFC1605FBAD358D8BC844F76D15203FAC9CA5C1A79FD4857FFAF2864FBEBF96",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -57955,17 +58596,17 @@
         {
           "position": 2,
           "cert_type": "root",
-          "subject_cn": "GlobalSign",
-          "subject_org": "GlobalSign",
-          "subject_country": "",
-          "issuer_cn": "GlobalSign",
-          "issuer_org": "GlobalSign",
-          "issuer_country": "",
-          "not_before": "2014-12-10T00:00:00+00:00",
-          "not_after": "2034-12-10T00:00:00+00:00",
-          "serial_hex": "0x45e6bb038333c3856548e6ff4551",
-          "sig_algorithm": "1.2.840.113549.1.1.12",
-          "sha256_fingerprint": "2CABEAFE37D06CA22ABA7391C0033D25982952C453647349763A3AB5AD6CCF69",
+          "subject_cn": "GTS Root R4",
+          "subject_org": "Google Trust Services LLC",
+          "subject_country": "US",
+          "issuer_cn": "GTS Root R4",
+          "issuer_org": "Google Trust Services LLC",
+          "issuer_country": "US",
+          "not_before": "2016-06-22T00:00:00+00:00",
+          "not_after": "2036-06-22T00:00:00+00:00",
+          "serial_hex": "0x203e5c068ef631a9c72905052",
+          "sig_algorithm": "1.2.840.10045.4.3.3",
+          "sha256_fingerprint": "349DFA4058C5E263123B398AE795573C4E1313C83FE68F93556CD5E8031B3C7D",
           "ccadb_match": false,
           "ca_owner": "",
           "ca_country": "",
@@ -57981,27 +58622,45 @@
       "classification_signals": [
         {
           "kind": "leaf_issuer",
-          "ca_name": "GlobalSign",
+          "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.35,
-          "detail": "leaf_issuer: issuer_org=GlobalSign nv-sa, issuer_cn=GlobalSign GCC R6 AlphaSSL CA 2023 → GlobalSign"
+          "detail": "leaf_issuer: issuer_cn=WE1 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "leaf_issuer",
+          "ca_name": "Google Trust Services",
+          "weight": 0.35,
+          "detail": "leaf_issuer: issuer_org=Google Trust Services → Google Trust Services"
         },
         {
           "kind": "intermediate_issuer",
-          "ca_name": "GlobalSign",
+          "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.25,
-          "detail": "intermediate_issuer: issuer_org=GlobalSign → GlobalSign"
+          "detail": "intermediate_issuer: issuer_cn=GTS Root R4 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "intermediate_issuer",
+          "ca_name": "Google Trust Services",
+          "weight": 0.25,
+          "detail": "intermediate_issuer: issuer_org=Google Trust Services LLC, issuer_cn=GTS Root R4 → Google Trust Services"
         },
         {
           "kind": "root_ca",
-          "ca_name": "GlobalSign",
+          "ca_name": "Let's Encrypt (ISRG)",
           "weight": 0.15,
-          "detail": "root_ca: issuer_org=GlobalSign → GlobalSign"
+          "detail": "root_ca: issuer_cn=GTS Root R4 → Let's Encrypt (ISRG)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Google Trust Services",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Google Trust Services LLC, issuer_cn=GTS Root R4 → Google Trust Services"
         }
       ],
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "CBE647E7A69B24F883F9F89E589BFDE7B79E3ECDB378EFB17EF6308B73B3FC29",
+      "shared_cert_fingerprint": "35238E25CD7306158482F5F0D4894493D6BA65AE7078694928861EC956A3F202",
       "error_category": "",
       "error": null,
       "scan_timestamp": ""
@@ -66147,7 +66806,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -66186,6 +66845,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -66206,6 +66884,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -69387,104 +70071,27 @@
       "domain": "landskrona.se",
       "scanned_domain": "",
       "population": 46305,
-      "primary_ca": "DigiCert",
-      "ca_owner": "DigiCert Inc. (Thoma Bravo PE)",
-      "ca_country": "US",
-      "jurisdiction": "us",
-      "risk_level": "critical",
-      "category": "us-controlled",
-      "classification_confidence": 95.0,
-      "cert_chain": [
-        {
-          "position": 0,
-          "cert_type": "leaf",
-          "subject_cn": "*.landskrona.se",
-          "subject_org": "Landskrona stad",
-          "subject_country": "SE",
-          "issuer_cn": "DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-          "issuer_org": "DigiCert Inc",
-          "issuer_country": "US",
-          "not_before": "2025-10-03T00:00:00+00:00",
-          "not_after": "2026-10-18T23:59:59+00:00",
-          "serial_hex": "0x67e63dafc5398d1f7702d448fcd2f68",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "EB988C63CDCC254417841C9DBD0AD06842642076BA872C318F7A4016AFD646C5",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        },
-        {
-          "position": 1,
-          "cert_type": "intermediate",
-          "subject_cn": "DigiCert Global G2 TLS RSA SHA256 2020 CA1",
-          "subject_org": "DigiCert Inc",
-          "subject_country": "US",
-          "issuer_cn": "DigiCert Global Root G2",
-          "issuer_org": "DigiCert Inc",
-          "issuer_country": "US",
-          "not_before": "2021-03-30T00:00:00+00:00",
-          "not_after": "2031-03-29T23:59:59+00:00",
-          "serial_hex": "0xcf5bd062b5602f47ab8502c23ccf066",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "C8025F9FC65FDFC95B3CA8CC7867B9A587B5277973957917463FC813D0B625A9",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        },
-        {
-          "position": 2,
-          "cert_type": "root",
-          "subject_cn": "DigiCert Global Root G2",
-          "subject_org": "DigiCert Inc",
-          "subject_country": "US",
-          "issuer_cn": "DigiCert Global Root G2",
-          "issuer_org": "DigiCert Inc",
-          "issuer_country": "US",
-          "not_before": "2013-08-01T12:00:00+00:00",
-          "not_after": "2038-01-15T12:00:00+00:00",
-          "serial_hex": "0x33af1e6a711a9a0bb2864b11d09fae5",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        }
-      ],
+      "primary_ca": "Unknown",
+      "ca_owner": "",
+      "ca_country": "",
+      "jurisdiction": "other",
+      "risk_level": "medium",
+      "category": "unknown",
+      "classification_confidence": 0.0,
+      "cert_chain": [],
       "caa_records": [],
       "ct_issuers": [],
       "tls_info": {
-        "tls_version": "TLSv1.2",
-        "verification": "OK"
+        "tls_version": "",
+        "verification": ""
       },
-      "classification_signals": [
-        {
-          "kind": "leaf_issuer",
-          "ca_name": "DigiCert",
-          "weight": 0.35,
-          "detail": "leaf_issuer: issuer_org=DigiCert Inc → DigiCert"
-        },
-        {
-          "kind": "intermediate_issuer",
-          "ca_name": "DigiCert",
-          "weight": 0.25,
-          "detail": "intermediate_issuer: issuer_org=DigiCert Inc, issuer_cn=DigiCert Global Root G2 → DigiCert"
-        },
-        {
-          "kind": "root_ca",
-          "ca_name": "DigiCert",
-          "weight": 0.15,
-          "detail": "root_ca: issuer_org=DigiCert Inc, issuer_cn=DigiCert Global Root G2, root_cn=DigiCert Global Root G2 → DigiCert"
-        }
-      ],
+      "classification_signals": [],
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "EB988C63CDCC254417841C9DBD0AD06842642076BA872C318F7A4016AFD646C5",
-      "error_category": "",
-      "error": null,
+      "shared_cert_fingerprint": "",
+      "error_category": "http_only",
+      "error": "http_only",
       "scan_timestamp": ""
     },
     "SE-1283": {
@@ -73445,7 +74052,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -73484,6 +74091,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -73504,6 +74130,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -74171,7 +74803,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -74210,6 +74842,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -74230,6 +74881,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -74885,7 +75542,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -74924,6 +75581,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -74944,6 +75620,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -76009,7 +76691,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -76048,6 +76730,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -76068,6 +76769,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -79679,7 +80386,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -79718,6 +80425,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -79738,6 +80464,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -81435,104 +82167,27 @@
       "domain": "avesta.se",
       "scanned_domain": "",
       "population": 23067,
-      "primary_ca": "GlobalSign",
-      "ca_owner": "GMO Internet Group (JP)",
-      "ca_country": "BE",
-      "jurisdiction": "eu",
-      "risk_level": "low",
-      "category": "eu-controlled",
-      "classification_confidence": 95.0,
-      "cert_chain": [
-        {
-          "position": 0,
-          "cert_type": "leaf",
-          "subject_cn": "*.avesta.se",
-          "subject_org": "",
-          "subject_country": "",
-          "issuer_cn": "GlobalSign GCC R6 AlphaSSL CA 2025",
-          "issuer_org": "GlobalSign nv-sa",
-          "issuer_country": "BE",
-          "not_before": "2026-02-25T14:37:36+00:00",
-          "not_after": "2027-03-29T14:37:35+00:00",
-          "serial_hex": "0x4d2de593abef4fc81f97e6b2",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "DA7C75E6B83E2BFAF6EC33F87EDFA30837FD4F89BD1E8B9545B270990307F837",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        },
-        {
-          "position": 1,
-          "cert_type": "intermediate",
-          "subject_cn": "GlobalSign GCC R6 AlphaSSL CA 2025",
-          "subject_org": "GlobalSign nv-sa",
-          "subject_country": "BE",
-          "issuer_cn": "GlobalSign",
-          "issuer_org": "GlobalSign",
-          "issuer_country": "",
-          "not_before": "2025-05-21T02:36:52+00:00",
-          "not_after": "2027-05-21T00:00:00+00:00",
-          "serial_hex": "0x837d4eb89e912fe72cad3bc7692ddc20",
-          "sig_algorithm": "1.2.840.113549.1.1.11",
-          "sha256_fingerprint": "A883559231F8388DAF35CE41C8101040AE8FD9B656434247B9475AF592CC08CA",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        },
-        {
-          "position": 2,
-          "cert_type": "root",
-          "subject_cn": "GlobalSign",
-          "subject_org": "GlobalSign",
-          "subject_country": "",
-          "issuer_cn": "GlobalSign",
-          "issuer_org": "GlobalSign",
-          "issuer_country": "",
-          "not_before": "2014-12-10T00:00:00+00:00",
-          "not_after": "2034-12-10T00:00:00+00:00",
-          "serial_hex": "0x45e6bb038333c3856548e6ff4551",
-          "sig_algorithm": "1.2.840.113549.1.1.12",
-          "sha256_fingerprint": "2CABEAFE37D06CA22ABA7391C0033D25982952C453647349763A3AB5AD6CCF69",
-          "ccadb_match": false,
-          "ca_owner": "",
-          "ca_country": "",
-          "revocation_status": ""
-        }
-      ],
+      "primary_ca": "Unknown",
+      "ca_owner": "",
+      "ca_country": "",
+      "jurisdiction": "other",
+      "risk_level": "medium",
+      "category": "unknown",
+      "classification_confidence": 0.0,
+      "cert_chain": [],
       "caa_records": [],
       "ct_issuers": [],
       "tls_info": {
-        "tls_version": "TLSv1.2",
-        "verification": "OK"
+        "tls_version": "",
+        "verification": ""
       },
-      "classification_signals": [
-        {
-          "kind": "leaf_issuer",
-          "ca_name": "GlobalSign",
-          "weight": 0.35,
-          "detail": "leaf_issuer: issuer_org=GlobalSign nv-sa, issuer_cn=GlobalSign GCC R6 AlphaSSL CA 2025 → GlobalSign"
-        },
-        {
-          "kind": "intermediate_issuer",
-          "ca_name": "GlobalSign",
-          "weight": 0.25,
-          "detail": "intermediate_issuer: issuer_org=GlobalSign → GlobalSign"
-        },
-        {
-          "kind": "root_ca",
-          "ca_name": "GlobalSign",
-          "weight": 0.15,
-          "detail": "root_ca: issuer_org=GlobalSign → GlobalSign"
-        }
-      ],
+      "classification_signals": [],
       "cert_mismatch": false,
       "http_accessible": null,
       "shared_hosting": false,
-      "shared_cert_fingerprint": "DA7C75E6B83E2BFAF6EC33F87EDFA30837FD4F89BD1E8B9545B270990307F837",
-      "error_category": "",
-      "error": null,
+      "shared_cert_fingerprint": "",
+      "error_category": "timeout",
+      "error": "Connection timeout (15s)",
       "scan_timestamp": ""
     },
     "SE-2085": {
@@ -82210,7 +82865,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -82249,6 +82904,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -82269,6 +82943,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -82809,7 +83489,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -82848,6 +83528,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -82868,6 +83567,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -83663,7 +84368,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -83702,6 +84407,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -83722,6 +84446,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -83747,7 +84477,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -83786,6 +84516,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -83806,6 +84555,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -84037,7 +84792,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -84076,6 +84831,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -84096,6 +84870,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": true,
@@ -84121,7 +84901,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -84160,6 +84940,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -84180,6 +84979,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -85124,7 +85929,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -85163,6 +85968,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -85183,6 +86007,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -86016,7 +86846,7 @@
       "caa_records": [],
       "ct_issuers": [],
       "tls_info": {
-        "tls_version": "TLSv1.2",
+        "tls_version": "TLSv1.3",
         "verification": "OK"
       },
       "classification_signals": [
@@ -86119,7 +86949,7 @@
       "caa_records": [],
       "ct_issuers": [],
       "tls_info": {
-        "tls_version": "TLSv1.2",
+        "tls_version": "TLSv1.3",
         "verification": "OK"
       },
       "classification_signals": [
@@ -86159,7 +86989,7 @@
       "jurisdiction": "nordic",
       "risk_level": "minimal",
       "category": "nordic",
-      "classification_confidence": 90.0,
+      "classification_confidence": 95.0,
       "cert_chain": [
         {
           "position": 0,
@@ -86198,6 +87028,25 @@
           "ca_owner": "",
           "ca_country": "",
           "revocation_status": ""
+        },
+        {
+          "position": 2,
+          "cert_type": "root",
+          "subject_cn": "Telia Root CA v2",
+          "subject_org": "Telia Finland Oyj",
+          "subject_country": "FI",
+          "issuer_cn": "Telia Root CA v2",
+          "issuer_org": "Telia Finland Oyj",
+          "issuer_country": "FI",
+          "not_before": "2018-11-29T11:55:54+00:00",
+          "not_after": "2043-11-29T11:55:54+00:00",
+          "serial_hex": "0x1675f27d6fe7ae3e4acbe095b059e",
+          "sig_algorithm": "1.2.840.113549.1.1.11",
+          "sha256_fingerprint": "242B69742FCB1E5B2ABF98898B94572187544E5B4D9911786573621F6A74B82C",
+          "ccadb_match": false,
+          "ca_owner": "",
+          "ca_country": "",
+          "revocation_status": ""
         }
       ],
       "caa_records": [],
@@ -86218,6 +87067,12 @@
           "ca_name": "Telia (TSSL)",
           "weight": 0.25,
           "detail": "intermediate_issuer: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
+        },
+        {
+          "kind": "root_ca",
+          "ca_name": "Telia (TSSL)",
+          "weight": 0.15,
+          "detail": "root_ca: issuer_org=Telia Finland Oyj, issuer_cn=Telia Root CA v2 → Telia (TSSL)"
         }
       ],
       "cert_mismatch": false,
@@ -86409,7 +87264,7 @@
       "caa_records": [],
       "ct_issuers": [],
       "tls_info": {
-        "tls_version": "TLSv1.2",
+        "tls_version": "TLSv1.3",
         "verification": "OK"
       },
       "classification_signals": [
