@@ -37,7 +37,7 @@ GISCO_URL = (
 GISCO_CACHE = CACHE_DIR / "gisco_lau_2021.geojson"
 
 # Countries to include
-COUNTRIES = ["FI", "SE", "NO", "DK"]
+COUNTRIES = ["FI", "SE", "NO", "DK", "EE", "LV", "LT"]
 
 
 # ── Download ──────────────────────────────────────────────────────────────────

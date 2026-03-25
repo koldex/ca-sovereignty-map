@@ -8,7 +8,7 @@ from __future__ import annotations
 
 # ── Countries covered ─────────────────────────────────────────────────────────
 
-COUNTRIES: list[str] = ["FI", "SE", "NO", "DK"]
+COUNTRIES: list[str] = ["FI", "SE", "NO", "DK", "EE", "LV", "LT"]
 # IS (Iceland) omitted by default — only ~70 municipalities
 
 COUNTRY_NAMES: dict[str, str] = {
@@ -17,6 +17,9 @@ COUNTRY_NAMES: dict[str, str] = {
     "NO": "Norway",
     "DK": "Denmark",
     "IS": "Iceland",
+    "EE": "Estonia",
+    "LV": "Latvia",
+    "LT": "Lithuania",
 }
 
 COUNTRY_TLDS: dict[str, str] = {
@@ -25,6 +28,9 @@ COUNTRY_TLDS: dict[str, str] = {
     "NO": "no",
     "DK": "dk",
     "IS": "is",
+    "EE": "ee",
+    "LV": "lv",
+    "LT": "lt",
 }
 
 # ── Wikidata SPARQL queries per country ───────────────────────────────────────
@@ -77,11 +83,48 @@ SELECT ?item ?itemLabel ?website ?code WHERE {
 ORDER BY ?code
 """
 
+
+# Estonian municipalities: wd:Q748664 = "omavalitsus" (Estonian municipality)
+WIKIDATA_QUERY_EE = """
+SELECT ?item ?itemLabel ?website ?code WHERE {
+  ?item wdt:P31 wd:Q748664 .
+  OPTIONAL { ?item wdt:P856 ?website . }
+  OPTIONAL { ?item wdt:P1260 ?code . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "et,en" . }
+}
+ORDER BY ?code
+"""
+
+# Latvian municipalities: wd:Q1967285 = "novads" (Latvian municipality)
+WIKIDATA_QUERY_LV = """
+SELECT ?item ?itemLabel ?website ?code WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q1967285 .
+  OPTIONAL { ?item wdt:P856 ?website . }
+  OPTIONAL { ?item wdt:P1260 ?code . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "lv,en" . }
+}
+ORDER BY ?code
+"""
+
+# Lithuanian municipalities: wd:Q586272 = "savivaldybė" (Lithuanian municipality)
+WIKIDATA_QUERY_LT = """
+SELECT ?item ?itemLabel ?website ?code WHERE {
+  ?item wdt:P31 wd:Q586272 .
+  OPTIONAL { ?item wdt:P856 ?website . }
+  OPTIONAL { ?item wdt:P511 ?code . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "lt,en" . }
+}
+ORDER BY ?code
+"""
+
 WIKIDATA_QUERIES: dict[str, str] = {
     "FI": WIKIDATA_QUERY_FI,
     "SE": WIKIDATA_QUERY_SE,
     "NO": WIKIDATA_QUERY_NO,
     "DK": WIKIDATA_QUERY_DK,
+    "EE": WIKIDATA_QUERY_EE,
+    "LV": WIKIDATA_QUERY_LV,
+    "LT": WIKIDATA_QUERY_LT,
 }
 
 # ── Official national APIs ─────────────────────────────────────────────────────
@@ -136,6 +179,26 @@ NORDIC_TRANSLITERATIONS: dict[str, str] = {
     "ý": "y",
     "é": "e",
     "á": "a",
+    # Estonian
+    "õ": "o",
+    # Latvian
+    "ā": "a",
+    "č": "c",
+    "ē": "e",
+    "ģ": "g",
+    "ī": "i",
+    "ķ": "k",
+    "ļ": "l",
+    "ņ": "n",
+    "š": "s",
+    "ū": "u",
+    "ž": "z",
+    # Lithuanian (č š ž shared above)
+    "ą": "a",
+    "ę": "e",
+    "ė": "e",
+    "į": "i",
+    "ų": "u",
 }
 
 # ── Geopolitical risk regions ─────────────────────────────────────────────────

@@ -1,4 +1,4 @@
-# CAmap Nordics — AI Session Context
+# CAmap Nordic & Baltic — AI Session Context
 
 **last_verified:** 2026-03-24T21:16:00Z
 **project_version:** 0.1.2
@@ -6,7 +6,7 @@
 
 ## Current state
 
-- 884 municipalities with resolved domains (FI:299, SE:288, NO:204, DK:93)
+- 1 093 municipalities with resolved domains (FI:299, SE:288, NO:204, DK:93)
 - Scan results: 399 US-controlled (45%), 49 EU (6%), 32 Nordic (4%), 404 unknown (46%)
 - Unknown breakdown: ~372 were OpenSSL timeouts → FIXED with asyncio SSL rewrite
 - GitHub Pages: https://koldex.github.io/ca-sovereignty-map/

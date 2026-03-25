@@ -1,4 +1,4 @@
-# CAmap Nordics
+# CAmap Nordic & Baltic
 
 **Interactive map of TLS certificate authority sovereignty for Nordic municipalities**
 
@@ -15,7 +15,7 @@ Live: **https://koldex.github.io/ca-sovereignty-map/**
 A certificate authority (CA) that has issued a TLS certificate can revoke it or refuse to
 renew it. If that CA is headquartered in the US it is subject to the **CLOUD Act**, meaning
 a US court order could compel it to act against any municipality's certificate. This project
-maps that exposure across ~1 055 municipalities in Finland, Sweden, Norway and Denmark.
+maps that exposure across ~1 313 municipalities in Finland, Sweden, Norway and Denmark.
 
 ### Risk levels
 
@@ -76,7 +76,7 @@ ca-sovereignty-map/
 ├── css/  js/                  Frontend (Leaflet, CARTO basemap)
 ├── index.html                 Map page
 ├── methodology.html           Methodology documentation
-├── nordic-municipalities.topojson  Municipality boundaries (537 KB)
+├── nordic-municipalities.topojson  Municipality boundaries (614 KB)
 ├── data.json                  Full scan output (~1.6 MB, pretty-printed)
 ├── data.min.json              Minified frontend payload
 ├── municipality_domains.json  Phase 1 output: municipality → domain
@@ -131,7 +131,7 @@ Only needed when GISCO data is updated or countries change:
 
 ```bash
 uv run python scripts/generate_topojson.py
-# Downloads ~125 MB GISCO file to .data_cache/, outputs 537 KB TopoJSON
+# Downloads ~125 MB GISCO file to .data_cache/, outputs 614 KB TopoJSON
 ```
 
 ### Run tests

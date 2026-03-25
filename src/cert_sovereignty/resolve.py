@@ -133,13 +133,41 @@ def _slugify_name(name: str) -> list[str]:
     return [s for s in slugs if s]  # filter empty
 
 
+# Suffixes to strip from Baltic municipality names before slug generation.
+# GISCO LAU names include administrative type suffixes that are NOT part of
+# the web domain (e.g. "Tallinna linn" → tallinn.ee, not tallinn-linn.ee).
+_BALTIC_SUFFIX_PATTERNS: dict[str, list[str]] = {
+    "EE": [" vald", " linn", " valla", " linna"],        # vald=rural, linn=city
+    "LV": [" novads", " pilsēta", " novada", " pilssēta"],  # novads=municipality
+    "LT": [
+        " miesto savivaldybė",
+        " rajono savivaldybė",
+        " savivaldybė",
+        " m. sav",
+        " r. sav",
+    ],
+}
+
+
+def _strip_baltic_suffixes(name: str, country: str) -> str:
+    """Remove trailing administrative-type suffixes from Baltic municipality names."""
+    patterns = _BALTIC_SUFFIX_PATTERNS.get(country, [])
+    lower = name.lower()
+    for suffix in patterns:
+        if lower.endswith(suffix.lower()):
+            return name[: -len(suffix)].strip()
+    return name
+
+
 def guess_domains(name: str, country: str, region: str = "") -> list[str]:
-    """Generate plausible domain guesses for a Nordic municipality.
+    """Generate plausible domain guesses for a Nordic/Baltic municipality.
 
     Returns candidates in priority order: most likely first.
     Cf. mxmap's guess_domains() for Swiss municipalities.
     """
-    slugs = _slugify_name(name)
+    # Strip administrative suffixes before slugifying (important for Baltic names)
+    clean_name = _strip_baltic_suffixes(name, country)
+    slugs = _slugify_name(clean_name)
     tld = COUNTRY_TLDS.get(country, "eu")
 
     # Use list to preserve priority order, set for deduplication
@@ -178,6 +206,24 @@ def guess_domains(name: str, country: str, region: str = "") -> list[str]:
             # Danish: majority use {name}.dk
             add(f"{slug}.dk")
             add(f"www.{slug}.dk")
+
+        elif country == "EE":
+            # Estonian: {name}.ee (e.g. tallinn.ee, tartu.ee)
+            add(f"{slug}.ee")
+            add(f"www.{slug}.ee")
+
+        elif country == "LV":
+            # Latvian: {name}.lv (e.g. riga.lv, jelgava.lv)
+            add(f"{slug}.lv")
+            add(f"www.{slug}.lv")
+            # Some rural municipalities: {name}.novads.lv
+            add(f"{slug}.novads.lv")
+
+        elif country == "LT":
+            # Lithuanian: municipalities = savivaldybės
+            # Most city municipalities: {name}.lt (e.g. vilnius.lt, kaunas.lt)
+            add(f"{slug}.lt")
+            add(f"www.{slug}.lt")
 
         else:
             add(f"{slug}.{tld}")

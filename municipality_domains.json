@@ -744,6 +744,582 @@
     "domain_source": "guess"
   },
   {
+    "id": "EE-0130",
+    "name": "Alutaguse vald",
+    "country": "EE",
+    "population": 4682,
+    "domain": "alutaguse.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0141",
+    "name": "Anija vald",
+    "country": "EE",
+    "population": 6253,
+    "domain": "anija.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0142",
+    "name": "Antsla vald",
+    "country": "EE",
+    "population": 4372,
+    "domain": "antsla.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0171",
+    "name": "Elva vald",
+    "country": "EE",
+    "population": 14597,
+    "domain": "elva.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0184",
+    "name": "Haapsalu linn",
+    "country": "EE",
+    "population": 12883,
+    "domain": "haapsalu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0191",
+    "name": "Haljala vald",
+    "country": "EE",
+    "population": 4297,
+    "domain": "haljala.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0198",
+    "name": "Harku vald",
+    "country": "EE",
+    "population": 15650,
+    "domain": "harku.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0205",
+    "name": "Hiiumaa vald",
+    "country": "EE",
+    "population": 9381,
+    "domain": "hiiumaa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0214",
+    "name": "Häädemeeste vald",
+    "country": "EE",
+    "population": 4794,
+    "domain": "haademeeste.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0245",
+    "name": "Jõelähtme vald",
+    "country": "EE",
+    "population": 6692,
+    "domain": "joelahtme.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0247",
+    "name": "Jõgeva vald",
+    "country": "EE",
+    "population": 13262,
+    "domain": "jogeva.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0251",
+    "name": "Jõhvi vald",
+    "country": "EE",
+    "population": 11699,
+    "domain": "johvi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0255",
+    "name": "Järva vald",
+    "country": "EE",
+    "population": 8837,
+    "domain": "jarva.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0272",
+    "name": "Kadrina vald",
+    "country": "EE",
+    "population": 4791,
+    "domain": "kadrina.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0283",
+    "name": "Kambja vald",
+    "country": "EE",
+    "population": 12089,
+    "domain": "kambja.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0284",
+    "name": "Kanepi vald",
+    "country": "EE",
+    "population": 4685,
+    "domain": "kanepi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0291",
+    "name": "Kastre vald",
+    "country": "EE",
+    "population": 5430,
+    "domain": "kastre.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0293",
+    "name": "Kehtna vald",
+    "country": "EE",
+    "population": 5416,
+    "domain": "kehtna.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0296",
+    "name": "Keila linn",
+    "country": "EE",
+    "population": 10078,
+    "domain": "keila.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0303",
+    "name": "Kihnu vald",
+    "country": "EE",
+    "population": 690,
+    "domain": "kihnu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0305",
+    "name": "Kiili vald",
+    "country": "EE",
+    "population": 5891,
+    "domain": "kiili.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0317",
+    "name": "Kohila vald",
+    "country": "EE",
+    "population": 7322,
+    "domain": "kohila.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0321",
+    "name": "Kohtla-Järve linn",
+    "country": "EE",
+    "population": 32577,
+    "domain": "kohtla-jarve.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0338",
+    "name": "Kose vald",
+    "country": "EE",
+    "population": 7211,
+    "domain": "kose.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0353",
+    "name": "Kuusalu vald",
+    "country": "EE",
+    "population": 6421,
+    "domain": "kuusalu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0424",
+    "name": "Loksa linn",
+    "country": "EE",
+    "population": 2467,
+    "domain": "loksa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0430",
+    "name": "Lääneranna vald",
+    "country": "EE",
+    "population": 5190,
+    "domain": "laaneranna.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0432",
+    "name": "Luunja vald",
+    "country": "EE",
+    "population": 5182,
+    "domain": "luunja.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0442",
+    "name": "Lüganuse vald",
+    "country": "EE",
+    "population": 8219,
+    "domain": "luganuse.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0446",
+    "name": "Maardu linn",
+    "country": "EE",
+    "population": 15284,
+    "domain": "maardu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0478",
+    "name": "Muhu vald",
+    "country": "EE",
+    "population": 1919,
+    "domain": "muhu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0480",
+    "name": "Mulgi vald",
+    "country": "EE",
+    "population": 7372,
+    "domain": "mulgi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0486",
+    "name": "Mustvee vald",
+    "country": "EE",
+    "population": 5204,
+    "domain": "mustvee.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0502",
+    "name": "Märjamaa vald",
+    "country": "EE",
+    "population": 7374,
+    "domain": "marjamaa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0511",
+    "name": "Narva linn",
+    "country": "EE",
+    "population": 53424,
+    "domain": "www.narva.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0514",
+    "name": "Narva-Jõesuu linn",
+    "country": "EE",
+    "population": 4479,
+    "domain": "narva-joesuu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0528",
+    "name": "Nõo vald",
+    "country": "EE",
+    "population": 4314,
+    "domain": "noo.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0557",
+    "name": "Otepää vald",
+    "country": "EE",
+    "population": 6412,
+    "domain": "otepaa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0567",
+    "name": "Paide linn",
+    "country": "EE",
+    "population": 10285,
+    "domain": "paide.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0615",
+    "name": "Põhja-Sakala vald",
+    "country": "EE",
+    "population": 7872,
+    "domain": "pohja-sakala.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0618",
+    "name": "Põltsamaa vald",
+    "country": "EE",
+    "population": 9616,
+    "domain": "poltsamaa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0622",
+    "name": "Põlva vald",
+    "country": "EE",
+    "population": 13609,
+    "domain": "polva.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0624",
+    "name": "Pärnu linn",
+    "country": "EE",
+    "population": 50639,
+    "domain": "parnu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0651",
+    "name": "Raasiku vald",
+    "country": "EE",
+    "population": 5138,
+    "domain": "raasiku.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0653",
+    "name": "Rae vald",
+    "country": "EE",
+    "population": 21765,
+    "domain": "rae.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0661",
+    "name": "Rakvere vald",
+    "country": "EE",
+    "population": 5619,
+    "domain": "rakvere.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0663",
+    "name": "Rakvere linn",
+    "country": "EE",
+    "population": 14984,
+    "domain": "rakvere.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0668",
+    "name": "Rapla vald",
+    "country": "EE",
+    "population": 13004,
+    "domain": "rapla.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0689",
+    "name": "Ruhnu vald",
+    "country": "EE",
+    "population": 140,
+    "domain": "ruhnu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0698",
+    "name": "Rõuge vald",
+    "country": "EE",
+    "population": 5180,
+    "domain": "rouge.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0708",
+    "name": "Räpina vald",
+    "country": "EE",
+    "population": 6179,
+    "domain": "rapina.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0712",
+    "name": "Saarde vald",
+    "country": "EE",
+    "population": 4455,
+    "domain": "saarde.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0714",
+    "name": "Saaremaa vald",
+    "country": "EE",
+    "population": 30973,
+    "domain": "saaremaa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0719",
+    "name": "Saku vald",
+    "country": "EE",
+    "population": 10722,
+    "domain": "saku.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0725",
+    "name": "Saue vald",
+    "country": "EE",
+    "population": 23790,
+    "domain": "saue.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0732",
+    "name": "Setomaa vald",
+    "country": "EE",
+    "population": 3114,
+    "domain": "setomaa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0735",
+    "name": "Sillamäe linn",
+    "country": "EE",
+    "population": 12230,
+    "domain": "sillamae.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0784",
+    "name": "Tallinn",
+    "country": "EE",
+    "population": 438341,
+    "domain": "tallinn.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0792",
+    "name": "Tapa vald",
+    "country": "EE",
+    "population": 10611,
+    "domain": "tapa.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0793",
+    "name": "Tartu linn",
+    "country": "EE",
+    "population": 95430,
+    "domain": "tartu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0796",
+    "name": "Tartu vald",
+    "country": "EE",
+    "population": 11539,
+    "domain": "tartu.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0803",
+    "name": "Toila vald",
+    "country": "EE",
+    "population": 4603,
+    "domain": "toila.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0809",
+    "name": "Tori vald",
+    "country": "EE",
+    "population": 11946,
+    "domain": "tori.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0824",
+    "name": "Tõrva vald",
+    "country": "EE",
+    "population": 6064,
+    "domain": "torva.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0855",
+    "name": "Valga vald",
+    "country": "EE",
+    "population": 15486,
+    "domain": "valga.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0890",
+    "name": "Viimsi vald",
+    "country": "EE",
+    "population": 21151,
+    "domain": "viimsi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0897",
+    "name": "Viljandi linn",
+    "country": "EE",
+    "population": 16875,
+    "domain": "viljandi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0899",
+    "name": "Viljandi vald",
+    "country": "EE",
+    "population": 13758,
+    "domain": "viljandi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0903",
+    "name": "Viru-Nigula vald",
+    "country": "EE",
+    "population": 5575,
+    "domain": "viru-nigula.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0907",
+    "name": "Vormsi vald",
+    "country": "EE",
+    "population": 397,
+    "domain": "vormsi.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0917",
+    "name": "Võru vald",
+    "country": "EE",
+    "population": 10699,
+    "domain": "voru.ee",
+    "domain_source": "guess"
+  },
+  {
+    "id": "EE-0919",
+    "name": "Võru linn",
+    "country": "EE",
+    "population": 11533,
+    "domain": "voru.ee",
+    "domain_source": "guess"
+  },
+  {
     "id": "FI-005",
     "name": "Alajärvi",
     "country": "FI",
@@ -3133,6 +3709,1102 @@
     "country": "FI",
     "population": 18765,
     "domain": "aanekoski.fi",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-13",
+    "name": "Vilniaus miesto savivaldybė",
+    "country": "LT",
+    "population": 569902,
+    "domain": "vilniaus.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-19",
+    "name": "Kauno miesto savivaldybė",
+    "country": "LT",
+    "population": 293277,
+    "domain": "kauno.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-21",
+    "name": "Klaipėdos miesto savivaldybė",
+    "country": "LT",
+    "population": 149056,
+    "domain": "klaipedos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-25",
+    "name": "Palangos miesto savivaldybė",
+    "country": "LT",
+    "population": 16429,
+    "domain": "palangos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-29",
+    "name": "Šiaulių miesto savivaldybė",
+    "country": "LT",
+    "population": 101884,
+    "domain": "siauliu.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-38",
+    "name": "Varėnos rajono savivaldybė",
+    "country": "LT",
+    "population": 20520,
+    "domain": "varenos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-41",
+    "name": "Vilniaus rajono savivaldybė",
+    "country": "LT",
+    "population": 102031,
+    "domain": "vilniaus.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-46",
+    "name": "Jonavos rajono savivaldybė",
+    "country": "LT",
+    "population": 40750,
+    "domain": "jonavos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-48",
+    "name": "Kalvarijos savivaldybė",
+    "country": "LT",
+    "population": 9953,
+    "domain": "kalvarijos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-52",
+    "name": "Kauno rajono savivaldybė",
+    "country": "LT",
+    "population": 97549,
+    "domain": "kauno.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-55",
+    "name": "Klaipėdos rajono savivaldybė",
+    "country": "LT",
+    "population": 62648,
+    "domain": "klaipedos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-56",
+    "name": "Kretingos rajono savivaldybė",
+    "country": "LT",
+    "population": 37323,
+    "domain": "kretingos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-61",
+    "name": "Mažeikių rajono savivaldybė",
+    "country": "LT",
+    "population": 50789,
+    "domain": "mazeikiu.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-68",
+    "name": "Plungės rajono savivaldybė",
+    "country": "LT",
+    "population": 32635,
+    "domain": "plunges.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-73",
+    "name": "Rokiškio rajono savivaldybė",
+    "country": "LT",
+    "population": 27515,
+    "domain": "www.rokiskio.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-79",
+    "name": "Trakų rajono savivaldybė",
+    "country": "LT",
+    "population": 33213,
+    "domain": "traku.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-82",
+    "name": "Utenos rajono savivaldybė",
+    "country": "LT",
+    "population": 37081,
+    "domain": "utenos.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LT-91",
+    "name": "Šiaulių rajono savivaldybė",
+    "country": "LT",
+    "population": 41554,
+    "domain": "siauliu.lt",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0010000",
+    "name": "Rīga",
+    "country": "LV",
+    "population": 614618,
+    "domain": "riga.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0050000",
+    "name": "Daugavpils",
+    "country": "LV",
+    "population": 80627,
+    "domain": "daugavpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0090000",
+    "name": "Jelgava",
+    "country": "LV",
+    "population": 21629,
+    "domain": "jelgava.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0110000",
+    "name": "Jēkabpils",
+    "country": "LV",
+    "population": 50248,
+    "domain": "jekabpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0130000",
+    "name": "Jūrmala",
+    "country": "LV",
+    "population": 55336,
+    "domain": "jurmala.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0170000",
+    "name": "Liepāja",
+    "country": "LV",
+    "population": 67964,
+    "domain": "liepaja.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0210000",
+    "name": "Rēzekne",
+    "country": "LV",
+    "population": 26839,
+    "domain": "rezekne.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0250000",
+    "name": "Valmiera",
+    "country": "LV",
+    "population": 22971,
+    "domain": "valmiera.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0270000",
+    "name": "Ventspils",
+    "country": "LV",
+    "population": 33372,
+    "domain": "ventspils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0320200",
+    "name": "Aizkraukles novads",
+    "country": "LV",
+    "population": 8017,
+    "domain": "aizkraukles.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0321000",
+    "name": "Jaunjelgavas novads",
+    "country": "LV",
+    "population": 5039,
+    "domain": "jaunjelgavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0321400",
+    "name": "Pļaviņu novads",
+    "country": "LV",
+    "population": 4765,
+    "domain": "plavinu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0326100",
+    "name": "Kokneses novads",
+    "country": "LV",
+    "population": 4851,
+    "domain": "kokneses.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0327100",
+    "name": "Neretas novads",
+    "country": "LV",
+    "population": 3278,
+    "domain": "neretas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0328200",
+    "name": "Skrīveru novads",
+    "country": "LV",
+    "population": 3417,
+    "domain": "skriveru.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0360200",
+    "name": "Alūksnes novads",
+    "country": "LV",
+    "population": 13861,
+    "domain": "aluksnes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0360800",
+    "name": "Apes novads",
+    "country": "LV",
+    "population": 3205,
+    "domain": "apes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0380200",
+    "name": "Balvu novads",
+    "country": "LV",
+    "population": 11576,
+    "domain": "balvu.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0381600",
+    "name": "Viļakas novads",
+    "country": "LV",
+    "population": 4476,
+    "domain": "vilakas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0384400",
+    "name": "Baltinavas novads",
+    "country": "LV",
+    "population": 937,
+    "domain": "baltinavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0387500",
+    "name": "Rugāju novads",
+    "country": "LV",
+    "population": 2026,
+    "domain": "rugaju.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0400200",
+    "name": "Bauskas novads",
+    "country": "LV",
+    "population": 22259,
+    "domain": "bauskas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0406400",
+    "name": "Iecavas novads",
+    "country": "LV",
+    "population": 8411,
+    "domain": "iecavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0407700",
+    "name": "Rundāles novads",
+    "country": "LV",
+    "population": 3290,
+    "domain": "rundales.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0409500",
+    "name": "Vecumnieku novads",
+    "country": "LV",
+    "population": 7795,
+    "domain": "vecumnieku.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0420200",
+    "name": "Cēsu novads",
+    "country": "LV",
+    "population": 16143,
+    "domain": "cesu.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0421200",
+    "name": "Līgatnes novads",
+    "country": "LV",
+    "population": 3258,
+    "domain": "ligatnes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0424701",
+    "name": "Amatas novads",
+    "country": "LV",
+    "population": 5042,
+    "domain": "amatas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0425700",
+    "name": "Jaunpiebalgas novads",
+    "country": "LV",
+    "population": 1992,
+    "domain": "jaunpiebalgas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0427300",
+    "name": "Priekuļu novads",
+    "country": "LV",
+    "population": 7509,
+    "domain": "priekulu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0427500",
+    "name": "Pārgaujas novads",
+    "country": "LV",
+    "population": 3603,
+    "domain": "pargaujas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0427700",
+    "name": "Raunas novads",
+    "country": "LV",
+    "population": 3005,
+    "domain": "raunas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0429300",
+    "name": "Vecpiebalgas novads",
+    "country": "LV",
+    "population": 3614,
+    "domain": "vecpiebalgas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0440200",
+    "name": "Daugavpils novads",
+    "country": "LV",
+    "population": 19553,
+    "domain": "daugavpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0440801",
+    "name": "Ilūkstes novads",
+    "country": "LV",
+    "population": 6374,
+    "domain": "ilukstes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0460200",
+    "name": "Dobeles novads",
+    "country": "LV",
+    "population": 19219,
+    "domain": "dobeles.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0460800",
+    "name": "Auces novads",
+    "country": "LV",
+    "population": 6025,
+    "domain": "auces.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0468900",
+    "name": "Tērvetes novads",
+    "country": "LV",
+    "population": 3273,
+    "domain": "tervetes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0500200",
+    "name": "Gulbenes novads",
+    "country": "LV",
+    "population": 19619,
+    "domain": "gulbenes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0540200",
+    "name": "Jelgavas novads",
+    "country": "LV",
+    "population": 22021,
+    "domain": "jelgavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0546701",
+    "name": "Ozolnieku novads",
+    "country": "LV",
+    "population": 9948,
+    "domain": "ozolnieku.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0560200",
+    "name": "Jēkabpils novads",
+    "country": "LV",
+    "population": 4164,
+    "domain": "jekabpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0560800",
+    "name": "Aknīstes novads",
+    "country": "LV",
+    "population": 2546,
+    "domain": "aknistes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0561800",
+    "name": "Viesītes novads",
+    "country": "LV",
+    "population": 3535,
+    "domain": "viesites.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0566900",
+    "name": "Krustpils novads",
+    "country": "LV",
+    "population": 5461,
+    "domain": "krustpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0568700",
+    "name": "Salas novads",
+    "country": "LV",
+    "population": 3241,
+    "domain": "salas.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0600202",
+    "name": "Krāslavas novads",
+    "country": "LV",
+    "population": 13533,
+    "domain": "kraslavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0601000",
+    "name": "Dagdas novads",
+    "country": "LV",
+    "population": 6475,
+    "domain": "dagdas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0604300",
+    "name": "Aglonas novads",
+    "country": "LV",
+    "population": 3042,
+    "domain": "aglonas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0620200",
+    "name": "Kuldīgas novads",
+    "country": "LV",
+    "population": 21907,
+    "domain": "kuldigas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0621200",
+    "name": "Skrundas novads",
+    "country": "LV",
+    "population": 4526,
+    "domain": "skrundas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0624200",
+    "name": "Alsungas novads",
+    "country": "LV",
+    "population": 1303,
+    "domain": "alsungas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0640600",
+    "name": "Aizputes novads",
+    "country": "LV",
+    "population": 8083,
+    "domain": "aizputes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0640801",
+    "name": "Durbes novads",
+    "country": "LV",
+    "population": 2020,
+    "domain": "durbes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0641000",
+    "name": "Grobiņas novads",
+    "country": "LV",
+    "population": 8329,
+    "domain": "grobinas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0641401",
+    "name": "Pāvilostas novads",
+    "country": "LV",
+    "population": 2543,
+    "domain": "pavilostas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0641600",
+    "name": "Priekules novads",
+    "country": "LV",
+    "population": 4955,
+    "domain": "priekules.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0647900",
+    "name": "Nīcas novads",
+    "country": "LV",
+    "population": 3113,
+    "domain": "nicas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0648500",
+    "name": "Rucavas novads",
+    "country": "LV",
+    "population": 1505,
+    "domain": "rucavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0649300",
+    "name": "Vaiņodes novads",
+    "country": "LV",
+    "population": 2216,
+    "domain": "vainodes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0660200",
+    "name": "Limbažu novads",
+    "country": "LV",
+    "population": 16744,
+    "domain": "limbazu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0661000",
+    "name": "Alojas novads",
+    "country": "LV",
+    "population": 4520,
+    "domain": "alojas.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0661400",
+    "name": "Salacgrīvas novads",
+    "country": "LV",
+    "population": 7282,
+    "domain": "salacgrivas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0680200",
+    "name": "Ludzas novads",
+    "country": "LV",
+    "population": 11739,
+    "domain": "ludzas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0681000",
+    "name": "Kārsavas novads",
+    "country": "LV",
+    "population": 5127,
+    "domain": "karsavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0681801",
+    "name": "Zilupes novads",
+    "country": "LV",
+    "population": 2549,
+    "domain": "zilupes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0684901",
+    "name": "Ciblas novads",
+    "country": "LV",
+    "population": 2362,
+    "domain": "ciblas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0700200",
+    "name": "Madonas novads",
+    "country": "LV",
+    "population": 21676,
+    "domain": "madonas.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0700800",
+    "name": "Cesvaines novads",
+    "country": "LV",
+    "population": 2253,
+    "domain": "cesvaines.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0701400",
+    "name": "Lubānas novads",
+    "country": "LV",
+    "population": 2163,
+    "domain": "lubanas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0701800",
+    "name": "Varakļānu novads",
+    "country": "LV",
+    "population": 2945,
+    "domain": "varaklanu.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0705500",
+    "name": "Ērgļu novads",
+    "country": "LV",
+    "population": 2600,
+    "domain": "erglu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0740202",
+    "name": "Ogres novads",
+    "country": "LV",
+    "population": 32790,
+    "domain": "ogres.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0740600",
+    "name": "Ikšķiles novads",
+    "country": "LV",
+    "population": 9967,
+    "domain": "ikskiles.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0741001",
+    "name": "Ķeguma novads",
+    "country": "LV",
+    "population": 5313,
+    "domain": "keguma.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0741401",
+    "name": "Lielvārdes novads",
+    "country": "LV",
+    "population": 9547,
+    "domain": "lielvardes.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0760202",
+    "name": "Preiļu novads",
+    "country": "LV",
+    "population": 8948,
+    "domain": "preilu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0761201",
+    "name": "Līvānu novads",
+    "country": "LV",
+    "population": 10636,
+    "domain": "livanu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0766300",
+    "name": "Riebiņu novads",
+    "country": "LV",
+    "population": 4466,
+    "domain": "riebinu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0769101",
+    "name": "Vārkavas novads",
+    "country": "LV",
+    "population": 1754,
+    "domain": "varkavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0780200",
+    "name": "Rēzeknes novads",
+    "country": "LV",
+    "population": 24244,
+    "domain": "rezeknes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0781800",
+    "name": "Viļānu novads",
+    "country": "LV",
+    "population": 5399,
+    "domain": "vilanu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0800600",
+    "name": "Baldones novads",
+    "country": "LV",
+    "population": 5446,
+    "domain": "baldones.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0800800",
+    "name": "Ķekavas novads",
+    "country": "LV",
+    "population": 24631,
+    "domain": "kekavas.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0801000",
+    "name": "Olaines novads",
+    "country": "LV",
+    "population": 19705,
+    "domain": "olaines.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0801200",
+    "name": "Salaspils novads",
+    "country": "LV",
+    "population": 22868,
+    "domain": "salaspils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0801400",
+    "name": "Saulkrastu novads",
+    "country": "LV",
+    "population": 7079,
+    "domain": "saulkrastu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0801601",
+    "name": "Siguldas novads",
+    "country": "LV",
+    "population": 18081,
+    "domain": "siguldas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0801800",
+    "name": "Inčukalna novads",
+    "country": "LV",
+    "population": 7622,
+    "domain": "incukalna.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0804400",
+    "name": "Ādažu novads",
+    "country": "LV",
+    "population": 11824,
+    "domain": "adazu.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0804900",
+    "name": "Babītes novads",
+    "country": "LV",
+    "population": 11247,
+    "domain": "babites.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0805200",
+    "name": "Carnikavas novads",
+    "country": "LV",
+    "population": 9310,
+    "domain": "carnikavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0806000",
+    "name": "Garkalnes novads",
+    "country": "LV",
+    "population": 9425,
+    "domain": "garkalnes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0806900",
+    "name": "Krimuldas novads",
+    "country": "LV",
+    "population": 4833,
+    "domain": "krimuldas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0807400",
+    "name": "Mālpils novads",
+    "country": "LV",
+    "population": 3324,
+    "domain": "malpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0807600",
+    "name": "Mārupes novads",
+    "country": "LV",
+    "population": 21577,
+    "domain": "marupes.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0808400",
+    "name": "Ropažu novads",
+    "country": "LV",
+    "population": 6836,
+    "domain": "ropazu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0809200",
+    "name": "Sējas novads",
+    "country": "LV",
+    "population": 2151,
+    "domain": "sejas.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0809600",
+    "name": "Stopiņu novads",
+    "country": "LV",
+    "population": 12201,
+    "domain": "stopinu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0840200",
+    "name": "Saldus novads",
+    "country": "LV",
+    "population": 21438,
+    "domain": "saldus.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0840601",
+    "name": "Brocēnu novads",
+    "country": "LV",
+    "population": 5672,
+    "domain": "brocenu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0880200",
+    "name": "Talsu novads",
+    "country": "LV",
+    "population": 27391,
+    "domain": "talsu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0885100",
+    "name": "Dundagas novads",
+    "country": "LV",
+    "population": 3487,
+    "domain": "dundagas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0887600",
+    "name": "Mērsraga novads",
+    "country": "LV",
+    "population": 1431,
+    "domain": "mersraga.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0888301",
+    "name": "Rojas novads",
+    "country": "LV",
+    "population": 3390,
+    "domain": "rojas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0900200",
+    "name": "Tukuma novads",
+    "country": "LV",
+    "population": 27614,
+    "domain": "tukuma.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0901201",
+    "name": "Kandavas novads",
+    "country": "LV",
+    "population": 7462,
+    "domain": "kandavas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0905100",
+    "name": "Engures novads",
+    "country": "LV",
+    "population": 7147,
+    "domain": "engures.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0905700",
+    "name": "Jaunpils novads",
+    "country": "LV",
+    "population": 2188,
+    "domain": "jaunpils.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0940200",
+    "name": "Valkas novads",
+    "country": "LV",
+    "population": 7596,
+    "domain": "valkas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0941600",
+    "name": "Smiltenes novads",
+    "country": "LV",
+    "population": 11945,
+    "domain": "smiltenes.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0941800",
+    "name": "Strenču novads",
+    "country": "LV",
+    "population": 2892,
+    "domain": "strencu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0960200",
+    "name": "Kocēnu novads",
+    "country": "LV",
+    "population": 5776,
+    "domain": "kocenu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0961000",
+    "name": "Mazsalacas novads",
+    "country": "LV",
+    "population": 2867,
+    "domain": "mazsalacas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0961600",
+    "name": "Rūjienas novads",
+    "country": "LV",
+    "population": 4817,
+    "domain": "rujienas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0964700",
+    "name": "Beverīnas novads",
+    "country": "LV",
+    "population": 2948,
+    "domain": "beverinas.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0967101",
+    "name": "Burtnieku novads",
+    "country": "LV",
+    "population": 7410,
+    "domain": "burtnieku.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0967300",
+    "name": "Naukšēnu novads",
+    "country": "LV",
+    "population": 1689,
+    "domain": "nauksenu.novads.lv",
+    "domain_source": "guess"
+  },
+  {
+    "id": "LV-0980200",
+    "name": "Ventspils novads",
+    "country": "LV",
+    "population": 10777,
+    "domain": "ventspils.lv",
     "domain_source": "guess"
   },
   {

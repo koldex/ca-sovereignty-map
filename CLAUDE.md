@@ -1,9 +1,9 @@
-# CAmap Nordics — AI Agent Context
+# CAmap Nordic & Baltic — AI Agent Context
 
 ## Project summary
 
 Interactive map of TLS certificate authority (CA) sovereignty for Nordic municipalities
-(FI, SE, NO, DK). Maps kill-switch risk: US-controlled CAs (CLOUD Act) vs EU/Nordic CAs.
+(FI, SE, NO, DK, EE, LV, LT). Maps kill-switch risk: US-controlled CAs (CLOUD Act) vs EU/Nordic CAs.
 
 **Live:** https://koldex.github.io/ca-sovereignty-map/
 **Inspired by:** mxmap.ch (David Huser) → mxmap.nl (Soverin/Andre)
