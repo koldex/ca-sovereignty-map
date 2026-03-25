@@ -4736,6 +4736,14 @@
     "domain_source": "override"
   },
   {
+    "id": "LV-0741401",
+    "name": "Lielvārdes novads",
+    "country": "LV",
+    "population": 9547,
+    "domain": "lielvarde.lv",
+    "domain_source": "guess"
+  },
+  {
     "id": "LV-0760202",
     "name": "Preiļu novads",
     "country": "LV",
@@ -5096,12 +5104,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1108",
+    "name": "Sandnes",
+    "country": "NO",
+    "population": 79537,
+    "domain": "sandnes.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1111",
     "name": "Sokndal",
     "country": "NO",
     "population": 3280,
     "domain": "www.sokndal.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1112",
+    "name": "Lund",
+    "country": "NO",
+    "population": 3202,
+    "domain": "lund.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1114",
+    "name": "Bjerkreim",
+    "country": "NO",
+    "population": 2787,
+    "domain": "bjerkreim.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1119",
@@ -5140,8 +5172,16 @@
     "name": "Sola",
     "country": "NO",
     "population": 27153,
-    "domain": "www.sola.no",
-    "domain_source": "guess"
+    "domain": "sola.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1127",
+    "name": "Randaberg",
+    "country": "NO",
+    "population": 11221,
+    "domain": "randaberg.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1130",
@@ -5156,8 +5196,8 @@
     "name": "Hjelmeland",
     "country": "NO",
     "population": 2574,
-    "domain": "www.hjelmeland.no",
-    "domain_source": "guess"
+    "domain": "hjelmeland.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1134",
@@ -5176,6 +5216,22 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1144",
+    "name": "Kvitsøy",
+    "country": "NO",
+    "population": 517,
+    "domain": "kvitsoy.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1145",
+    "name": "Bokn",
+    "country": "NO",
+    "population": 852,
+    "domain": "bokn.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1149",
     "name": "Karmøy",
     "country": "NO",
@@ -5190,6 +5246,14 @@
     "population": 198,
     "domain": "www.utsira.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1160",
+    "name": "Vindafjord",
+    "country": "NO",
+    "population": 8714,
+    "domain": "vindafjord.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1505",
@@ -5208,6 +5272,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1507",
+    "name": "Ålesund",
+    "country": "NO",
+    "population": 66258,
+    "domain": "alesund.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1511",
     "name": "Vanylven",
     "country": "NO",
@@ -5216,12 +5288,44 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1514",
+    "name": "Sande",
+    "country": "NO",
+    "population": 2461,
+    "domain": "sande.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1515",
+    "name": "Herøy (Møre og Romsdal)",
+    "country": "NO",
+    "population": 8900,
+    "domain": "heroy.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1516",
+    "name": "Ulstein",
+    "country": "NO",
+    "population": 8571,
+    "domain": "ulstein.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1517",
+    "name": "Hareid",
+    "country": "NO",
+    "population": 5175,
+    "domain": "hareid.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1520",
     "name": "Ørsta",
     "country": "NO",
     "population": 10825,
-    "domain": "www.orsta.no",
-    "domain_source": "guess"
+    "domain": "orsta.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1525",
@@ -5248,12 +5352,20 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1532",
+    "name": "Giske",
+    "country": "NO",
+    "population": 8462,
+    "domain": "giske.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1535",
     "name": "Vestnes",
     "country": "NO",
     "population": 6532,
-    "domain": "www.vestnes.no",
-    "domain_source": "guess"
+    "domain": "vestnes.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1539",
@@ -5268,8 +5380,8 @@
     "name": "Aukra",
     "country": "NO",
     "population": 3509,
-    "domain": "www.aukra.no",
-    "domain_source": "guess"
+    "domain": "aukra.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1554",
@@ -5280,6 +5392,22 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1557",
+    "name": "Gjemnes",
+    "country": "NO",
+    "population": 2629,
+    "domain": "gjemnes.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1560",
+    "name": "Tingvoll",
+    "country": "NO",
+    "population": 3025,
+    "domain": "tingvoll.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1563",
     "name": "Sunndal",
     "country": "NO",
@@ -5288,12 +5416,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1566",
+    "name": "Surnadal",
+    "country": "NO",
+    "population": 5920,
+    "domain": "surnadal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1573",
+    "name": "Smøla",
+    "country": "NO",
+    "population": 2150,
+    "domain": "smola.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1576",
     "name": "Aure",
     "country": "NO",
     "population": 3507,
     "domain": "www.aure.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1577",
+    "name": "Volda",
+    "country": "NO",
+    "population": 10473,
+    "domain": "volda.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1578",
@@ -5332,8 +5484,16 @@
     "name": "Bindal",
     "country": "NO",
     "population": 1426,
-    "domain": "www.bindal.no",
-    "domain_source": "guess"
+    "domain": "bindal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1812",
+    "name": "Sømna",
+    "country": "NO",
+    "population": 1975,
+    "domain": "somna.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1813",
@@ -5342,6 +5502,22 @@
     "population": 7917,
     "domain": "www.bronnoy.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1815",
+    "name": "Vega",
+    "country": "NO",
+    "population": 1200,
+    "domain": "vega.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1816",
+    "name": "Vevelstad",
+    "country": "NO",
+    "population": 462,
+    "domain": "vevelstad.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1820",
@@ -5366,6 +5542,46 @@
     "population": 13278,
     "domain": "www.vefsn.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1825",
+    "name": "Grane",
+    "country": "NO",
+    "population": 1482,
+    "domain": "grane.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1826",
+    "name": "Aarborte - Hattfjelldal",
+    "country": "NO",
+    "population": 1297,
+    "domain": "hattfjelldal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1827",
+    "name": "Dønna",
+    "country": "NO",
+    "population": 1371,
+    "domain": "donna.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1828",
+    "name": "Nesna",
+    "country": "NO",
+    "population": 1761,
+    "domain": "nesna.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1832",
+    "name": "Hemnes",
+    "country": "NO",
+    "population": 4454,
+    "domain": "hemnes.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1833",
@@ -5408,12 +5624,60 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1839",
+    "name": "Beiarn",
+    "country": "NO",
+    "population": 1017,
+    "domain": "beiarn.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1840",
+    "name": "Saltdal",
+    "country": "NO",
+    "population": 4671,
+    "domain": "saltdal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1841",
+    "name": "Fauske - Fuossko",
+    "country": "NO",
+    "population": 9739,
+    "domain": "fauske.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1845",
+    "name": "Sørfold",
+    "country": "NO",
+    "population": 1926,
+    "domain": "sorfold.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1848",
     "name": "Steigen",
     "country": "NO",
     "population": 2608,
     "domain": "www.steigen.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1851",
+    "name": "Lødingen",
+    "country": "NO",
+    "population": 2034,
+    "domain": "lodingen.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1853",
+    "name": "Evenes - Evenášši",
+    "country": "NO",
+    "population": 1348,
+    "domain": "evenes.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1856",
@@ -5432,12 +5696,60 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1859",
+    "name": "Flakstad",
+    "country": "NO",
+    "population": 1272,
+    "domain": "flakstad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1860",
+    "name": "Vestvågøy",
+    "country": "NO",
+    "population": 11433,
+    "domain": "vestvagoy.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-1865",
     "name": "Vågan",
     "country": "NO",
     "population": 9608,
     "domain": "www.vagan.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-1866",
+    "name": "Hadsel",
+    "country": "NO",
+    "population": 8061,
+    "domain": "hadsel.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1867",
+    "name": "Bø",
+    "country": "NO",
+    "population": 2569,
+    "domain": "bo.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1868",
+    "name": "Øksnes",
+    "country": "NO",
+    "population": 4410,
+    "domain": "oksnes.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1870",
+    "name": "Sortland - Suortá",
+    "country": "NO",
+    "population": 10566,
+    "domain": "sortland.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-1871",
@@ -5448,12 +5760,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-1874",
+    "name": "Moskenes",
+    "country": "NO",
+    "population": 1015,
+    "domain": "moskenes.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-1875",
+    "name": "Hábmer - Hamarøy",
+    "country": "NO",
+    "population": 2766,
+    "domain": "hamaroy.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3001",
     "name": "Halden",
     "country": "NO",
     "population": 31373,
     "domain": "www.halden.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3002",
+    "name": "Moss",
+    "country": "NO",
+    "population": 49273,
+    "domain": "moss.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3003",
@@ -5512,20 +5848,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3013",
+    "name": "Marker",
+    "country": "NO",
+    "population": 3595,
+    "domain": "marker.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3015",
     "name": "Skiptvet",
     "country": "NO",
     "population": 3805,
-    "domain": "www.skiptvet.no",
-    "domain_source": "guess"
+    "domain": "skiptvet.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3016",
     "name": "Rakkestad",
     "country": "NO",
     "population": 8255,
-    "domain": "www.rakkestad.no",
-    "domain_source": "guess"
+    "domain": "rakkestad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3017",
+    "name": "Råde",
+    "country": "NO",
+    "population": 7508,
+    "domain": "rade.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3019",
@@ -5544,12 +5896,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3021",
+    "name": "Ås",
+    "country": "NO",
+    "population": 20439,
+    "domain": "as.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3022",
     "name": "Frogn",
     "country": "NO",
     "population": 15877,
     "domain": "www.frogn.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3023",
+    "name": "Nesodden",
+    "country": "NO",
+    "population": 19616,
+    "domain": "nesodden.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3024",
@@ -5568,12 +5936,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3026",
+    "name": "Aurskog-Høland",
+    "country": "NO",
+    "population": 17390,
+    "domain": "aurskog-holand.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3027",
+    "name": "Rælingen",
+    "country": "NO",
+    "population": 18530,
+    "domain": "ralingen.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3028",
     "name": "Enebakk",
     "country": "NO",
     "population": 11110,
     "domain": "www.enebakk.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3029",
+    "name": "Lørenskog",
+    "country": "NO",
+    "population": 41460,
+    "domain": "lorenskog.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3030",
@@ -5592,6 +5984,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3032",
+    "name": "Gjerdrum",
+    "country": "NO",
+    "population": 6890,
+    "domain": "gjerdrum.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3033",
     "name": "Ullensaker",
     "country": "NO",
@@ -5600,20 +6000,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3034",
+    "name": "Nes",
+    "country": "NO",
+    "population": 23092,
+    "domain": "nes.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3035",
     "name": "Eidsvoll",
     "country": "NO",
     "population": 25436,
-    "domain": "www.eidsvoll.no",
-    "domain_source": "guess"
+    "domain": "eidsvoll.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3036",
     "name": "Nannestad",
     "country": "NO",
     "population": 14139,
-    "domain": "www.nannestad.no",
-    "domain_source": "guess"
+    "domain": "nannestad.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3037",
@@ -5628,8 +6036,8 @@
     "name": "Hole",
     "country": "NO",
     "population": 6799,
-    "domain": "www.hole.no",
-    "domain_source": "guess"
+    "domain": "ullensaker.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3039",
@@ -5648,6 +6056,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3041",
+    "name": "Gol",
+    "country": "NO",
+    "population": 4608,
+    "domain": "gol.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3042",
     "name": "Hemsedal",
     "country": "NO",
@@ -5664,12 +6080,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3044",
+    "name": "Hol",
+    "country": "NO",
+    "population": 4441,
+    "domain": "hol.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3045",
     "name": "Sigdal",
     "country": "NO",
     "population": 3467,
     "domain": "www.sigdal.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3046",
+    "name": "Krødsherad",
+    "country": "NO",
+    "population": 2212,
+    "domain": "krodsherad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3047",
+    "name": "Modum",
+    "country": "NO",
+    "population": 14115,
+    "domain": "modum.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3048",
@@ -5702,6 +6142,14 @@
     "population": 1390,
     "domain": "www.rollag.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3052",
+    "name": "Nore og Uvdal",
+    "country": "NO",
+    "population": 2439,
+    "domain": "nore-og-uvdal.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3053",
@@ -5776,6 +6224,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3414",
+    "name": "Nord-Odal",
+    "country": "NO",
+    "population": 5016,
+    "domain": "nord-odal.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3415",
     "name": "Sør-Odal",
     "country": "NO",
@@ -5798,6 +6254,14 @@
     "population": 4612,
     "domain": "www.grue.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3418",
+    "name": "Åsnes",
+    "country": "NO",
+    "population": 7203,
+    "domain": "asnes.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3420",
@@ -5824,6 +6288,46 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3423",
+    "name": "Stor-Elvdal",
+    "country": "NO",
+    "population": 2419,
+    "domain": "stor-elvdal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3424",
+    "name": "Rendalen",
+    "country": "NO",
+    "population": 1780,
+    "domain": "rendalen.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3425",
+    "name": "Engerdal",
+    "country": "NO",
+    "population": 1268,
+    "domain": "engerdal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3426",
+    "name": "Tolga",
+    "country": "NO",
+    "population": 1562,
+    "domain": "tolga.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3427",
+    "name": "Tynset",
+    "country": "NO",
+    "population": 5578,
+    "domain": "tynset.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3428",
     "name": "Alvdal",
     "country": "NO",
@@ -5832,12 +6336,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3429",
+    "name": "Folldal",
+    "country": "NO",
+    "population": 1545,
+    "domain": "folldal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3430",
+    "name": "Os",
+    "country": "NO",
+    "population": 1891,
+    "domain": "os.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3431",
     "name": "Dovre",
     "country": "NO",
     "population": 2553,
     "domain": "www.dovre.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3432",
+    "name": "Lesja",
+    "country": "NO",
+    "population": 1975,
+    "domain": "lesja.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3433",
@@ -5856,6 +6384,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3435",
+    "name": "Vågå",
+    "country": "NO",
+    "population": 3570,
+    "domain": "vaga.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3436",
     "name": "Nord-Fron",
     "country": "NO",
@@ -5864,12 +6400,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3437",
+    "name": "Sel",
+    "country": "NO",
+    "population": 5739,
+    "domain": "sel.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3438",
     "name": "Sør-Fron",
     "country": "NO",
     "population": 3119,
     "domain": "www.sor-fron.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3439",
+    "name": "Ringebu",
+    "country": "NO",
+    "population": 4392,
+    "domain": "ringebu.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3440",
@@ -5886,6 +6438,46 @@
     "population": 6106,
     "domain": "www.gausdal.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3442",
+    "name": "Østre Toten",
+    "country": "NO",
+    "population": 14973,
+    "domain": "ostre-toten.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3443",
+    "name": "Vestre Toten",
+    "country": "NO",
+    "population": 13427,
+    "domain": "vestre-toten.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3446",
+    "name": "Gran",
+    "country": "NO",
+    "population": 13630,
+    "domain": "gran.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3447",
+    "name": "Søndre Land",
+    "country": "NO",
+    "population": 5617,
+    "domain": "sondre-land.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3448",
+    "name": "Nordre Land",
+    "country": "NO",
+    "population": 6633,
+    "domain": "nordre-land.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3449",
@@ -5912,6 +6504,22 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3452",
+    "name": "Vestre Slidre",
+    "country": "NO",
+    "population": 2125,
+    "domain": "vestre-slidre.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3453",
+    "name": "Øystre Slidre",
+    "country": "NO",
+    "population": 3229,
+    "domain": "oystre-slidre.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3454",
     "name": "Vang",
     "country": "NO",
@@ -5934,6 +6542,14 @@
     "population": 24699,
     "domain": "www.holmestrand.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3803",
+    "name": "Tønsberg",
+    "country": "NO",
+    "population": 56293,
+    "domain": "tonsberg.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3804",
@@ -5960,6 +6576,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3807",
+    "name": "Skien",
+    "country": "NO",
+    "population": 54942,
+    "domain": "skien.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3808",
     "name": "Notodden",
     "country": "NO",
@@ -5984,12 +6608,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3813",
+    "name": "Bamble",
+    "country": "NO",
+    "population": 14061,
+    "domain": "bamble.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3814",
     "name": "Kragerø",
     "country": "NO",
     "population": 10380,
     "domain": "www.kragero.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-3815",
+    "name": "Drangedal",
+    "country": "NO",
+    "population": 4060,
+    "domain": "drangedal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3816",
+    "name": "Nome",
+    "country": "NO",
+    "population": 6515,
+    "domain": "nome.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3817",
@@ -6008,12 +6656,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-3819",
+    "name": "Hjartdal",
+    "country": "NO",
+    "population": 1573,
+    "domain": "hjartdal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-3820",
+    "name": "Seljord",
+    "country": "NO",
+    "population": 2888,
+    "domain": "seljord.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-3821",
     "name": "Kviteseid",
     "country": "NO",
     "population": 2403,
-    "domain": "www.kviteseid.no",
-    "domain_source": "guess"
+    "domain": "vinje.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-3822",
@@ -6064,6 +6728,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4203",
+    "name": "Arendal",
+    "country": "NO",
+    "population": 44999,
+    "domain": "arendal.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4204",
     "name": "Kristiansand",
     "country": "NO",
@@ -6096,12 +6768,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4211",
+    "name": "Gjerstad",
+    "country": "NO",
+    "population": 2428,
+    "domain": "gjerstad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4212",
+    "name": "Vegårshei",
+    "country": "NO",
+    "population": 2097,
+    "domain": "vegarshei.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4213",
     "name": "Tvedestrand",
     "country": "NO",
     "population": 6053,
     "domain": "www.tvedestrand.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-4214",
+    "name": "Froland",
+    "country": "NO",
+    "population": 5951,
+    "domain": "froland.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-4215",
@@ -6128,6 +6824,22 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4218",
+    "name": "Iveland",
+    "country": "NO",
+    "population": 1331,
+    "domain": "iveland.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4220",
+    "name": "Bygland",
+    "country": "NO",
+    "population": 1162,
+    "domain": "bygland.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4221",
     "name": "Valle",
     "country": "NO",
@@ -6152,12 +6864,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4224",
+    "name": "Åseral",
+    "country": "NO",
+    "population": 932,
+    "domain": "aseral.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4225",
     "name": "Lyngdal",
     "country": "NO",
     "population": 10365,
     "domain": "www.lyngdal.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-4226",
+    "name": "Hægebostad",
+    "country": "NO",
+    "population": 1680,
+    "domain": "haegebostad.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-4227",
@@ -6224,12 +6952,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4615",
+    "name": "Fitjar",
+    "country": "NO",
+    "population": 3189,
+    "domain": "fitjar.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4616",
     "name": "Tysnes",
     "country": "NO",
     "population": 2869,
     "domain": "www.tysnes.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-4617",
+    "name": "Kvinnherad",
+    "country": "NO",
+    "population": 13071,
+    "domain": "kvinnherad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4618",
+    "name": "Ullensvang",
+    "country": "NO",
+    "population": 11048,
+    "domain": "ullensvang.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-4619",
@@ -6244,15 +6996,23 @@
     "name": "Ulvik",
     "country": "NO",
     "population": 1080,
-    "domain": "www.ulvik.no",
+    "domain": "ulvik.herad.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-4621",
+    "name": "Voss",
+    "country": "NO",
+    "population": 15740,
+    "domain": "voss.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-4622",
     "name": "Kvam",
     "country": "NO",
     "population": 8457,
-    "domain": "www.kvam.no",
+    "domain": "kvam.herad.no",
     "domain_source": "guess"
   },
   {
@@ -6312,6 +7072,30 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4630",
+    "name": "Osterøy",
+    "country": "NO",
+    "population": 8098,
+    "domain": "osteroy.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4631",
+    "name": "Alver",
+    "country": "NO",
+    "population": 29224,
+    "domain": "alver.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4632",
+    "name": "Austrheim",
+    "country": "NO",
+    "population": 2870,
+    "domain": "austrheim.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4633",
     "name": "Fedje",
     "country": "NO",
@@ -6336,12 +7120,52 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4636",
+    "name": "Solund",
+    "country": "NO",
+    "population": 802,
+    "domain": "solund.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4637",
+    "name": "Hyllestad",
+    "country": "NO",
+    "population": 1328,
+    "domain": "hyllestad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4638",
+    "name": "Høyanger",
+    "country": "NO",
+    "population": 4101,
+    "domain": "hoyanger.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4639",
     "name": "Vik",
     "country": "NO",
     "population": 2635,
     "domain": "www.vik.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-4640",
+    "name": "Sogndal",
+    "country": "NO",
+    "population": 11847,
+    "domain": "sogndal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-4641",
+    "name": "Aurland",
+    "country": "NO",
+    "population": 1781,
+    "domain": "aurland.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-4642",
@@ -6360,6 +7184,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4644",
+    "name": "Luster",
+    "country": "NO",
+    "population": 5174,
+    "domain": "luster.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4645",
     "name": "Askvoll",
     "country": "NO",
@@ -6368,12 +7200,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-4646",
+    "name": "Fjaler",
+    "country": "NO",
+    "population": 2802,
+    "domain": "fjaler.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-4647",
     "name": "Sunnfjord",
     "country": "NO",
     "population": 22030,
     "domain": "sunnfjord.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-4648",
+    "name": "Bremanger",
+    "country": "NO",
+    "population": 3629,
+    "domain": "bremanger.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-4649",
@@ -6414,6 +7262,14 @@
     "population": 24357,
     "domain": "www.steinkjer.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5007",
+    "name": "Namsos - Nåavmesjenjaelmie",
+    "country": "NO",
+    "population": 15230,
+    "domain": "namsos.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5014",
@@ -6464,12 +7320,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5027",
+    "name": "Midtre Gauldal",
+    "country": "NO",
+    "population": 6238,
+    "domain": "midtre-gauldal.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5028",
     "name": "Melhus",
     "country": "NO",
     "population": 16733,
     "domain": "www.melhus.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5029",
+    "name": "Skaun",
+    "country": "NO",
+    "population": 8325,
+    "domain": "skaun.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5031",
@@ -6488,12 +7360,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5033",
+    "name": "Tydal",
+    "country": "NO",
+    "population": 769,
+    "domain": "tydal.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5034",
+    "name": "Meråker",
+    "country": "NO",
+    "population": 2422,
+    "domain": "meraker.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5035",
     "name": "Stjørdal",
     "country": "NO",
     "population": 24145,
     "domain": "www.stjordal.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5036",
+    "name": "Frosta",
+    "country": "NO",
+    "population": 2627,
+    "domain": "frosta.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5037",
@@ -6512,12 +7408,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5041",
+    "name": "Snåase - Snåsa",
+    "country": "NO",
+    "population": 2063,
+    "domain": "snasa.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5042",
     "name": "Lierne",
     "country": "NO",
     "population": 1355,
     "domain": "www.lierne.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5043",
+    "name": "Raarvihke - Røyrvik",
+    "country": "NO",
+    "population": 461,
+    "domain": "royrvik.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5044",
+    "name": "Namsskogan",
+    "country": "NO",
+    "population": 843,
+    "domain": "namsskogan.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5045",
@@ -6536,12 +7456,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5047",
+    "name": "Overhalla",
+    "country": "NO",
+    "population": 3884,
+    "domain": "overhalla.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5049",
     "name": "Flatanger",
     "country": "NO",
     "population": 1103,
     "domain": "www.flatanger.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5052",
+    "name": "Leka",
+    "country": "NO",
+    "population": 557,
+    "domain": "leka.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5053",
@@ -6600,6 +7536,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5060",
+    "name": "Nærøysund",
+    "country": "NO",
+    "population": 9623,
+    "domain": "naroysund.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5061",
     "name": "Rindal",
     "country": "NO",
@@ -6614,6 +7558,14 @@
     "population": 76974,
     "domain": "www.tromso.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5402",
+    "name": "Harstad - Hárstták",
+    "country": "NO",
+    "population": 24703,
+    "domain": "harstad.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5403",
@@ -6632,12 +7584,84 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5405",
+    "name": "Vadsø",
+    "country": "NO",
+    "population": 5788,
+    "domain": "vadso.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5406",
+    "name": "Hammerfest - Hámmerfeasta",
+    "country": "NO",
+    "population": 11448,
+    "domain": "hammerfest.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5411",
+    "name": "Kvæfjord",
+    "country": "NO",
+    "population": 2839,
+    "domain": "kvafjord.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5412",
+    "name": "Dielddanuorri - Tjeldsund",
+    "country": "NO",
+    "population": 4216,
+    "domain": "tjeldsund.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5413",
+    "name": "Ibestad",
+    "country": "NO",
+    "population": 1361,
+    "domain": "ibestad.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5414",
+    "name": "Gratangen",
+    "country": "NO",
+    "population": 1091,
+    "domain": "gratangen.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5415",
+    "name": "Loabák - Lavangen",
+    "country": "NO",
+    "population": 1034,
+    "domain": "lavangen.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5416",
     "name": "Bardu",
     "country": "NO",
     "population": 4005,
     "domain": "www.bardu.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5417",
+    "name": "Salangen",
+    "country": "NO",
+    "population": 2146,
+    "domain": "salangen.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5418",
+    "name": "Målselv",
+    "country": "NO",
+    "population": 6640,
+    "domain": "malselv.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5419",
@@ -6656,12 +7680,92 @@
     "domain_source": "guess"
   },
   {
+    "id": "NO-5421",
+    "name": "Senja",
+    "country": "NO",
+    "population": 14851,
+    "domain": "senja.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5422",
+    "name": "Balsfjord",
+    "country": "NO",
+    "population": 5559,
+    "domain": "balsfjord.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5423",
+    "name": "Karlsøy",
+    "country": "NO",
+    "population": 2200,
+    "domain": "karlsoy.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5424",
+    "name": "Lyngen",
+    "country": "NO",
+    "population": 2794,
+    "domain": "lyngen.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5425",
+    "name": "Storfjord - Omasvuotna - Omasvuono",
+    "country": "NO",
+    "population": 1829,
+    "domain": "storfjord.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5426",
+    "name": "Gáivuotna - Kåfjord - Kaivuono",
+    "country": "NO",
+    "population": 2071,
+    "domain": "kafjord.kommune.no",
+    "domain_source": "override"
+  },
+  {
     "id": "NO-5427",
     "name": "Skjervøy",
     "country": "NO",
     "population": 2927,
     "domain": "www.skjervoy.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5428",
+    "name": "Nordreisa - Ráisa - Raisi",
+    "country": "NO",
+    "population": 4861,
+    "domain": "nordreisa.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5429",
+    "name": "Kvænangen",
+    "country": "NO",
+    "population": 1191,
+    "domain": "kvanangen.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5430",
+    "name": "Guovdageaidnu - Kautokeino",
+    "country": "NO",
+    "population": 2910,
+    "domain": "kautokeino.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5432",
+    "name": "Loppa",
+    "country": "NO",
+    "population": 888,
+    "domain": "loppa.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5433",
@@ -6686,6 +7790,70 @@
     "population": 3162,
     "domain": "www.nordkapp.no",
     "domain_source": "guess"
+  },
+  {
+    "id": "NO-5436",
+    "name": "Porsanger - Porsáŋgu - Porsanki",
+    "country": "NO",
+    "population": 3998,
+    "domain": "porsanger.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5437",
+    "name": "Kárášjohka - Karasjok",
+    "country": "NO",
+    "population": 2628,
+    "domain": "karasjok.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5438",
+    "name": "Lebesby",
+    "country": "NO",
+    "population": 1290,
+    "domain": "lebesby.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5439",
+    "name": "Gamvik",
+    "country": "NO",
+    "population": 1132,
+    "domain": "gamvik.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5440",
+    "name": "Berlevåg",
+    "country": "NO",
+    "population": 957,
+    "domain": "berlevag.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5441",
+    "name": "Deatnu - Tana",
+    "country": "NO",
+    "population": 2918,
+    "domain": "tana.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5442",
+    "name": "Unjárga - Nesseby",
+    "country": "NO",
+    "population": 926,
+    "domain": "nesseby.kommune.no",
+    "domain_source": "override"
+  },
+  {
+    "id": "NO-5443",
+    "name": "Båtsfjord",
+    "country": "NO",
+    "population": 2221,
+    "domain": "batsfjord.kommune.no",
+    "domain_source": "override"
   },
   {
     "id": "NO-5444",

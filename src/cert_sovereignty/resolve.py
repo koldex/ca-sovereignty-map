@@ -222,10 +222,12 @@ def guess_domains(name: str, country: str, region: str = "") -> list[str]:
             add(f"www.{slug}.kommun.se")
 
         elif country == "NO":
-            # Norwegian: majority use {name}.kommune.no
+            # Norwegian: most use {name}.kommune.no;
+            # Vestland/western municipalities sometimes use {name}.herad.no
             add(f"{slug}.kommune.no")
-            add(f"{slug}.no")
             add(f"www.{slug}.kommune.no")
+            add(f"{slug}.herad.no")
+            add(f"{slug}.no")
             add(f"www.{slug}.no")
 
         elif country == "DK":

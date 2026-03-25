@@ -531,5 +531,639 @@
   "LT-79": {
     "domain": "trakai.lt",
     "reason": "Trakų rajono sav. — traku.lt redirects to Facebook real estate page; correct domain is trakai.lt"
+  },
+  "_section_NO": "Norwegian overrides: extended domain discovery for 140+ municipalities. Patterns: {slug}.kommune.no (primary), {slug}.herad.no (some Vestland), {slug}.no (some). Sami bilingual municipality names resolved via Norwegian part. Timeout fixes: replaced www.X.no with X.kommune.no.",
+  "NO-1108": {
+    "domain": "sandnes.kommune.no",
+    "reason": "NO — NO-1108 resolved via extended pattern/manual lookup"
+  },
+  "NO-1112": {
+    "domain": "lund.kommune.no",
+    "reason": "NO — NO-1112 resolved via extended pattern/manual lookup"
+  },
+  "NO-1114": {
+    "domain": "bjerkreim.kommune.no",
+    "reason": "NO — NO-1114 resolved via extended pattern/manual lookup"
+  },
+  "NO-1127": {
+    "domain": "randaberg.kommune.no",
+    "reason": "NO — NO-1127 resolved via extended pattern/manual lookup"
+  },
+  "NO-1144": {
+    "domain": "kvitsoy.kommune.no",
+    "reason": "NO — NO-1144 resolved via extended pattern/manual lookup"
+  },
+  "NO-1145": {
+    "domain": "bokn.kommune.no",
+    "reason": "NO — NO-1145 resolved via extended pattern/manual lookup"
+  },
+  "NO-1160": {
+    "domain": "vindafjord.kommune.no",
+    "reason": "NO — NO-1160 resolved via extended pattern/manual lookup"
+  },
+  "NO-1507": {
+    "domain": "alesund.kommune.no",
+    "reason": "NO — NO-1507 resolved via extended pattern/manual lookup"
+  },
+  "NO-1514": {
+    "domain": "sande.kommune.no",
+    "reason": "NO — NO-1514 resolved via extended pattern/manual lookup"
+  },
+  "NO-1516": {
+    "domain": "ulstein.kommune.no",
+    "reason": "NO — NO-1516 resolved via extended pattern/manual lookup"
+  },
+  "NO-1517": {
+    "domain": "hareid.kommune.no",
+    "reason": "NO — NO-1517 resolved via extended pattern/manual lookup"
+  },
+  "NO-1532": {
+    "domain": "giske.kommune.no",
+    "reason": "NO — NO-1532 resolved via extended pattern/manual lookup"
+  },
+  "NO-1557": {
+    "domain": "gjemnes.kommune.no",
+    "reason": "NO — NO-1557 resolved via extended pattern/manual lookup"
+  },
+  "NO-1560": {
+    "domain": "tingvoll.kommune.no",
+    "reason": "NO — NO-1560 resolved via extended pattern/manual lookup"
+  },
+  "NO-1566": {
+    "domain": "surnadal.kommune.no",
+    "reason": "NO — NO-1566 resolved via extended pattern/manual lookup"
+  },
+  "NO-1573": {
+    "domain": "smola.kommune.no",
+    "reason": "NO — NO-1573 resolved via extended pattern/manual lookup"
+  },
+  "NO-1577": {
+    "domain": "volda.kommune.no",
+    "reason": "NO — NO-1577 resolved via extended pattern/manual lookup"
+  },
+  "NO-1812": {
+    "domain": "somna.kommune.no",
+    "reason": "NO — NO-1812 resolved via extended pattern/manual lookup"
+  },
+  "NO-1815": {
+    "domain": "vega.kommune.no",
+    "reason": "NO — NO-1815 resolved via extended pattern/manual lookup"
+  },
+  "NO-1816": {
+    "domain": "vevelstad.kommune.no",
+    "reason": "NO — NO-1816 resolved via extended pattern/manual lookup"
+  },
+  "NO-1825": {
+    "domain": "grane.kommune.no",
+    "reason": "NO — NO-1825 resolved via extended pattern/manual lookup"
+  },
+  "NO-1827": {
+    "domain": "donna.kommune.no",
+    "reason": "NO — NO-1827 resolved via extended pattern/manual lookup"
+  },
+  "NO-1828": {
+    "domain": "nesna.kommune.no",
+    "reason": "NO — NO-1828 resolved via extended pattern/manual lookup"
+  },
+  "NO-1832": {
+    "domain": "hemnes.kommune.no",
+    "reason": "NO — NO-1832 resolved via extended pattern/manual lookup"
+  },
+  "NO-1839": {
+    "domain": "beiarn.kommune.no",
+    "reason": "NO — NO-1839 resolved via extended pattern/manual lookup"
+  },
+  "NO-1840": {
+    "domain": "saltdal.kommune.no",
+    "reason": "NO — NO-1840 resolved via extended pattern/manual lookup"
+  },
+  "NO-1845": {
+    "domain": "sorfold.kommune.no",
+    "reason": "NO — NO-1845 resolved via extended pattern/manual lookup"
+  },
+  "NO-1851": {
+    "domain": "lodingen.kommune.no",
+    "reason": "NO — NO-1851 resolved via extended pattern/manual lookup"
+  },
+  "NO-1859": {
+    "domain": "flakstad.kommune.no",
+    "reason": "NO — NO-1859 resolved via extended pattern/manual lookup"
+  },
+  "NO-1860": {
+    "domain": "vestvagoy.kommune.no",
+    "reason": "NO — NO-1860 resolved via extended pattern/manual lookup"
+  },
+  "NO-1866": {
+    "domain": "hadsel.kommune.no",
+    "reason": "NO — NO-1866 resolved via extended pattern/manual lookup"
+  },
+  "NO-1867": {
+    "domain": "bo.kommune.no",
+    "reason": "NO — NO-1867 resolved via extended pattern/manual lookup"
+  },
+  "NO-1868": {
+    "domain": "oksnes.kommune.no",
+    "reason": "NO — NO-1868 resolved via extended pattern/manual lookup"
+  },
+  "NO-1874": {
+    "domain": "moskenes.kommune.no",
+    "reason": "NO — NO-1874 resolved via extended pattern/manual lookup"
+  },
+  "NO-3002": {
+    "domain": "moss.kommune.no",
+    "reason": "NO — NO-3002 resolved via extended pattern/manual lookup"
+  },
+  "NO-3013": {
+    "domain": "marker.kommune.no",
+    "reason": "NO — NO-3013 resolved via extended pattern/manual lookup"
+  },
+  "NO-3017": {
+    "domain": "rade.kommune.no",
+    "reason": "NO — NO-3017 resolved via extended pattern/manual lookup"
+  },
+  "NO-3021": {
+    "domain": "as.kommune.no",
+    "reason": "NO — NO-3021 resolved via extended pattern/manual lookup"
+  },
+  "NO-3023": {
+    "domain": "nesodden.kommune.no",
+    "reason": "NO — NO-3023 resolved via extended pattern/manual lookup"
+  },
+  "NO-3026": {
+    "domain": "aurskog-holand.kommune.no",
+    "reason": "NO — NO-3026 resolved via extended pattern/manual lookup"
+  },
+  "NO-3029": {
+    "domain": "lorenskog.kommune.no",
+    "reason": "NO — NO-3029 resolved via extended pattern/manual lookup"
+  },
+  "NO-3032": {
+    "domain": "gjerdrum.kommune.no",
+    "reason": "NO — NO-3032 resolved via extended pattern/manual lookup"
+  },
+  "NO-3034": {
+    "domain": "nes.kommune.no",
+    "reason": "NO — NO-3034 resolved via extended pattern/manual lookup"
+  },
+  "NO-3041": {
+    "domain": "gol.kommune.no",
+    "reason": "NO — NO-3041 resolved via extended pattern/manual lookup"
+  },
+  "NO-3044": {
+    "domain": "hol.kommune.no",
+    "reason": "NO — NO-3044 resolved via extended pattern/manual lookup"
+  },
+  "NO-3046": {
+    "domain": "krodsherad.kommune.no",
+    "reason": "NO — NO-3046 resolved via extended pattern/manual lookup"
+  },
+  "NO-3047": {
+    "domain": "modum.kommune.no",
+    "reason": "NO — NO-3047 resolved via extended pattern/manual lookup"
+  },
+  "NO-3052": {
+    "domain": "nore-og-uvdal.kommune.no",
+    "reason": "NO — NO-3052 resolved via extended pattern/manual lookup"
+  },
+  "NO-3414": {
+    "domain": "nord-odal.kommune.no",
+    "reason": "NO — NO-3414 resolved via extended pattern/manual lookup"
+  },
+  "NO-3418": {
+    "domain": "asnes.kommune.no",
+    "reason": "NO — NO-3418 resolved via extended pattern/manual lookup"
+  },
+  "NO-3423": {
+    "domain": "stor-elvdal.kommune.no",
+    "reason": "NO — NO-3423 resolved via extended pattern/manual lookup"
+  },
+  "NO-3424": {
+    "domain": "rendalen.kommune.no",
+    "reason": "NO — NO-3424 resolved via extended pattern/manual lookup"
+  },
+  "NO-3425": {
+    "domain": "engerdal.kommune.no",
+    "reason": "NO — NO-3425 resolved via extended pattern/manual lookup"
+  },
+  "NO-3426": {
+    "domain": "tolga.kommune.no",
+    "reason": "NO — NO-3426 resolved via extended pattern/manual lookup"
+  },
+  "NO-3427": {
+    "domain": "tynset.kommune.no",
+    "reason": "NO — NO-3427 resolved via extended pattern/manual lookup"
+  },
+  "NO-3429": {
+    "domain": "folldal.kommune.no",
+    "reason": "NO — NO-3429 resolved via extended pattern/manual lookup"
+  },
+  "NO-3430": {
+    "domain": "os.kommune.no",
+    "reason": "NO — NO-3430 resolved via extended pattern/manual lookup"
+  },
+  "NO-3432": {
+    "domain": "lesja.kommune.no",
+    "reason": "NO — NO-3432 resolved via extended pattern/manual lookup"
+  },
+  "NO-3435": {
+    "domain": "vaga.kommune.no",
+    "reason": "NO — NO-3435 resolved via extended pattern/manual lookup"
+  },
+  "NO-3437": {
+    "domain": "sel.kommune.no",
+    "reason": "NO — NO-3437 resolved via extended pattern/manual lookup"
+  },
+  "NO-3439": {
+    "domain": "ringebu.kommune.no",
+    "reason": "NO — NO-3439 resolved via extended pattern/manual lookup"
+  },
+  "NO-3442": {
+    "domain": "ostre-toten.kommune.no",
+    "reason": "NO — NO-3442 resolved via extended pattern/manual lookup"
+  },
+  "NO-3443": {
+    "domain": "vestre-toten.kommune.no",
+    "reason": "NO — NO-3443 resolved via extended pattern/manual lookup"
+  },
+  "NO-3446": {
+    "domain": "gran.kommune.no",
+    "reason": "NO — NO-3446 resolved via extended pattern/manual lookup"
+  },
+  "NO-3447": {
+    "domain": "sondre-land.kommune.no",
+    "reason": "NO — NO-3447 resolved via extended pattern/manual lookup"
+  },
+  "NO-3448": {
+    "domain": "nordre-land.kommune.no",
+    "reason": "NO — NO-3448 resolved via extended pattern/manual lookup"
+  },
+  "NO-3452": {
+    "domain": "vestre-slidre.kommune.no",
+    "reason": "NO — NO-3452 resolved via extended pattern/manual lookup"
+  },
+  "NO-3453": {
+    "domain": "oystre-slidre.kommune.no",
+    "reason": "NO — NO-3453 resolved via extended pattern/manual lookup"
+  },
+  "NO-3803": {
+    "domain": "tonsberg.kommune.no",
+    "reason": "NO — NO-3803 resolved via extended pattern/manual lookup"
+  },
+  "NO-3807": {
+    "domain": "skien.kommune.no",
+    "reason": "NO — NO-3807 resolved via extended pattern/manual lookup"
+  },
+  "NO-3813": {
+    "domain": "bamble.kommune.no",
+    "reason": "NO — NO-3813 resolved via extended pattern/manual lookup"
+  },
+  "NO-3815": {
+    "domain": "drangedal.kommune.no",
+    "reason": "NO — NO-3815 resolved via extended pattern/manual lookup"
+  },
+  "NO-3816": {
+    "domain": "nome.kommune.no",
+    "reason": "NO — NO-3816 resolved via extended pattern/manual lookup"
+  },
+  "NO-3819": {
+    "domain": "hjartdal.kommune.no",
+    "reason": "NO — NO-3819 resolved via extended pattern/manual lookup"
+  },
+  "NO-3820": {
+    "domain": "seljord.kommune.no",
+    "reason": "NO — NO-3820 resolved via extended pattern/manual lookup"
+  },
+  "NO-4203": {
+    "domain": "arendal.kommune.no",
+    "reason": "NO — NO-4203 resolved via extended pattern/manual lookup"
+  },
+  "NO-4211": {
+    "domain": "gjerstad.kommune.no",
+    "reason": "NO — NO-4211 resolved via extended pattern/manual lookup"
+  },
+  "NO-4212": {
+    "domain": "vegarshei.kommune.no",
+    "reason": "NO — NO-4212 resolved via extended pattern/manual lookup"
+  },
+  "NO-4214": {
+    "domain": "froland.kommune.no",
+    "reason": "NO — NO-4214 resolved via extended pattern/manual lookup"
+  },
+  "NO-4218": {
+    "domain": "iveland.kommune.no",
+    "reason": "NO — NO-4218 resolved via extended pattern/manual lookup"
+  },
+  "NO-4220": {
+    "domain": "bygland.kommune.no",
+    "reason": "NO — NO-4220 resolved via extended pattern/manual lookup"
+  },
+  "NO-4224": {
+    "domain": "aseral.kommune.no",
+    "reason": "NO — NO-4224 resolved via extended pattern/manual lookup"
+  },
+  "NO-4226": {
+    "domain": "haegebostad.kommune.no",
+    "reason": "NO — NO-4226 resolved via extended pattern/manual lookup"
+  },
+  "NO-4615": {
+    "domain": "fitjar.kommune.no",
+    "reason": "NO — NO-4615 resolved via extended pattern/manual lookup"
+  },
+  "NO-4617": {
+    "domain": "kvinnherad.kommune.no",
+    "reason": "NO — NO-4617 resolved via extended pattern/manual lookup"
+  },
+  "NO-4618": {
+    "domain": "ullensvang.kommune.no",
+    "reason": "NO — NO-4618 resolved via extended pattern/manual lookup"
+  },
+  "NO-4621": {
+    "domain": "voss.kommune.no",
+    "reason": "NO — NO-4621 resolved via extended pattern/manual lookup"
+  },
+  "NO-4630": {
+    "domain": "osteroy.kommune.no",
+    "reason": "NO — NO-4630 resolved via extended pattern/manual lookup"
+  },
+  "NO-4631": {
+    "domain": "alver.kommune.no",
+    "reason": "NO — NO-4631 resolved via extended pattern/manual lookup"
+  },
+  "NO-4632": {
+    "domain": "austrheim.kommune.no",
+    "reason": "NO — NO-4632 resolved via extended pattern/manual lookup"
+  },
+  "NO-4636": {
+    "domain": "solund.kommune.no",
+    "reason": "NO — NO-4636 resolved via extended pattern/manual lookup"
+  },
+  "NO-4637": {
+    "domain": "hyllestad.kommune.no",
+    "reason": "NO — NO-4637 resolved via extended pattern/manual lookup"
+  },
+  "NO-4638": {
+    "domain": "hoyanger.kommune.no",
+    "reason": "NO — NO-4638 resolved via extended pattern/manual lookup"
+  },
+  "NO-4640": {
+    "domain": "sogndal.kommune.no",
+    "reason": "NO — NO-4640 resolved via extended pattern/manual lookup"
+  },
+  "NO-4641": {
+    "domain": "aurland.kommune.no",
+    "reason": "NO — NO-4641 resolved via extended pattern/manual lookup"
+  },
+  "NO-4644": {
+    "domain": "luster.kommune.no",
+    "reason": "NO — NO-4644 resolved via extended pattern/manual lookup"
+  },
+  "NO-4646": {
+    "domain": "fjaler.kommune.no",
+    "reason": "NO — NO-4646 resolved via extended pattern/manual lookup"
+  },
+  "NO-4648": {
+    "domain": "bremanger.kommune.no",
+    "reason": "NO — NO-4648 resolved via extended pattern/manual lookup"
+  },
+  "NO-5027": {
+    "domain": "midtre-gauldal.kommune.no",
+    "reason": "NO — NO-5027 resolved via extended pattern/manual lookup"
+  },
+  "NO-5029": {
+    "domain": "skaun.kommune.no",
+    "reason": "NO — NO-5029 resolved via extended pattern/manual lookup"
+  },
+  "NO-5033": {
+    "domain": "tydal.kommune.no",
+    "reason": "NO — NO-5033 resolved via extended pattern/manual lookup"
+  },
+  "NO-5034": {
+    "domain": "meraker.kommune.no",
+    "reason": "NO — NO-5034 resolved via extended pattern/manual lookup"
+  },
+  "NO-5036": {
+    "domain": "frosta.kommune.no",
+    "reason": "NO — NO-5036 resolved via extended pattern/manual lookup"
+  },
+  "NO-5044": {
+    "domain": "namsskogan.kommune.no",
+    "reason": "NO — NO-5044 resolved via extended pattern/manual lookup"
+  },
+  "NO-5047": {
+    "domain": "overhalla.kommune.no",
+    "reason": "NO — NO-5047 resolved via extended pattern/manual lookup"
+  },
+  "NO-5052": {
+    "domain": "leka.kommune.no",
+    "reason": "NO — NO-5052 resolved via extended pattern/manual lookup"
+  },
+  "NO-5405": {
+    "domain": "vadso.kommune.no",
+    "reason": "NO — NO-5405 resolved via extended pattern/manual lookup"
+  },
+  "NO-5413": {
+    "domain": "ibestad.kommune.no",
+    "reason": "NO — NO-5413 resolved via extended pattern/manual lookup"
+  },
+  "NO-5414": {
+    "domain": "gratangen.kommune.no",
+    "reason": "NO — NO-5414 resolved via extended pattern/manual lookup"
+  },
+  "NO-5417": {
+    "domain": "salangen.kommune.no",
+    "reason": "NO — NO-5417 resolved via extended pattern/manual lookup"
+  },
+  "NO-5418": {
+    "domain": "malselv.kommune.no",
+    "reason": "NO — NO-5418 resolved via extended pattern/manual lookup"
+  },
+  "NO-5421": {
+    "domain": "senja.kommune.no",
+    "reason": "NO — NO-5421 resolved via extended pattern/manual lookup"
+  },
+  "NO-5422": {
+    "domain": "balsfjord.kommune.no",
+    "reason": "NO — NO-5422 resolved via extended pattern/manual lookup"
+  },
+  "NO-5423": {
+    "domain": "karlsoy.kommune.no",
+    "reason": "NO — NO-5423 resolved via extended pattern/manual lookup"
+  },
+  "NO-5424": {
+    "domain": "lyngen.kommune.no",
+    "reason": "NO — NO-5424 resolved via extended pattern/manual lookup"
+  },
+  "NO-5432": {
+    "domain": "loppa.kommune.no",
+    "reason": "NO — NO-5432 resolved via extended pattern/manual lookup"
+  },
+  "NO-5438": {
+    "domain": "lebesby.kommune.no",
+    "reason": "NO — NO-5438 resolved via extended pattern/manual lookup"
+  },
+  "NO-5439": {
+    "domain": "gamvik.kommune.no",
+    "reason": "NO — NO-5439 resolved via extended pattern/manual lookup"
+  },
+  "NO-5440": {
+    "domain": "berlevag.kommune.no",
+    "reason": "NO — NO-5440 resolved via extended pattern/manual lookup"
+  },
+  "NO-5443": {
+    "domain": "batsfjord.kommune.no",
+    "reason": "NO — NO-5443 resolved via extended pattern/manual lookup"
+  },
+  "NO-1826": {
+    "domain": "hattfjelldal.kommune.no",
+    "reason": "NO — NO-1826 resolved via extended pattern/manual lookup"
+  },
+  "NO-5441": {
+    "domain": "tana.kommune.no",
+    "reason": "NO — NO-5441 resolved via extended pattern/manual lookup"
+  },
+  "NO-5412": {
+    "domain": "tjeldsund.kommune.no",
+    "reason": "NO — NO-5412 resolved via extended pattern/manual lookup"
+  },
+  "NO-1853": {
+    "domain": "evenes.kommune.no",
+    "reason": "NO — NO-1853 resolved via extended pattern/manual lookup"
+  },
+  "NO-1841": {
+    "domain": "fauske.kommune.no",
+    "reason": "NO — NO-1841 resolved via extended pattern/manual lookup"
+  },
+  "NO-5430": {
+    "domain": "kautokeino.kommune.no",
+    "reason": "NO — NO-5430 resolved via extended pattern/manual lookup"
+  },
+  "NO-5426": {
+    "domain": "kafjord.kommune.no",
+    "reason": "NO — NO-5426 resolved via extended pattern/manual lookup"
+  },
+  "NO-5406": {
+    "domain": "hammerfest.kommune.no",
+    "reason": "NO — NO-5406 resolved via extended pattern/manual lookup"
+  },
+  "NO-5402": {
+    "domain": "harstad.kommune.no",
+    "reason": "NO — NO-5402 resolved via extended pattern/manual lookup"
+  },
+  "NO-1515": {
+    "domain": "heroy.kommune.no",
+    "reason": "NO — NO-1515 resolved via extended pattern/manual lookup"
+  },
+  "NO-1875": {
+    "domain": "hamaroy.kommune.no",
+    "reason": "NO — NO-1875 resolved via extended pattern/manual lookup"
+  },
+  "NO-5411": {
+    "domain": "kvafjord.kommune.no",
+    "reason": "NO — NO-5411 resolved via extended pattern/manual lookup"
+  },
+  "NO-5429": {
+    "domain": "kvanangen.kommune.no",
+    "reason": "NO — NO-5429 resolved via extended pattern/manual lookup"
+  },
+  "NO-5437": {
+    "domain": "karasjok.kommune.no",
+    "reason": "NO — NO-5437 resolved via extended pattern/manual lookup"
+  },
+  "NO-5415": {
+    "domain": "lavangen.kommune.no",
+    "reason": "NO — NO-5415 resolved via extended pattern/manual lookup"
+  },
+  "NO-5007": {
+    "domain": "namsos.kommune.no",
+    "reason": "NO — NO-5007 resolved via extended pattern/manual lookup"
+  },
+  "NO-5428": {
+    "domain": "nordreisa.kommune.no",
+    "reason": "NO — NO-5428 resolved via extended pattern/manual lookup"
+  },
+  "NO-5060": {
+    "domain": "naroysund.kommune.no",
+    "reason": "NO — NO-5060 resolved via extended pattern/manual lookup"
+  },
+  "NO-5436": {
+    "domain": "porsanger.kommune.no",
+    "reason": "NO — NO-5436 resolved via extended pattern/manual lookup"
+  },
+  "NO-5043": {
+    "domain": "royrvik.kommune.no",
+    "reason": "NO — NO-5043 resolved via extended pattern/manual lookup"
+  },
+  "NO-3027": {
+    "domain": "ralingen.kommune.no",
+    "reason": "NO — NO-3027 resolved via extended pattern/manual lookup"
+  },
+  "NO-5041": {
+    "domain": "snasa.kommune.no",
+    "reason": "NO — NO-5041 resolved via extended pattern/manual lookup"
+  },
+  "NO-1870": {
+    "domain": "sortland.kommune.no",
+    "reason": "NO — NO-1870 resolved via extended pattern/manual lookup"
+  },
+  "NO-5425": {
+    "domain": "storfjord.kommune.no",
+    "reason": "NO — NO-5425 resolved via extended pattern/manual lookup"
+  },
+  "NO-5442": {
+    "domain": "nesseby.kommune.no",
+    "reason": "NO — NO-5442 resolved via extended pattern/manual lookup"
+  },
+  "NO-1124": {
+    "domain": "sola.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with sola.kommune.no"
+  },
+  "NO-1133": {
+    "domain": "hjelmeland.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with hjelmeland.kommune.no"
+  },
+  "NO-1520": {
+    "domain": "orsta.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with orsta.kommune.no"
+  },
+  "NO-1535": {
+    "domain": "vestnes.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with vestnes.kommune.no"
+  },
+  "NO-1547": {
+    "domain": "aukra.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with aukra.kommune.no"
+  },
+  "NO-1811": {
+    "domain": "bindal.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with bindal.kommune.no"
+  },
+  "NO-3015": {
+    "domain": "skiptvet.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with skiptvet.kommune.no"
+  },
+  "NO-3016": {
+    "domain": "rakkestad.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with rakkestad.kommune.no"
+  },
+  "NO-3035": {
+    "domain": "eidsvoll.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with eidsvoll.kommune.no"
+  },
+  "NO-3036": {
+    "domain": "nannestad.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with nannestad.kommune.no"
+  },
+  "NO-3038": {
+    "domain": "ullensaker.kommune.no",
+    "reason": "NO — replaced timing-out www.X.no with ullensaker.kommune.no"
+  },
+  "_todo_NO-4219": "Norway — no working domain found for NO-4219",
+  "_todo_NO-1818": "Norway — no working domain found for NO-1818",
+  "_todo_NO-3014": "Norway — no working domain found for NO-3014",
+  "_todo_NO-1835": "Norway — no working domain found for NO-1835",
+  "_todo_NO-1146": "Norway — no working domain found for NO-1146",
+  "NO-3821": {
+    "domain": "vinje.no",
+    "reason": "NO — replaced timing-out www.X.no with vinje.no"
   }
 }
