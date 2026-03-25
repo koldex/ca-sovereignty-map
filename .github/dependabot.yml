@@ -1,8 +1,12 @@
 version: 2
 updates:
-  # Keep GitHub Actions SHA pins up to date.
-  # Dependabot opens a PR when a new version of a pinned action is released,
-  # updating both the SHA and the version comment.
+  # Keep GitHub Actions SHA pins current.
+  # Dependabot opens a PR each week when a new version of a pinned action
+  # is released, updating both the commit SHA and the version comment.
+  #
+  # Note: Python dependencies are managed via uv.lock (PEP 735
+  # [dependency-groups]), which Dependabot does not yet support. Run
+  # `uv lock --upgrade` locally and commit the updated uv.lock manually.
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -12,20 +16,5 @@ updates:
       timezone: Europe/Helsinki
     commit-message:
       prefix: "chore(actions)"
-    labels:
-      - dependencies
-    reviewers: []
-
-  # Keep Python dependencies in uv.lock up to date.
-  # Dependabot will open PRs for new patch/minor versions.
-  - package-ecosystem: pip
-    directory: /
-    schedule:
-      interval: weekly
-      day: monday
-      time: "06:00"
-      timezone: Europe/Helsinki
-    commit-message:
-      prefix: "chore(deps)"
     labels:
       - dependencies
