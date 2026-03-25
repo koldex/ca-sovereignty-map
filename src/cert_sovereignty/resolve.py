@@ -137,7 +137,7 @@ def _slugify_name(name: str) -> list[str]:
 # GISCO LAU names include administrative type suffixes that are NOT part of
 # the web domain (e.g. "Tallinna linn" → tallinn.ee, not tallinn-linn.ee).
 _BALTIC_SUFFIX_PATTERNS: dict[str, list[str]] = {
-    "EE": [" vald", " linn", " valla", " linna"],        # vald=rural, linn=city
+    "EE": [" vald", " linn", " valla", " linna"],  # vald=rural, linn=city
     "LV": [" novads", " pilsēta", " novada", " pilssēta"],  # novads=municipality
     "LT": [
         " miesto savivaldybė",
@@ -152,10 +152,10 @@ _BALTIC_SUFFIX_PATTERNS: dict[str, list[str]] = {
 # GISCO stores municipality names in genitive compound form ('Kuldīgas novads')
 # but websites use the nominative ('kuldiga.lv').
 _LV_GENITIVE_TO_NOMINATIVE: list[tuple[str, str]] = [
-    ("as", "a"),   # Bauska→Bauskas, Kuldīga→Kuldīgas
-    ("es", "e"),   # Dobele→Dobeles, Aizkraukle→Aizkraukles
-    ("u",  "i"),  # Brocēni→Brocēnu, Tukums→ (special below)
-    ("a",  "s"),  # Tukums gen=Tukuma: Tukuma→Tukums
+    ("as", "a"),  # Bauska→Bauskas, Kuldīga→Kuldīgas
+    ("es", "e"),  # Dobele→Dobeles, Aizkraukle→Aizkraukles
+    ("u", "i"),  # Brocēni→Brocēnu, Tukums→ (special below)
+    ("a", "s"),  # Tukums gen=Tukuma: Tukuma→Tukums
 ]
 
 
