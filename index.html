@@ -33,6 +33,11 @@
   <script src="js/map-shared.js"></script>
   <script>
     'use strict';
+    // Colour for polygons present in the TopoJSON boundaries but absent
+    // from data.json (no domain was resolved for the municipality).
+    // Defined here — not in map-shared.js — to avoid cross-<script> scope issues.
+    const NO_DATA_COLOR = '#c0cad4'; // blue-grey, distinct from classified-unknown greys
+
     const DATA_URL = 'data.min.json';
     const TOPOJSON_URL = 'nordic-municipalities.topojson';
     let map, muniLayer, mapData;
