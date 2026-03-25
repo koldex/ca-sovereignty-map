@@ -191,6 +191,12 @@
       <li>Lithuanian domain guessing has lower accuracy (~30%) because GISCO LAU names use the
           genitive case (<em>Alytaus miesto savivaldybė</em> instead of <em>Alytus</em>).
           Corrections can be added to <code>overrides.json</code>.</li>
+      <li>Latvia: 89 of 119 GISCO municipalities use the old <code>*.novads.lv</code>
+          shared portal, which has been abandoned and is currently parked by a Russian
+          domain parking service (<em>DomainParking.ru</em>, cert <code>*.domainparking.ru</code>).
+          These are shown as grey “No domain data” polygons. Latvia’s administrative
+          reform of July 2021 reduced the number of municipalities from 119 to 43+9;
+          many pre-reform entities no longer have active websites.</li>
       <li>Domain guessing is heuristic — <code>overrides.json</code> corrects known mistakes</li>
       <li>CAA records may permit more CAs than are actually in use</li>
       <li>CCADB does not cover every CA; unrecognised issuers are classified as Unknown</li>

@@ -154,6 +154,13 @@ SKIP_DOMAINS: frozenset[str] = frozenset(
         "cloudfront.net",
         "azurewebsites.net",
         "pages.dev",
+        # Latvian municipality shared portal — ABANDONED/PARKED.
+        # novads.lv is registered to a Russian domain parking service
+        # (DomainParking.ru, cert *.domainparking.ru). All *.novads.lv
+        # subdomains resolve to a 'domain for sale' page.
+        # Latvia reformed from 119 → 43+9 municipalities in July 2021;
+        # the old shared portal was never transferred to the new entities.
+        "novads.lv",
     ]
 )
 

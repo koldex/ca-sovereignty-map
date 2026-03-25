@@ -4248,67 +4248,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0320200",
-    "name": "Aizkraukles novads",
-    "country": "LV",
-    "population": 8017,
-    "domain": "aizkraukles.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0321000",
-    "name": "Jaunjelgavas novads",
-    "country": "LV",
-    "population": 5039,
-    "domain": "jaunjelgavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0321400",
-    "name": "Pļaviņu novads",
-    "country": "LV",
-    "population": 4765,
-    "domain": "plavinu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0326100",
-    "name": "Kokneses novads",
-    "country": "LV",
-    "population": 4851,
-    "domain": "kokneses.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0327100",
-    "name": "Neretas novads",
-    "country": "LV",
-    "population": 3278,
-    "domain": "neretas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0328200",
     "name": "Skrīveru novads",
     "country": "LV",
     "population": 3417,
     "domain": "skriveru.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0360200",
-    "name": "Alūksnes novads",
-    "country": "LV",
-    "population": 13861,
-    "domain": "aluksnes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0360800",
-    "name": "Apes novads",
-    "country": "LV",
-    "population": 3205,
-    "domain": "apes.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4320,123 +4264,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0381600",
-    "name": "Viļakas novads",
-    "country": "LV",
-    "population": 4476,
-    "domain": "vilakas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0384400",
-    "name": "Baltinavas novads",
-    "country": "LV",
-    "population": 937,
-    "domain": "baltinavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0387500",
-    "name": "Rugāju novads",
-    "country": "LV",
-    "population": 2026,
-    "domain": "rugaju.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0400200",
-    "name": "Bauskas novads",
-    "country": "LV",
-    "population": 22259,
-    "domain": "bauskas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0406400",
-    "name": "Iecavas novads",
-    "country": "LV",
-    "population": 8411,
-    "domain": "iecavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0407700",
-    "name": "Rundāles novads",
-    "country": "LV",
-    "population": 3290,
-    "domain": "rundales.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0409500",
-    "name": "Vecumnieku novads",
-    "country": "LV",
-    "population": 7795,
-    "domain": "vecumnieku.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0420200",
     "name": "Cēsu novads",
     "country": "LV",
     "population": 16143,
     "domain": "cesu.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0421200",
-    "name": "Līgatnes novads",
-    "country": "LV",
-    "population": 3258,
-    "domain": "ligatnes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0424701",
-    "name": "Amatas novads",
-    "country": "LV",
-    "population": 5042,
-    "domain": "amatas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0425700",
-    "name": "Jaunpiebalgas novads",
-    "country": "LV",
-    "population": 1992,
-    "domain": "jaunpiebalgas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0427300",
-    "name": "Priekuļu novads",
-    "country": "LV",
-    "population": 7509,
-    "domain": "priekulu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0427500",
-    "name": "Pārgaujas novads",
-    "country": "LV",
-    "population": 3603,
-    "domain": "pargaujas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0427700",
-    "name": "Raunas novads",
-    "country": "LV",
-    "population": 3005,
-    "domain": "raunas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0429300",
-    "name": "Vecpiebalgas novads",
-    "country": "LV",
-    "population": 3614,
-    "domain": "vecpiebalgas.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4448,75 +4280,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0440801",
-    "name": "Ilūkstes novads",
-    "country": "LV",
-    "population": 6374,
-    "domain": "ilukstes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0460200",
-    "name": "Dobeles novads",
-    "country": "LV",
-    "population": 19219,
-    "domain": "dobeles.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0460800",
-    "name": "Auces novads",
-    "country": "LV",
-    "population": 6025,
-    "domain": "auces.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0468900",
-    "name": "Tērvetes novads",
-    "country": "LV",
-    "population": 3273,
-    "domain": "tervetes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0500200",
-    "name": "Gulbenes novads",
-    "country": "LV",
-    "population": 19619,
-    "domain": "gulbenes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0540200",
-    "name": "Jelgavas novads",
-    "country": "LV",
-    "population": 22021,
-    "domain": "jelgavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0546701",
-    "name": "Ozolnieku novads",
-    "country": "LV",
-    "population": 9948,
-    "domain": "ozolnieku.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0560200",
     "name": "Jēkabpils novads",
     "country": "LV",
     "population": 4164,
     "domain": "jekabpils.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0560800",
-    "name": "Aknīstes novads",
-    "country": "LV",
-    "population": 2546,
-    "domain": "aknistes.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4544,171 +4312,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0600202",
-    "name": "Krāslavas novads",
-    "country": "LV",
-    "population": 13533,
-    "domain": "kraslavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0601000",
-    "name": "Dagdas novads",
-    "country": "LV",
-    "population": 6475,
-    "domain": "dagdas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0604300",
-    "name": "Aglonas novads",
-    "country": "LV",
-    "population": 3042,
-    "domain": "aglonas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0620200",
-    "name": "Kuldīgas novads",
-    "country": "LV",
-    "population": 21907,
-    "domain": "kuldigas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0621200",
-    "name": "Skrundas novads",
-    "country": "LV",
-    "population": 4526,
-    "domain": "skrundas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0624200",
-    "name": "Alsungas novads",
-    "country": "LV",
-    "population": 1303,
-    "domain": "alsungas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0640600",
-    "name": "Aizputes novads",
-    "country": "LV",
-    "population": 8083,
-    "domain": "aizputes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0640801",
-    "name": "Durbes novads",
-    "country": "LV",
-    "population": 2020,
-    "domain": "durbes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0641000",
-    "name": "Grobiņas novads",
-    "country": "LV",
-    "population": 8329,
-    "domain": "grobinas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0641401",
-    "name": "Pāvilostas novads",
-    "country": "LV",
-    "population": 2543,
-    "domain": "pavilostas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0641600",
-    "name": "Priekules novads",
-    "country": "LV",
-    "population": 4955,
-    "domain": "priekules.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0647900",
-    "name": "Nīcas novads",
-    "country": "LV",
-    "population": 3113,
-    "domain": "nicas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0648500",
-    "name": "Rucavas novads",
-    "country": "LV",
-    "population": 1505,
-    "domain": "rucavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0649300",
-    "name": "Vaiņodes novads",
-    "country": "LV",
-    "population": 2216,
-    "domain": "vainodes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0660200",
-    "name": "Limbažu novads",
-    "country": "LV",
-    "population": 16744,
-    "domain": "limbazu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0661000",
     "name": "Alojas novads",
     "country": "LV",
     "population": 4520,
     "domain": "alojas.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0661400",
-    "name": "Salacgrīvas novads",
-    "country": "LV",
-    "population": 7282,
-    "domain": "salacgrivas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0680200",
-    "name": "Ludzas novads",
-    "country": "LV",
-    "population": 11739,
-    "domain": "ludzas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0681000",
-    "name": "Kārsavas novads",
-    "country": "LV",
-    "population": 5127,
-    "domain": "karsavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0681801",
-    "name": "Zilupes novads",
-    "country": "LV",
-    "population": 2549,
-    "domain": "zilupes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0684901",
-    "name": "Ciblas novads",
-    "country": "LV",
-    "population": 2362,
-    "domain": "ciblas.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4720,59 +4328,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0700800",
-    "name": "Cesvaines novads",
-    "country": "LV",
-    "population": 2253,
-    "domain": "cesvaines.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0701400",
-    "name": "Lubānas novads",
-    "country": "LV",
-    "population": 2163,
-    "domain": "lubanas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0701800",
     "name": "Varakļānu novads",
     "country": "LV",
     "population": 2945,
     "domain": "varaklanu.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0705500",
-    "name": "Ērgļu novads",
-    "country": "LV",
-    "population": 2600,
-    "domain": "erglu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0740202",
-    "name": "Ogres novads",
-    "country": "LV",
-    "population": 32790,
-    "domain": "ogres.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0740600",
-    "name": "Ikšķiles novads",
-    "country": "LV",
-    "population": 9967,
-    "domain": "ikskiles.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0741001",
-    "name": "Ķeguma novads",
-    "country": "LV",
-    "population": 5313,
-    "domain": "keguma.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4784,75 +4344,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0760202",
-    "name": "Preiļu novads",
-    "country": "LV",
-    "population": 8948,
-    "domain": "preilu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0761201",
-    "name": "Līvānu novads",
-    "country": "LV",
-    "population": 10636,
-    "domain": "livanu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0766300",
-    "name": "Riebiņu novads",
-    "country": "LV",
-    "population": 4466,
-    "domain": "riebinu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0769101",
-    "name": "Vārkavas novads",
-    "country": "LV",
-    "population": 1754,
-    "domain": "varkavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0780200",
-    "name": "Rēzeknes novads",
-    "country": "LV",
-    "population": 24244,
-    "domain": "rezeknes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0781800",
-    "name": "Viļānu novads",
-    "country": "LV",
-    "population": 5399,
-    "domain": "vilanu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0800600",
-    "name": "Baldones novads",
-    "country": "LV",
-    "population": 5446,
-    "domain": "baldones.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0800800",
     "name": "Ķekavas novads",
     "country": "LV",
     "population": 24631,
     "domain": "kekavas.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0801000",
-    "name": "Olaines novads",
-    "country": "LV",
-    "population": 19705,
-    "domain": "olaines.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4864,67 +4360,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0801400",
-    "name": "Saulkrastu novads",
-    "country": "LV",
-    "population": 7079,
-    "domain": "saulkrastu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0801601",
-    "name": "Siguldas novads",
-    "country": "LV",
-    "population": 18081,
-    "domain": "siguldas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0801800",
-    "name": "Inčukalna novads",
-    "country": "LV",
-    "population": 7622,
-    "domain": "incukalna.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0804400",
     "name": "Ādažu novads",
     "country": "LV",
     "population": 11824,
     "domain": "adazu.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0804900",
-    "name": "Babītes novads",
-    "country": "LV",
-    "population": 11247,
-    "domain": "babites.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0805200",
-    "name": "Carnikavas novads",
-    "country": "LV",
-    "population": 9310,
-    "domain": "carnikavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0806000",
-    "name": "Garkalnes novads",
-    "country": "LV",
-    "population": 9425,
-    "domain": "garkalnes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0806900",
-    "name": "Krimuldas novads",
-    "country": "LV",
-    "population": 4833,
-    "domain": "krimuldas.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4944,27 +4384,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0808400",
-    "name": "Ropažu novads",
-    "country": "LV",
-    "population": 6836,
-    "domain": "ropazu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0809200",
     "name": "Sējas novads",
     "country": "LV",
     "population": 2151,
     "domain": "sejas.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0809600",
-    "name": "Stopiņu novads",
-    "country": "LV",
-    "population": 12201,
-    "domain": "stopinu.novads.lv",
     "domain_source": "guess"
   },
   {
@@ -4976,147 +4400,11 @@
     "domain_source": "guess"
   },
   {
-    "id": "LV-0840601",
-    "name": "Brocēnu novads",
-    "country": "LV",
-    "population": 5672,
-    "domain": "brocenu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0880200",
-    "name": "Talsu novads",
-    "country": "LV",
-    "population": 27391,
-    "domain": "talsu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0885100",
-    "name": "Dundagas novads",
-    "country": "LV",
-    "population": 3487,
-    "domain": "dundagas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0887600",
-    "name": "Mērsraga novads",
-    "country": "LV",
-    "population": 1431,
-    "domain": "mersraga.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0888301",
-    "name": "Rojas novads",
-    "country": "LV",
-    "population": 3390,
-    "domain": "rojas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0900200",
-    "name": "Tukuma novads",
-    "country": "LV",
-    "population": 27614,
-    "domain": "tukuma.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0901201",
-    "name": "Kandavas novads",
-    "country": "LV",
-    "population": 7462,
-    "domain": "kandavas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0905100",
-    "name": "Engures novads",
-    "country": "LV",
-    "population": 7147,
-    "domain": "engures.novads.lv",
-    "domain_source": "guess"
-  },
-  {
     "id": "LV-0905700",
     "name": "Jaunpils novads",
     "country": "LV",
     "population": 2188,
     "domain": "jaunpils.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0940200",
-    "name": "Valkas novads",
-    "country": "LV",
-    "population": 7596,
-    "domain": "valkas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0941600",
-    "name": "Smiltenes novads",
-    "country": "LV",
-    "population": 11945,
-    "domain": "smiltenes.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0941800",
-    "name": "Strenču novads",
-    "country": "LV",
-    "population": 2892,
-    "domain": "strencu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0960200",
-    "name": "Kocēnu novads",
-    "country": "LV",
-    "population": 5776,
-    "domain": "kocenu.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0961000",
-    "name": "Mazsalacas novads",
-    "country": "LV",
-    "population": 2867,
-    "domain": "mazsalacas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0961600",
-    "name": "Rūjienas novads",
-    "country": "LV",
-    "population": 4817,
-    "domain": "rujienas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0964700",
-    "name": "Beverīnas novads",
-    "country": "LV",
-    "population": 2948,
-    "domain": "beverinas.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0967101",
-    "name": "Burtnieku novads",
-    "country": "LV",
-    "population": 7410,
-    "domain": "burtnieku.novads.lv",
-    "domain_source": "guess"
-  },
-  {
-    "id": "LV-0967300",
-    "name": "Naukšēnu novads",
-    "country": "LV",
-    "population": 1689,
-    "domain": "nauksenu.novads.lv",
     "domain_source": "guess"
   },
   {
