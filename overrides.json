@@ -1,5 +1,5 @@
 {
-  "_comment": "Manual domain overrides for municipalities where auto-detection fails. Format: municipality_id → {domain, reason}",
+  "_comment": "Manual domain overrides. Format: {id: {domain, reason}}. Priority over Wikidata + domain guessing.",
   "FI-091": {
     "domain": "hel.fi",
     "reason": "Helsinki uses hel.fi, not helsinki.fi"
@@ -18,6 +18,169 @@
   },
   "DK-101": {
     "domain": "kk.dk",
-    "reason": "Copenhagen uses kk.dk (Kobenhavns Kommune)"
-  }
+    "reason": "Copenhagen: kk.dk (Kobenhavns Kommune)"
+  },
+  "_section_LT": "Lithuanian overrides — GISCO LAU uses genitive case. All 40 domains DNS-verified.",
+  "LT-32": {
+    "domain": "akmene.lt",
+    "reason": "Akmenės rajono sav. — nom: Akmenė"
+  },
+  "LT-11": {
+    "domain": "alytus.lt",
+    "reason": "Alytaus miesto sav. — nom: Alytus"
+  },
+  "LT-34": {
+    "domain": "anyksciai.lt",
+    "reason": "Anykščių rajono sav. — nom: Anykščiai"
+  },
+  "LT-12": {
+    "domain": "birstonas.lt",
+    "reason": "Birštono sav. — nom: Birštonas"
+  },
+  "LT-36": {
+    "domain": "birzai.lt",
+    "reason": "Biržų rajono sav. — nom: Biržai"
+  },
+  "LT-15": {
+    "domain": "druskininkai.lt",
+    "reason": "Druskininkų sav. — nom: Druskininkai"
+  },
+  "LT-42": {
+    "domain": "elektrenai.lt",
+    "reason": "Elektrėnų sav. — nom: Elektrėnai"
+  },
+  "LT-45": {
+    "domain": "ignalina.lt",
+    "reason": "Ignalinos rajono sav. — nom: Ignalina"
+  },
+  "LT-47": {
+    "domain": "joniskis.lt",
+    "reason": "Joniškio rajono sav. — nom: Joniškis"
+  },
+  "LT-94": {
+    "domain": "jurbarkas.lt",
+    "reason": "Jurbarko rajono sav. — nom: Jurbarkas"
+  },
+  "LT-49": {
+    "domain": "kaisiadorys.lt",
+    "reason": "Kaišiadorių rajono sav. — nom: Kaišiadorys"
+  },
+  "LT-58": {
+    "domain": "kazluruda.lt",
+    "reason": "Kazlų Rūdos sav. — nom: Kazlų Rūda"
+  },
+  "LT-54": {
+    "domain": "kelme.lt",
+    "reason": "Kelmės rajono sav. — nom: Kelmė"
+  },
+  "LT-53": {
+    "domain": "kedainiai.lt",
+    "reason": "Kėdainių rajono sav. — nom: Kėdainiai"
+  },
+  "LT-57": {
+    "domain": "kupiskis.lt",
+    "reason": "Kupiškio rajono sav. — nom: Kupiškis"
+  },
+  "LT-59": {
+    "domain": "lazdijai.lt",
+    "reason": "Lazdijų rajono sav. — nom: Lazdijai"
+  },
+  "LT-18": {
+    "domain": "marijampole.lt",
+    "reason": "Marijampolės sav. — nom: Marijampolė"
+  },
+  "LT-62": {
+    "domain": "moletai.lt",
+    "reason": "Molėtų rajono sav. — nom: Molėtai"
+  },
+  "LT-23": {
+    "domain": "neringa.lt",
+    "reason": "Neringos sav. — nom: Neringa"
+  },
+  "LT-63": {
+    "domain": "pagegiai.lt",
+    "reason": "Pagėgių sav. — nom: Pagėgiai"
+  },
+  "LT-65": {
+    "domain": "pakruojis.lt",
+    "reason": "Pakruojo rajono sav. — nom: Pakruojis"
+  },
+  "LT-27": {
+    "domain": "panevezys.lt",
+    "reason": "Panevėžio miesto sav. — nom: Panevėžys"
+  },
+  "LT-67": {
+    "domain": "pasvalys.lt",
+    "reason": "Pasvalio rajono sav. — nom: Pasvalys"
+  },
+  "LT-69": {
+    "domain": "prienai.lt",
+    "reason": "Prienų rajono sav. — nom: Prienai"
+  },
+  "LT-71": {
+    "domain": "radviliskis.lt",
+    "reason": "Radviliškio rajono sav. — nom: Radviliškis"
+  },
+  "LT-72": {
+    "domain": "raseiniai.lt",
+    "reason": "Raseinių rajono sav. — nom: Raseiniai"
+  },
+  "LT-74": {
+    "domain": "rietavas.lt",
+    "reason": "Rietavo sav. — nom: Rietavas"
+  },
+  "LT-75": {
+    "domain": "skuodas.lt",
+    "reason": "Skuodo rajono sav. — nom: Skuodas"
+  },
+  "LT-77": {
+    "domain": "taurage.lt",
+    "reason": "Tauragės rajono sav. — nom: Tauragė"
+  },
+  "LT-78": {
+    "domain": "telsiai.lt",
+    "reason": "Telšių rajono sav. — nom: Telšiai"
+  },
+  "LT-81": {
+    "domain": "ukmerge.lt",
+    "reason": "Ukmergės rajono sav. — nom: Ukmergė"
+  },
+  "LT-39": {
+    "domain": "vilkaviskis.lt",
+    "reason": "Vilkaviškio rajono sav. — nom: Vilkaviškis"
+  },
+  "LT-30": {
+    "domain": "visaginas.lt",
+    "reason": "Visagino sav. — nom: Visaginas"
+  },
+  "LT-43": {
+    "domain": "zarasai.lt",
+    "reason": "Zarasų rajono sav. — nom: Zarasai"
+  },
+  "LT-84": {
+    "domain": "sakiai.lt",
+    "reason": "Šakių rajono sav. — nom: Šakiai"
+  },
+  "LT-85": {
+    "domain": "salcininkai.lt",
+    "reason": "Šalčininkų rajono sav. — nom: Šalčininkai"
+  },
+  "LT-87": {
+    "domain": "silale.lt",
+    "reason": "Šilalės rajono sav. — nom: Šilalė"
+  },
+  "LT-88": {
+    "domain": "silute.lt",
+    "reason": "Šilutės rajono sav. — nom: Šilutė"
+  },
+  "LT-89": {
+    "domain": "sirvintos.lt",
+    "reason": "Širvintų rajono sav. — nom: Širvintos"
+  },
+  "LT-86": {
+    "domain": "svencionys.lt",
+    "reason": "Švenčionių rajono sav. — nom: Švenčionys"
+  },
+  "_todo_LT-33": "Alytaus rajono savivaldybė — no working public domain found",
+  "_todo_LT-66": "Panevėžio rajono savivaldybė — no working public domain found"
 }

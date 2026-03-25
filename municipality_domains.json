@@ -3712,12 +3712,44 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-11",
+    "name": "Alytaus miesto savivaldybė",
+    "country": "LT",
+    "population": 49205,
+    "domain": "alytus.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-12",
+    "name": "Birštono savivaldybė",
+    "country": "LT",
+    "population": 4037,
+    "domain": "birstonas.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-13",
     "name": "Vilniaus miesto savivaldybė",
     "country": "LT",
     "population": 569902,
     "domain": "vilniaus.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-15",
+    "name": "Druskininkų savivaldybė",
+    "country": "LT",
+    "population": 19016,
+    "domain": "druskininkai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-18",
+    "name": "Marijampolės savivaldybė",
+    "country": "LT",
+    "population": 53480,
+    "domain": "marijampole.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-19",
@@ -3736,12 +3768,28 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-23",
+    "name": "Neringos savivaldybė",
+    "country": "LT",
+    "population": 3641,
+    "domain": "neringa.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-25",
     "name": "Palangos miesto savivaldybė",
     "country": "LT",
     "population": 16429,
     "domain": "palangos.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-27",
+    "name": "Panevėžio miesto savivaldybė",
+    "country": "LT",
+    "population": 84613,
+    "domain": "panevezys.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-29",
@@ -3752,12 +3800,52 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-30",
+    "name": "Visagino savivaldybė",
+    "country": "LT",
+    "population": 18134,
+    "domain": "visaginas.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-32",
+    "name": "Akmenės rajono savivaldybė",
+    "country": "LT",
+    "population": 18537,
+    "domain": "akmene.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-34",
+    "name": "Anykščių rajono savivaldybė",
+    "country": "LT",
+    "population": 22623,
+    "domain": "anyksciai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-36",
+    "name": "Biržų rajono savivaldybė",
+    "country": "LT",
+    "population": 22305,
+    "domain": "birzai.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-38",
     "name": "Varėnos rajono savivaldybė",
     "country": "LT",
     "population": 20520,
     "domain": "varenos.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-39",
+    "name": "Vilkaviškio rajono savivaldybė",
+    "country": "LT",
+    "population": 34231,
+    "domain": "vilkaviskis.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-41",
@@ -3768,12 +3856,44 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-42",
+    "name": "Elektrėnų savivaldybė",
+    "country": "LT",
+    "population": 24108,
+    "domain": "elektrenai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-43",
+    "name": "Zarasų rajono savivaldybė",
+    "country": "LT",
+    "population": 14638,
+    "domain": "zarasai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-45",
+    "name": "Ignalinos rajono savivaldybė",
+    "country": "LT",
+    "population": 14131,
+    "domain": "ignalina.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-46",
     "name": "Jonavos rajono savivaldybė",
     "country": "LT",
     "population": 40750,
     "domain": "jonavos.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-47",
+    "name": "Joniškio rajono savivaldybė",
+    "country": "LT",
+    "population": 20344,
+    "domain": "joniskis.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-48",
@@ -3784,12 +3904,36 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-49",
+    "name": "Kaišiadorių rajono savivaldybė",
+    "country": "LT",
+    "population": 29191,
+    "domain": "kaisiadorys.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-52",
     "name": "Kauno rajono savivaldybė",
     "country": "LT",
     "population": 97549,
     "domain": "kauno.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-53",
+    "name": "Kėdainių rajono savivaldybė",
+    "country": "LT",
+    "population": 44750,
+    "domain": "kedainiai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-54",
+    "name": "Kelmės rajono savivaldybė",
+    "country": "LT",
+    "population": 24826,
+    "domain": "kelme.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-55",
@@ -3808,12 +3952,68 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-57",
+    "name": "Kupiškio rajono savivaldybė",
+    "country": "LT",
+    "population": 16062,
+    "domain": "kupiskis.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-58",
+    "name": "Kazlų Rūdos savivaldybė",
+    "country": "LT",
+    "population": 11139,
+    "domain": "kazluruda.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-59",
+    "name": "Lazdijų rajono savivaldybė",
+    "country": "LT",
+    "population": 17839,
+    "domain": "lazdijai.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-61",
     "name": "Mažeikių rajono savivaldybė",
     "country": "LT",
     "population": 50789,
     "domain": "mazeikiu.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-62",
+    "name": "Molėtų rajono savivaldybė",
+    "country": "LT",
+    "population": 16876,
+    "domain": "moletai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-63",
+    "name": "Pagėgių savivaldybė",
+    "country": "LT",
+    "population": 7126,
+    "domain": "pagegiai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-65",
+    "name": "Pakruojo rajono savivaldybė",
+    "country": "LT",
+    "population": 18215,
+    "domain": "pakruojis.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-67",
+    "name": "Pasvalio rajono savivaldybė",
+    "country": "LT",
+    "population": 22339,
+    "domain": "pasvalys.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-68",
@@ -3824,12 +4024,68 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-69",
+    "name": "Prienų rajono savivaldybė",
+    "country": "LT",
+    "population": 25466,
+    "domain": "prienai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-71",
+    "name": "Radviliškio rajono savivaldybė",
+    "country": "LT",
+    "population": 34576,
+    "domain": "radviliskis.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-72",
+    "name": "Raseinių rajono savivaldybė",
+    "country": "LT",
+    "population": 30608,
+    "domain": "raseiniai.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-73",
     "name": "Rokiškio rajono savivaldybė",
     "country": "LT",
     "population": 27515,
     "domain": "www.rokiskio.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-74",
+    "name": "Rietavo savivaldybė",
+    "country": "LT",
+    "population": 7178,
+    "domain": "rietavas.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-75",
+    "name": "Skuodo rajono savivaldybė",
+    "country": "LT",
+    "population": 15665,
+    "domain": "skuodas.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-77",
+    "name": "Tauragės rajono savivaldybė",
+    "country": "LT",
+    "population": 37331,
+    "domain": "taurage.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-78",
+    "name": "Telšių rajono savivaldybė",
+    "country": "LT",
+    "population": 38759,
+    "domain": "telsiai.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-79",
@@ -3840,6 +4096,14 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-81",
+    "name": "Ukmergės rajono savivaldybė",
+    "country": "LT",
+    "population": 33052,
+    "domain": "ukmerge.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-82",
     "name": "Utenos rajono savivaldybė",
     "country": "LT",
@@ -3848,12 +4112,68 @@
     "domain_source": "guess"
   },
   {
+    "id": "LT-84",
+    "name": "Šakių rajono savivaldybė",
+    "country": "LT",
+    "population": 26070,
+    "domain": "sakiai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-85",
+    "name": "Šalčininkų rajono savivaldybė",
+    "country": "LT",
+    "population": 30274,
+    "domain": "salcininkai.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-86",
+    "name": "Švenčionių rajono savivaldybė",
+    "country": "LT",
+    "population": 22493,
+    "domain": "svencionys.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-87",
+    "name": "Šilalės rajono savivaldybė",
+    "country": "LT",
+    "population": 21436,
+    "domain": "silale.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-88",
+    "name": "Šilutės rajono savivaldybė",
+    "country": "LT",
+    "population": 37087,
+    "domain": "silute.lt",
+    "domain_source": "override"
+  },
+  {
+    "id": "LT-89",
+    "name": "Širvintų rajono savivaldybė",
+    "country": "LT",
+    "population": 14910,
+    "domain": "sirvintos.lt",
+    "domain_source": "override"
+  },
+  {
     "id": "LT-91",
     "name": "Šiaulių rajono savivaldybė",
     "country": "LT",
     "population": 41554,
     "domain": "siauliu.lt",
     "domain_source": "guess"
+  },
+  {
+    "id": "LT-94",
+    "name": "Jurbarko rajono savivaldybė",
+    "country": "LT",
+    "population": 24236,
+    "domain": "jurbarkas.lt",
+    "domain_source": "override"
   },
   {
     "id": "LV-0010000",
