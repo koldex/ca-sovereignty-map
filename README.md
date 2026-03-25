@@ -36,6 +36,23 @@ This map is an invitation to ask the question: if our public website certificate
 what else is? It is a starting point for a broader audit of digital sovereignty in the public
 sector.
 
+### Conflict of interest disclosure
+
+The author, **Mikko Koljander**, has a direct professional interest in the subject matter of this
+application. He is involved in certificate authority product development and operations at
+[Telia](https://trust.telia.com/), a Nordic telecommunications company whose CA services
+(Telia Certificate Service) are classified in this map as **Minimal risk / Nordic jurisdiction**.
+
+This disclosure is made in the interest of transparency. The data collection methodology, the
+CA classification database and the risk taxonomy are based on verifiable public information
+(certificate chain inspection, CCADB, DNS records) and apply the same criteria to all CAs
+including Telia. The author's professional background informs the technical design of the
+scanner but does not alter the classification results, which are derived automatically from
+certificate data.
+
+Readers are encouraged to inspect the open source code, reproduce the scan results
+independently and raise any concerns via a [GitHub issue](https://github.com/koldex/ca-sovereignty-map/issues).
+
 ---
 
 ## What it shows
