@@ -3756,8 +3756,8 @@
     "name": "Kauno miesto savivaldybė",
     "country": "LT",
     "population": 293277,
-    "domain": "kauno.lt",
-    "domain_source": "guess"
+    "domain": "kaunas.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-21",
@@ -3916,8 +3916,8 @@
     "name": "Kauno rajono savivaldybė",
     "country": "LT",
     "population": 97549,
-    "domain": "kauno.lt",
-    "domain_source": "guess"
+    "domain": "kaunorajonas.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-53",
@@ -4092,8 +4092,8 @@
     "name": "Trakų rajono savivaldybė",
     "country": "LT",
     "population": 33213,
-    "domain": "traku.lt",
-    "domain_source": "guess"
+    "domain": "trakai.lt",
+    "domain_source": "override"
   },
   {
     "id": "LT-81",
@@ -4734,14 +4734,6 @@
     "population": 5313,
     "domain": "kegums.lv",
     "domain_source": "override"
-  },
-  {
-    "id": "LV-0741401",
-    "name": "Lielvārdes novads",
-    "country": "LV",
-    "population": 9547,
-    "domain": "lielvardes.lv",
-    "domain_source": "guess"
   },
   {
     "id": "LV-0760202",

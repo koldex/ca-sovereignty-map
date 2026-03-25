@@ -161,6 +161,10 @@ SKIP_DOMAINS: frozenset[str] = frozenset(
         # Latvia reformed from 119 → 43+9 municipalities in July 2021;
         # the old shared portal was never transferred to the new entities.
         "novads.lv",
+        # Specific Latvian domains parked by DomainParking.ru
+        "lielvardes.lv",  # 'lielvardes.lv is for sale' (DomainParking.ru)
+        # Wrong Lithuanian domains
+        "traku.lt",  # Redirects to facebook.com/traku.turtas (real estate), not municipality
     ]
 )
 

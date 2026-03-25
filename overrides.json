@@ -518,5 +518,18 @@
   "_todo_LV-0321000": "Jaunjelgavas novads — no working domain found (may have merged)",
   "_todo_LV-0967300": "Naukšēnu novads — no working domain found",
   "_todo_LV-0321400": "Pļaviņu novads — no working domain found",
-  "_todo_LV-0740202": "Ogres novads — ogres.lv already in direct list"
+  "_todo_LV-0740202": "Ogres novads — ogres.lv already in direct list",
+  "_todo_LV-0741401": "Lielvārdes novads — lielvardes.lv is parked by DomainParking.ru ('lielvardes.lv is for sale'); not the municipality website",
+  "LT-19": {
+    "domain": "kaunas.lt",
+    "reason": "Kauno miesto sav. — kauno.lt (genitive slug) redirects to kaunas.lt (nom), confirmed 'Kauno miesto savivaldybė' title"
+  },
+  "LT-52": {
+    "domain": "kaunorajonas.lt",
+    "reason": "Kauno rajono sav. — not kauno.lt (city), district uses kaunorajonas.lt"
+  },
+  "LT-79": {
+    "domain": "trakai.lt",
+    "reason": "Trakų rajono sav. — traku.lt redirects to Facebook real estate page; correct domain is trakai.lt"
+  }
 }
