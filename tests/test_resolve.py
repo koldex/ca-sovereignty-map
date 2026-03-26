@@ -110,7 +110,9 @@ def test_is_no_bare_domain_rejects_non_no() -> None:
 
 async def test_cname_exits_no_no_cname_record() -> None:
     """No CNAME record — resolve_robust returns None → does not exit."""
-    with patch("cert_sovereignty.resolve.resolve_robust", new_callable=AsyncMock, return_value=None):
+    with patch(
+        "cert_sovereignty.resolve.resolve_robust", new_callable=AsyncMock, return_value=None
+    ):
         assert await _cname_exits_no("laerdal.no") is False
 
 
@@ -118,7 +120,9 @@ async def test_cname_exits_no_stays_within_no() -> None:
     """CNAME target is still within .no → does not exit."""
     rdata = MagicMock()
     rdata.target = "www.laerdal.no."
-    with patch("cert_sovereignty.resolve.resolve_robust", new_callable=AsyncMock, return_value=[rdata]):
+    with patch(
+        "cert_sovereignty.resolve.resolve_robust", new_callable=AsyncMock, return_value=[rdata]
+    ):
         assert await _cname_exits_no("laerdal.no") is False
 
 
@@ -126,7 +130,9 @@ async def test_cname_exits_no_exits_to_com() -> None:
     """CNAME to .com → exits .no TLD."""
     rdata = MagicMock()
     rdata.target = "laerdal.com."
-    with patch("cert_sovereignty.resolve.resolve_robust", new_callable=AsyncMock, return_value=[rdata]):
+    with patch(
+        "cert_sovereignty.resolve.resolve_robust", new_callable=AsyncMock, return_value=[rdata]
+    ):
         assert await _cname_exits_no("laerdal.no") is True
 
 
@@ -136,22 +142,26 @@ async def test_cname_exits_no_exits_to_com() -> None:
 async def test_tls_reachable_ssl_error() -> None:
     """SSL error during handshake → False."""
     import ssl
-    with patch("asyncio.open_connection", new_callable=AsyncMock,
-               side_effect=ssl.SSLError("TLSV1_UNRECOGNIZED_NAME")):
+
+    with patch(
+        "asyncio.open_connection",
+        new_callable=AsyncMock,
+        side_effect=ssl.SSLError("TLSV1_UNRECOGNIZED_NAME"),
+    ):
         assert await _tls_reachable("www.nord-fron.no") is False
 
 
 async def test_tls_reachable_connection_refused() -> None:
     """Connection refused → False."""
-    with patch("asyncio.open_connection", new_callable=AsyncMock,
-               side_effect=ConnectionRefusedError()):
+    with patch(
+        "asyncio.open_connection", new_callable=AsyncMock, side_effect=ConnectionRefusedError()
+    ):
         assert await _tls_reachable("www.rindal.no") is False
 
 
 async def test_tls_reachable_timeout() -> None:
     """Timeout → False."""
-    with patch("asyncio.open_connection", new_callable=AsyncMock,
-               side_effect=TimeoutError()):
+    with patch("asyncio.open_connection", new_callable=AsyncMock, side_effect=TimeoutError()):
         assert await _tls_reachable("www.amot.no") is False
 
 
@@ -160,8 +170,9 @@ async def test_tls_reachable_success() -> None:
     mock_writer = MagicMock()
     mock_writer.close = MagicMock()
     mock_writer.wait_closed = AsyncMock(return_value=None)
-    with patch("asyncio.open_connection",
-               new_callable=AsyncMock, return_value=(MagicMock(), mock_writer)):
+    with patch(
+        "asyncio.open_connection", new_callable=AsyncMock, return_value=(MagicMock(), mock_writer)
+    ):
         assert await _tls_reachable("vinje.kommune.no") is True
 
 
@@ -178,50 +189,64 @@ async def test_validate_domain_rejects_empty() -> None:
 
 
 async def test_validate_domain_rejects_no_dns() -> None:
-    with patch("cert_sovereignty.resolve.domain_resolves",
-               new_callable=AsyncMock, return_value=False):
+    with patch(
+        "cert_sovereignty.resolve.domain_resolves", new_callable=AsyncMock, return_value=False
+    ):
         assert await validate_domain("nonexistent.fi") is False
 
 
 async def test_validate_domain_rejects_cname_exit() -> None:
     """Bare .no with CNAME exiting .no → False."""
-    with patch("cert_sovereignty.resolve.domain_resolves",
-               new_callable=AsyncMock, return_value=True), \
-         patch("cert_sovereignty.resolve._cname_exits_no",
-               new_callable=AsyncMock, return_value=True):
+    with (
+        patch(
+            "cert_sovereignty.resolve.domain_resolves", new_callable=AsyncMock, return_value=True
+        ),
+        patch(
+            "cert_sovereignty.resolve._cname_exits_no", new_callable=AsyncMock, return_value=True
+        ),
+    ):
         assert await validate_domain("laerdal2.no") is False
 
 
 async def test_validate_domain_rejects_tls_failure() -> None:
     """Bare .no with TLS failure → False."""
-    with patch("cert_sovereignty.resolve.domain_resolves",
-               new_callable=AsyncMock, return_value=True), \
-         patch("cert_sovereignty.resolve._cname_exits_no",
-               new_callable=AsyncMock, return_value=False), \
-         patch("cert_sovereignty.resolve._tls_reachable",
-               new_callable=AsyncMock, return_value=False):
+    with (
+        patch(
+            "cert_sovereignty.resolve.domain_resolves", new_callable=AsyncMock, return_value=True
+        ),
+        patch(
+            "cert_sovereignty.resolve._cname_exits_no", new_callable=AsyncMock, return_value=False
+        ),
+        patch(
+            "cert_sovereignty.resolve._tls_reachable", new_callable=AsyncMock, return_value=False
+        ),
+    ):
         assert await validate_domain("www.amot.no") is False
 
 
 async def test_validate_domain_accepts_bare_no_with_good_tls() -> None:
     """Bare .no with no CNAME exit and working TLS → True."""
-    with patch("cert_sovereignty.resolve.domain_resolves",
-               new_callable=AsyncMock, return_value=True), \
-         patch("cert_sovereignty.resolve._cname_exits_no",
-               new_callable=AsyncMock, return_value=False), \
-         patch("cert_sovereignty.resolve._tls_reachable",
-               new_callable=AsyncMock, return_value=True):
+    with (
+        patch(
+            "cert_sovereignty.resolve.domain_resolves", new_callable=AsyncMock, return_value=True
+        ),
+        patch(
+            "cert_sovereignty.resolve._cname_exits_no", new_callable=AsyncMock, return_value=False
+        ),
+        patch("cert_sovereignty.resolve._tls_reachable", new_callable=AsyncMock, return_value=True),
+    ):
         assert await validate_domain("www.stavanger.no") is True
 
 
 async def test_validate_domain_skips_extra_checks_for_kommune() -> None:
     """*.kommune.no skips CNAME and TLS checks entirely."""
-    with patch("cert_sovereignty.resolve.domain_resolves",
-               new_callable=AsyncMock, return_value=True), \
-         patch("cert_sovereignty.resolve._cname_exits_no",
-               new_callable=AsyncMock) as mock_cname, \
-         patch("cert_sovereignty.resolve._tls_reachable",
-               new_callable=AsyncMock) as mock_tls:
+    with (
+        patch(
+            "cert_sovereignty.resolve.domain_resolves", new_callable=AsyncMock, return_value=True
+        ),
+        patch("cert_sovereignty.resolve._cname_exits_no", new_callable=AsyncMock) as mock_cname,
+        patch("cert_sovereignty.resolve._tls_reachable", new_callable=AsyncMock) as mock_tls,
+    ):
         result = await validate_domain("amot.kommune.no")
     assert result is True
     mock_cname.assert_not_called()
