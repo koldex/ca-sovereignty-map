@@ -16,7 +16,7 @@ env:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120   # Up to 2 h budget; accuracy matters more than speed
     permissions:
       contents: write  # Required to commit updated data.json
 
@@ -40,18 +40,26 @@ jobs:
 
       # Phase 2: Scan certificates (municipality_domains.json must exist)
       #
-      # --skip-ct: REQUIRED for CI. crt.sh rate-limits GitHub Actions IPs;
-      #   without this flag the scan rate degrades from ~6 dom/s to ~2 dom/s
-      #   as stamina retries pile up, causing Swedish/Norwegian servers to time
-      #   out that succeed on a local developer connection.
-      #   CT data is supplementary — leaf cert + intermediate + CAA signals are
-      #   sufficient for CA classification.
+      # Tuning for GitHub Actions (Azure, US West) → Nordic/Baltic servers:
       #
-      # --concurrency 50: Safe with --skip-ct (no crt.sh bottleneck).
-      #   The nightly runner has 2 vCPU / 7 GB RAM; asyncio SSL is I/O-bound
-      #   so higher concurrency improves throughput without CPU pressure.
+      # --concurrency 15
+      #   Low enough that crt.sh is never rate-limited from the CI IP range.
+      #   The 2026-03-26 nightly showed 'stamina.retry_scheduled' storms when
+      #   running at concurrency 30 with CT enabled — scan rate fell from
+      #   ~6 dom/s to ~2.3 dom/s and 195 fewer municipalities were classified.
+      #
+      # --timeout 25
+      #   GitHub Actions runs in Azure (US West); round-trip to Nordic servers
+      #   is ~150-200 ms vs ~20 ms from Finland. The extra 10 s window catches
+      #   servers that would time out at 15 s from CI but succeed from a local
+      #   developer machine.
+      #
+      # CT enabled (no --skip-ct)
+      #   Accuracy over speed. With concurrency 15 and no rate-limit pressure,
+      #   crt.sh historical data adds CT log signals for borderline cases.
+      #   Expected total run time: ~25-35 minutes (well within 120 min budget).
       - name: Scan TLS certificates
-        run: uv run scan-certs --skip-ct --concurrency 50
+        run: uv run scan-certs --concurrency 15 --timeout 25
 
       - name: Run analysis report
         run: uv run analyze

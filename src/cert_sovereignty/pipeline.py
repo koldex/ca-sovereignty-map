@@ -34,13 +34,14 @@ async def scan_domain(
     port: int = 443,
     semaphore: asyncio.Semaphore,
     skip_ct: bool = False,
+    tls_timeout: int = 15,
 ) -> ClassificationResult:
     """Scan a single domain and return classification result."""
     async with semaphore:
         logger.debug("Scanning {}", domain)  # debug level to keep progress bar clean
 
         # TLS certificate chain scan
-        tls_result = await scan_certificate_chain(domain, port=port)
+        tls_result = await scan_certificate_chain(domain, port=port, timeout=tls_timeout)
         tls_evidence = tls_result.get("evidence", [])
         chain = tls_result.get("chain", [])
         tls_version = tls_result.get("tls_version", "")
@@ -80,6 +81,7 @@ async def scan_many(
     *,
     concurrency: int = SEMAPHORE_LIMIT,
     skip_ct: bool = False,
+    tls_timeout: int = 15,
 ) -> dict[str, ClassificationResult]:
     """Scan multiple domains concurrently, printing a live progress bar."""
     total = len(domains)
@@ -87,7 +89,9 @@ async def scan_many(
 
     # Wrap each scan_domain coroutine to track completions
     async def _tracked(domain: str) -> tuple[str, ClassificationResult]:
-        result = await scan_domain(domain, semaphore=semaphore, skip_ct=skip_ct)
+        result = await scan_domain(
+            domain, semaphore=semaphore, skip_ct=skip_ct, tls_timeout=tls_timeout
+        )
         return domain, result
 
     tasks = [asyncio.create_task(_tracked(d)) for d in domains]

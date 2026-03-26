@@ -82,6 +82,16 @@ def scan_certs() -> None:
     parser.add_argument("--output-dir", default=str(ROOT))
     parser.add_argument("--concurrency", type=int, default=50)
     parser.add_argument("--skip-ct", action="store_true", help="Skip CT log queries")
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=15,
+        help=(
+            "TLS connection timeout in seconds (default: 15). "
+            "Increase to 20-25 when scanning from a high-latency location "
+            "such as a CI runner in a US data centre scanning Nordic servers."
+        ),
+    )
     parser.add_argument("--country", help="Scan only this country")
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()
@@ -106,12 +116,19 @@ def scan_certs() -> None:
 
         # Extract domain list
         domains = [m["domain"] for m in municipalities if m.get("domain")]
-        logger.info("Scanning {} domains with concurrency={}", len(domains), args.concurrency)
+        logger.info(
+            "Scanning {} domains  concurrency={}  timeout={}s  ct={}",
+            len(domains),
+            args.concurrency,
+            args.timeout,
+            "disabled" if args.skip_ct else "enabled",
+        )
 
         results = await scan_many(
             domains,
             concurrency=args.concurrency,
             skip_ct=args.skip_ct,
+            tls_timeout=args.timeout,
         )
 
         data = build_data_json(municipalities, results)
