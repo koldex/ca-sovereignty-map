@@ -39,8 +39,19 @@ jobs:
       - run: uv sync
 
       # Phase 2: Scan certificates (municipality_domains.json must exist)
+      #
+      # --skip-ct: REQUIRED for CI. crt.sh rate-limits GitHub Actions IPs;
+      #   without this flag the scan rate degrades from ~6 dom/s to ~2 dom/s
+      #   as stamina retries pile up, causing Swedish/Norwegian servers to time
+      #   out that succeed on a local developer connection.
+      #   CT data is supplementary — leaf cert + intermediate + CAA signals are
+      #   sufficient for CA classification.
+      #
+      # --concurrency 50: Safe with --skip-ct (no crt.sh bottleneck).
+      #   The nightly runner has 2 vCPU / 7 GB RAM; asyncio SSL is I/O-bound
+      #   so higher concurrency improves throughput without CPU pressure.
       - name: Scan TLS certificates
-        run: uv run scan-certs --concurrency 30
+        run: uv run scan-certs --skip-ct --concurrency 50
 
       - name: Run analysis report
         run: uv run analyze
