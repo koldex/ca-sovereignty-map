@@ -6,6 +6,7 @@ from cert_sovereignty.models import SignalKind
 from cert_sovereignty.tls import (
     _extract_pem_certs,
     _match_cert_to_ca,
+    _no_kommune_fallback,
 )
 
 
@@ -65,6 +66,32 @@ def test_match_cert_to_ca_buypass(buypass_leaf) -> None:
     results = _match_cert_to_ca(buypass_leaf, SignalKind.LEAF_ISSUER)
     ca_names = [ev.ca_name for ev in results]
     assert "Buypass" in ca_names
+
+
+# ── _no_kommune_fallback ─────────────────────────────────────────────────────
+
+
+def test_no_kommune_fallback_www_prefix() -> None:
+    assert _no_kommune_fallback("www.nord-fron.no") == "nord-fron.kommune.no"
+    assert _no_kommune_fallback("www.amot.no") == "amot.kommune.no"
+
+
+def test_no_kommune_fallback_bare() -> None:
+    assert _no_kommune_fallback("laerdal.no") == "laerdal.kommune.no"
+    assert _no_kommune_fallback("vinje.no") == "vinje.kommune.no"
+
+
+def test_no_kommune_fallback_already_authoritative() -> None:
+    # Already .kommune.no or .herad.no — must return None
+    assert _no_kommune_fallback("nord-fron.kommune.no") is None
+    assert _no_kommune_fallback("ulvik.herad.no") is None
+
+
+def test_no_kommune_fallback_non_norwegian() -> None:
+    # Non-.no domains must return None
+    assert _no_kommune_fallback("espoo.fi") is None
+    assert _no_kommune_fallback("stockholm.se") is None
+    assert _no_kommune_fallback("laerdal.com") is None
 
 
 def test_match_cert_to_ca_unknown() -> None:

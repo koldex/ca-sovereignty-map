@@ -12,10 +12,11 @@ Fix: resolve IPv4 address explicitly and connect to it (passing server_hostname 
 Recovery chain when primary fails:
   1. www fallback            — try www.{domain}:443
   2. Cert mismatch recovery  — SSL verify failed → connect without verify (shared hosting)
-  3. HTTP-only probe         — timeout/reset → check if port 80 is open
+  3. Norwegian .no fallback  — bare .no domain fails → retry {slug}.kommune.no
+  4. HTTP-only probe         — timeout/reset → check if port 80 is open
 
 Additional enrichment after successful scan:
-  4. HTTPS redirect following — if domain redirects to a different host (e.g.
+  5. HTTPS redirect following — if domain redirects to a different host (e.g.
      stockholm.se → start.stockholm), scan the redirect target instead so we
      classify the CA actually serving municipality content.
 """
@@ -49,6 +50,29 @@ WEIGHTS: dict[SignalKind, float] = {
 _RETRY_ERRORS = ("Connection timeout", "Connection error", "Connection reset")
 
 
+def _no_kommune_fallback(domain: str) -> str | None:
+    """Derive the {slug}.kommune.no fallback for a Norwegian bare .no domain.
+
+    Examples::
+        'www.nord-fron.no' → 'nord-fron.kommune.no'
+        'amot.no'          → 'amot.kommune.no'
+        'amot.kommune.no'  → None  (already authoritative)
+        'vinje.herad.no'   → None  (already authoritative)
+        'stavanger.no'     → 'stavanger.kommune.no'
+
+    Returns None when the domain is already authoritative or not Norwegian.
+    """
+    bare = domain.removeprefix("www.")
+    if not bare.endswith(".no"):
+        return None
+    if bare.endswith(".kommune.no") or bare.endswith(".herad.no"):
+        return None
+    slug = bare.removesuffix(".no")
+    if not slug:
+        return None
+    return f"{slug}.kommune.no"
+
+
 async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15) -> dict:
     """Scan TLS cert chain with full recovery chain + redirect following."""
     result = await _scan_asyncio_ssl(domain, port, timeout)
@@ -61,7 +85,7 @@ async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15
             www["scanned_domain"] = f"www.{domain}"
             return www
 
-    # ── Recovery 2: cert mismatch → shared hosting ────────────────────────────
+    # ── Recovery 2: cert mismatch → shared hosting ─────────────────────────────────
     if result["error"] and "SSL verification failed" in result["error"]:
         shared = await _scan_asyncio_ssl_no_verify(domain, port, min(timeout, 10))
         if not shared.get("error") and shared.get("chain"):
@@ -76,14 +100,29 @@ async def scan_certificate_chain(domain: str, port: int = 443, timeout: int = 15
                 shared_www["cert_mismatch"] = True
                 return shared_www
 
-    # ── Recovery 3: HTTP-only probe ───────────────────────────────────────────
+    # ── Recovery 3: Norwegian bare .no → {slug}.kommune.no fallback ───────────────
+    # Bare .no domains (e.g. www.amot.no) may have TLS SNI mismatches, timeouts,
+    # or CNAME to commercial sites. The authoritative Norwegian municipal domain
+    # is always {slug}.kommune.no (or .herad.no — already excluded by helper).
+    # This recovery fires for ANY error type: ssl_error, timeout, connection_error.
+    if result["error"]:
+        kommune_domain = _no_kommune_fallback(domain)
+        if kommune_domain:
+            logger.debug("Norwegian .no fallback: {} → {}", domain, kommune_domain)
+            kommune = await _scan_asyncio_ssl(kommune_domain, port, timeout)
+            if not kommune["error"]:
+                kommune["domain"] = domain
+                kommune["scanned_domain"] = kommune_domain
+                return kommune
+
+    # ── Recovery 4: HTTP-only probe ────────────────────────────────────────────
     if result["error"] and any(s in result["error"] for s in _RETRY_ERRORS):
         http_ok = await _check_port_open(domain, 80, timeout=5)
         result["http_accessible"] = http_ok
         if http_ok:
             result["error"] = "http_only"
 
-    # ── Enrichment 4: HTTPS cross-domain redirect following ───────────────────
+    # ── Enrichment 5: HTTPS cross-domain redirect following ─────────────────────────
     # Only run when we successfully got a cert — check if the domain redirects
     # to a different host (e.g. stockholm.se → start.stockholm). If so, the
     # redirect target is the actual municipal website; scan it instead.

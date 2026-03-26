@@ -9,8 +9,11 @@ Two-phase process (cf. mxmap's resolve.py):
 
 from __future__ import annotations
 
+import asyncio
 import json
 import re
+import socket
+import ssl as _ssl
 import unicodedata
 from pathlib import Path
 
@@ -25,7 +28,7 @@ from .constants import (
     WIKIDATA_QUERIES,
     WIKIDATA_SPARQL_ENDPOINT,
 )
-from .dns import domain_resolves
+from .dns import domain_resolves, resolve_robust
 
 # ── Wikidata SPARQL ───────────────────────────────────────────────────────────
 
@@ -264,6 +267,71 @@ def guess_domains(name: str, country: str, region: str = "") -> list[str]:
 # ── Domain validation ─────────────────────────────────────────────────────────
 
 
+def _is_no_bare_domain(domain: str) -> bool:
+    """Return True for Norwegian .no domains that are NOT *.kommune.no or *.herad.no.
+
+    These bare .no domains require extra validation beyond DNS resolution:
+    they may point to commercial sites (laerdal.no → laerdal.com) or have
+    TLS configuration issues (SNI mismatches, timeouts) while the authoritative
+    {slug}.kommune.no is perfectly reachable.
+    """
+    if not domain.endswith(".no"):
+        return False
+    return not (domain.endswith(".kommune.no") or domain.endswith(".herad.no"))
+
+
+async def _cname_exits_no(domain: str) -> bool:
+    """Return True if domain's CNAME chain points outside the .no TLD.
+
+    Detects commercial hijacks like laerdal.no → laerdal.com where the .no
+    domain resolves via DNS but actually serves a private company's site.
+    """
+    answer = await resolve_robust(domain, "CNAME")
+    if answer is None:
+        return False
+    for rdata in answer:
+        target = str(rdata.target).rstrip(".")
+        if not target.endswith(".no"):
+            logger.debug("CNAME exits .no TLD: {} → {} — rejecting", domain, target)
+            return True
+    return False
+
+
+async def _tls_reachable(domain: str, timeout: float = 8.0) -> bool:
+    """Return True if a TLS handshake to domain:443 completes successfully.
+
+    Lightweight analog of tls.py's _scan_asyncio_ssl — no cert parsing, just
+    connectivity. Uses explicit IPv4 to avoid broken-IPv6 Nordic server timeouts
+    (same approach as tls.py).
+    """
+    try:
+        ssl_ctx = _ssl.create_default_context()
+        loop = asyncio.get_event_loop()
+        connect_target: str = domain
+        try:
+            ipv4_infos = await asyncio.wait_for(
+                loop.getaddrinfo(domain, 443, family=socket.AF_INET, type=socket.SOCK_STREAM),
+                timeout=3,
+            )
+            if ipv4_infos:
+                connect_target = ipv4_infos[0][4][0]
+        except Exception:
+            pass  # No IPv4 — fall back to hostname
+        _, writer = await asyncio.wait_for(
+            asyncio.open_connection(connect_target, 443, ssl=ssl_ctx, server_hostname=domain),
+            timeout=timeout,
+        )
+        writer.close()
+        try:
+            await asyncio.wait_for(writer.wait_closed(), timeout=1)
+        except Exception:
+            pass
+        return True
+    except Exception as e:
+        logger.debug("TLS reachability check failed for {}: {}", domain, e)
+        return False
+
+
 def _extract_domain(url: str) -> str:
     """Extract bare domain from a URL."""
     # Strip protocol
@@ -285,10 +353,28 @@ def _is_skip_domain(domain: str) -> bool:
 
 
 async def validate_domain(domain: str) -> bool:
-    """Check if a domain has DNS records and is reachable."""
+    """Check if a domain has DNS records and is reachable.
+
+    For Norwegian bare .no domains (not *.kommune.no / *.herad.no) two extra
+    checks are applied before accepting:
+      1. CNAME chain must not exit the .no TLD (rejects commercial hijacks
+         such as laerdal.no → laerdal.com).
+      2. TLS handshake on port 443 must succeed (rejects SNI mismatches,
+         timeouts, and non-existent TLS endpoints).
+
+    Failing either extra check causes the caller's candidate loop to fall
+    through to the next guess — typically {slug}.kommune.no.
+    """
     if not domain or _is_skip_domain(domain):
         return False
-    return await domain_resolves(domain)
+    if not await domain_resolves(domain):
+        return False
+    if _is_no_bare_domain(domain):
+        if await _cname_exits_no(domain):
+            return False
+        if not await _tls_reachable(domain):
+            return False
+    return True
 
 
 # ── Overrides ─────────────────────────────────────────────────────────────────

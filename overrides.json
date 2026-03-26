@@ -1163,11 +1163,31 @@
   "_todo_NO-1835": "Norway — no working domain found for NO-1835",
   "_todo_NO-1146": "Norway — no working domain found for NO-1146",
   "NO-3821": {
-    "domain": "vinje.no",
-    "reason": "NO — replaced timing-out www.X.no with vinje.no"
+    "domain": "kviteseid.kommune.no",
+    "reason": "Kviteseid — fixed wrong vinje.no assignment (ID confusion); verified kviteseid.kommune.no 301→www, Let's Encrypt R12"
+  },
+  "NO-3825": {
+    "domain": "vinje.kommune.no",
+    "reason": "Vinje — vinje.no times out; vinje.kommune.no 301→www, Let's Encrypt R12 verified"
   },
   "NO-3428": {
     "domain": "alvdal.kommune.no",
     "reason": "www.alvdal.no is a parked page at Norwegian web hotel Tornado (title='Parked', cert *.web.tornado-node.net); correct domain is alvdal.kommune.no"
+  },
+  "NO-3436": {
+    "domain": "nord-fron.kommune.no",
+    "reason": "www.nord-fron.no gives TLSV1_UNRECOGNIZED_NAME (SNI mismatch); nord-fron.kommune.no 301→www, Let's Encrypt R13 verified"
+  },
+  "NO-3422": {
+    "domain": "amot.kommune.no",
+    "reason": "www.amot.no times out; amot.kommune.no 301→www, Let's Encrypt R12 verified"
+  },
+  "NO-5061": {
+    "domain": "rindal.kommune.no",
+    "reason": "www.rindal.no does not exist (Safari/curl connection error); rindal.kommune.no 301→www, Let's Encrypt R12 verified"
+  },
+  "NO-4642": {
+    "domain": "laerdal.kommune.no",
+    "reason": "laerdal.no CNAMEs to laerdal.com (Laerdal Medical, commercial); laerdal.kommune.no 200 OK, Let's Encrypt R12 verified"
   }
 }

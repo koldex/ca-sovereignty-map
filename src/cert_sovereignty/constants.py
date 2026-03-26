@@ -167,6 +167,8 @@ SKIP_DOMAINS: frozenset[str] = frozenset(
         "traku.lt",  # Redirects to facebook.com/traku.turtas (real estate), not municipality
         # Norwegian domains parked at web hotels (title='Parked', cert belongs to hosting platform)
         "www.alvdal.no",  # Parked at Tornado web hotel (*.web.tornado-node.net); use alvdal.kommune.no
+        # Norwegian commercial .no domains that resolve but belong to private companies
+        "laerdal.no",  # CNAMEs to laerdal.com (Laerdal Medical AS); municipality is laerdal.kommune.no
     ]
 )
 
