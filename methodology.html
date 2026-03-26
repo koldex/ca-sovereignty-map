@@ -195,6 +195,62 @@
       </tbody>
     </table>
 
+    <h3>Confidence scoring</h3>
+    <p>
+      Every classification carries a <strong>confidence score</strong> (shown as a percentage in
+      each municipality popup). It is a rule-based epistemic measure — not a statistical
+      probability — that reflects how much independent, mutually-corroborating evidence
+      supports the winner CA.
+    </p>
+    <p>
+      The score is determined by matching the <em>set of signal types</em> collected for the
+      winning CA against a lookup table of rules, from highest to lowest priority:
+    </p>
+    <table class="signal-table">
+      <thead><tr><th>Signal combination</th><th>Confidence</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Leaf issuer + intermediate issuer + root CA</td><td><strong>95 %</strong></td><td>Full verified cert chain, all 3 positions match the same CA</td></tr>
+        <tr><td>Leaf issuer + intermediate issuer + DNS CAA</td><td><strong>95 %</strong></td><td>Live cert chain corroborated by domain owner's CAA record</td></tr>
+        <tr><td>Leaf issuer + intermediate issuer</td><td>90 %</td><td>Two cert positions agree; root not retrieved</td></tr>
+        <tr><td>Leaf issuer + CT log history</td><td>80 %</td><td>Live cert matches historical issuance pattern</td></tr>
+        <tr><td>Intermediate issuer + root CA</td><td>85 %</td><td>Academic chains where leaf CA is unlisted (e.g. GÉANT under HARICA)</td></tr>
+        <tr><td>Leaf issuer only</td><td>75 %</td><td>Single cert position, no corroboration</td></tr>
+        <tr><td>Intermediate issuer only</td><td>65 %</td><td>Only intermediate retrieved</td></tr>
+        <tr><td>CAA record only</td><td>50 %</td><td>Domain owner authorisation, no live cert available</td></tr>
+        <tr><td>No matching signals</td><td>30 %</td><td>Fallback; CA identified but evidence is minimal or conflicting</td></tr>
+      </tbody>
+    </table>
+    <h4>Why 95 % is the maximum</h4>
+    <p>
+      The confidence score deliberately never reaches 100 %. Even with three mutually
+      corroborating signals — a full certificate chain whose leaf, intermediate and root all
+      identify the same CA — five percent of uncertainty remains. This is not a technical
+      limitation; it is an intentional acknowledgement of irreducible unknowns:
+    </p>
+    <ul>
+      <li><strong>Heuristic pattern matching.</strong> CA identification relies on substring
+          matching of issuer organisation and CN fields against a manually maintained
+          fingerprint database. A carefully crafted or misconfigured certificate could
+          produce a false match that the scanner cannot detect.</li>
+      <li><strong>Ownership changes post-issuance.</strong> A certificate is valid for up to
+          two years. A CA classified as EU-controlled at the time of issuance could be
+          acquired by a US entity before the cert expires — the cert scan alone cannot
+          detect that.</li>
+      <li><strong>Jurisdiction is interpretive.</strong> Whether a European subsidiary of a
+          US-headquartered CA is truly subject to US CLOUD Act compulsion is a legal
+          question, not a binary technical fact. The map makes reasonable assessments;
+          it does not claim legal certainty.</li>
+      <li><strong>Cross-signed roots.</strong> Some certificate chains terminate in roots
+          that are cross-signed under different organisational contexts, creating ambiguity
+          about which trust anchor — and which jurisdiction — governs the end-entity cert.</li>
+    </ul>
+    <p>
+      In practice, a 95 % confidence classification should be read as: <em>"multiple
+      independent, automatically-collected signals agree on this CA, and we have no
+      reason from the available evidence to doubt it."</em> The 5 % gap is the space
+      reserved for what automated scanning cannot know.
+    </p>
+
     <h2>Risk Levels</h2>
     <table class="risk-table">
       <thead><tr><th>Risk</th><th>Colour</th><th>Description</th><th>Example CAs</th></tr></thead>
