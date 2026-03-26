@@ -55,7 +55,7 @@ Examples: `FI-049` (Espoo), `SE-0180` (Stockholm), `NO-0301` (Oslo), `DK-101` (C
 ## Hosting recommendation
 
 UpCloud Helsinki + Coolify (~7 €/month) — Finnish jurisdiction, no US CLOUD Act.
-TLS: Buypass (Norwegian ACME, `https://api.buypass.com/acme/directory`) for Nordic sovereignty.
+TLS: Telia Certificate Service (ACME, `https://acme.trust.telia.com/directory`) for Nordic sovereignty.
 
 ## Important bugs fixed
 

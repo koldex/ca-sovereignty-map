@@ -225,7 +225,7 @@ curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 # 3. In Coolify UI (https://YOUR_SERVER_IP:8000):
 #    - New project → Connect GitHub repo
 #    - Set build command: npm ci && npm run build  (or static file serving)
-#    - Set domain + SSL (use Buypass ACME for Norwegian jurisdiction)
+#    - Set domain + SSL (use Telia ACME for Nordic/Swedish jurisdiction)
 ```
 
 ### Option 3 — UpCloud Object Storage (~3 €/month, static only)
