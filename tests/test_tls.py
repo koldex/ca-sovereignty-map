@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+from unittest.mock import AsyncMock, patch
+
 from cert_sovereignty.models import SignalKind
 from cert_sovereignty.tls import (
     _extract_pem_certs,
     _match_cert_to_ca,
     _no_kommune_fallback,
+    scan_certificate_chain,
 )
 
 
@@ -92,6 +95,58 @@ def test_no_kommune_fallback_non_norwegian() -> None:
     assert _no_kommune_fallback("espoo.fi") is None
     assert _no_kommune_fallback("stockholm.se") is None
     assert _no_kommune_fallback("laerdal.com") is None
+
+
+# ── scan_certificate_chain — Recovery 3 (─────────────────────────────────────
+
+
+def _err(domain: str, msg: str = "SSL error: SNI") -> dict:
+    """Minimal failed _scan_asyncio_ssl result."""
+    return {
+        "domain": domain, "scan_timestamp": "2026-01-01T00:00:00+00:00",
+        "chain": [], "evidence": [], "tls_version": "", "verification": "",
+        "error": msg, "cert_mismatch": False, "http_accessible": None,
+    }
+
+
+def _ok(domain: str) -> dict:
+    """Minimal successful _scan_asyncio_ssl result."""
+    return {
+        "domain": domain, "scan_timestamp": "2026-01-01T00:00:00+00:00",
+        "chain": [], "evidence": [], "tls_version": "TLSv1.3", "verification": "OK",
+        "error": None, "cert_mismatch": False, "http_accessible": None,
+    }
+
+
+async def test_recovery3_triggers_for_bare_no() -> None:
+    """www.amot.no SSL error → Recovery 3 retries amot.kommune.no."""
+    with patch("cert_sovereignty.tls._scan_asyncio_ssl", new_callable=AsyncMock,
+               side_effect=[_err("www.amot.no"), _ok("amot.kommune.no")]):
+        result = await scan_certificate_chain("www.amot.no")
+    assert result["scanned_domain"] == "amot.kommune.no"
+    assert result["domain"] == "www.amot.no"
+    assert result["error"] is None
+
+
+async def test_recovery3_does_not_trigger_for_non_no() -> None:
+    """Recovery 3 does not fire for non-Norwegian domains."""
+    with patch("cert_sovereignty.tls._scan_asyncio_ssl", new_callable=AsyncMock,
+               return_value=_err("www.espoo.fi")):
+        result = await scan_certificate_chain("www.espoo.fi")
+    assert result["error"] == "SSL error: SNI"
+    assert result.get("scanned_domain", "") == ""
+
+
+async def test_recovery3_does_not_trigger_for_kommune_domain() -> None:
+    """Recovery 3 does not fire when domain is already .kommune.no."""
+    with patch("cert_sovereignty.tls._scan_asyncio_ssl", new_callable=AsyncMock,
+               return_value=_err("amot.kommune.no", msg="SSL error: test")), \
+         patch("cert_sovereignty.tls._check_port_open", new_callable=AsyncMock,
+               return_value=False):
+        result = await scan_certificate_chain("amot.kommune.no")
+    # Should stay on the original error, no .kommune.no sub-fallback attempted
+    assert result["error"] == "SSL error: test"
+    assert result.get("scanned_domain", "") == ""
 
 
 def test_match_cert_to_ca_unknown() -> None:

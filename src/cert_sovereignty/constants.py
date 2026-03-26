@@ -146,9 +146,11 @@ NATIONAL_API_URLS: dict[str, str] = {
 
 SKIP_DOMAINS: frozenset[str] = frozenset(
     [
-        # Generic / redirect domains
+        # Generic / redirect domains — note: use suffix matching only for
+        # shared portals whose subdomains are ALL invalid municipality sites.
+        # Do NOT add *.kommune.no here: {slug}.kommune.no are authoritative
+        # Norwegian municipal domains.
         "kommuner.se",
-        "kommune.no",
         "kunta.fi",
         # Known CDN/proxy endpoints
         "cloudfront.net",
