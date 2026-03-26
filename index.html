@@ -93,7 +93,7 @@
           layer.on('click', () => {
             if (muni) {
               updateInfoBar(muni);
-              layer.bindPopup(buildPopup(muni), { maxWidth: 400 }).openPopup();
+          layer.bindPopup(buildPopup(muni), { maxWidth: 400, autoPan: false }).openPopup();
             } else {
               // No scan data — polygon exists in boundaries but had no
               // resolvable domain (municipality too small, recently merged, etc.)
@@ -115,7 +115,7 @@
                        target="_blank" rel="noopener">overrides.json</a>.
                   </div>
                 </div>`,
-                { maxWidth: 380 }
+                { maxWidth: 380, autoPan: false }
               ).openPopup();
             }
           });

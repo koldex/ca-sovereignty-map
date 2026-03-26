@@ -160,8 +160,8 @@ function initMap(containerId) {
     minZoom: 4, maxZoom: 14,
     renderer: L.canvas(),
     scrollWheelZoom: true, touchZoom: true,
-    // Extended south to 53.5°N to include Lithuania (southernmost ∼53.9°N)
-    maxBounds: L.latLngBounds(L.latLng(53.5, 3.0), L.latLng(72.0, 32.0)),
+    // No maxBounds — free panning in all directions.
+    // minZoom: 4 already prevents zooming so far out that the region is invisible.
   });
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://carto.com/">CARTO</a>',
