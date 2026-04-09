@@ -48,7 +48,7 @@ jobs:
       # SHA-pinned to actions/upload-pages-artifact@v3
       # https://github.com/actions/upload-pages-artifact/releases/tag/v3
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
         with:
           path: '.'   # Serve from repo root (index.html, data.min.json, css/, js/)
 
