@@ -29,7 +29,7 @@ jobs:
 
       # SHA-pinned to astral-sh/setup-uv@v5
       # https://github.com/astral-sh/setup-uv/releases/tag/v5
-      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86
+      - uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57
         with:
           enable-cache: true
           cache-dependency-glob: uv.lock
